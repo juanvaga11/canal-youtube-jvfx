@@ -184,7 +184,7 @@ def demo():
 
 
 def resumen():
-    ck = lambda s, t: f'<div class="chk" data-s="{s}"><b>✓</b>{t}</div>'
+    ck = lambda s, t: f'<div class="chk" data-s="{s}"><b>✓</b><span>{t}</span></div>'
     return f"""<div class="stage" style="align-items:center">
 <div class="pill" data-s="0">RESUMEN</div>
 <div style="display:flex;flex-direction:column;gap:26px">
@@ -319,12 +319,42 @@ def mitos():
 
 def ruta():
     pasos = [('1', 'Fundamentos', 1), ('2', 'Estructura', 2), ('3', 'SMC', 3), ('4', 'Modelo de entrada', 4), ('5', 'Instrumentos', 5), ('6', 'Experto', 6)]
-    items = "".join(f'<div class="card" data-s="{s}" style="width:205px;padding:24px 12px{";border-color:" + ORO + ";box-shadow:0 0 40px rgba(212,175,55,.35)" if n == "1" else ""}"><div class="big oro" style="font-size:80px">{n}</div><div class="val" style="font-size:32px">{t}</div>{"<div class=pill style=font-size:18px;margin-top:12px>ESTÁS AQUÍ</div>" if n == "1" else ""}</div>' for n, t, s in pasos)
+    items = "".join(f'<div class="card" data-s="{s}" style="width:205px;padding:24px 12px{";border-color:" + ORO + ";box-shadow:0 0 40px rgba(212,175,55,.35)" if n == "1" else ""}"><div class="big oro" style="font-size:80px">{n}</div><div class="val" style="font-size:26px">{t}</div>{"<div class=pill style=font-size:18px;margin-top:12px>ESTÁS AQUÍ</div>" if n == "1" else ""}</div>' for n, t, s in pasos)
     return f"""<div class="stage">
 <div class="pill" data-s="0">LA RUTA: DE CERO A EXPERTO</div>
 <div class="row" style="gap:16px">{items}</div>
 <div class="p" data-s="8">Síguela <b class="oro">en orden</b> y vas a entender el mercado</div>
 </div>"""
+
+
+def por_que_pierden():
+    c = lambda s, n, i, t, e: f'<div class="card" data-s="{s}" style="width:470px;border-color:rgba(239,68,68,.5)"><div class="lbl">Razón {n}</div><div class="ico" style="margin:12px 0">{i}</div><div class="val" style="font-size:44px">{t}</div><div class="p" style="font-size:27px;margin-top:10px">{e}</div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">¿POR QUÉ PIERDEN?</div>
+<div class="row">{c(2,1,'🗺️','Sin plan','Entran por lo que vieron en redes')}{c(5,2,'😰','Emociones','Miedo y avaricia mandan')}{c(8,3,'🔁','Sobreoperar','Más operaciones ≠ más ganancia')}</div>
+<div class="p" data-s="11">El que gana <b class="oro">espera con paciencia</b> su oportunidad</div>
+</div>"""
+
+
+def realidad():
+    return f"""<div class="stage" style="gap:24px">
+<div class="h2" data-s="0" style="font-size:56px">¿Cuánto se puede <span class="oro">ganar</span>?</div>
+<div class="card" data-s="2" style="width:1000px"><div class="val">No hay una cifra fija</div><div class="row" style="margin-top:22px;gap:18px"><div class="pill">💰 CAPITAL</div><div class="pill">⚖️ RIESGO</div><div class="pill">🔁 CONSISTENCIA</div></div></div>
+<div class="card" data-s="4" style="width:1000px;border-color:{ORO}"><div class="lbl">Tu meta al principio</div><div class="val">Aprender a <span class="oro">no perder</span> y proteger tu cuenta</div></div>
+<div class="p" data-s="6">Las ganancias son la <b class="oro">consecuencia</b> de un buen proceso</div>
+</div>"""
+
+
+def aprovechar():
+    ck = lambda s, i, t: f'<div class="chk" data-s="{s}" style="font-size:48px"><b>{i}</b><span>{t}</span></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">CÓMO APROVECHAR LA SERIE</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+{ck(1,'1','Mira los videos <span class="oro">en orden</span>')}
+{ck(2,'2','Toma apuntes cortos')}
+{ck(3,'3','Practica en tu <span class="oro">cuenta demo</span>')}
+{ck(4,'4','Deja tus dudas en los <span class="oro">comentarios</span> 💬')}
+</div></div>"""
 
 
 def intro_frame(t, w=1920, h=1080):
