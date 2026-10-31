@@ -18,7 +18,7 @@ jobs:
           mkdir -p pruebas_voz/salida
           python herramientas/pronunciacion.py pruebas_voz/texto.txt > /tmp/t.txt
           cat /tmp/t.txt
-          edge-tts --voice es-MX-JorgeNeural --rate=+5% -f /tmp/t.txt --write-media pruebas_voz/salida/jorge_corregido.mp3
+          edge-tts --voice es-CO-GonzaloNeural --rate=+5% -f /tmp/t.txt --write-media pruebas_voz/salida/gonzalo_corregido.mp3
       - name: Guardar
         run: |
           git config user.name "jvfx-bot"; git config user.email "bot@users.noreply.github.com"
