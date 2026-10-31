@@ -248,6 +248,85 @@ def s_cta():
 </div>"""
 
 
+
+def inversion():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">TRADING ≠ INVERTIR</div>
+<div class="row">
+<div class="card" data-s="1" style="width:560px"><div class="ico">🏦</div><div class="val">Inversión</div><div class="p" style="font-size:30px;margin-top:10px">Compras y guardas<br><b class="oro">durante años</b></div></div>
+<div class="card" data-s="2" style="width:560px;border-color:{ORO}"><div class="ico">⚡</div><div class="val oro">Trading</div><div class="p" style="font-size:30px;margin-top:10px">Movimientos cortos:<br><b class="oro">minutos · horas · días</b></div></div>
+</div>
+<div class="p" data-s="4">Ninguno es mejor: <b class="oro">son dos formas distintas</b></div>
+</div>"""
+
+
+def estilos():
+    c = lambda s, i, n, t, e: f'<div class="card" data-s="{s}" style="width:440px"><div class="ico">{i}</div><div class="val">{n}</div><div class="pill" style="margin:16px 0 8px;font-size:24px">{t}</div><div class="p" style="font-size:28px">{e}</div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">ESTILOS DE TRADING</div>
+<div class="row">{c(1,'⏱️','Scalping','MINUTOS','Muchas operaciones rápidas')}{c(2,'☀️','Intradía','EL MISMO DÍA','Abres y cierras hoy')}{c(3,'📈','Swing','VARIOS DÍAS','Menos pantalla, más paciencia')}</div>
+<div class="p" data-s="4">Cada estilo se adapta a <b class="oro">tu tiempo y tu personalidad</b></div>
+</div>"""
+
+
+def operacion():
+    rnd = random.Random(11)
+    p, vs = 100.0, []
+    for k in range(30):
+        o = p; c = o + rnd.gauss(0.5 if k > 8 else -0.2, 1.6)
+        vs.append((o, max(o, c) + abs(rnd.gauss(0, .8)), min(o, c) - abs(rnd.gauss(0, .8)), c)); p = c
+    W, H, cw = 1150, 470, 22
+    entrada = vs[-1][3]; sl = min(v[2] for v in vs[-8:]) - 1.0; tp = entrada + (entrada - sl) * 2
+    mn = min(min(v[2] for v in vs), sl) - 1; mx = max(max(v[1] for v in vs), tp) + 1
+    y = lambda v: 15 + (mx - v) / (mx - mn) * (H - 30)
+    out = [f'<svg width="{W}" height="{H}">']
+    for i, (o, hi, lo, c) in enumerate(vs):
+        x = 20 + i * cw; col = VERDE if c >= o else ROJO
+        out.append(f'<line x1="{x}" x2="{x}" y1="{y(hi)}" y2="{y(lo)}" stroke="{col}" stroke-width="3"/><rect x="{x-7}" y="{y(max(o,c))}" width="14" height="{max(y(min(o,c))-y(max(o,c)),3)}" fill="{col}" rx="2"/>')
+    out.append('</svg>')
+    x0 = 20 + 29 * cw
+    def ln(v, col, txt, s, fill=None):
+        return f'<div data-s="{s}" style="position:absolute;left:{x0}px;width:{W - x0 - 10}px;top:{y(v)}px;border-top:4px dashed {col}"><span style="position:absolute;right:0;top:-46px;background:{col};color:#0a0a0a;font-weight:800;font-size:26px;padding:6px 16px;border-radius:10px">{txt}</span></div>'
+    zonas = f'<div data-s="4" style="position:absolute;left:{x0}px;width:{W-x0-10}px;top:{y(tp)}px;height:{y(entrada)-y(tp)}px;background:rgba(34,197,94,.12)"></div><div data-s="3" style="position:absolute;left:{x0}px;width:{W-x0-10}px;top:{y(entrada)}px;height:{y(sl)-y(entrada)}px;background:rgba(239,68,68,.12)"></div>'
+    return f"""<div class="stage" style="gap:26px">
+<div class="pill" data-s="0">UNA OPERACIÓN COMPLETA</div>
+<div class="card" style="padding:20px"><div style="position:relative;width:{W}px;height:{H}px">{"".join(out)}{zonas}
+{ln(entrada, ORO, '① ENTRADA', 2)}{ln(sl, ROJO, '② STOP LOSS', 3)}{ln(tp, VERDE, '③ TAKE PROFIT', 4)}</div></div>
+<div class="p" data-s="5">Las 3 se definen <b class="oro">antes de entrar</b>, nunca después</div>
+</div>"""
+
+
+def riesgo():
+    barra = lambda pct, col: f'<div style="height:26px;background:#222;border-radius:13px;overflow:hidden;margin-top:14px"><div style="width:{pct}%;height:100%;background:{col}"></div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">EN NÚMEROS</div>
+<div class="row" data-s="1"><div class="card"><div class="lbl">Cuenta</div><div class="val">$1.000</div></div><div class="arrow">✕</div><div class="card"><div class="lbl">Riesgo</div><div class="val oro">1%</div></div><div class="arrow">=</div><div class="card"><div class="lbl">Pérdida máxima</div><div class="val">$10</div></div></div>
+<div class="row">
+<div class="card" data-s="2" style="width:600px;border-color:{VERDE};text-align:left"><div class="val verde" style="font-size:40px">✅ Riesgo 1%</div><div class="p" style="text-align:left;font-size:30px">5 pérdidas seguidas → <b>$950</b></div>{barra(95, VERDE)}</div>
+<div class="card" data-s="3" style="width:600px;border-color:{ROJO};text-align:left"><div class="val rojo" style="font-size:40px">❌ Riesgo 50%</div><div class="p" style="text-align:left;font-size:30px">2 pérdidas → <b>cuenta quemada</b></div>{barra(2, ROJO)}</div>
+</div></div>"""
+
+
+def mitos():
+    m = lambda s1, s2, t, r: f'<div style="display:flex;align-items:center;gap:26px"><div class="card" data-s="{s1}" style="width:760px;text-align:left;padding:24px 34px"><div class="val" style="font-size:40px">“{t}”</div></div><div data-s="{s2}" style="display:flex;align-items:center;gap:18px"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">FALSO</div><div class="p" style="text-align:left;font-size:30px;width:560px">{r}</div></div></div>'
+    return f"""<div class="stage" style="gap:24px">
+<div class="pill" data-s="0">3 MITOS DEL TRADING</div>
+{m(2,3,'Necesitas mucho dinero','Aprende gratis en demo, empieza con poco')}
+{m(6,7,'Es como apostar','Método + gestión de riesgo = lógica')}
+{m(10,11,'Te vuelves rico en un mes','Es una carrera de largo plazo')}
+</div>"""
+
+
+def ruta():
+    pasos = [('1', 'Fundamentos', 1), ('2', 'Estructura', 2), ('3', 'SMC', 3), ('4', 'Modelo de entrada', 4), ('5', 'Instrumentos', 5), ('6', 'Experto', 6)]
+    items = "".join(f'<div class="card" data-s="{s}" style="width:205px;padding:24px 12px{";border-color:" + ORO + ";box-shadow:0 0 40px rgba(212,175,55,.35)" if n == "1" else ""}"><div class="big oro" style="font-size:80px">{n}</div><div class="val" style="font-size:32px">{t}</div>{"<div class=pill style=font-size:18px;margin-top:12px>ESTÁS AQUÍ</div>" if n == "1" else ""}</div>' for n, t, s in pasos)
+    return f"""<div class="stage">
+<div class="pill" data-s="0">LA RUTA: DE CERO A EXPERTO</div>
+<div class="row" style="gap:16px">{items}</div>
+<div class="p" data-s="8">Síguela <b class="oro">en orden</b> y vas a entender el mercado</div>
+</div>"""
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math

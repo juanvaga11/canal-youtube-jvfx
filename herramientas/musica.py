@@ -97,3 +97,9 @@ def brillo_logo():
     s = _nota(hz(45), 2.8, 0.35, 0.02, 1.8, 0.1)
     out[:len(s)] += s
     return _reverb(out, 0.45)
+
+
+def clic():
+    n = int(0.03 * SR)
+    r = np.random.default_rng(5).standard_normal(n) * np.exp(-np.linspace(0, 12, n))
+    return _paso_bajo(r, 4000) * 1.5
