@@ -1,6 +1,11 @@
 """Plantillas visuales (HTML) de cada escena. Marca JulianVal.fx: negro y dorado.
 Los elementos con data-s="n" aparecen cuando la voz llega a la frase n de la escena."""
-import random
+import random, base64, os
+_M = os.path.join(os.path.dirname(__file__), "..", "marca")
+def _uri(f):
+    return "data:image/png;base64," + base64.b64encode(open(os.path.join(_M, f), "rb").read()).decode()
+JV = _uri("jv.png")
+LOGO = _uri("logo_completo.png")
 
 ORO = "#D4AF37"
 ORO2 = "#F5D97A"
@@ -12,8 +17,8 @@ CSS = f"""
 html,body{{width:var(--w);height:var(--h);overflow:hidden;background:#07070a;font-family:'Inter',sans-serif;color:#fff}}
 body{{background:radial-gradient(ellipse at 50% 35%,#1b1708 0%,#0b0a07 45%,#050505 100%)}}
 .grid{{position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,55,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.05) 1px,transparent 1px);background-size:80px 80px}}
-.logo{{position:absolute;top:44px;left:56px;font-family:'Inter Display';font-weight:900;font-size:34px;letter-spacing:1px;color:{ORO}}}
-.logo span{{color:#fff;font-weight:600}}
+.logo{{position:absolute;top:34px;left:50px;display:flex;align-items:center;gap:14px;font-family:'Inter Display';font-weight:900;font-size:34px;letter-spacing:1px;color:{ORO}}}
+.logo span{{color:#fff;font-weight:600}} .logo img{{height:64px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.6))}}
 .tag{{position:absolute;top:50px;right:56px;font-size:22px;color:#bfae7a;font-weight:600;letter-spacing:3px;text-transform:uppercase}}
 .stage{{position:absolute;left:0;right:0;top:120px;bottom:210px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;padding:0 120px}}
 .h1{{font-family:'Inter Display';font-weight:900;font-size:96px;line-height:1.02;text-align:center;letter-spacing:-1px}}
@@ -83,7 +88,7 @@ def gancho():
 
 def marca():
     return f"""<div class="stage">
-<div class="h1"><span class="oro">JulianVal</span>.fx</div>
+<img src="{LOGO}" style="height:330px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))">
 <div class="p" data-s="1">Trading paso a paso · <b class="oro">de cero a experto</b></div>
 <div class="row" data-s="2"><div class="card"><div class="lbl">Serie</div><div class="val">Fundamentos</div></div><div class="card"><div class="lbl">Video</div><div class="val oro">#1</div></div></div>
 </div>"""
@@ -192,6 +197,7 @@ def resumen():
 
 def cierre():
     return f"""<div class="stage">
+<img src="{JV}" style="height:150px">
 <div class="lbl" data-s="0">Siguiente video</div>
 <div class="card" data-s="0" style="width:1100px"><div class="val">#2 · Qué mercados operar y <span class="oro">cuál te conviene</span></div></div>
 <div class="row" data-s="1"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">▶ SUSCRÍBETE</div><div class="pill">🔔 ACTIVA LA CAMPANITA</div></div>
@@ -236,10 +242,27 @@ def s_regla():
 
 def s_cta():
     return f"""<div class="stage" style="top:200px;bottom:700px">
-<div class="h1" style="font-size:96px"><span class="oro">JulianVal</span>.fx</div>
+<img src="{LOGO}" style="width:760px">
 <div class="p" style="font-size:46px">Serie completa: <b class="oro">Trading de cero a experto</b></div>
 <div class="pill" data-s="1" style="font-size:44px;background:{ROJO};border-color:{ROJO};color:#fff">➕ SÍGUEME</div>
 </div>"""
+
+
+def intro_frame(t, w=1920, h=1080):
+    """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
+    import math
+    e = 1 - (1 - min(t / 0.35, 1)) ** 3
+    esc = 0.82 + 0.18 * e + 0.03 * t
+    op = min(t / 0.25, 1) * (1 - max(0, (t - 0.9) / 0.1))
+    barr = -60 + 220 * min(max((t - 0.3) / 0.45, 0), 1)
+    glow = math.exp(-((t - 0.32) / 0.12) ** 2)
+    return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}
+.c{{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}}
+.halo{{position:absolute;width:{900*w/1920}px;height:{900*w/1920}px;border-radius:50%;background:radial-gradient(circle,rgba(245,217,122,{0.35*glow+0.12*op}) 0%,rgba(212,175,55,0) 65%)}}
+.wrap{{position:relative;transform:scale({esc});opacity:{op}}}
+.wrap img{{height:{620*w/1920 if w>h else 560}px;display:block;filter:drop-shadow(0 30px 60px rgba(0,0,0,.8))}}
+.sh{{position:absolute;inset:0;-webkit-mask:url({LOGO}) center/contain no-repeat;mask:url({LOGO}) center/contain no-repeat;background:linear-gradient(105deg,transparent {barr}%,rgba(255,255,255,.85) {barr+8}%,transparent {barr+16}%)}}
+</style></head><body><div class="grid" style="opacity:{op}"></div><div class="c"><div class="halo"></div><div class="wrap"><img src="{LOGO}"><div class="sh"></div></div></div></body></html>"""
 
 
 ESCENAS = {k: v for k, v in globals().items() if callable(v) and not k.startswith("_")}
@@ -248,9 +271,9 @@ ESCENAS = {k: v for k, v in globals().items() if callable(v) and not k.startswit
 def pagina(nombre, paso, w, h):
     cuerpo = ESCENAS[nombre]()
     vertical = h > w
-    extra = ".stage{padding:0 70px}.logo{font-size:46px;top:70px;left:70px}" if vertical else ".stage{zoom:1.15;top:100px;bottom:180px}"
+    extra = ".stage{padding:0 70px}.logo{font-size:46px;top:70px;left:70px}.logo img{height:96px}" if vertical else ".stage{zoom:1.15;top:100px;bottom:180px}"
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}{extra}</style></head>
-<body><div class="grid"></div><div class="logo">JulianVal<span>.fx</span></div>{'' if vertical else '<div class="tag">Trading de cero a experto</div>'}
+<body><div class="grid"></div><div class="logo"><img src="{JV}"><div>JulianVal<span>.fx</span></div></div>{'' if vertical else '<div class="tag">Trading de cero a experto</div>'}
 {cuerpo}
 <script>document.querySelectorAll('[data-s]').forEach(e=>{{if(+e.dataset.s>{paso})e.classList.add('hide')}});</script>
 </body></html>"""

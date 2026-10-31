@@ -5,9 +5,10 @@ import numpy as np
 from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, os.path.dirname(__file__))
-from escenas import pagina
+from escenas import pagina, intro_frame
+import musica as MU
 
-SR = 24000
+SR = 48000
 FPS = 30
 
 
@@ -53,7 +54,13 @@ def main(guion, salida):
     # 1) Voz y tiempos
     pistas, segmentos, t = [], [], 0.35
     pistas.append(np.zeros(int(0.35 * SR), np.int16))
+    intro_ini = None
     for i, esc in enumerate(d["escenas"]):
+        if esc["v"] == "intro":
+            dur = 3.4
+            segmentos.append(dict(esc=i, paso=0, ini=t, voz=0, fin=t + dur, texto="", v="intro"))
+            pistas.append(np.zeros(int(dur * SR), np.int16)); intro_ini = t; t += dur
+            continue
         fs = frases(esc["texto"])
         for j, f in enumerate(fs):
             a = recortar_silencio(leer_mp3(f"{adir}/{esc['v']}_{j:02d}.mp3"))
@@ -66,15 +73,33 @@ def main(guion, salida):
             t += dur + pausa
     total = t + 0.6
     pistas.append(np.zeros(int(0.6 * SR), np.int16))
-    audio = np.concatenate(pistas)
+    voz = np.concatenate(pistas).astype(np.float64) / 32768
+    from scipy.ndimage import uniform_filter1d
+    env = uniform_filter1d(np.abs(voz), int(0.35 * SR))
+    hay_voz = np.clip(env / 0.02, 0, 1)
+    fondo = MU.musica(len(voz) / SR, seed=hash(d["id"]) % 100)
+    fondo = fondo[:len(voz)] * (0.30 - 0.20 * hay_voz)
+    if intro_ini is not None:
+        sfx = np.concatenate([MU.whoosh(0.7) * 0.5, MU.brillo_logo() * 0.9])
+        k = int(max(intro_ini - 0.35, 0) * SR)
+        fondo[k:k + len(sfx)] += sfx[:len(fondo) - k]
+    mezcla = voz + fondo
+    mezcla = mezcla / max(1.0, np.abs(mezcla).max() / 0.95)
     with wave.open(f"{tmp}/voz.wav", "wb") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes(audio.tobytes())
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mezcla * 32767).astype(np.int16).tobytes())
 
     # 2) Imágenes: una por frase (los elementos van apareciendo)
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={"width": W, "height": H})
         for k, s in enumerate(segmentos):
+            if s["v"] == "intro":
+                n = int(round((s["fin"] - s["ini"]) * FPS))
+                for f in range(n):
+                    pg.set_content(intro_frame(f / (n - 1), W, H))
+                    pg.screenshot(path=f"{tmp}/{k:03d}_{f:03d}.jpg", type="jpeg", quality=92)
+                s["frames"] = n
+                continue
             pg.set_content(pagina(s["v"], s["paso"], W, H))
             pg.wait_for_timeout(60)
             pg.screenshot(path=f"{tmp}/{k:03d}.jpg", type="jpeg", quality=92)
@@ -85,6 +110,10 @@ def main(guion, salida):
         for k, s in enumerate(segmentos):
             ini = 0 if k == 0 else s["ini"]
             fin = segmentos[k + 1]["ini"] if k + 1 < len(segmentos) else total
+            if s["v"] == "intro":
+                for f in range(s["frames"]):
+                    L.write(f"file '{tmp}/{k:03d}_{f:03d}.jpg'\nduration {1 / FPS:.5f}\n")
+                continue
             L.write(f"file '{tmp}/{k:03d}.jpg'\nduration {fin - ini:.3f}\n")
         L.write(f"file '{tmp}/{len(segmentos) - 1:03d}.jpg'\n")
 
@@ -99,6 +128,8 @@ def main(guion, salida):
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
     for s in segmentos:
+        if not s["texto"]:
+            continue
         partes = trozos(s["texto"], 5 if vertical else 9)
         nchar = sum(len(x) for x in partes)
         t0 = s["ini"]
