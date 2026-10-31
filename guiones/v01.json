@@ -3,61 +3,26 @@
  "formato": "horizontal",
  "titulo": "Qué es el trading y cómo funciona (explicado desde cero)",
  "escenas": [
-  {
-   "v": "gancho",
-   "texto": "Más de siete de cada diez personas que entran al trading pierden dinero. No es mala suerte: es que empiezan sin entender qué están haciendo. En este video te explico, desde cero y sin enredos, qué es el trading y cómo funciona. Y al final te digo el error número uno de los principiantes, para que tú no lo cometas."
-  },
-  {
-   "v": "intro",
-   "texto": ""
-  },
-  {
-   "v": "marca",
-   "texto": "Bienvenido a JulianVal.fx. Aquí aprendes trading paso a paso, de cero a experto. Este es el video uno de la serie, así que si estás empezando, estás en el lugar correcto."
-  },
-  {
-   "v": "definicion",
-   "texto": "Empecemos por lo más básico. El trading es comprar y vender activos financieros para ganar con la diferencia de precio. Así de sencillo. No es magia, no es un juego de azar y no es una forma de hacerse rico de la noche a la mañana. Es una habilidad, y como toda habilidad, se aprende."
-  },
-  {
-   "v": "cafe",
-   "texto": "Piénsalo así. Imagina que compras una arroba de café en cien mil pesos, cuando está barata. Unas semanas después el precio sube y la vendes en ciento veinte mil. Esa diferencia de veinte mil pesos es tu ganancia. Eso, en esencia, es trading. La diferencia es que en el trading no tocas el café: compras y vendes el precio, desde tu celular o tu computador."
-  },
-  {
-   "v": "mercados",
-   "texto": "¿Y qué se puede operar? Hay muchos mercados. Las divisas, como el euro contra el dólar. Materias primas, como el oro. Índices de bolsa, que representan a un grupo de empresas. Y los índices sintéticos, que funcionan las veinticuatro horas. En este canal vamos a trabajar sobre todo el oro, el forex y los sintéticos."
-  },
-  {
-   "v": "direccion",
-   "texto": "Aquí viene algo que sorprende a muchos: en el trading puedes ganar cuando el precio sube y también cuando baja. Si crees que el precio va a subir, abres una compra. Si crees que va a bajar, abres una venta. Lo que importa no es la dirección, sino acertar en el análisis y controlar el riesgo."
-  },
-  {
-   "v": "oferta",
-   "texto": "Pero, ¿por qué se mueve el precio? Por la oferta y la demanda. Cuando hay más gente queriendo comprar que vender, el precio sube. Cuando hay más vendedores, el precio baja. Y detrás de los movimientos grandes están los bancos y las instituciones, el llamado dinero inteligente. Aprender a seguir sus huellas es justo lo que vamos a ver más adelante con SMC."
-  },
-  {
-   "v": "herramientas",
-   "texto": "Para operar necesitas tres cosas. Un bróker, que es la empresa que te conecta con el mercado. Una plataforma, como MetaTrader 5, donde abres y cierras tus operaciones. Y el gráfico, que es donde ves cómo se mueve el precio. Todo esto lo vamos a instalar juntos en los próximos videos."
-  },
-  {
-   "v": "velas",
-   "texto": "Este es un gráfico de velas. Cada vela te muestra cómo se movió el precio en un tiempo determinado. Las verdes son cuando el precio subió, y las rojas cuando bajó. Parece complicado, pero en un par de videos lo vas a leer como si fuera un libro."
-  },
-  {
-   "v": "error",
-   "texto": "Ahora sí, el error número uno de los principiantes: operar sin gestión de riesgo. Entrar con todo el dinero, sin stop loss, esperando que el precio se devuelva. Así se queman la mayoría de las cuentas. La regla de oro es simple: nunca arriesgues en una sola operación más de lo que estás dispuesto a perder. Muchos profesionales arriesgan apenas el uno o el dos por ciento de su cuenta en cada operación."
-  },
-  {
-   "v": "demo",
-   "texto": "Y un consejo: empieza en una cuenta demo. Es una cuenta con dinero virtual, donde practicas sin arriesgar tu plata. Primero aprendes, después ganas experiencia, y solo después pasas a real."
-  },
-  {
-   "v": "resumen",
-   "texto": "Resumamos. El trading es comprar y vender para ganar con la diferencia de precio. Puedes ganar cuando el precio sube y cuando baja. El precio se mueve por oferta y demanda. Y lo más importante: primero la gestión de riesgo, después todo lo demás."
-  },
-  {
-   "v": "cierre",
-   "texto": "En el siguiente video te muestro qué mercados se pueden operar y cuál te conviene más si estás empezando. Suscríbete y activa la campanita para no perderte la serie. Y si quieres aprender conmigo de forma más profunda, en la descripción te dejo el enlace de SKY Academy. Nos vemos en el próximo video."
-  }
+  {"v":"gancho","texto":"Más de siete de cada diez personas que entran al trading pierden dinero. No es mala suerte: es que empiezan sin entender qué están haciendo. En este video te explico, desde cero y sin enredos, qué es el trading y cómo funciona. Y al final te digo el error número uno de los principiantes, para que tú no lo cometas."},
+  {"v":"intro","texto":""},
+  {"v":"marca","texto":"Bienvenido a JulianVal.fx. Aquí aprendes trading paso a paso, de cero a experto. Este es el video uno de la serie, así que si estás empezando, estás en el lugar correcto."},
+  {"v":"definicion","texto":"Empecemos por lo más básico. El trading es comprar y vender activos financieros para ganar con la diferencia de precio. Así de sencillo. No es magia, no es un juego de azar y no es una forma de hacerse rico de la noche a la mañana. Es una habilidad, y como toda habilidad, se aprende con estudio, práctica y paciencia."},
+  {"v":"cafe","texto":"Piénsalo así. Imagina que compras una arroba de café en cien mil pesos, cuando está barata. Unas semanas después el precio sube y la vendes en ciento veinte mil. Esa diferencia de veinte mil pesos es tu ganancia. Eso, en esencia, es trading. La diferencia es que en el trading no tocas el café: compras y vendes el precio, desde tu celular o tu computador."},
+  {"v":"inversion","texto":"Ahora, mucha gente confunde el trading con invertir. Cuando inviertes, compras algo y lo guardas durante años, esperando que crezca con el tiempo. En el trading buscas aprovechar movimientos más cortos: de minutos, de horas o de algunos días. Ninguno es mejor que el otro. Son dos formas distintas de trabajar con los mercados, y en este canal nos vamos a enfocar en el trading."},
+  {"v":"estilos","texto":"Dentro del trading hay varios estilos. El scalping, donde las operaciones duran pocos minutos. El trading intradía, donde abres y cierras tus operaciones el mismo día. Y el swing trading, donde una operación puede durar varios días. Cada estilo se adapta a un tipo de persona y al tiempo que tienes disponible. Más adelante te ayudo a encontrar el tuyo."},
+  {"v":"mercados","texto":"¿Y qué se puede operar? Hay muchos mercados. Las divisas, como el euro contra el dólar. Materias primas, como el oro. Índices de bolsa, que representan a un grupo de empresas. Y los índices sintéticos, que funcionan las veinticuatro horas. En este canal vamos a trabajar sobre todo el oro, el forex y los sintéticos."},
+  {"v":"direccion","texto":"Aquí viene algo que sorprende a muchos: en el trading puedes ganar cuando el precio sube y también cuando baja. Si crees que el precio va a subir, abres una compra. Si crees que va a bajar, abres una venta. Lo que importa no es la dirección, sino acertar en el análisis y controlar el riesgo."},
+  {"v":"oferta","texto":"Pero, ¿por qué se mueve el precio? Por la oferta y la demanda. Cuando hay más gente queriendo comprar que vender, el precio sube. Cuando hay más vendedores, el precio baja. Y detrás de los movimientos grandes están los bancos y las instituciones, el llamado dinero inteligente. Aprender a seguir sus huellas es justo lo que vamos a ver más adelante con SMC."},
+  {"v":"herramientas","texto":"Para operar necesitas tres cosas. Un bróker, que es la empresa que te conecta con el mercado. Una plataforma, como MetaTrader 5, donde abres y cierras tus operaciones. Y el gráfico, que es donde ves cómo se mueve el precio. Todo esto lo vamos a instalar juntos en los próximos videos."},
+  {"v":"velas","texto":"Este es un gráfico de velas. Cada vela te muestra cómo se movió el precio en un tiempo determinado. Las verdes son cuando el precio subió, y las rojas cuando bajó. Parece complicado, pero en un par de videos lo vas a leer como si fuera un libro."},
+  {"v":"operacion","texto":"Ahora mira cómo se ve una operación completa. Primero haces tu análisis y defines dónde quieres entrar. Ese es tu punto de entrada. Luego pones un stop loss, que es el punto donde aceptas que te equivocaste y la operación se cierra sola con una pérdida pequeña. Y por último pones un take profit, que es el punto donde tomas tus ganancias. Entrada, stop loss y take profit: esas tres cosas las defines siempre antes de entrar, nunca después."},
+  {"v":"error","texto":"Y ahora sí, el error número uno de los principiantes: operar sin gestión de riesgo. Entrar con todo el dinero, sin stop loss, esperando que el precio se devuelva. Así se queman la mayoría de las cuentas. La regla de oro es simple: nunca arriesgues en una sola operación más de lo que estás dispuesto a perder. Muchos profesionales arriesgan apenas el uno o el dos por ciento de su cuenta en cada operación."},
+  {"v":"riesgo","texto":"Te lo pongo en números. Si tienes una cuenta de mil dólares y arriesgas el uno por ciento, en cada operación solo puedes perder diez dólares. Así, aunque pierdas cinco operaciones seguidas, tu cuenta sigue casi intacta y puedes seguir operando. En cambio, si arriesgas la mitad de la cuenta, con dos malas operaciones quedas por fuera. Por eso la gestión de riesgo es lo que separa a los que duran de los que se queman."},
+  {"v":"mitos","texto":"Antes de seguir, rompamos tres mitos. Primero: necesitas mucho dinero para empezar. Falso: puedes aprender gratis en una cuenta demo y empezar en real con poco. Segundo: el trading es como apostar. Falso: cuando tienes un método y gestionas el riesgo, tomas decisiones con lógica, no con suerte. Y tercero: te vas a volver rico en un mes. Falso: el trading es una carrera de largo plazo, y quien te prometa lo contrario te está vendiendo humo."},
+  {"v":"demo","texto":"Por eso, mi consejo: empieza en una cuenta demo. Es una cuenta con dinero virtual, donde practicas sin arriesgar tu plata. Primero aprendes, después ganas experiencia, y solo después pasas a real."},
+  {"v":"ruta","texto":"Y para que no aprendas a pedazos, armé esta serie como una ruta. Primero los fundamentos, que es donde estamos ahora. Después la estructura de mercado. Luego Smart Money Concepts, la forma en que operan los grandes. Después mi modelo de entrada paso a paso. Luego los instrumentos, como el oro y los sintéticos. Y al final, el nivel experto: backtesting, psicología y tu plan de trading. Si la sigues en orden, vas a entender el mercado como nunca."},
+  {"v":"resumen","texto":"Resumamos. El trading es comprar y vender para ganar con la diferencia de precio. Puedes ganar cuando el precio sube y cuando baja. El precio se mueve por oferta y demanda. Y lo más importante: primero la gestión de riesgo, después todo lo demás."},
+  {"v":"cierre","texto":"En el siguiente video te muestro qué mercados se pueden operar y cuál te conviene más si estás empezando. Suscríbete y activa la campanita para no perderte la serie. Y si quieres aprender conmigo de forma más profunda, en la descripción te dejo el enlace de SKY Academy. Nos vemos en el próximo video."},
+  {"v":"outro","texto":""}
  ]
 }

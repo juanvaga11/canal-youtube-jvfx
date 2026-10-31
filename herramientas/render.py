@@ -1,6 +1,6 @@
 """Arma el video final: escenas (HTML -> imagen), voz, subtítulos.
 Uso: python herramientas/render.py guiones/v01.json salida/v01.mp4"""
-import json, os, re, subprocess, sys, wave, shutil
+import json, os, re, subprocess, sys, wave, shutil, hashlib
 import numpy as np
 from playwright.sync_api import sync_playwright
 
@@ -63,7 +63,7 @@ def main(guion, salida):
             continue
         fs = frases(esc["texto"])
         for j, f in enumerate(fs):
-            a = recortar_silencio(leer_mp3(f"{adir}/{esc['v']}_{j:02d}.mp3"))
+            a = recortar_silencio(leer_mp3(f"{adir}/{esc['v']}_{j:02d}_{hashlib.md5(f.encode()).hexdigest()[:6]}.mp3"))
             pausa = 0.12 if f.endswith(":") else 0.28
             if j == len(fs) - 1:
                 pausa = 0.55
