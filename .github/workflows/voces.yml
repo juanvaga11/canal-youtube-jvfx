@@ -1,0 +1,25 @@
+name: Generar voces de prueba
+on:
+  push:
+    paths: ["pruebas_voz/texto.txt", ".github/workflows/voces.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  voces:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install edge-tts
+      - name: Generar
+        run: |
+          mkdir -p pruebas_voz/salida
+          for v in es-CO-GonzaloNeural es-CO-SalomeNeural es-MX-JorgeNeural es-MX-DaliaNeural; do
+            edge-tts --voice $v --rate=+5% -f pruebas_voz/texto.txt --write-media pruebas_voz/salida/$v.mp3
+          done
+      - name: Guardar
+        run: |
+          git config user.name "jvfx-bot"; git config user.email "bot@users.noreply.github.com"
+          git add pruebas_voz/salida && git commit -m "Voces de prueba [skip ci]" && git push
