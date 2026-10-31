@@ -56,7 +56,7 @@ def main(guion, salida):
     for i, esc in enumerate(d["escenas"]):
         fs = frases(esc["texto"])
         for j, f in enumerate(fs):
-            a = recortar_silencio(leer_mp3(f"{adir}/{i:02d}_{j:02d}.mp3"))
+            a = recortar_silencio(leer_mp3(f"{adir}/{esc['v']}_{j:02d}.mp3"))
             pausa = 0.12 if f.endswith(":") else 0.28
             if j == len(fs) - 1:
                 pausa = 0.55

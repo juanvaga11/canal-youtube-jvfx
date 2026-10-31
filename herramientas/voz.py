@@ -18,7 +18,7 @@ async def main():
         out = f"audio/{d['id']}"; os.makedirs(out, exist_ok=True)
         for i, esc in enumerate(d["escenas"]):
             for j, f in enumerate(frases(esc["texto"])):
-                ruta = f"{out}/{i:02d}_{j:02d}.mp3"
+                ruta = f"{out}/{esc['v']}_{j:02d}.mp3"
                 if os.path.exists(ruta):
                     continue
                 for intento in range(3):
