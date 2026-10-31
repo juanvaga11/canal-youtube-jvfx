@@ -69,9 +69,9 @@ def main(guion, salida):
         fs = frases(esc["texto"])
         for j, f in enumerate(fs):
             a = recortar_silencio(leer_mp3(f"{adir}/{esc['v']}_{j:02d}_{hashlib.md5(f.encode()).hexdigest()[:6]}.mp3"))
-            pausa = 0.12 if f.endswith(":") else 0.28
+            pausa = 0.16 if f.endswith(":") else 0.42
             if j == len(fs) - 1:
-                pausa = 0.55
+                pausa = 0.85
             dur = len(a) / SR
             segmentos.append(dict(esc=i, paso=j, ini=t, voz=dur, fin=t + dur + pausa, texto=f, v=esc["v"]))
             pistas.append(a); pistas.append(np.zeros(int(pausa * SR), np.int16))
@@ -167,7 +167,7 @@ def main(guion, salida):
         filtro += "[b0];"
         for n, (t0, tipo) in enumerate(pops):
             entradas += ["-framerate", str(FPS), "-i", f"{pdir}/{tipo}/%03d.png"]
-            filtro += f"[{n + 2}:v]setpts=PTS+{t0:.2f}/TB[p{n}];[b{n}][p{n}]overlay=x=W-w-24:y=96:eof_action=pass[b{n + 1}];"
+            filtro += f"[{n + 2}:v]scale=544:-1,setpts=PTS+{t0:.2f}/TB[p{n}];[b{n}][p{n}]overlay=x=W-w-16:y=10:eof_action=pass[b{n + 1}];"
         filtro += f"[b{len(pops)}]"
     else:
         filtro += ","
