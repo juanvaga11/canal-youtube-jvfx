@@ -1,7 +1,7 @@
 name: Generar voces de prueba
 on:
   push:
-    paths: ["pruebas_voz/texto.txt", ".github/workflows/voces.yml"]
+    paths: ["pruebas_voz/texto.txt", ".github/workflows/voces.yml", "herramientas/pronunciacion.py"]
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,10 +16,10 @@ jobs:
       - name: Generar
         run: |
           mkdir -p pruebas_voz/salida
-          for v in es-CO-GonzaloNeural es-CO-SalomeNeural es-MX-JorgeNeural es-MX-DaliaNeural; do
-            edge-tts --voice $v --rate=+5% -f pruebas_voz/texto.txt --write-media pruebas_voz/salida/$v.mp3
-          done
+          python herramientas/pronunciacion.py pruebas_voz/texto.txt > /tmp/t.txt
+          cat /tmp/t.txt
+          edge-tts --voice es-MX-JorgeNeural --rate=+5% -f /tmp/t.txt --write-media pruebas_voz/salida/jorge_corregido.mp3
       - name: Guardar
         run: |
           git config user.name "jvfx-bot"; git config user.email "bot@users.noreply.github.com"
-          git add pruebas_voz/salida && git commit -m "Voces de prueba [skip ci]" && git push
+          git add pruebas_voz/salida && git commit -m "Voz corregida [skip ci]" && git push
