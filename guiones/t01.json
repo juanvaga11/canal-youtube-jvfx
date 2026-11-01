@@ -1,0 +1,29 @@
+{
+ "id": "t01",
+ "formato": "vertical",
+ "titulo": "El error #1 que quema las cuentas de los principiantes",
+ "escenas": [
+  {
+   "v": "s_gancho",
+   "texto": "El error número uno que quema las cuentas de los que empiezan en el trading."
+  },
+  {
+   "v": "s_no",
+   "texto": "No es la estrategia. No es el bróker. Es operar sin gestión de riesgo."
+  },
+  {
+   "v": "s_mal",
+   "texto": "Entrar con toda la cuenta, sin stop loss, rezando para que el precio se devuelva."
+  },
+  {
+   "v": "s_regla",
+   "texto": "La regla es simple: en cada operación arriesga solo un pequeño porcentaje de tu cuenta. Muchos profesionales usan el uno o el dos por ciento. Así, aunque pierdas varias seguidas, sigues en el juego."
+  },
+  {
+   "v": "t_cta",
+   "texto": "Esto es parte de mi serie: Trading de cero a experto. Sígueme para que no te pierdas la siguiente parte."
+  }
+ ],
+ "origen": "s01",
+ "plataforma": "tiktok"
+}

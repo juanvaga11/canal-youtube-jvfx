@@ -817,6 +817,15 @@ def intro_frame(t, w=1920, h=1080):
 </style></head><body><div class="grid" style="opacity:{op}"></div><div class="c"><div class="halo"></div><div class="wrap"><img src="{LOGO}"><div class="sh"></div></div></div></body></html>"""
 
 
+# ---- TikTok ----
+def t_cta():
+    return f"""<div class="stage" style="top:200px;bottom:700px">
+<img src="{LOGO}" style="width:760px">
+<div class="p" data-s="0" style="font-size:46px">Serie: <b class="oro">Trading de cero a experto</b></div>
+<div class="pill" data-s="1" style="font-size:48px;background:#FE2C55;border-color:#FE2C55;color:#fff">➕ SÍGUEME · Parte siguiente 👉</div>
+</div>"""
+
+
 ESCENAS = {k: v for k, v in globals().items() if callable(v) and not k.startswith("_")}
 
 
@@ -829,3 +838,4 @@ def pagina(nombre, paso, w, h):
 {cuerpo}
 <script>document.querySelectorAll('[data-s]').forEach(e=>{{if(+e.dataset.s>{paso})e.classList.add('hide')}});</script>
 </body></html>"""
+
