@@ -1194,7 +1194,7 @@ def v5_tarea():
 def v5_comentarios():
     return f"""<div class="stage"><div style="font-size:150px">💬</div>
 <div class="h2" data-s="0">¿Ya la instalaste? ¿Te quedó <span class="oro">alguna duda</span>?</div>
-<div class="p" data-s="1">Cuéntame en los comentarios · <b class="oro">te ayudo</b></div></div>"""
+<div class="p" data-s="1">Cuéntame en los comentarios · <b class="oro">te ayudo</b></div><div class="pill" data-s="2">📤 COMPÁRTELO CON QUIEN QUIERA EMPEZAR</div></div>"""
 
 
 def v5_resumen():
