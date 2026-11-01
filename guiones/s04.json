@@ -1,0 +1,12 @@
+{
+ "id": "s04",
+ "formato": "vertical",
+ "titulo": "El error de la cuenta demo de 100.000 dólares",
+ "escenas": [
+  {"v":"s4_gancho","texto":"El error de la cuenta demo de cien mil dólares."},
+  {"v":"s4_mal","texto":"La plataforma te da cien mil virtuales y operas como millonario: lotes enormes, sin miedo."},
+  {"v":"s4_porque","texto":"Eso no te enseña nada, porque nunca vas a operar así con tu plata real."},
+  {"v":"s4_bien","texto":"Pon en la demo lo mismo que vas a usar en real, y arriesga el mismo porcentaje."},
+  {"v":"s4_cta","texto":"Mira el video completo en mi canal. Y sígueme para más."}
+ ]
+}
