@@ -22,6 +22,13 @@ CAMBIOS = {
     r"\btake profit\b": "teik prófit",
     r"\bSKY Academy\b": "Skai Académi",
     r"\bYouTube\b": "Iutub",
+    r"\bNasdaq\b": "Násdak",
+    r"\bDow Jones\b": "Dau Yons",
+    r"\bCrash\b": "Crash",
+    r"\bBoom\b": "Bum",
+    r"\bVolatility\b": "Volátiliti",
+    r"\bStep\b": "Estep",
+    r"\bbitcoin\b": "bítcoin",
     r"\bShorts?\b": "Shorts",
 }
 def aplicar(texto):

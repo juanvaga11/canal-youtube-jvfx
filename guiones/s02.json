@@ -1,0 +1,12 @@
+{
+ "id": "s02",
+ "formato": "vertical",
+ "titulo": "¿Qué mercado operar si estás empezando?",
+ "escenas": [
+  {"v":"s2_gancho","texto":"¿Qué mercado deberías operar si estás empezando?"},
+  {"v":"s2_tiempo","texto":"Depende de tu tiempo. Si tienes las mañanas libres: euro dólar y después oro."},
+  {"v":"s2_noche","texto":"Si solo puedes de noche o los fines de semana: índices sintéticos, primero en demo."},
+  {"v":"s2_regla","texto":"Pero la regla de oro es esta: escoge uno solo y domínalo. El que opera todo, no domina nada."},
+  {"v":"s2_cta","texto":"Mira el video completo en mi canal. Y sígueme para más."}
+ ]
+}
