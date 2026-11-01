@@ -1023,6 +1023,228 @@ def v4_tiempo():
 </div>"""
 
 
+# ================= VIDEO 5: METATRADER 5 =================
+def _mt5(hl=None, w=1380, h=600, extra=""):
+    """Esquema ilustrativo de la plataforma (no es captura real)."""
+    def box(k):
+        return f"outline:{'4px solid ' + ORO if hl == k else '1px solid #2a2a2a'};{'box-shadow:0 0 40px rgba(212,175,55,.55);z-index:2' if hl == k else ''}"
+    tfs = "".join(f'<span style="padding:4px 9px;border-radius:5px;{"background:" + ORO + ";color:#000" if t == "H1" else "color:#ccc"}">{t}</span>' for t in ["M1", "M5", "M15", "M30", "H1", "H4", "D1", "W1", "MN"])
+    sims = [("EURUSD", "1.08512", "1.08524"), ("XAUUSD", "4000.10", "4000.40"), ("GBPUSD", "1.27105", "1.27119"), ("USDJPY", "151.204", "151.216"), ("US30", "42150.0", "42152.5")]
+    filas = "".join(f'<tr><td>{a}</td><td style="color:{ROJO}">{b}</td><td style="color:{VERDE}">{c}</td></tr>' for a, b, c in sims)
+    return f"""<div style="position:relative;width:{w}px;height:{h}px;background:#121212;border:2px solid #333;border-radius:14px;overflow:hidden;font-size:21px;color:#ddd;text-align:left">
+<div style="height:46px;background:#1b1b1b;display:flex;align-items:center;gap:6px;padding:0 14px;{box('barra')}">
+<span style="margin-right:14px;color:#888">Archivo · Ver · Insertar · Gráficos</span><span style="background:{VERDE};color:#000;padding:4px 10px;border-radius:5px;font-weight:700;{box('nueva')}">+ Nueva orden</span><span style="margin-left:12px;color:#888">📊 🕯️ 📈</span><span style="margin-left:auto;display:flex;gap:4px;{box('tf')}">{tfs}</span></div>
+<div style="position:absolute;left:0;top:46px;width:330px;height:300px;background:#161616;padding:10px;{box('obs')}"><div style="color:{ORO};font-weight:700;margin-bottom:6px">Observación del mercado</div>
+<table style="width:100%;font-size:20px;border-collapse:collapse"><tr style="color:#888"><td>Símbolo</td><td>Bid</td><td>Ask</td></tr>{filas}</table></div>
+<div style="position:absolute;left:0;top:346px;width:330px;height:{h - 346 - 150}px;background:#161616;padding:10px;{box('nav')}"><div style="color:{ORO};font-weight:700">Navegador</div><div style="color:#aaa;margin-top:6px">▸ Cuentas<br>▸ Indicadores<br>▸ Plantillas</div></div>
+<div style="position:absolute;left:330px;top:46px;right:0;height:{h - 46 - 150}px;background:#0d0d0d;padding:8px;{box('graf')}"><div style="color:#888;font-size:15px">EURUSD, H1</div>{velas_svg(w=w - 360, h=h - 46 - 150 - 40, n=46, seed=5, tendencia=.25)}{extra}</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:150px;background:#181818;padding:10px 14px;{box('caja')}"><div style="color:{ORO};font-weight:700">Caja de herramientas</div>
+<div style="color:#888;margin:6px 0">Operaciones · Historial · Noticias · Diario</div><div style="color:#ccc">EURUSD · Compra · 0.01 · S/L 1.08300 · T/P 1.08900 · <span style="color:{VERDE}">+1.20</span> <span style="color:{ROJO}">✕</span></div></div>
+</div>"""
+
+
+def v5_gancho():
+    return f"""<div class="stage" style="gap:20px">
+<div data-s="0" style="zoom:.8">{_mt5()}</div>
+<div class="row" data-s="2"><div class="pill">⬇️ INSTALAR</div><div class="pill">🔑 ENTRAR</div><div class="pill">🪟 VENTANAS</div><div class="pill">🟢 PRIMERA OPERACIÓN</div></div>
+</div>"""
+
+
+def v5_marca():
+    return f"""<div class="stage">
+<img src="{LOGO}" style="height:300px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))">
+<div class="row" data-s="1"><div class="card"><div class="lbl">Serie</div><div class="val">Fundamentos</div></div><div class="card"><div class="lbl">Video</div><div class="val oro">#5</div></div></div>
+<div class="p" data-s="3">Hoy: <b class="oro">tu plataforma lista para practicar</b></div>
+</div>"""
+
+
+def v5_que_es():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">METATRADER 5</div>
+<div class="row" data-s="1"><div class="pill">🆓 GRATIS</div><div class="pill">📊 GRÁFICOS</div><div class="pill">🟢 ABRIR Y CERRAR</div></div>
+<div class="row" data-s="3" style="align-items:center"><div class="card" style="width:340px"><div class="ico">🏢</div><div class="val">Tu bróker</div></div><div class="arrow">⇄</div><div class="card" style="width:380px;border-color:{ORO}"><div class="ico">💻</div><div class="val oro">MetaTrader 5</div><div class="lbl">El programa</div></div><div class="arrow">⇄</div><div class="card" style="width:340px"><div class="ico">🌐</div><div class="val">Mercado</div></div></div>
+<div class="h2" data-s="3">MetaTrader <span class="rojo">no es</span> el bróker</div>
+</div>"""
+
+
+def v5_descarga():
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">⚠️ SEGURIDAD AL DESCARGAR</div>
+<div class="row"><div class="card" data-s="1" style="width:560px;border-color:{VERDE}"><div class="val verde">✅ Solo de aquí</div><div class="p" style="font-size:30px;margin-top:10px">Web oficial de tu bróker<br>Web oficial de MetaTrader</div></div>
+<div class="card" data-s="2" style="width:560px;border-color:{ROJO}"><div class="val rojo">❌ Nunca de aquí</div><div class="p" style="font-size:30px;margin-top:10px">Enlaces por mensaje o redes<br>Versiones "modificadas"</div></div></div>
+<div class="row" data-s="3"><div class="pill">💻 WINDOWS</div><div class="pill">🍎 MAC</div><div class="pill">🤖 ANDROID</div><div class="pill">📱 IPHONE</div></div>
+</div>"""
+
+
+def v5_instalar():
+    return f"""<div class="stage">
+<div class="row">
+<div class="card" data-s="0" style="width:600px"><div class="ico">💻</div><div class="val">Computador</div><div class="p" style="font-size:30px;margin-top:10px">Abrir instalador → Aceptar → Siguiente<br>⏱️ Un par de minutos</div></div>
+<div class="card" data-s="2" style="width:600px"><div class="ico">📱</div><div class="val">Celular</div><div class="p" style="font-size:30px;margin-top:10px">Busca "MetaTrader 5"<br>Desarrollador: <b class="oro">MetaQuotes</b></div></div>
+</div></div>"""
+
+
+def v5_login():
+    campo = lambda s, l, v: f'<div data-s="{s}" style="margin:14px 0"><div class="lbl" style="text-align:left">{l}</div><div style="background:#0d0d0d;border:2px solid #333;border-radius:10px;padding:14px 18px;font-size:32px;text-align:left">{v}</div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">ENTRAR A TU CUENTA</div>
+<div class="card" style="width:820px;text-align:left"><div class="val" style="font-size:34px">Archivo → Conectarse a una cuenta de trading</div>
+{campo(2,'Número de cuenta','12345678')}{campo(2,'Contraseña','••••••••')}{campo(4,'Servidor','TuBroker-Demo')}</div>
+<div class="p" data-s="5">⚠️ Servidor mal escrito = <b class="rojo">no conecta</b></div>
+</div>"""
+
+
+def v5_contrasenas():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">🔐 DOS CONTRASEÑAS</div>
+<div class="row"><div class="card" data-s="2" style="width:560px;border-color:{ROJO}"><div class="ico">🔑</div><div class="val">Principal</div><div class="p" style="font-size:28px">Permite operar · <b class="rojo">no la compartas</b></div></div>
+<div class="card" data-s="2" style="width:560px;border-color:{VERDE}"><div class="ico">👁️</div><div class="val">De inversor</div><div class="p" style="font-size:28px">Solo ver · sin operar</div></div></div>
+</div>"""
+
+
+def v5_ventanas():
+    return f"""<div class="stage" style="gap:14px">
+<div class="pill" data-s="0">LAS 4 ZONAS</div>
+<div style="zoom:.82">{_mt5()}</div>
+<div class="row" style="gap:10px;zoom:.8"><div class="pill" data-s="1">① OBSERVACIÓN</div><div class="pill" data-s="2">② NAVEGADOR</div><div class="pill" data-s="3">③ GRÁFICO</div><div class="pill" data-s="4">④ CAJA DE HERRAMIENTAS</div></div>
+</div>"""
+
+
+def v5_observacion():
+    return f"""<div class="stage" style="gap:16px"><div class="pill" data-s="0">OBSERVACIÓN DEL MERCADO</div>
+<div style="zoom:.85">{_mt5('obs')}</div>
+<div class="row" data-s="2"><div class="pill" style="border-color:{ROJO};color:{ROJO}">BID = VENTA</div><div class="pill" style="border-color:{VERDE};color:{VERDE}">ASK = COMPRA</div><div class="pill" data-s="4">DIFERENCIA = SPREAD</div></div></div>"""
+
+
+def v5_grafico():
+    return f"""<div class="stage" style="gap:16px"><div class="pill" data-s="0">ABRIR EL GRÁFICO</div>
+<div style="zoom:.85">{_mt5('graf')}</div>
+<div class="p" data-s="2">Usa <b class="oro">velas</b>: las vamos a usar en toda la serie</div></div>"""
+
+
+def v5_temporalidades():
+    t = lambda n, d: f'<div class="card" style="padding:14px 18px"><div class="val oro" style="font-size:36px">{n}</div><div class="lbl" style="font-size:16px">{d}</div></div>'
+    return f"""<div class="stage" style="gap:20px"><div class="pill" data-s="0">TEMPORALIDADES</div>
+<div class="row" data-s="1" style="gap:10px">{t('M1','1 min')}{t('M5','5 min')}{t('M15','15 min')}{t('M30','30 min')}{t('H1','1 hora')}{t('H4','4 horas')}{t('D1','1 día')}{t('W1','1 semana')}{t('MN','1 mes')}</div>
+<div class="row" data-s="4"><div class="card" style="width:500px"><div class="ico">🔭</div><div class="val">Altas = panorama</div></div><div class="card" style="width:500px"><div class="ico">🔬</div><div class="val">Bajas = detalle</div></div></div></div>"""
+
+
+def v5_limpio():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">💡 CONSEJO</div>
+<div class="row" style="align-items:center"><div class="card" data-s="2" style="width:520px;border-color:{ROJO}"><div class="ico">🤯</div><div class="val rojo">15 indicadores</div><div class="lbl">Más confusión</div></div><div class="arrow">vs</div><div class="card" data-s="3" style="width:520px;border-color:{VERDE}"><div class="ico">🕯️</div><div class="val verde">Velas + gráfico limpio</div><div class="lbl">Suficiente para empezar</div></div></div>
+<div class="p" data-s="4">💾 Guárdalo como <b class="oro">plantilla</b></div></div>"""
+
+
+def v5_orden():
+    fila = lambda s, l, v: f'<div data-s="{s}" style="display:flex;justify-content:space-between;gap:30px;padding:10px 0;border-bottom:1px solid #2a2a2a;font-size:30px"><span style="color:#aaa">{l}</span><b>{v}</b></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">NUEVA ORDEN · F9</div>
+<div class="card" data-s="1" style="width:760px;text-align:left">{fila(2,'Símbolo','EURUSD')}{fila(2,'Tipo','Ejecución por mercado')}{fila(3,'Volumen','<span class="oro">0.01</span>')}{fila(2,'Stop Loss','1.08300')}{fila(2,'Take Profit','1.08900')}
+<div class="row" style="margin-top:20px"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">VENDER POR MERCADO</div><div class="pill" style="background:{VERDE};border-color:{VERDE};color:#000">COMPRAR POR MERCADO</div></div></div>
+</div>"""
+
+
+def v5_sl_tp():
+    linea = lambda top, col, txt: f'<div style="position:absolute;left:10px;right:10px;top:{top}px;border-top:3px dashed {col}"><span style="position:absolute;right:0;top:-26px;background:{col};color:#000;font-weight:800;font-size:16px;padding:2px 8px;border-radius:5px">{txt}</span></div>'
+    extra = linea(120, VERDE, 'T/P') + linea(250, ORO, 'ENTRADA') + linea(330, ROJO, 'S/L')
+    return f"""<div class="stage" style="gap:16px"><div class="h2" data-s="0">SL y TP <span class="oro">antes</span> de entrar</div>
+<div data-s="3" style="zoom:.85">{_mt5('graf', extra=extra)}</div></div>"""
+
+
+def v5_pendientes():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">2 FORMAS DE ENTRAR</div>
+<div class="row"><div class="card" data-s="0" style="width:560px"><div class="ico">⚡</div><div class="val">Por mercado</div><div class="p" style="font-size:28px">Entras ya, al precio actual</div></div>
+<div class="card" data-s="1" style="width:560px;border-color:{ORO}"><div class="ico">⏳</div><div class="val oro">Orden pendiente</div><div class="p" style="font-size:28px">"Entra cuando el precio llegue aquí"</div></div></div>
+<div class="p" data-s="3">Las usaremos mucho en <b class="oro">Smart Money Concepts</b></div></div>"""
+
+
+def v5_gestionar():
+    return f"""<div class="stage" style="gap:16px"><div class="pill" data-s="0">GESTIONAR LA OPERACIÓN</div>
+<div style="zoom:.72">{_mt5('caja')}</div>
+<div class="card" data-s="2" style="width:1100px;border-color:{ROJO};padding:20px"><div class="val" style="font-size:38px">🚫 Nunca alejes el stop loss <span class="rojo">para no perder</span></div></div></div>"""
+
+
+def v5_historial():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">📜 HISTORIAL</div>
+<div class="row"><div class="card" data-s="0" style="width:440px"><div class="ico">✅</div><div class="val">Operaciones cerradas</div></div><div class="card" data-s="1" style="width:440px"><div class="ico">📊</div><div class="val">Informe con estadísticas</div></div><div class="card" data-s="2" style="width:440px;border-color:{ORO}"><div class="ico">📓</div><div class="val oro">Tu diario de trading</div></div></div></div>"""
+
+
+def v5_movil():
+    return f"""<div class="stage">
+<div class="row" style="align-items:center">
+<div class="card" data-s="0" style="width:520px"><div class="ico">📱</div><div class="val">Celular</div><div class="p" style="font-size:28px">Revisar operaciones</div></div>
+<div class="card" data-s="2" style="width:520px;border-color:{ORO}"><div class="ico">💻</div><div class="val oro">Computador</div><div class="p" style="font-size:28px">Analizar y poner el SL</div></div></div></div>"""
+
+
+def v5_errores():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}" style="font-size:40px"><b style="background:{ROJO};color:#fff">✕</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:20px"><div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">ERRORES COMUNES EN METATRADER</div>
+<div style="display:flex;flex-direction:column;gap:18px">{ck(1,'Operar en real creyendo que es demo')}{ck(2,'Volumen gigante por equivocación')}{ck(3,'Olvidar el stop loss')}{ck(4,'Pantalla llena de gráficos e indicadores')}</div></div>"""
+
+
+def v5_tarea():
+    ck = lambda n, t: f'<div class="chk" style="font-size:38px"><b>{n}</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:18px"><div class="pill" data-s="0">📝 TAREA DE LA SEMANA</div>
+<div data-s="1" style="display:flex;flex-direction:column;gap:14px">{ck(1,'Instala MetaTrader 5')}{ck(2,'Conéctate a una cuenta demo')}{ck(3,'Euro dólar en velas · cambia temporalidades')}{ck(4,'Guarda tu plantilla')}{ck(5,'3 operaciones con 0.01, SL y TP')}</div></div>"""
+
+
+def v5_comentarios():
+    return f"""<div class="stage"><div style="font-size:150px">💬</div>
+<div class="h2" data-s="0">¿Ya la instalaste? ¿Te quedó <span class="oro">alguna duda</span>?</div>
+<div class="p" data-s="1">Cuéntame en los comentarios · <b class="oro">te ayudo</b></div></div>"""
+
+
+def v5_resumen():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}"><b>✓</b><span>{t}</span></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">RESUMEN</div>
+<div style="display:flex;flex-direction:column;gap:20px">{ck(1,'MetaTrader 5 es la plataforma, no el bróker')}{ck(2,'Descárgala solo de fuentes oficiales')}{ck(3,'Cuenta + contraseña + servidor')}{ck(4,'Velas, temporalidad y gráfico limpio')}{ck(5,'<span class="oro">Siempre con SL y TP</span>')}</div></div>"""
+
+
+def v5_cierre():
+    return f"""<div class="stage">
+<img src="{JV}" style="height:150px">
+<div class="lbl" data-s="0">Siguiente video</div>
+<div class="card" data-s="0" style="width:1150px"><div class="val">#6 · Velas japonesas: <span class="oro">cómo leerlas sin enredarte</span></div></div>
+<div class="row" data-s="2"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">▶ SUSCRÍBETE</div><div class="pill">🔔 ACTIVA LA CAMPANITA</div></div>
+<div class="p" data-s="3">📅 ¿Se te complicó? Agenda conmigo · <b class="oro">link en la descripción</b></div>
+<div class="p" style="font-size:22px;color:#8a826c;margin-top:20px">Contenido educativo. Imágenes de la plataforma ilustrativas. El trading implica riesgo.</div>
+</div>"""
+
+
+# ---- Short 5 ----
+def _s5(tecla, t):
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div style="display:inline-block;padding:30px 60px;border-radius:30px;border:6px solid {ORO};background:#1a1a1a;box-shadow:0 14px 0 #0a0a0a"><div class="big oro" style="font-size:160px">{tecla}</div></div>
+<div class="h2" data-s="1" style="font-size:70px">{t}</div></div>"""
+
+
+def s5_gancho():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="pill">⌨️ METATRADER 5</div><div class="h1" style="font-size:110px">4 atajos que te <span class="oro">ahorran tiempo</span></div></div>"""
+
+
+def s5_f9():
+    return _s5('F9', 'Nueva orden al instante')
+
+
+def s5_ctrlm():
+    return _s5('Ctrl + M', 'Observación del mercado')
+
+
+def s5_alt():
+    return _s5('Alt + 2', 'Gráfico de velas')
+
+
+def s5_zoom():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="row"><div style="padding:30px 60px;border-radius:30px;border:6px solid {ORO};background:#1a1a1a"><div class="big oro" style="font-size:160px">+</div></div><div style="padding:30px 60px;border-radius:30px;border:6px solid {ORO};background:#1a1a1a"><div class="big oro" style="font-size:160px">−</div></div></div>
+<div class="h2" data-s="1" style="font-size:70px">Acercar y alejar el gráfico</div></div>"""
+
+
+def s5_cta():
+    return s_cta()
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math
