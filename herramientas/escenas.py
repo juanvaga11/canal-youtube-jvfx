@@ -357,6 +357,210 @@ def aprovechar():
 </div></div>"""
 
 
+# ================= VIDEO 2: MERCADOS =================
+def _card(s, ico, tit, sub="", w=330, borde=None, extra=""):
+    b = f";border-color:{borde}" if borde else ""
+    return f'<div class="card" data-s="{s}" style="width:{w}px{b}"><div class="ico">{ico}</div><div class="val" style="font-size:40px">{tit}</div>{f"<div class=lbl>{sub}</div>" if sub else ""}{extra}</div>'
+
+
+def _mercado(s_pill, n, ico, nombre, s_items, items, color=None):
+    col = color or ORO
+    filas = "".join(f'<div class="chk" data-s="{si}" style="font-size:38px"><b>✓</b><span>{t}</span></div>' for si, t in zip(s_items, items))
+    return f"""<div class="stage" style="flex-direction:row;gap:80px">
+<div style="text-align:center" data-s="{s_pill}"><div class="lbl">Mercado {n} de 6</div><div style="font-size:180px;line-height:1.1">{ico}</div><div class="h2" style="color:{col}">{nombre}</div></div>
+<div style="display:flex;flex-direction:column;gap:30px;max-width:900px">{filas}</div></div>"""
+
+
+def v2_gancho():
+    return f"""<div class="stage">
+<div class="row" data-s="0">{_card(0,'🥇','Oro')}{_card(0,'💱','Forex')}{_card(0,'₿','Cripto')}{_card(0,'📊','Índices')}</div>
+<div class="h2" data-s="0">¿Todo al mismo tiempo? <span class="rojo">Error</span></div>
+<div class="p" data-s="1">Cada mercado <b class="oro">se mueve distinto</b></div>
+<div class="pill" data-s="2">LOS 6 MERCADOS · HORARIOS · CUÁL ELEGIR</div>
+</div>"""
+
+
+def v2_marca():
+    return f"""<div class="stage">
+<img src="{LOGO}" style="height:300px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))">
+<div class="row" data-s="1"><div class="card"><div class="lbl">Serie</div><div class="val">Fundamentos</div></div><div class="card"><div class="lbl">Video</div><div class="val oro">#2</div></div></div>
+<div class="p" data-s="2">Antes: qué es el trading → <b class="oro">Hoy: los mercados</b></div>
+</div>"""
+
+
+def v2_activo():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">PALABRA CLAVE</div>
+<div class="h1" data-s="1">ACTIVO</div>
+<div class="p" data-s="2">Cualquier cosa que puedes <b class="oro">comprar o vender</b> en trading</div>
+<div class="row" data-s="3">{_card(3,'💶','Moneda',w=260)}{_card(3,'🥇','Oro',w=260)}{_card(3,'🏢','Acción',w=260)}{_card(3,'₿','Bitcoin',w=260)}</div>
+<div class="p" data-s="4">Cada uno: <b class="oro">gráfico · horario · personalidad</b></div>
+</div>"""
+
+
+def v2_forex():
+    return _mercado(1, 1, "💱", "Forex", [2, 3, 5, 5], ["Se compran y venden <span class='oro'>monedas</span>", "El mercado <span class='oro'>más grande del mundo</span>", "24 horas, <span class='oro'>lunes a viernes</span>", "Mucha liquidez"])
+
+
+def v2_par():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">CÓMO SE LEE UN PAR</div>
+<div class="row" data-s="1" style="align-items:center"><div class="card"><div class="ico">🇪🇺</div><div class="val">EUR</div><div class="lbl">Base</div></div><div class="arrow">/</div><div class="card"><div class="ico">🇺🇸</div><div class="val">USD</div><div class="lbl">Cotización</div></div><div class="arrow">=</div><div class="card" style="border-color:{ORO}"><div class="val oro" style="font-size:70px">1.08</div><div class="lbl">1 € = 1,08 $</div></div></div>
+<div class="row"><div class="card" data-s="3" style="border-color:{VERDE};width:560px"><div class="val verde">COMPRAS ▲</div><div class="p" style="font-size:28px">El euro se fortalece</div></div><div class="card" data-s="4" style="border-color:{ROJO};width:560px"><div class="val rojo">VENDES ▼</div><div class="p" style="font-size:28px">El euro se debilita</div></div></div>
+</div>"""
+
+
+def v2_mayores():
+    par = lambda s, a, b: f'<div class="card" data-s="{s}" style="width:300px;padding:26px"><div class="val" style="font-size:44px">{a}<span class="oro">/{b}</span></div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">PARES MAYORES (todos con USD)</div>
+<div class="row">{par(1,'EUR','USD')}{par(1,'GBP','USD')}{par(1,'USD','JPY')}{par(1,'AUD','USD')}</div>
+<div class="row">{par(1,'USD','CHF')}{par(1,'USD','CAD')}{par(1,'NZD','USD')}</div>
+<div class="p" data-s="2">Para empezar: <b class="oro">más ordenados y más baratos</b></div>
+</div>"""
+
+
+def v2_oro():
+    return _mercado(1, 2, "🥇", "Oro · XAUUSD", [2, 3, 5, 7], ["Oro contra el dólar", "<span class='oro'>Activo refugio</span>: sube con el miedo", "Se mueve fuerte: <span class='oro'>oportunidad</span> y <span class='rojo'>riesgo</span>", "Gestión de riesgo <span class='oro'>todavía más importante</span>"])
+
+
+def v2_indices():
+    return _mercado(0, 3, "📊", "Índices", [1, 2, 2, 4], ["Varias empresas en <span class='oro'>un solo precio</span>", "<span class='oro'>Nasdaq</span>: tecnología", "<span class='oro'>Dow Jones</span>: 30 gigantes de EE.UU.", "Se mueven en la <span class='oro'>apertura de Nueva York</span>"])
+
+
+def v2_materias():
+    return _mercado(0, 4, "🛢️", "Materias primas", [0, 1, 2], ["Petróleo · plata", "Dependen de <span class='oro'>producción y conflictos</span>", "Para empezar: <span class='rojo'>no son las más sencillas</span>"])
+
+
+def v2_cripto():
+    return _mercado(0, 5, "₿", "Criptomonedas", [1, 2, 3], ["<span class='oro'>24/7</span>, incluso fines de semana", "Se mueven <span class='oro'>muchísimo</span> en poco tiempo", "<span class='rojo'>De las más peligrosas</span> para principiantes"])
+
+
+def v2_sinteticos():
+    t = lambda s, n, e: f'<div class="card" data-s="{s}" style="width:330px"><div class="val" style="font-size:40px">{n}</div><div class="p" style="font-size:26px;margin-top:8px">{e}</div></div>'
+    return f"""<div class="stage">
+<div class="h2" data-s="0">⚡ Mercado 6 de 6: <span class="oro">Índices sintéticos</span></div>
+<div class="row" data-s="1"><div class="pill">🤖 CREADOS POR UN ALGORITMO</div><div class="pill" data-s="3">🕐 24/7</div><div class="pill" data-s="3">📰 SIN NOTICIAS</div></div>
+<div class="row">{t(5,'Crash / Boom','Picos fuertes')}{t(5,'Volatility','Niveles de movimiento')}{t(5,'Step','Pasos fijos')}</div>
+<div class="p" data-s="6">Solo algunos brókers · <b class="rojo">alto riesgo</b></div>
+</div>"""
+
+
+def v2_cfd():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">ALGO IMPORTANTE</div>
+<div class="row" data-s="1"><div class="card" style="width:520px"><div class="ico">🚫📦</div><div class="val">No compras el activo real</div></div><div class="card" data-s="3" style="width:520px;border-color:{ORO}"><div class="ico">📈</div><div class="val">Operas el <span class="oro">precio</span></div><div class="lbl">Contrato con tu bróker</div></div></div>
+<div class="card" data-s="5" style="width:1080px;border-color:{ROJO}"><div class="val">⚠️ Apalancamiento: multiplica <span class="verde">ganancias</span> y <span class="rojo">pérdidas</span></div></div>
+</div>"""
+
+
+def v2_comparativa():
+    fila = lambda s, m, h, v, n: f'<tr data-s="{s}"><td>{m}</td><td>{h}</td><td>{v}</td><td>{n}</td></tr>'
+    return f"""<div class="stage">
+<style>table{{border-collapse:collapse;font-size:42px}} td,th{{padding:18px 40px;border-bottom:1px solid rgba(212,175,55,.25);text-align:left}} th{{color:#bfae7a;font-size:22px;letter-spacing:2px;text-transform:uppercase}} td:first-child{{font-weight:800}}</style>
+<div class="pill" data-s="0">LADO A LADO</div>
+<table><tr><th>Mercado</th><th>Horario</th><th>Movimiento</th><th>Noticias</th></tr>
+{fila(1,'💱 Forex','Lun–Vie','Moderado','Sí')}
+{fila(2,'🥇 Oro','Lun–Vie','<span class=rojo>Fuerte</span>','Mucho')}
+{fila(3,'📊 Índices','Horario de bolsa','Medio-alto','Sí')}
+{fila(4,'₿ Cripto','Todos los días','<span class=rojo>Muy alto</span>','Sí')}
+{fila(5,'⚡ Sintéticos','Todos los días','<span class=rojo>Brusco</span>','<span class=verde>No</span>')}
+</table></div>"""
+
+
+def v2_horarios():
+    ses = lambda s, ico, n, h: f'<div class="card" data-s="{s}" style="width:400px"><div class="ico">{ico}</div><div class="val">{n}</div><div class="p" style="font-size:30px;margin-top:8px">{h}</div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">SESIONES · HORA COLOMBIA 🇨🇴</div>
+<div class="row">{ses(2,'🌏','Asia','Noche')}{ses(3,'🇬🇧','Londres','2:00 – 3:00 a.m.')}{ses(4,'🇺🇸','Nueva York','7:00 – 8:00 a.m.')}</div>
+<div class="card" data-s="5" style="border-color:{ORO};width:1000px"><div class="val">🔥 Londres + Nueva York = <span class="oro">más movimiento</span></div><div class="lbl">En la mañana de Colombia</div></div>
+</div>"""
+
+
+def v2_elegir():
+    c = lambda s, n, i, t, e: f'<div class="card" data-s="{s}" style="width:440px"><div class="lbl">{n}</div><div class="ico" style="margin:10px 0">{i}</div><div class="val">{t}</div><div class="p" style="font-size:26px;margin-top:8px">{e}</div></div>'
+    return f"""<div class="stage">
+<div class="h2" data-s="0">¿Cuál te conviene <span class="oro">a ti</span>?</div>
+<div class="row">{c(2,'Primero','⏰','Tu tiempo','¿Mañanas, noches o fines de semana?')}{c(4,'Segundo','💓','Tu riesgo','¿Te ponen nervioso los movimientos fuertes?')}{c(6,'Tercero','💰','Tu capital','Que puedas operar pequeño')}</div>
+</div>"""
+
+
+def v2_recomendacion():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">MI RECOMENDACIÓN</div>
+<div class="row">
+<div class="card" data-s="1" style="width:580px"><div class="ico">🌅</div><div class="lbl">Mañanas libres</div><div class="val">Euro dólar → <span class="oro">Oro</span></div></div>
+<div class="card" data-s="2" style="width:580px"><div class="ico">🌙</div><div class="lbl">Noches / fines de semana</div><div class="val">Sintéticos <span class="oro">en demo</span></div><div class="p" style="font-size:26px">Con riesgo muy pequeño</div></div>
+</div>
+<div class="h2" data-s="3">Escoge <span class="oro">uno solo</span> y domínalo</div>
+</div>"""
+
+
+def v2_error():
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">ERROR COMÚN</div>
+<div class="row" data-s="1"><div class="card"><div class="val">Hoy 🥇</div></div><div class="card"><div class="val">Mañana ₿</div></div><div class="card"><div class="val">Pasado 📊</div></div></div>
+<div class="p" data-s="2">Así <b class="rojo">nunca aprendes</b> cómo se mueve ninguno</div>
+<div class="h1" data-s="5" style="font-size:84px">Menos mercados, <span class="oro">más dominio</span></div>
+</div>"""
+
+
+def v2_mio():
+    return f"""<div class="stage">
+<img src="{JV}" style="height:170px">
+<div class="lbl" data-s="0">Lo que yo opero</div>
+<div class="row" data-s="0">{_card(0,'🥇','Oro')}{_card(0,'💶','Euro dólar')}{_card(0,'⚡','Sintéticos')}</div>
+<div class="p" data-s="2">La estructura y el SMC <b class="oro">sirven para cualquier activo</b></div>
+</div>"""
+
+
+def v2_resumen():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}"><b>✓</b><span>{t}</span></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">RESUMEN</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+{ck(1,'6 mercados: forex, oro, índices, materias, cripto, sintéticos')}
+{ck(3,'Cada uno tiene su horario y su personalidad')}
+{ck(4,'Operas el precio, no el activo real')}
+{ck(5,'<span class="oro">Escoge uno y domínalo</span>')}
+</div></div>"""
+
+
+def v2_cierre():
+    return f"""<div class="stage">
+<img src="{JV}" style="height:150px">
+<div class="lbl" data-s="0">Siguiente video</div>
+<div class="card" data-s="0" style="width:1150px"><div class="val">#3 · Qué es un bróker y <span class="oro">cómo no caer en estafas</span></div></div>
+<div class="row" data-s="2"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">▶ SUSCRÍBETE</div><div class="pill">🔔 ACTIVA LA CAMPANITA</div></div>
+<div class="p" data-s="3">📅 Agenda una llamada conmigo · <b class="oro">link en la descripción</b></div>
+<div class="p" style="font-size:22px;color:#8a826c;margin-top:20px">Contenido educativo. El trading implica riesgo de pérdida de capital.</div>
+</div>"""
+
+
+# ---- Short 2 ----
+def s2_gancho():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="pill">PRINCIPIANTES</div>
+<div class="h1" style="font-size:110px">¿Qué mercado <span class="oro">operar</span>?</div><div style="font-size:130px">🥇💱⚡</div></div>"""
+
+
+def s2_tiempo():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="h2" style="font-size:76px">Depende de <span class="oro">tu tiempo</span></div>
+<div class="card" data-s="1" style="width:880px"><div class="ico">🌅</div><div class="lbl" style="font-size:30px">Mañanas libres</div><div class="val" style="font-size:66px">Euro dólar → <span class="oro">Oro</span></div></div></div>"""
+
+
+def s2_noche():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="card" style="width:880px"><div class="ico">🌙</div><div class="lbl" style="font-size:30px">Noches / fines de semana</div><div class="val" style="font-size:66px">Sintéticos</div><div class="pill" data-s="1" style="margin-top:20px;font-size:36px">PRIMERO EN DEMO</div></div></div>"""
+
+
+def s2_regla():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="lbl" style="font-size:36px">La regla de oro</div>
+<div class="h1" data-s="1" style="font-size:110px">Escoge <span class="oro">uno</span> y domínalo</div>
+<div class="p" data-s="2" style="font-size:46px">El que opera todo, <b class="rojo">no domina nada</b></div></div>"""
+
+
+def s2_cta():
+    return s_cta()
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math
