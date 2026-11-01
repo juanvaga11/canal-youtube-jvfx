@@ -1,0 +1,847 @@
+1
+00:00:00,350 --> 00:00:01,827
+Más de siete de cada diez personas
+
+2
+00:00:01,827 --> 00:00:03,435
+que entran al trading pierden dinero.
+
+3
+00:00:03,855 --> 00:00:04,830
+No es mala suerte:
+
+4
+00:00:04,990 --> 00:00:06,968
+es que empiezan sin entender qué están haciendo.
+
+5
+00:00:07,388 --> 00:00:09,607
+En este video te explico, desde cero y sin
+
+6
+00:00:09,607 --> 00:00:11,880
+enredos, qué es el trading y cómo funciona.
+
+7
+00:00:12,300 --> 00:00:14,098
+Y al final te digo el error número uno
+
+8
+00:00:14,098 --> 00:00:16,369
+de los principiantes, para que tú no lo cometas.
+
+9
+00:00:21,219 --> 00:00:23,220
+Bienvenido a JulianVal.fx.
+
+10
+00:00:23,640 --> 00:00:25,166
+Aquí aprendes trading paso a
+
+11
+00:00:25,166 --> 00:00:26,474
+paso, de cero a experto.
+
+12
+00:00:26,894 --> 00:00:28,765
+Este es el video uno de la serie, así
+
+13
+00:00:28,765 --> 00:00:31,343
+que si estás empezando, estás en el lugar correcto.
+
+14
+00:00:32,193 --> 00:00:33,639
+Empecemos por lo más básico.
+
+15
+00:00:34,059 --> 00:00:36,251
+El trading es comprar y vender activos financieros
+
+16
+00:00:36,251 --> 00:00:37,961
+para ganar con la diferencia de precio.
+
+17
+00:00:38,381 --> 00:00:39,246
+Así de sencillo.
+
+18
+00:00:39,666 --> 00:00:41,011
+No es magia, no es un juego de
+
+19
+00:00:41,011 --> 00:00:42,490
+azar y no es una forma de hacerse
+
+20
+00:00:42,490 --> 00:00:43,789
+rico de la noche a la mañana.
+
+21
+00:00:44,209 --> 00:00:46,370
+Es una habilidad, y como toda habilidad,
+
+22
+00:00:46,370 --> 00:00:48,802
+se aprende con estudio, práctica y paciencia.
+
+23
+00:00:49,652 --> 00:00:50,332
+Piénsalo así.
+
+24
+00:00:50,752 --> 00:00:52,483
+Imagina que compras una arroba de café
+
+25
+00:00:52,483 --> 00:00:54,213
+en cien mil pesos, cuando está barata.
+
+26
+00:00:54,633 --> 00:00:56,349
+Unas semanas después el precio sube y
+
+27
+00:00:56,349 --> 00:00:57,787
+la vendes en ciento veinte mil.
+
+28
+00:00:58,207 --> 00:01:00,514
+Esa diferencia de veinte mil pesos es tu ganancia.
+
+29
+00:01:00,934 --> 00:01:03,089
+Eso, en esencia, es trading.
+
+30
+00:01:03,509 --> 00:01:04,634
+La diferencia es que en el
+
+31
+00:01:04,634 --> 00:01:05,717
+trading no tocas el café:
+
+32
+00:01:05,877 --> 00:01:07,665
+compras y vendes el precio, desde
+
+33
+00:01:07,665 --> 00:01:09,128
+tu celular o tu computador.
+
+34
+00:01:09,978 --> 00:01:12,513
+Ahora, mucha gente confunde el trading con invertir.
+
+35
+00:01:12,933 --> 00:01:15,517
+Cuando inviertes, compras algo y lo guardas durante
+
+36
+00:01:15,517 --> 00:01:17,593
+años, esperando que crezca con el tiempo.
+
+37
+00:01:18,013 --> 00:01:20,632
+En el trading buscas aprovechar movimientos más cortos:
+
+38
+00:01:20,792 --> 00:01:23,153
+de minutos, de horas o de algunos días.
+
+39
+00:01:23,573 --> 00:01:24,811
+Ninguno es mejor que el otro.
+
+40
+00:01:25,231 --> 00:01:27,064
+Son dos formas distintas de trabajar con
+
+41
+00:01:27,064 --> 00:01:28,576
+los mercados, y en este canal nos
+
+42
+00:01:28,576 --> 00:01:29,951
+vamos a enfocar en el trading.
+
+43
+00:01:30,801 --> 00:01:32,639
+Dentro del trading hay varios estilos.
+
+44
+00:01:33,059 --> 00:01:36,101
+El scalping, donde las operaciones duran pocos minutos.
+
+45
+00:01:36,521 --> 00:01:38,327
+El trading intradía, donde abres y
+
+46
+00:01:38,327 --> 00:01:40,292
+cierras tus operaciones el mismo día.
+
+47
+00:01:40,712 --> 00:01:42,155
+Y el swing trading, donde una
+
+48
+00:01:42,155 --> 00:01:43,847
+operación puede durar varios días.
+
+49
+00:01:44,267 --> 00:01:45,696
+Cada estilo se adapta a un tipo de
+
+50
+00:01:45,696 --> 00:01:47,462
+persona y al tiempo que tienes disponible.
+
+51
+00:01:47,882 --> 00:01:49,709
+Más adelante te ayudo a encontrar el tuyo.
+
+52
+00:01:50,559 --> 00:01:51,553
+¿Y qué se puede operar?
+
+53
+00:01:51,973 --> 00:01:53,072
+Hay muchos mercados.
+
+54
+00:01:53,492 --> 00:01:55,664
+Las divisas, como el euro contra el dólar.
+
+55
+00:01:56,084 --> 00:01:57,880
+Materias primas, como el oro.
+
+56
+00:01:58,300 --> 00:02:00,087
+Índices de bolsa, que representan
+
+57
+00:02:00,087 --> 00:02:01,332
+a un grupo de empresas.
+
+58
+00:02:01,752 --> 00:02:05,122
+Y los índices sintéticos, que funcionan las veinticuatro horas.
+
+59
+00:02:05,542 --> 00:02:07,580
+En este canal vamos a trabajar sobre todo
+
+60
+00:02:07,580 --> 00:02:09,270
+el oro, el forex y los sintéticos.
+
+61
+00:02:10,120 --> 00:02:11,982
+Aquí viene algo que sorprende a muchos:
+
+62
+00:02:12,142 --> 00:02:13,617
+en el trading puedes ganar cuando el
+
+63
+00:02:13,617 --> 00:02:15,010
+precio sube y también cuando baja.
+
+64
+00:02:15,430 --> 00:02:16,598
+Si crees que el precio va
+
+65
+00:02:16,598 --> 00:02:17,813
+a subir, abres una compra.
+
+66
+00:02:18,233 --> 00:02:20,259
+Si crees que va a bajar, abres una venta.
+
+67
+00:02:20,679 --> 00:02:22,604
+Lo que importa no es la dirección, sino
+
+68
+00:02:22,604 --> 00:02:24,825
+acertar en el análisis y controlar el riesgo.
+
+69
+00:02:25,675 --> 00:02:27,362
+Pero, ¿por qué se mueve el precio?
+
+70
+00:02:27,782 --> 00:02:28,936
+Por la oferta y la demanda.
+
+71
+00:02:29,356 --> 00:02:31,063
+Cuando hay más gente queriendo comprar
+
+72
+00:02:31,063 --> 00:02:32,276
+que vender, el precio sube.
+
+73
+00:02:32,696 --> 00:02:34,876
+Cuando hay más vendedores, el precio baja.
+
+74
+00:02:35,296 --> 00:02:37,507
+Y detrás de los movimientos grandes están los
+
+75
+00:02:37,507 --> 00:02:40,356
+bancos y las instituciones, el llamado dinero inteligente.
+
+76
+00:02:40,776 --> 00:02:42,675
+Aprender a seguir sus huellas es justo lo
+
+77
+00:02:42,675 --> 00:02:44,390
+que vamos a ver más adelante con SMC.
+
+78
+00:02:45,240 --> 00:02:47,049
+Para operar necesitas tres cosas.
+
+79
+00:02:47,469 --> 00:02:48,748
+Un bróker, que es la empresa
+
+80
+00:02:48,748 --> 00:02:50,119
+que te conecta con el mercado.
+
+81
+00:02:50,539 --> 00:02:53,052
+Una plataforma, como MetaTrader 5, donde
+
+82
+00:02:53,052 --> 00:02:55,063
+abres y cierras tus operaciones.
+
+83
+00:02:55,483 --> 00:02:56,692
+Y el gráfico, que es donde
+
+84
+00:02:56,692 --> 00:02:57,994
+ves cómo se mueve el precio.
+
+85
+00:02:58,414 --> 00:02:59,698
+Todo esto lo vamos a instalar
+
+86
+00:02:59,698 --> 00:03:01,026
+juntos en los próximos videos.
+
+87
+00:03:01,876 --> 00:03:03,308
+Este es un gráfico de velas.
+
+88
+00:03:03,728 --> 00:03:05,057
+Cada vela te muestra cómo se movió
+
+89
+00:03:05,057 --> 00:03:06,425
+el precio en un tiempo determinado.
+
+90
+00:03:06,845 --> 00:03:08,359
+Las verdes son cuando el precio
+
+91
+00:03:08,359 --> 00:03:09,872
+subió, y las rojas cuando bajó.
+
+92
+00:03:10,292 --> 00:03:12,330
+Parece complicado, pero en un par de videos lo
+
+93
+00:03:12,330 --> 00:03:13,835
+vas a leer como si fuera un libro.
+
+94
+00:03:14,685 --> 00:03:16,651
+Ahora mira cómo se ve una operación completa.
+
+95
+00:03:17,071 --> 00:03:19,664
+Primero haces tu análisis y defines dónde quieres entrar.
+
+96
+00:03:20,084 --> 00:03:21,298
+Ese es tu punto de entrada.
+
+97
+00:03:21,718 --> 00:03:23,304
+Luego pones un stop loss, que es el
+
+98
+00:03:23,304 --> 00:03:25,252
+punto donde aceptas que te equivocaste y la
+
+99
+00:03:25,252 --> 00:03:27,472
+operación se cierra sola con una pérdida pequeña.
+
+100
+00:03:27,892 --> 00:03:29,763
+Y por último pones un take profit, que
+
+101
+00:03:29,763 --> 00:03:31,634
+es el punto donde tomas tus ganancias.
+
+102
+00:03:32,054 --> 00:03:34,100
+Entrada, stop loss y take profit:
+
+103
+00:03:34,260 --> 00:03:35,942
+esas tres cosas las defines siempre
+
+104
+00:03:35,942 --> 00:03:37,432
+antes de entrar, nunca después.
+
+105
+00:03:38,282 --> 00:03:39,330
+Y ahora sí, el error
+
+106
+00:03:39,330 --> 00:03:41,008
+número uno de los principiantes:
+
+107
+00:03:41,168 --> 00:03:42,686
+operar sin gestión de riesgo.
+
+108
+00:03:43,106 --> 00:03:44,915
+Entrar con todo el dinero, sin stop
+
+109
+00:03:44,915 --> 00:03:47,087
+loss, esperando que el precio se devuelva.
+
+110
+00:03:47,507 --> 00:03:49,369
+Así se queman la mayoría de las cuentas.
+
+111
+00:03:49,789 --> 00:03:50,960
+La regla de oro es simple:
+
+112
+00:03:51,120 --> 00:03:52,852
+nunca arriesgues en una sola operación más
+
+113
+00:03:52,852 --> 00:03:54,294
+de lo que estás dispuesto a perder.
+
+114
+00:03:54,714 --> 00:03:57,120
+Muchos profesionales arriesgan apenas el uno o el dos
+
+115
+00:03:57,120 --> 00:03:59,026
+por ciento de su cuenta en cada operación.
+
+116
+00:03:59,876 --> 00:04:00,972
+Te lo pongo en números.
+
+117
+00:04:01,392 --> 00:04:03,091
+Si tienes una cuenta de mil dólares
+
+118
+00:04:03,091 --> 00:04:04,693
+y arriesgas el uno por ciento, en
+
+119
+00:04:04,693 --> 00:04:06,975
+cada operación solo puedes perder diez dólares.
+
+120
+00:04:07,395 --> 00:04:10,264
+Así, aunque pierdas cinco operaciones seguidas, tu cuenta
+
+121
+00:04:10,264 --> 00:04:12,479
+sigue casi intacta y puedes seguir operando.
+
+122
+00:04:12,899 --> 00:04:14,767
+En cambio, si arriesgas la mitad de la
+
+123
+00:04:14,767 --> 00:04:17,274
+cuenta, con dos malas operaciones quedas por fuera.
+
+124
+00:04:17,694 --> 00:04:18,901
+Por eso la gestión de riesgo es
+
+125
+00:04:18,901 --> 00:04:20,029
+lo que separa a los que duran
+
+126
+00:04:20,029 --> 00:04:20,847
+de los que se queman.
+
+127
+00:04:21,697 --> 00:04:23,093
+¿Y por qué pierde tanta gente?
+
+128
+00:04:23,513 --> 00:04:24,552
+Por tres razones.
+
+129
+00:04:24,972 --> 00:04:25,586
+La primera:
+
+130
+00:04:25,746 --> 00:04:26,782
+operan sin un plan.
+
+131
+00:04:27,202 --> 00:04:29,208
+Entran porque vieron a alguien en redes, sin
+
+132
+00:04:29,208 --> 00:04:31,032
+saber por qué compran ni por qué venden.
+
+133
+00:04:31,452 --> 00:04:32,134
+La segunda:
+
+134
+00:04:32,294 --> 00:04:33,251
+las emociones.
+
+135
+00:04:33,671 --> 00:04:35,467
+El miedo los saca de una buena operación y
+
+136
+00:04:35,467 --> 00:04:37,221
+la avaricia los deja metidos en una mala.
+
+137
+00:04:37,641 --> 00:04:38,446
+Y la tercera:
+
+138
+00:04:38,606 --> 00:04:39,568
+operan demasiado.
+
+139
+00:04:39,988 --> 00:04:42,202
+Creen que entre más operaciones hagan, más
+
+140
+00:04:42,202 --> 00:04:43,626
+ganan, y es justo al revés.
+
+141
+00:04:44,046 --> 00:04:45,078
+El trader que gana es el
+
+142
+00:04:45,078 --> 00:04:46,798
+que espera con paciencia su oportunidad.
+
+143
+00:04:47,648 --> 00:04:49,883
+Antes de seguir, rompamos tres mitos.
+
+144
+00:04:50,303 --> 00:04:50,777
+Primero:
+
+145
+00:04:50,937 --> 00:04:52,740
+necesitas mucho dinero para empezar.
+
+146
+00:04:53,160 --> 00:04:53,612
+Falso:
+
+147
+00:04:53,772 --> 00:04:55,635
+puedes aprender gratis en una cuenta demo
+
+148
+00:04:55,635 --> 00:04:56,861
+y empezar en real con poco.
+
+149
+00:04:57,281 --> 00:04:57,846
+Segundo:
+
+150
+00:04:58,006 --> 00:04:59,341
+el trading es como apostar.
+
+151
+00:04:59,761 --> 00:05:00,213
+Falso:
+
+152
+00:05:00,373 --> 00:05:02,820
+cuando tienes un método y gestionas el riesgo,
+
+153
+00:05:02,820 --> 00:05:05,107
+tomas decisiones con lógica, no con suerte.
+
+154
+00:05:05,527 --> 00:05:06,182
+Y tercero:
+
+155
+00:05:06,342 --> 00:05:07,725
+te vas a volver rico en un mes.
+
+156
+00:05:08,145 --> 00:05:08,597
+Falso:
+
+157
+00:05:08,757 --> 00:05:10,694
+el trading es una carrera de largo plazo, y
+
+158
+00:05:10,694 --> 00:05:13,080
+quien te prometa lo contrario te está vendiendo humo.
+
+159
+00:05:13,930 --> 00:05:16,316
+Ahora, una pregunta que seguro te estás haciendo:
+
+160
+00:05:16,476 --> 00:05:17,366
+¿cuánto se puede ganar?
+
+161
+00:05:17,786 --> 00:05:18,875
+La respuesta honesta es que
+
+162
+00:05:18,875 --> 00:05:19,761
+no hay una cifra fija.
+
+163
+00:05:20,181 --> 00:05:22,388
+Depende de tu capital, del riesgo que
+
+164
+00:05:22,388 --> 00:05:24,773
+tomes y, sobre todo, de tu consistencia.
+
+165
+00:05:25,193 --> 00:05:26,406
+Por eso, al principio tu
+
+166
+00:05:26,406 --> 00:05:27,569
+meta no es ganar mucho.
+
+167
+00:05:27,989 --> 00:05:29,590
+Tu meta es aprender a no perder, a
+
+168
+00:05:29,590 --> 00:05:31,379
+seguir tu plan y a proteger tu cuenta.
+
+169
+00:05:31,799 --> 00:05:33,445
+Las ganancias llegan como consecuencia
+
+170
+00:05:33,445 --> 00:05:34,528
+de hacer bien el proceso.
+
+171
+00:05:35,378 --> 00:05:36,705
+Por eso, mi consejo:
+
+172
+00:05:36,865 --> 00:05:38,054
+empieza en una cuenta demo.
+
+173
+00:05:38,474 --> 00:05:40,146
+Es una cuenta con dinero virtual,
+
+174
+00:05:40,146 --> 00:05:42,122
+donde practicas sin arriesgar tu plata.
+
+175
+00:05:42,542 --> 00:05:45,084
+Primero aprendes, después ganas experiencia, y
+
+176
+00:05:45,084 --> 00:05:46,521
+solo después pasas a real.
+
+177
+00:05:47,371 --> 00:05:49,126
+Y para que no aprendas a pedazos,
+
+178
+00:05:49,126 --> 00:05:50,721
+armé esta serie como una ruta.
+
+179
+00:05:51,141 --> 00:05:53,625
+Primero los fundamentos, que es donde estamos ahora.
+
+180
+00:05:54,045 --> 00:05:55,521
+Después la estructura de mercado.
+
+181
+00:05:55,941 --> 00:05:57,802
+Luego Smart Money Concepts, la forma
+
+182
+00:05:57,802 --> 00:05:59,147
+en que operan los grandes.
+
+183
+00:05:59,567 --> 00:06:01,326
+Después mi modelo de entrada paso a paso.
+
+184
+00:06:01,746 --> 00:06:04,640
+Luego los instrumentos, como el oro y los sintéticos.
+
+185
+00:06:05,060 --> 00:06:06,922
+Y al final, el nivel experto:
+
+186
+00:06:07,082 --> 00:06:09,587
+backtesting, psicología y tu plan de trading.
+
+187
+00:06:10,007 --> 00:06:11,334
+Si la sigues en orden, vas
+
+188
+00:06:11,334 --> 00:06:13,017
+a entender el mercado como nunca.
+
+189
+00:06:13,867 --> 00:06:15,592
+Para sacarle el máximo provecho a
+
+190
+00:06:15,592 --> 00:06:17,631
+esta serie, te recomiendo cuatro cosas.
+
+191
+00:06:18,051 --> 00:06:19,900
+Mira los videos en orden, porque cada
+
+192
+00:06:19,900 --> 00:06:21,300
+uno se apoya en el anterior.
+
+193
+00:06:21,720 --> 00:06:23,731
+Toma apuntes, aunque sean cortos.
+
+194
+00:06:24,151 --> 00:06:26,262
+Practica en tu cuenta demo lo que vas aprendiendo.
+
+195
+00:06:26,682 --> 00:06:28,538
+Y si tienes una duda, déjala en los
+
+196
+00:06:28,538 --> 00:06:30,765
+comentarios, que yo los leo y te respondo.
+
+197
+00:06:31,615 --> 00:06:32,349
+Resumamos.
+
+198
+00:06:32,769 --> 00:06:34,285
+El trading es comprar y vender para
+
+199
+00:06:34,285 --> 00:06:35,758
+ganar con la diferencia de precio.
+
+200
+00:06:36,178 --> 00:06:38,197
+Puedes ganar cuando el precio sube y cuando baja.
+
+201
+00:06:38,617 --> 00:06:40,503
+El precio se mueve por oferta y demanda.
+
+202
+00:06:40,923 --> 00:06:41,981
+Y lo más importante:
+
+203
+00:06:42,141 --> 00:06:44,887
+primero la gestión de riesgo, después todo lo demás.
+
+204
+00:06:45,737 --> 00:06:47,228
+En el siguiente video te muestro qué
+
+205
+00:06:47,228 --> 00:06:48,677
+mercados se pueden operar y cuál te
+
+206
+00:06:48,677 --> 00:06:50,002
+conviene más si estás empezando.
+
+207
+00:06:50,422 --> 00:06:52,021
+Suscríbete y activa la campanita
+
+208
+00:06:52,021 --> 00:06:53,320
+para no perderte la serie.
+
+209
+00:06:53,740 --> 00:06:55,508
+Y si quieres aprender conmigo de forma
+
+210
+00:06:55,508 --> 00:06:57,322
+más profunda, en la descripción te dejo
+
+211
+00:06:57,322 --> 00:06:58,484
+el enlace de SKY Academy.
+
+212
+00:06:58,904 --> 00:07:00,311
+Nos vemos en el próximo video.

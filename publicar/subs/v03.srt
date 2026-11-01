@@ -1,0 +1,835 @@
+1
+00:00:00,350 --> 00:00:02,352
+Puedes tener la mejor estrategia del mundo,
+
+2
+00:00:02,352 --> 00:00:03,796
+y aun así perder todo tu dinero
+
+3
+00:00:03,796 --> 00:00:04,914
+si eliges mal el bróker.
+
+4
+00:00:05,333 --> 00:00:07,095
+Cada año miles de personas caen en estafas
+
+5
+00:00:07,095 --> 00:00:08,898
+que se hacen pasar por empresas de trading.
+
+6
+00:00:09,318 --> 00:00:11,240
+En este video te explico qué es un bróker,
+
+7
+00:00:11,240 --> 00:00:13,436
+cómo gana dinero, y la lista de verificación que
+
+8
+00:00:13,436 --> 00:00:15,540
+debes revisar antes de depositar un solo peso.
+
+9
+00:00:20,390 --> 00:00:22,392
+Bienvenido a JulianVal.fx.
+
+10
+00:00:22,812 --> 00:00:23,886
+Este es el video tres de
+
+11
+00:00:23,886 --> 00:00:25,095
+la serie de cero a experto.
+
+12
+00:00:25,515 --> 00:00:26,346
+Ya sabes qué es el
+
+13
+00:00:26,346 --> 00:00:27,779
+trading y qué mercados existen.
+
+14
+00:00:28,199 --> 00:00:29,481
+Ahora vamos con la empresa que
+
+15
+00:00:29,481 --> 00:00:30,721
+te conecta con esos mercados.
+
+16
+00:00:31,571 --> 00:00:32,931
+Un bróker es un intermediario.
+
+17
+00:00:33,351 --> 00:00:35,126
+Es la empresa que te da acceso al mercado.
+
+18
+00:00:35,546 --> 00:00:37,328
+Tú no puedes llegar directamente al mercado
+
+19
+00:00:37,328 --> 00:00:38,323
+de divisas o al del oro:
+
+20
+00:00:38,483 --> 00:00:40,353
+necesitas que alguien te abra la puerta.
+
+21
+00:00:40,773 --> 00:00:42,941
+El bróker te da una cuenta, una plataforma
+
+22
+00:00:42,941 --> 00:00:45,419
+para operar, y guarda tu dinero mientras operas.
+
+23
+00:00:45,839 --> 00:00:47,611
+Por eso elegirlo bien es tan importante:
+
+24
+00:00:47,771 --> 00:00:49,797
+literalmente le estás confiando tu capital.
+
+25
+00:00:50,647 --> 00:00:51,927
+¿Y cómo gana dinero un bróker?
+
+26
+00:00:52,347 --> 00:00:53,887
+Principalmente de tres formas.
+
+27
+00:00:54,307 --> 00:00:55,702
+La primera es el spread, que es
+
+28
+00:00:55,702 --> 00:00:57,457
+la diferencia entre el precio de compra
+
+29
+00:00:57,457 --> 00:00:58,403
+y el precio de venta.
+
+30
+00:00:58,823 --> 00:01:00,541
+La segunda son las comisiones, que
+
+31
+00:01:00,541 --> 00:01:02,259
+algunos cobran por cada operación.
+
+32
+00:01:02,679 --> 00:01:04,320
+Y la tercera es el swap, un pequeño
+
+33
+00:01:04,320 --> 00:01:06,147
+cobro o pago que se aplica cuando dejas
+
+34
+00:01:06,147 --> 00:01:08,116
+una operación abierta de un día para otro.
+
+35
+00:01:08,536 --> 00:01:09,653
+Un buen bróker te muestra
+
+36
+00:01:09,653 --> 00:01:10,904
+estos costos de forma clara.
+
+37
+00:01:11,754 --> 00:01:13,332
+Te explico el spread con un ejemplo.
+
+38
+00:01:13,752 --> 00:01:15,259
+Si en tu plataforma el oro aparece
+
+39
+00:01:15,259 --> 00:01:16,545
+con un precio de compra y uno
+
+40
+00:01:16,545 --> 00:01:17,874
+de venta un poco más bajo, esa
+
+41
+00:01:17,874 --> 00:01:19,515
+diferencia es lo que pagas al entrar.
+
+42
+00:01:19,935 --> 00:01:23,210
+Por eso, apenas abres una operación, aparece en negativo.
+
+43
+00:01:23,630 --> 00:01:24,780
+No es que estés perdiendo:
+
+44
+00:01:24,940 --> 00:01:26,017
+es el costo de entrar.
+
+45
+00:01:26,437 --> 00:01:27,531
+Entre más bajo sea el
+
+46
+00:01:27,531 --> 00:01:29,145
+spread, menos te cuesta operar.
+
+47
+00:01:29,995 --> 00:01:31,801
+Hay dos tipos principales de brókers.
+
+48
+00:01:32,221 --> 00:01:34,469
+Los creadores de mercado, que toman la otra parte
+
+49
+00:01:34,469 --> 00:01:36,808
+de tu operación y normalmente tienen spreads fijos.
+
+50
+00:01:37,228 --> 00:01:39,301
+Y los brókers de acceso directo, que envían
+
+51
+00:01:39,301 --> 00:01:41,470
+tu orden a otros proveedores de liquidez, con
+
+52
+00:01:41,470 --> 00:01:43,253
+spreads variables y a veces comisión.
+
+53
+00:01:43,673 --> 00:01:45,039
+Ninguno es malo por sí mismo.
+
+54
+00:01:45,459 --> 00:01:46,553
+Lo importante es que esté
+
+55
+00:01:46,553 --> 00:01:47,954
+regulado y que sea transparente.
+
+56
+00:01:48,804 --> 00:01:49,863
+El bróker también te da la
+
+57
+00:01:49,863 --> 00:01:51,085
+plataforma donde vas a operar.
+
+58
+00:01:51,505 --> 00:01:53,577
+La más usada en el mundo es MetaTrader 5,
+
+59
+00:01:53,577 --> 00:01:55,902
+que funciona en el computador y en el celular.
+
+60
+00:01:56,322 --> 00:01:58,818
+Tiene gráficos, indicadores y te permite poner tu
+
+61
+00:01:58,818 --> 00:02:00,804
+stop loss y tu take profit en segundos.
+
+62
+00:02:01,224 --> 00:02:03,305
+Si un bróker te obliga a usar una plataforma
+
+63
+00:02:03,305 --> 00:02:05,150
+rara que nadie conoce, y que no te deja
+
+64
+00:02:05,150 --> 00:02:07,704
+ver bien el historial de tus operaciones, ten cuidado.
+
+65
+00:02:08,554 --> 00:02:09,399
+Y aquí viene lo más
+
+66
+00:02:09,399 --> 00:02:10,644
+importante de todo el video:
+
+67
+00:02:10,804 --> 00:02:11,598
+la regulación.
+
+68
+00:02:12,018 --> 00:02:13,797
+Un bróker regulado está vigilado por una
+
+69
+00:02:13,797 --> 00:02:15,621
+entidad del gobierno que le exige reglas:
+
+70
+00:02:15,781 --> 00:02:18,206
+separar el dinero de los clientes, reportar sus
+
+71
+00:02:18,206 --> 00:02:20,114
+cuentas y responder si algo sale mal.
+
+72
+00:02:20,534 --> 00:02:22,781
+Algunos de los reguladores más reconocidos son
+
+73
+00:02:22,781 --> 00:02:24,295
+la FCA del Reino Unido, la ASIC
+
+74
+00:02:24,295 --> 00:02:25,955
+de Australia y la CySEC de Chipre.
+
+75
+00:02:26,375 --> 00:02:27,602
+Un bróker sin regulación es
+
+76
+00:02:27,602 --> 00:02:28,919
+como un banco sin vigilancia:
+
+77
+00:02:29,079 --> 00:02:31,682
+si desaparece con tu dinero, nadie te responde.
+
+78
+00:02:32,532 --> 00:02:33,779
+Pero ojo, no basta con que
+
+79
+00:02:33,779 --> 00:02:35,362
+el bróker diga que está regulado.
+
+80
+00:02:35,782 --> 00:02:38,077
+Muchas estafas ponen logos falsos en su página.
+
+81
+00:02:38,497 --> 00:02:40,062
+Lo que tienes que hacer es ir a la
+
+82
+00:02:40,062 --> 00:02:42,685
+página oficial del regulador, buscar el nombre del bróker
+
+83
+00:02:42,685 --> 00:02:44,940
+o su número de licencia, y verificar que coincida
+
+84
+00:02:44,940 --> 00:02:47,011
+con la página web donde te estás registrando.
+
+85
+00:02:47,431 --> 00:02:48,857
+Si no aparece, o el nombre
+
+86
+00:02:48,857 --> 00:02:50,776
+es parecido pero no igual, aléjate.
+
+87
+00:02:51,626 --> 00:02:53,493
+Y si estás en Colombia, también te sirve
+
+88
+00:02:53,493 --> 00:02:55,921
+revisar la página de la Superintendencia Financiera.
+
+89
+00:02:56,341 --> 00:02:58,205
+Ahí publican advertencias sobre empresas
+
+90
+00:02:58,205 --> 00:02:59,836
+que captan dinero sin autorización.
+
+91
+00:03:00,256 --> 00:03:01,818
+Si una empresa aparece en esas
+
+92
+00:03:01,818 --> 00:03:03,433
+listas, no le confíes tu plata.
+
+93
+00:03:04,283 --> 00:03:06,466
+Ahora, las señales de alerta de una estafa.
+
+94
+00:03:06,886 --> 00:03:07,400
+Primera:
+
+95
+00:03:07,560 --> 00:03:09,922
+te prometen ganancias fijas o garantizadas, como
+
+96
+00:03:09,922 --> 00:03:11,595
+un diez por ciento mensual seguro.
+
+97
+00:03:12,015 --> 00:03:14,558
+En el trading real nadie puede garantizar ganancias.
+
+98
+00:03:14,978 --> 00:03:15,551
+Segunda:
+
+99
+00:03:15,711 --> 00:03:17,849
+te presionan para depositar rápido, o te llama
+
+100
+00:03:17,849 --> 00:03:19,894
+un supuesto asesor que quiere operar por ti.
+
+101
+00:03:20,314 --> 00:03:20,870
+Tercera:
+
+102
+00:03:21,030 --> 00:03:22,978
+te ponen problemas para retirar tu dinero,
+
+103
+00:03:22,978 --> 00:03:24,369
+o te piden pagar un impuesto o
+
+104
+00:03:24,369 --> 00:03:26,132
+una comisión extra para poder retirar.
+
+105
+00:03:26,552 --> 00:03:28,615
+Si ves cualquiera de estas, sal de ahí.
+
+106
+00:03:29,465 --> 00:03:31,260
+Cuidado también con los brókers clonados.
+
+107
+00:03:31,680 --> 00:03:33,534
+Son páginas falsas que copian el nombre
+
+108
+00:03:33,534 --> 00:03:34,959
+y el diseño de un bróker real,
+
+109
+00:03:34,959 --> 00:03:36,670
+pero con una dirección web distinta.
+
+110
+00:03:37,090 --> 00:03:39,511
+Por eso siempre entra escribiendo tú mismo la dirección
+
+111
+00:03:39,511 --> 00:03:41,623
+oficial, y nunca desde un enlace que te mandaron
+
+112
+00:03:41,623 --> 00:03:43,208
+por un mensaje o por redes sociales.
+
+113
+00:03:44,058 --> 00:03:45,992
+Te dejo la lista de verificación completa.
+
+114
+00:03:46,412 --> 00:03:46,787
+Uno:
+
+115
+00:03:46,947 --> 00:03:48,210
+que esté regulado, y que lo
+
+116
+00:03:48,210 --> 00:03:49,942
+confirmes en la página del regulador.
+
+117
+00:03:50,362 --> 00:03:50,843
+Dos:
+
+118
+00:03:51,003 --> 00:03:52,305
+que sus costos sean claros:
+
+119
+00:03:52,465 --> 00:03:54,157
+spread, comisiones y swap.
+
+120
+00:03:54,577 --> 00:03:54,998
+Tres:
+
+121
+00:03:55,158 --> 00:03:58,295
+que ofrezca una plataforma conocida, como MetaTrader 5.
+
+122
+00:03:58,715 --> 00:03:59,189
+Cuatro:
+
+123
+00:03:59,349 --> 00:04:00,779
+que tenga cuenta demo gratis.
+
+124
+00:04:01,199 --> 00:04:01,718
+Cinco:
+
+125
+00:04:01,878 --> 00:04:03,890
+que los depósitos y retiros sean fáciles y
+
+126
+00:04:03,890 --> 00:04:05,903
+con métodos que puedas usar desde tu país.
+
+127
+00:04:06,323 --> 00:04:06,888
+Y seis:
+
+128
+00:04:07,048 --> 00:04:09,185
+que tenga soporte en español y que te responda.
+
+129
+00:04:10,035 --> 00:04:11,097
+Y un consejo de oro:
+
+130
+00:04:11,257 --> 00:04:12,351
+haz una prueba de retiro.
+
+131
+00:04:12,771 --> 00:04:15,812
+Antes de depositar una cantidad grande, deposita poco,
+
+132
+00:04:15,812 --> 00:04:17,839
+opera un poco, y solicita un retiro.
+
+133
+00:04:18,259 --> 00:04:20,031
+Si el dinero te llega sin problemas y
+
+134
+00:04:20,031 --> 00:04:22,187
+en el tiempo que prometieron, es buena señal.
+
+135
+00:04:22,607 --> 00:04:24,125
+Si te ponen excusas, ya sabes
+
+136
+00:04:24,125 --> 00:04:25,382
+lo que tienes que hacer.
+
+137
+00:04:26,232 --> 00:04:28,182
+Cuando abres una cuenta real en un bróker
+
+138
+00:04:28,182 --> 00:04:30,323
+serio, te van a pedir verificar tu identidad:
+
+139
+00:04:30,483 --> 00:04:31,704
+una foto de tu documento y
+
+140
+00:04:31,704 --> 00:04:33,394
+a veces un comprobante de dirección.
+
+141
+00:04:33,814 --> 00:04:35,188
+Esto es normal y es una buena
+
+142
+00:04:35,188 --> 00:04:37,606
+señal, porque los brókers regulados están obligados
+
+143
+00:04:37,606 --> 00:04:38,791
+a conocer a sus clientes.
+
+144
+00:04:39,211 --> 00:04:40,775
+Lo que no es normal es que te pidan
+
+145
+00:04:40,775 --> 00:04:42,697
+tus claves del banco, el acceso a tu correo
+
+146
+00:04:42,697 --> 00:04:45,111
+o que instales programas para controlar tu computador.
+
+147
+00:04:45,531 --> 00:04:47,165
+Eso nunca lo hace un bróker legítimo.
+
+148
+00:04:48,015 --> 00:04:49,106
+Otra cosa que vas a ver al
+
+149
+00:04:49,106 --> 00:04:50,660
+abrir tu cuenta es el apalancamiento.
+
+150
+00:04:51,080 --> 00:04:52,426
+El bróker te deja controlar una
+
+151
+00:04:52,426 --> 00:04:53,903
+posición más grande que tu dinero.
+
+152
+00:04:54,323 --> 00:04:56,750
+Por ejemplo, con un apalancamiento de uno a cien,
+
+153
+00:04:56,750 --> 00:04:59,326
+con cien dólares controlas una posición de diez mil.
+
+154
+00:04:59,746 --> 00:05:01,437
+Suena muy bien, pero recuerda:
+
+155
+00:05:01,597 --> 00:05:04,900
+si multiplica las ganancias, también multiplica las pérdidas.
+
+156
+00:05:05,320 --> 00:05:06,943
+Un apalancamiento muy alto no es
+
+157
+00:05:06,943 --> 00:05:08,161
+un regalo, es un riesgo.
+
+158
+00:05:08,581 --> 00:05:09,648
+Lo vamos a ver a fondo en
+
+159
+00:05:09,648 --> 00:05:11,142
+el video de lotes y apalancamiento.
+
+160
+00:05:11,992 --> 00:05:14,458
+Muchos brókers también te ofrecen varios tipos de cuenta.
+
+161
+00:05:14,878 --> 00:05:16,903
+La cuenta estándar, que es la más común.
+
+162
+00:05:17,323 --> 00:05:19,149
+La cuenta cent o micro, donde operas
+
+163
+00:05:19,149 --> 00:05:21,228
+con montos muy pequeños, ideal para pasar
+
+164
+00:05:21,228 --> 00:05:23,003
+de demo a real sin arriesgar mucho.
+
+165
+00:05:23,423 --> 00:05:25,548
+Y las cuentas de spread bajo, donde el spread
+
+166
+00:05:25,548 --> 00:05:28,005
+es mínimo pero te cobran una comisión por operación.
+
+167
+00:05:28,425 --> 00:05:30,827
+Si estás empezando, una cuenta cent o estándar
+
+168
+00:05:30,827 --> 00:05:32,863
+con poco capital es más que suficiente.
+
+169
+00:05:33,713 --> 00:05:36,085
+Mi recomendación es que antes de escoger tu bróker
+
+170
+00:05:36,085 --> 00:05:38,647
+definitivo, abras cuentas demo en dos o tres opciones.
+
+171
+00:05:39,067 --> 00:05:41,145
+Compara los spreads en los mismos activos y
+
+172
+00:05:41,145 --> 00:05:43,079
+a la misma hora, revisa cómo funciona la
+
+173
+00:05:43,079 --> 00:05:45,544
+plataforma, y escríbele al soporte con una pregunta
+
+174
+00:05:45,544 --> 00:05:47,285
+para ver qué tan rápido te responde.
+
+175
+00:05:47,705 --> 00:05:48,889
+Eso te dice mucho de cómo te
+
+176
+00:05:48,889 --> 00:05:50,539
+van a tratar cuando tengas dinero real.
+
+177
+00:05:51,389 --> 00:05:52,814
+El error que más veo es elegir el
+
+178
+00:05:52,814 --> 00:05:54,584
+bróker por el bono de bienvenida o porque
+
+179
+00:05:54,584 --> 00:05:56,484
+un conocido lo recomendó sin verificar nada.
+
+180
+00:05:56,904 --> 00:05:58,145
+Un bono grande no te protege
+
+181
+00:05:58,145 --> 00:05:59,165
+si no te dejan retirar.
+
+182
+00:05:59,585 --> 00:06:01,382
+Lo que te protege es la regulación,
+
+183
+00:06:01,382 --> 00:06:03,538
+la transparencia y tu propia verificación.
+
+184
+00:06:04,388 --> 00:06:06,141
+Y ahora cuéntame tú en los comentarios:
+
+185
+00:06:06,301 --> 00:06:07,329
+¿qué bróker usas, y ya
+
+186
+00:06:07,329 --> 00:06:08,638
+hiciste tu prueba de retiro?
+
+187
+00:06:09,058 --> 00:06:11,437
+Leo todos los comentarios, y tus preguntas me ayudan
+
+188
+00:06:11,437 --> 00:06:13,404
+a preparar los próximos videos de la serie.
+
+189
+00:06:13,824 --> 00:06:15,703
+Y si este video te sirvió, compártelo con
+
+190
+00:06:15,703 --> 00:06:17,583
+alguien que esté empezando en el trading.
+
+191
+00:06:18,003 --> 00:06:19,235
+Puede que le salves su dinero.
+
+192
+00:06:20,085 --> 00:06:20,820
+Resumamos.
+
+193
+00:06:21,240 --> 00:06:22,901
+El bróker es la empresa que te conecta
+
+194
+00:06:22,901 --> 00:06:24,387
+con el mercado y guarda tu dinero.
+
+195
+00:06:24,807 --> 00:06:27,329
+Gana con el spread, las comisiones y el swap.
+
+196
+00:06:27,749 --> 00:06:29,720
+Lo más importante es que esté regulado, y eso
+
+197
+00:06:29,720 --> 00:06:31,602
+lo verificas tú en la página del regulador.
+
+198
+00:06:32,022 --> 00:06:34,295
+Desconfía de las ganancias garantizadas, de la
+
+199
+00:06:34,295 --> 00:06:36,271
+presión y de los problemas para retirar.
+
+200
+00:06:36,691 --> 00:06:38,182
+Y haz siempre una prueba de retiro.
+
+201
+00:06:39,032 --> 00:06:40,648
+En el siguiente video vamos a hablar de
+
+202
+00:06:40,648 --> 00:06:41,974
+la cuenta demo y la cuenta real:
+
+203
+00:06:42,134 --> 00:06:43,652
+cuál usar, cuándo pasar de una a
+
+204
+00:06:43,652 --> 00:06:45,124
+otra y cómo no cometer el error
+
+205
+00:06:45,124 --> 00:06:46,737
+de saltar a real demasiado pronto.
+
+206
+00:06:47,157 --> 00:06:48,972
+Suscríbete y activa la campanita.
+
+207
+00:06:49,392 --> 00:06:51,107
+Y si tienes dudas con tu bróker, en la
+
+208
+00:06:51,107 --> 00:06:53,904
+descripción tienes el enlace para agendar una llamada conmigo.
+
+209
+00:06:54,324 --> 00:06:55,731
+Nos vemos en el próximo video.
