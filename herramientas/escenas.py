@@ -819,6 +819,202 @@ def v3_comentarios():
 </div>"""
 
 
+# ================= VIDEO 4: DEMO VS REAL =================
+def v4_gancho():
+    return f"""<div class="stage">
+<div class="row" data-s="0" style="align-items:center"><div class="card" style="width:420px"><div class="ico">🎮</div><div class="val">Demo</div></div><div class="arrow" style="font-size:90px">⚡➜</div><div class="card" style="width:420px;border-color:{ROJO}"><div class="ico">💸</div><div class="val rojo">Real</div></div></div>
+<div class="h2" data-s="1">Demasiado <span class="rojo">rápido</span> o de la forma <span class="rojo">equivocada</span></div>
+<div class="pill" data-s="2">CÓMO USAR LA DEMO · CUÁNDO PASAR A REAL</div>
+</div>"""
+
+
+def v4_marca():
+    return f"""<div class="stage">
+<img src="{LOGO}" style="height:300px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))">
+<div class="row" data-s="1"><div class="card"><div class="lbl">Serie</div><div class="val">Fundamentos</div></div><div class="card"><div class="lbl">Video</div><div class="val oro">#4</div></div></div>
+<div class="p" data-s="3">Hoy: <b class="oro">por dónde empezar a operar</b></div>
+</div>"""
+
+
+def v4_que_es():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">CUENTA DEMO</div>
+<div class="row">
+<div class="card" data-s="1" style="width:440px"><div class="ico">📈</div><div class="val">Precios reales</div></div>
+<div class="card" data-s="1" style="width:440px"><div class="ico">💻</div><div class="val">Misma plataforma</div></div>
+<div class="card" data-s="0" style="width:440px;border-color:{ORO}"><div class="ico">🪙</div><div class="val oro">Dinero virtual</div></div>
+</div>
+<div class="row" data-s="2"><div class="pill" style="border-color:{VERDE};color:{VERDE}">GANAS → $0 REAL</div><div class="pill" data-s="3" style="border-color:{ROJO};color:{ROJO}">PIERDES → $0 REAL</div></div>
+<div class="p" data-s="4">Gratis en casi todos los brókers serios</div>
+</div>"""
+
+
+def v4_para_que():
+    c = lambda s, n, i, t, e: f'<div class="card" data-s="{s}" style="width:440px"><div class="lbl">{n}</div><div class="ico" style="margin:10px 0">{i}</div><div class="val">{t}</div><div class="p" style="font-size:26px;margin-top:8px">{e}</div></div>'
+    return f"""<div class="stage"><div class="h2" data-s="0">¿Para qué sirve la demo?</div>
+<div class="row">{c(2,'1','🖱️','La plataforma','Abrir, cerrar, SL, TP, tamaño')}{c(4,'2','🧪','Tu estrategia','¿De verdad funciona?')}{c(5,'3','🔁','El hábito','Seguir tus reglas siempre')}</div></div>"""
+
+
+def v4_limites():
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">EL LÍMITE DE LA DEMO</div>
+<div class="h1" data-s="1" style="font-size:84px">No entrena tus <span class="rojo">emociones</span></div>
+<div class="row"><div class="card" data-s="2" style="width:540px"><div class="lbl">Dinero virtual</div><div class="val">😌 Calma</div></div><div class="card" data-s="3" style="width:540px;border-color:{ROJO}"><div class="lbl">Dinero real</div><div class="val rojo">😰 Miedo y ansiedad</div></div></div>
+<div class="p" data-s="4">+ Deslizamiento: <b class="oro">tu orden entra a otro precio</b></div>
+</div>"""
+
+
+def v4_error_100k():
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">ERROR #1 EN DEMO</div>
+<div class="big oro" data-s="1" style="font-size:180px">$100.000</div>
+<div class="row" data-s="2"><div class="pill">🐘 LOTES ENORMES</div><div class="pill">🎲 SIN PENSAR</div><div class="pill">🎢 MILES EN UN DÍA</div></div>
+<div class="p" data-s="4">🎮 Como aprender a manejar en un videojuego</div>
+</div>"""
+
+
+def v4_ejemplo():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">EJEMPLO</div>
+<div class="row" style="align-items:center">
+<div class="card" data-s="2" style="width:420px;border-color:{VERDE}"><div class="lbl">Demo · lotes gigantes</div><div class="val verde" style="font-size:60px">+$20.000</div></div>
+<div class="arrow" data-s="3">➜</div>
+<div class="card" data-s="3" style="width:420px"><div class="lbl">Deposita en real</div><div class="val" style="font-size:60px">$500</div></div>
+<div class="arrow" data-s="4">➜</div>
+<div class="card" data-s="4" style="width:420px;border-color:{ROJO}"><div class="lbl">2 días después</div><div class="val rojo" style="font-size:60px">$250</div></div>
+</div>
+<div class="h2" data-s="5">No era la estrategia: <span class="oro">era la práctica</span></div>
+</div>"""
+
+
+def v4_bien():
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{VERDE};color:{VERDE}">✅ LA FORMA CORRECTA</div>
+<div class="row" data-s="1" style="align-items:center"><div class="card" style="width:420px"><div class="lbl">Real</div><div class="val" style="font-size:64px">$200</div></div><div class="arrow">=</div><div class="card" style="width:420px;border-color:{ORO}"><div class="lbl">Demo</div><div class="val oro" style="font-size:64px">$200</div></div></div>
+<div class="row" data-s="3"><div class="pill">⚖️ MISMO RIESGO: 1%</div><div class="pill" data-s="4">💵 COMO SI FUERA TU PLATA</div></div>
+</div>"""
+
+
+def v4_reglas():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}" style="font-size:40px"><b>✍️</b><span>{t}</span></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">TUS REGLAS · POR ESCRITO</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+{ck(1,'Qué mercado y en qué horario')}{ck(1,'Máximo de operaciones por día')}{ck(1,'Cuánto arriesgas en cada una')}{ck(1,'Cuándo paras si pierdes')}
+</div><div class="p" data-s="2">Sin reglas = <b class="rojo">improvisación</b> = cuenta quemada</div></div>"""
+
+
+def v4_diario():
+    cols = ['Fecha', 'Activo', '¿Por qué?', 'SL / TP', 'Resultado', '¿Cómo me sentí?']
+    return f"""<div class="stage">
+<div class="pill" data-s="0">📓 DIARIO DE TRADING</div>
+<div class="row" data-s="1" style="gap:12px;flex-wrap:wrap;max-width:1500px">{''.join(f'<div class="card" style="padding:22px 28px"><div class="val" style="font-size:34px">{c}</div></div>' for c in cols)}</div>
+<div class="p" data-s="2">Al final del mes: <b class="oro">la verdad sobre tu trading</b></div>
+</div>"""
+
+
+def v4_metricas():
+    c = lambda s, i, t, e: f'<div class="card" data-s="{s}" style="width:460px"><div class="ico">{i}</div><div class="val">{t}</div><div class="p" style="font-size:26px;margin-top:8px">{e}</div></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">3 NÚMEROS DE TU DIARIO</div>
+<div class="row">{c(1,'🎯','% de acierto','De 10 operaciones, ¿cuántas ganas?')}{c(3,'⚖️','Riesgo / beneficio','Lo que ganas vs. lo que pierdes')}{c(5,'📉','Peor racha','La mayor caída de tu cuenta')}</div>
+<div class="p" data-s="7">Sin engañarte con <b class="oro">una semana buena</b></div></div>"""
+
+
+def v4_senales():
+    ck = lambda s, n, t: f'<div class="chk" data-s="{s}" style="font-size:40px"><b>{n}</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:20px"><div class="pill" data-s="0" style="border-color:{VERDE};color:{VERDE}">✅ 5 SEÑALES DE QUE ESTÁS LISTO</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+{ck(2,'1','2–3 meses operando en demo')}{ck(4,'2','50+ operaciones en tu diario')}{ck(6,'3','Resultados positivos en todo el periodo')}{ck(8,'4','Seguiste tus reglas casi siempre')}{ck(10,'5','Sabes cuánto arriesgas y estás tranquilo')}
+</div></div>"""
+
+
+def v4_no_listo():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}" style="font-size:40px"><b style="background:{ROJO};color:#fff">✕</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:20px"><div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">🚩 TODAVÍA NO ESTÁS LISTO SI…</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+{ck(1,'Te aburriste de la demo')}{ck(2,'Quieres recuperar algo rápido')}{ck(3,'Mueves el stop loss')}{ck(4,'No sabes explicar por qué entras')}
+</div><div class="p" data-s="6">No es tiempo perdido: <b class="oro">es entrenamiento</b></div></div>"""
+
+
+def v4_transicion():
+    paso = lambda s, i, t: f'<div class="card" data-s="{s}" style="width:340px"><div class="ico">{i}</div><div class="val" style="font-size:34px">{t}</div></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">EL SALTO, GRADUAL</div>
+<div class="row">{paso(1,'💵','Monto pequeño')}{paso(2,'🪙','Cuenta cent / micro')}{paso(3,'⬇️','Riesgo 0,5%')}{paso(4,'📋','Mismas reglas')}</div></div>"""
+
+
+def v4_escalar():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">CRECER POCO A POCO</div>
+<div class="row" data-s="1" style="align-items:center"><div class="card" style="width:420px;border-color:{ORO}"><div class="lbl">Primero</div><div class="val oro">Capital</div></div><div class="arrow">➜</div><div class="card" style="width:420px"><div class="lbl">Después</div><div class="val">Riesgo</div></div></div>
+<div class="h2" data-s="2"><span class="rojo">Nunca</span> al revés</div>
+<div class="p" data-s="3">¿Perdiste el control? <b class="oro">Volver a demo está bien</b></div>
+</div>"""
+
+
+def v4_emociones():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">EN REAL VAS A SENTIR</div>
+<div class="row" data-s="2"><div class="card" style="width:400px"><div class="ico">😨</div><div class="val" style="font-size:34px">Miedo de entrar</div></div><div class="card" style="width:400px"><div class="ico">🏃</div><div class="val" style="font-size:34px">Ganas de cerrar antes</div></div><div class="card" style="width:400px"><div class="ico">😤</div><div class="val" style="font-size:34px">Ganas de vengarte</div></div></div>
+<div class="h2" data-s="6">Cuando las emociones hablan, <span class="oro">tu plan decide</span></div>
+</div>"""
+
+
+def v4_plan():
+    f = lambda s, d, t: f'<div class="card" data-s="{s}" style="width:470px"><div class="lbl">{d}</div><div class="val" style="font-size:34px">{t}</div></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">📅 PLAN DE 90 DÍAS</div>
+<div class="row">{f(1,'Días 1–30','Plataforma + demo con reglas')}{f(3,'Días 31–60','Demo + diario completo')}{f(5,'Días 61–90','Revisa números → ¿5 señales?')}</div>
+<div class="row"><div class="pill" data-s="7" style="border-color:{VERDE};color:{VERDE}">✅ SÍ: REAL CON POCO</div><div class="pill" data-s="8" style="border-color:{ROJO};color:{ROJO}">❌ NO: AJUSTA Y REPITE</div></div></div>"""
+
+
+def v4_comentarios():
+    return f"""<div class="stage"><div style="font-size:150px">💬</div>
+<div class="h2" data-s="1">¿Demo o ya pasaste a <span class="oro">real</span>?</div>
+<div class="h2" data-s="2">¿Qué fue lo más difícil?</div>
+<div class="p" data-s="3">Tu respuesta <b class="oro">ayuda a otro que está empezando</b></div></div>"""
+
+
+def v4_resumen():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}"><b>✓</b><span>{t}</span></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">RESUMEN</div>
+<div style="display:flex;flex-direction:column;gap:22px">
+{ck(1,'Demo: plataforma, estrategia y hábitos')}{ck(2,'Mismo capital y mismo riesgo que en real')}{ck(3,'Reglas escritas + diario')}{ck(4,'<span class="oro">A real con poco, y crece poco a poco</span>')}
+</div></div>"""
+
+
+def v4_cierre():
+    return f"""<div class="stage">
+<img src="{JV}" style="height:150px">
+<div class="lbl" data-s="0">Siguiente video</div>
+<div class="card" data-s="0" style="width:1150px"><div class="val">#5 · Cómo instalar y usar <span class="oro">MetaTrader 5</span> paso a paso</div></div>
+<div class="row" data-s="1"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">▶ SUSCRÍBETE</div><div class="pill">🔔 ACTIVA LA CAMPANITA</div></div>
+<div class="p" data-s="2">📅 Revisemos tu plan para pasar a real · <b class="oro">link en la descripción</b></div>
+<div class="p" style="font-size:22px;color:#8a826c;margin-top:20px">Contenido educativo. El trading implica riesgo de pérdida de capital.</div>
+</div>"""
+
+
+# ---- Short 4 ----
+def s4_gancho():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="pill" style="border-color:{ROJO};color:{ROJO}">🚩 ERROR DE PRINCIPIANTE</div>
+<div class="big oro" style="font-size:190px">$100.000</div><div class="h2" style="font-size:72px">en la cuenta demo</div></div>"""
+
+
+def s4_mal():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div style="font-size:150px">🤑</div><div class="h2" style="font-size:72px">Operas como <span class="oro">millonario</span></div>
+<div class="row" data-s="1"><div class="pill" style="font-size:34px">🐘 LOTES ENORMES</div></div><div class="pill" data-s="1" style="font-size:34px">😎 SIN MIEDO</div></div>"""
+
+
+def s4_porque():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div style="font-size:150px">❌</div><div class="h1" style="font-size:96px">No te enseña <span class="rojo">nada</span></div></div>"""
+
+
+def s4_bien():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="pill" style="border-color:{VERDE};color:{VERDE};font-size:34px">✅ HAZLO ASÍ</div>
+<div class="h2" style="font-size:76px">Demo = <span class="oro">lo mismo</span> que tendrás en real</div><div class="pill" style="font-size:36px">⚖️ MISMO % DE RIESGO</div></div>"""
+
+
+def s4_cta():
+    return s_cta()
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math
