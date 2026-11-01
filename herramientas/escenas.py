@@ -565,9 +565,9 @@ def v2_noticias():
     n = lambda s, i, t: f'<div class="card" data-s="{s}" style="width:400px"><div class="ico">{i}</div><div class="val" style="font-size:38px">{t}</div></div>'
     return f"""<div class="stage">
 <div class="pill" data-s="0">📰 NOTICIAS QUE MUEVEN EL PRECIO</div>
-<div class="row">{n(1,'👷','Empleo EE.UU.')}{n(1,'🛒','Inflación')}{n(1,'🏦','Tasas de interés')}</div>
-<div class="p" data-s="2">En segundos se mueve <b class="rojo">lo que normalmente toma horas</b></div>
-<div class="card" data-s="3" style="width:1000px;border-color:{ORO}"><div class="val">📅 Revisa el <span class="oro">calendario económico</span></div><div class="lbl" data-s="4">Principiante: sin operaciones abiertas en la noticia</div></div>
+<div class="row">{n(2,'👷','Empleo EE.UU.')}{n(2,'🛒','Inflación')}{n(2,'🏦','Tasas de interés')}</div>
+<div class="p" data-s="3">En segundos se mueve <b class="rojo">lo que normalmente toma horas</b></div>
+<div class="card" data-s="4" style="width:1000px;border-color:{ORO}"><div class="val">📅 Revisa el <span class="oro">calendario económico</span></div><div class="lbl" data-s="5">Principiante: sin operaciones abiertas en la noticia</div></div>
 </div>"""
 
 
@@ -578,7 +578,7 @@ def v2_tarea():
 {ck(1,'1','Abre una cuenta demo')}
 {ck(1,'2','Agrega <span class="oro">euro dólar · oro · un sintético</span>')}
 {ck(2,'3','No operes: <span class="oro">solo observa</span> a distintas horas')}
-{ck(2,'4','Anota cuál se mueve más y cuál va con tu horario')}
+{ck(3,'4','Anota cuál se mueve más y cuál va con tu horario')}
 </div></div>"""
 
 
