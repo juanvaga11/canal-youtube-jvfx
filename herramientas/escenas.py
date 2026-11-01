@@ -37,7 +37,7 @@ body{{background:radial-gradient(ellipse at 50% 35%,#1b1708 0%,#0b0a07 45%,#0505
 .chk{{display:flex;align-items:center;gap:22px;font-size:40px;font-weight:600;text-align:left}}
 .chk b{{color:#07070a;background:{ORO};border-radius:50%;width:54px;height:54px;flex:none;display:flex;align-items:center;justify-content:center;font-size:32px}}
 [data-s]{{transition:none}}
-.hide{{opacity:0}}
+.hide{{opacity:0}} tr.hide td{{border-color:transparent}}
 .dim{{opacity:.28}}
 """
 
