@@ -969,7 +969,7 @@ def v4_comentarios():
     return f"""<div class="stage"><div style="font-size:150px">💬</div>
 <div class="h2" data-s="1">¿Demo o ya pasaste a <span class="oro">real</span>?</div>
 <div class="h2" data-s="2">¿Qué fue lo más difícil?</div>
-<div class="p" data-s="3">Tu respuesta <b class="oro">ayuda a otro que está empezando</b></div></div>"""
+<div class="p" data-s="3">Tu respuesta <b class="oro">ayuda a otro que está empezando</b></div><div class="pill" data-s="4">📤 COMPÁRTELO CON QUIEN QUIERA EMPEZAR</div></div>"""
 
 
 def v4_resumen():

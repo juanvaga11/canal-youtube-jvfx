@@ -69,7 +69,7 @@ def main(guion, salida):
         fs = frases(esc["texto"])
         for j, f in enumerate(fs):
             a = recortar_silencio(leer_mp3(f"{adir}/{esc['v']}_{j:02d}_{hashlib.md5(f.encode()).hexdigest()[:6]}.mp3"))
-            pausa = 0.16 if f.endswith(":") else 0.42
+            pausa = 0.16 if f.endswith(":") else 0.45
             if j == len(fs) - 1:
                 pausa = 0.85
             dur = len(a) / SR
