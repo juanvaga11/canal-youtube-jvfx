@@ -1015,6 +1015,14 @@ def s4_cta():
     return s_cta()
 
 
+def v4_tiempo():
+    return f"""<div class="stage">
+<div class="h2" data-s="0">¿Cuánto practicar al día?</div>
+<div class="row" data-s="2"><div class="card" style="width:460px;border-color:{ORO}"><div class="ico">⏱️</div><div class="val oro">30 – 60 min</div><div class="lbl">Mismo horario · con reglas</div></div><div class="card" data-s="1" style="width:460px"><div class="ico">🚫🖥️</div><div class="val">No 8 horas</div></div></div>
+<div class="row" data-s="4"><div class="card" style="width:460px;border-color:{VERDE}"><div class="val verde">2 bien pensadas</div></div><div class="arrow">&gt;</div><div class="card" style="width:460px;border-color:{ROJO}"><div class="val rojo">20 por impulso</div></div></div>
+</div>"""
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math
