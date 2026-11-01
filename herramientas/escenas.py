@@ -800,6 +800,24 @@ def s3_cta():
     return s_cta()
 
 
+def v3_cuentas():
+    c = lambda s, i, t, e: f'<div class="card" data-s="{s}" style="width:460px"><div class="ico">{i}</div><div class="val">{t}</div><div class="p" style="font-size:27px;margin-top:8px">{e}</div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">TIPOS DE CUENTA</div>
+<div class="row">{c(1,'🧾','Estándar','La más común')}{c(2,'🪙','Cent / Micro','Montos muy pequeños · de demo a real')}{c(3,'⚙️','Spread bajo','Spread mínimo + comisión')}</div>
+<div class="p" data-s="4">Empezando: <b class="oro">cent o estándar con poco capital</b></div>
+</div>"""
+
+
+def v3_comentarios():
+    return f"""<div class="stage">
+<div style="font-size:150px">💬</div>
+<div class="h2" data-s="0">¿Qué bróker usas?</div>
+<div class="h2" data-s="0">¿Ya hiciste tu <span class="oro">prueba de retiro</span>?</div>
+<div class="p" data-s="1">Cuéntame en los comentarios · <b class="oro">los leo todos</b></div>
+</div>"""
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math

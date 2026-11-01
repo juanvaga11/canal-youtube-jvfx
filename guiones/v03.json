@@ -72,12 +72,20 @@
    "texto": "Otra cosa que vas a ver al abrir tu cuenta es el apalancamiento. El bróker te deja controlar una posición más grande que tu dinero. Por ejemplo, con un apalancamiento de uno a cien, con cien dólares controlas una posición de diez mil. Suena muy bien, pero recuerda: si multiplica las ganancias, también multiplica las pérdidas. Un apalancamiento muy alto no es un regalo, es un riesgo. Lo vamos a ver a fondo en el video de lotes y apalancamiento."
   },
   {
+   "v": "v3_cuentas",
+   "texto": "Muchos brókers también te ofrecen varios tipos de cuenta. La cuenta estándar, que es la más común. La cuenta cent o micro, donde operas con montos muy pequeños, ideal para pasar de demo a real sin arriesgar mucho. Y las cuentas de spread bajo, donde el spread es mínimo pero te cobran una comisión por operación. Si estás empezando, una cuenta cent o estándar con poco capital es más que suficiente."
+  },
+  {
    "v": "v3_demo",
    "texto": "Mi recomendación es que antes de escoger tu bróker definitivo, abras cuentas demo en dos o tres opciones. Compara los spreads en los mismos activos y a la misma hora, revisa cómo funciona la plataforma, y escríbele al soporte con una pregunta para ver qué tan rápido te responde. Eso te dice mucho de cómo te van a tratar cuando tengas dinero real."
   },
   {
    "v": "v3_error",
    "texto": "El error que más veo es elegir el bróker por el bono de bienvenida o porque un conocido lo recomendó sin verificar nada. Un bono grande no te protege si no te dejan retirar. Lo que te protege es la regulación, la transparencia y tu propia verificación."
+  },
+  {
+   "v": "v3_comentarios",
+   "texto": "Y ahora cuéntame tú en los comentarios: ¿qué bróker usas, y ya hiciste tu prueba de retiro? Leo todos los comentarios, y tus preguntas me ayudan a preparar los próximos videos de la serie."
   },
   {
    "v": "v3_resumen",
