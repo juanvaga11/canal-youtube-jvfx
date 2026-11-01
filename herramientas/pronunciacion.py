@@ -14,7 +14,7 @@ CAMBIOS = {
     r"\bFVG\b": "efe ve ge",
     r"\bBOS\b": "bos",
     r"\bCHoCH\b": "chok",
-    r"\bXAUUSD\b": "oro contra dólar",
+    r"\bXAUUSD\b": "equis, a, u, u, ese, de",
     r"\bMT5\b": "Meta Tréider cinco",
     r"\bMetaTrader\b": "Meta Tréider",
     r"\bforex\b": "fórex",
