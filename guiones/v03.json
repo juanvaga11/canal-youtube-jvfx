@@ -3,25 +3,93 @@
  "formato": "horizontal",
  "titulo": "Qué es un bróker y cómo elegir uno sin caer en estafas",
  "escenas": [
-  {"v":"v3_gancho","texto":"Puedes tener la mejor estrategia del mundo, y aun así perder todo tu dinero si eliges mal el bróker. Cada año miles de personas caen en estafas que se hacen pasar por empresas de trading. En este video te explico qué es un bróker, cómo gana dinero, y la lista de verificación que debes revisar antes de depositar un solo peso."},
-  {"v":"intro","texto":""},
-  {"v":"v3_marca","texto":"Bienvenido a JulianVal.fx. Este es el video tres de la serie de cero a experto. Ya sabes qué es el trading y qué mercados existen. Ahora vamos con la empresa que te conecta con esos mercados."},
-  {"v":"v3_que_es","texto":"Un bróker es un intermediario. Es la empresa que te da acceso al mercado. Tú no puedes llegar directamente al mercado de divisas o al del oro: necesitas que alguien te abra la puerta. El bróker te da una cuenta, una plataforma para operar, y guarda tu dinero mientras operas. Por eso elegirlo bien es tan importante: literalmente le estás confiando tu capital."},
-  {"v":"v3_como_gana","texto":"¿Y cómo gana dinero un bróker? Principalmente de tres formas. La primera es el spread, que es la diferencia entre el precio de compra y el precio de venta. La segunda son las comisiones, que algunos cobran por cada operación. Y la tercera es el swap, un pequeño cobro o pago que se aplica cuando dejas una operación abierta de un día para otro. Un buen bróker te muestra estos costos de forma clara."},
-  {"v":"v3_spread","texto":"Te explico el spread con un ejemplo. Si en tu plataforma el oro aparece con un precio de compra y uno de venta un poco más bajo, esa diferencia es lo que pagas al entrar. Por eso, apenas abres una operación, aparece en negativo. No es que estés perdiendo: es el costo de entrar. Entre más bajo sea el spread, menos te cuesta operar."},
-  {"v":"v3_tipos","texto":"Hay dos tipos principales de brókers. Los creadores de mercado, que toman la otra parte de tu operación y normalmente tienen spreads fijos. Y los brókers de acceso directo, que envían tu orden a otros proveedores de liquidez, con spreads variables y a veces comisión. Ninguno es malo por sí mismo. Lo importante es que esté regulado y que sea transparente."},
-  {"v":"v3_regulacion","texto":"Y aquí viene lo más importante de todo el video: la regulación. Un bróker regulado está vigilado por una entidad del gobierno que le exige reglas: separar el dinero de los clientes, reportar sus cuentas y responder si algo sale mal. Algunos de los reguladores más reconocidos son la FCA del Reino Unido, la ASIC de Australia y la CySEC de Chipre. Un bróker sin regulación es como un banco sin vigilancia: si desaparece con tu dinero, nadie te responde."},
-  {"v":"v3_verificar","texto":"Pero ojo, no basta con que el bróker diga que está regulado. Muchas estafas ponen logos falsos en su página. Lo que tienes que hacer es ir a la página oficial del regulador, buscar el nombre del bróker o su número de licencia, y verificar que coincida con la página web donde te estás registrando. Si no aparece, o el nombre es parecido pero no igual, aléjate."},
-  {"v":"v3_colombia","texto":"Y si estás en Colombia, también te sirve revisar la página de la Superintendencia Financiera. Ahí publican advertencias sobre empresas que captan dinero sin autorización. Si una empresa aparece en esas listas, no le confíes tu plata."},
-  {"v":"v3_alertas","texto":"Ahora, las señales de alerta de una estafa. Primera: te prometen ganancias fijas o garantizadas, como un diez por ciento mensual seguro. En el trading real nadie puede garantizar ganancias. Segunda: te presionan para depositar rápido, o te llama un supuesto asesor que quiere operar por ti. Tercera: te ponen problemas para retirar tu dinero, o te piden pagar un impuesto o una comisión extra para poder retirar. Si ves cualquiera de estas, sal de ahí."},
-  {"v":"v3_clones","texto":"Cuidado también con los brókers clonados. Son páginas falsas que copian el nombre y el diseño de un bróker real, pero con una dirección web distinta. Por eso siempre entra escribiendo tú mismo la dirección oficial, y nunca desde un enlace que te mandaron por un mensaje o por redes sociales."},
-  {"v":"v3_checklist","texto":"Te dejo la lista de verificación completa. Uno: que esté regulado, y que lo confirmes en la página del regulador. Dos: que sus costos sean claros: spread, comisiones y swap. Tres: que ofrezca una plataforma conocida, como MetaTrader 5. Cuatro: que tenga cuenta demo gratis. Cinco: que los depósitos y retiros sean fáciles y con métodos que puedas usar desde tu país. Y seis: que tenga soporte en español y que te responda."},
-  {"v":"v3_retiro","texto":"Y un consejo de oro: haz una prueba de retiro. Antes de depositar una cantidad grande, deposita poco, opera un poco, y solicita un retiro. Si el dinero te llega sin problemas y en el tiempo que prometieron, es buena señal. Si te ponen excusas, ya sabes lo que tienes que hacer."},
-  {"v":"v3_apalancamiento","texto":"Otra cosa que vas a ver al abrir tu cuenta es el apalancamiento. El bróker te deja controlar una posición más grande que tu dinero. Por ejemplo, con un apalancamiento de uno a cien, con cien dólares controlas una posición de diez mil. Suena muy bien, pero recuerda: si multiplica las ganancias, también multiplica las pérdidas. Un apalancamiento muy alto no es un regalo, es un riesgo. Lo vamos a ver a fondo en el video de lotes y apalancamiento."},
-  {"v":"v3_demo","texto":"Mi recomendación es que antes de escoger tu bróker definitivo, abras cuentas demo en dos o tres opciones. Compara los spreads en los mismos activos y a la misma hora, revisa cómo funciona la plataforma, y escríbele al soporte con una pregunta para ver qué tan rápido te responde. Eso te dice mucho de cómo te van a tratar cuando tengas dinero real."},
-  {"v":"v3_error","texto":"El error que más veo es elegir el bróker por el bono de bienvenida o porque un conocido lo recomendó sin verificar nada. Un bono grande no te protege si no te dejan retirar. Lo que te protege es la regulación, la transparencia y tu propia verificación."},
-  {"v":"v3_resumen","texto":"Resumamos. El bróker es la empresa que te conecta con el mercado y guarda tu dinero. Gana con el spread, las comisiones y el swap. Lo más importante es que esté regulado, y eso lo verificas tú en la página del regulador. Desconfía de las ganancias garantizadas, de la presión y de los problemas para retirar. Y haz siempre una prueba de retiro."},
-  {"v":"v3_cierre","texto":"En el siguiente video vamos a hablar de la cuenta demo y la cuenta real: cuál usar, cuándo pasar de una a otra y cómo no cometer el error de saltar a real demasiado pronto. Suscríbete y activa la campanita. Y si tienes dudas con tu bróker, en la descripción tienes el enlace para agendar una llamada conmigo. Nos vemos en el próximo video."},
-  {"v":"outro","texto":""}
+  {
+   "v": "v3_gancho",
+   "texto": "Puedes tener la mejor estrategia del mundo, y aun así perder todo tu dinero si eliges mal el bróker. Cada año miles de personas caen en estafas que se hacen pasar por empresas de trading. En este video te explico qué es un bróker, cómo gana dinero, y la lista de verificación que debes revisar antes de depositar un solo peso."
+  },
+  {
+   "v": "intro",
+   "texto": ""
+  },
+  {
+   "v": "v3_marca",
+   "texto": "Bienvenido a JulianVal.fx. Este es el video tres de la serie de cero a experto. Ya sabes qué es el trading y qué mercados existen. Ahora vamos con la empresa que te conecta con esos mercados."
+  },
+  {
+   "v": "v3_que_es",
+   "texto": "Un bróker es un intermediario. Es la empresa que te da acceso al mercado. Tú no puedes llegar directamente al mercado de divisas o al del oro: necesitas que alguien te abra la puerta. El bróker te da una cuenta, una plataforma para operar, y guarda tu dinero mientras operas. Por eso elegirlo bien es tan importante: literalmente le estás confiando tu capital."
+  },
+  {
+   "v": "v3_como_gana",
+   "texto": "¿Y cómo gana dinero un bróker? Principalmente de tres formas. La primera es el spread, que es la diferencia entre el precio de compra y el precio de venta. La segunda son las comisiones, que algunos cobran por cada operación. Y la tercera es el swap, un pequeño cobro o pago que se aplica cuando dejas una operación abierta de un día para otro. Un buen bróker te muestra estos costos de forma clara."
+  },
+  {
+   "v": "v3_spread",
+   "texto": "Te explico el spread con un ejemplo. Si en tu plataforma el oro aparece con un precio de compra y uno de venta un poco más bajo, esa diferencia es lo que pagas al entrar. Por eso, apenas abres una operación, aparece en negativo. No es que estés perdiendo: es el costo de entrar. Entre más bajo sea el spread, menos te cuesta operar."
+  },
+  {
+   "v": "v3_tipos",
+   "texto": "Hay dos tipos principales de brókers. Los creadores de mercado, que toman la otra parte de tu operación y normalmente tienen spreads fijos. Y los brókers de acceso directo, que envían tu orden a otros proveedores de liquidez, con spreads variables y a veces comisión. Ninguno es malo por sí mismo. Lo importante es que esté regulado y que sea transparente."
+  },
+  {
+   "v": "v3_plataforma",
+   "texto": "El bróker también te da la plataforma donde vas a operar. La más usada en el mundo es MetaTrader 5, que funciona en el computador y en el celular. Tiene gráficos, indicadores y te permite poner tu stop loss y tu take profit en segundos. Si un bróker te obliga a usar una plataforma rara que nadie conoce, y que no te deja ver bien el historial de tus operaciones, ten cuidado."
+  },
+  {
+   "v": "v3_regulacion",
+   "texto": "Y aquí viene lo más importante de todo el video: la regulación. Un bróker regulado está vigilado por una entidad del gobierno que le exige reglas: separar el dinero de los clientes, reportar sus cuentas y responder si algo sale mal. Algunos de los reguladores más reconocidos son la FCA del Reino Unido, la ASIC de Australia y la CySEC de Chipre. Un bróker sin regulación es como un banco sin vigilancia: si desaparece con tu dinero, nadie te responde."
+  },
+  {
+   "v": "v3_verificar",
+   "texto": "Pero ojo, no basta con que el bróker diga que está regulado. Muchas estafas ponen logos falsos en su página. Lo que tienes que hacer es ir a la página oficial del regulador, buscar el nombre del bróker o su número de licencia, y verificar que coincida con la página web donde te estás registrando. Si no aparece, o el nombre es parecido pero no igual, aléjate."
+  },
+  {
+   "v": "v3_colombia",
+   "texto": "Y si estás en Colombia, también te sirve revisar la página de la Superintendencia Financiera. Ahí publican advertencias sobre empresas que captan dinero sin autorización. Si una empresa aparece en esas listas, no le confíes tu plata."
+  },
+  {
+   "v": "v3_alertas",
+   "texto": "Ahora, las señales de alerta de una estafa. Primera: te prometen ganancias fijas o garantizadas, como un diez por ciento mensual seguro. En el trading real nadie puede garantizar ganancias. Segunda: te presionan para depositar rápido, o te llama un supuesto asesor que quiere operar por ti. Tercera: te ponen problemas para retirar tu dinero, o te piden pagar un impuesto o una comisión extra para poder retirar. Si ves cualquiera de estas, sal de ahí."
+  },
+  {
+   "v": "v3_clones",
+   "texto": "Cuidado también con los brókers clonados. Son páginas falsas que copian el nombre y el diseño de un bróker real, pero con una dirección web distinta. Por eso siempre entra escribiendo tú mismo la dirección oficial, y nunca desde un enlace que te mandaron por un mensaje o por redes sociales."
+  },
+  {
+   "v": "v3_checklist",
+   "texto": "Te dejo la lista de verificación completa. Uno: que esté regulado, y que lo confirmes en la página del regulador. Dos: que sus costos sean claros: spread, comisiones y swap. Tres: que ofrezca una plataforma conocida, como MetaTrader 5. Cuatro: que tenga cuenta demo gratis. Cinco: que los depósitos y retiros sean fáciles y con métodos que puedas usar desde tu país. Y seis: que tenga soporte en español y que te responda."
+  },
+  {
+   "v": "v3_retiro",
+   "texto": "Y un consejo de oro: haz una prueba de retiro. Antes de depositar una cantidad grande, deposita poco, opera un poco, y solicita un retiro. Si el dinero te llega sin problemas y en el tiempo que prometieron, es buena señal. Si te ponen excusas, ya sabes lo que tienes que hacer."
+  },
+  {
+   "v": "v3_verificacion",
+   "texto": "Cuando abres una cuenta real en un bróker serio, te van a pedir verificar tu identidad: una foto de tu documento y a veces un comprobante de dirección. Esto es normal y es una buena señal, porque los brókers regulados están obligados a conocer a sus clientes. Lo que no es normal es que te pidan tus claves del banco, el acceso a tu correo o que instales programas para controlar tu computador. Eso nunca lo hace un bróker legítimo."
+  },
+  {
+   "v": "v3_apalancamiento",
+   "texto": "Otra cosa que vas a ver al abrir tu cuenta es el apalancamiento. El bróker te deja controlar una posición más grande que tu dinero. Por ejemplo, con un apalancamiento de uno a cien, con cien dólares controlas una posición de diez mil. Suena muy bien, pero recuerda: si multiplica las ganancias, también multiplica las pérdidas. Un apalancamiento muy alto no es un regalo, es un riesgo. Lo vamos a ver a fondo en el video de lotes y apalancamiento."
+  },
+  {
+   "v": "v3_demo",
+   "texto": "Mi recomendación es que antes de escoger tu bróker definitivo, abras cuentas demo en dos o tres opciones. Compara los spreads en los mismos activos y a la misma hora, revisa cómo funciona la plataforma, y escríbele al soporte con una pregunta para ver qué tan rápido te responde. Eso te dice mucho de cómo te van a tratar cuando tengas dinero real."
+  },
+  {
+   "v": "v3_error",
+   "texto": "El error que más veo es elegir el bróker por el bono de bienvenida o porque un conocido lo recomendó sin verificar nada. Un bono grande no te protege si no te dejan retirar. Lo que te protege es la regulación, la transparencia y tu propia verificación."
+  },
+  {
+   "v": "v3_resumen",
+   "texto": "Resumamos. El bróker es la empresa que te conecta con el mercado y guarda tu dinero. Gana con el spread, las comisiones y el swap. Lo más importante es que esté regulado, y eso lo verificas tú en la página del regulador. Desconfía de las ganancias garantizadas, de la presión y de los problemas para retirar. Y haz siempre una prueba de retiro."
+  },
+  {
+   "v": "v3_cierre",
+   "texto": "En el siguiente video vamos a hablar de la cuenta demo y la cuenta real: cuál usar, cuándo pasar de una a otra y cómo no cometer el error de saltar a real demasiado pronto. Suscríbete y activa la campanita. Y si tienes dudas con tu bróker, en la descripción tienes el enlace para agendar una llamada conmigo. Nos vemos en el próximo video."
+  },
+  {
+   "v": "outro",
+   "texto": ""
+  }
  ]
 }
