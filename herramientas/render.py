@@ -86,7 +86,7 @@ def main(guion, salida):
     fondo = fondo[:len(voz)] * (0.30 - 0.20 * hay_voz)
     if intro_ini is not None:
         sfx = np.concatenate([MU.whoosh(0.7) * 0.5, MU.brillo_logo() * 0.9])
-        k = int(max(intro_ini - 0.1, 0) * SR)
+        k = int(max(intro_ini - 0.2, 0) * SR)
         fondo[k:k + len(sfx)] += sfx[:len(fondo) - k]
     if outro_ini is not None:
         sfx = MU.brillo_logo() * 0.8
