@@ -1,0 +1,13 @@
+{
+ "id": "s05",
+ "formato": "vertical",
+ "titulo": "4 atajos de MetaTrader 5 que te ahorran tiempo",
+ "escenas": [
+  {"v":"s5_gancho","texto":"Cuatro atajos de MetaTrader 5 que te ahorran tiempo."},
+  {"v":"s5_f9","texto":"F9: abre una nueva orden al instante."},
+  {"v":"s5_ctrlm","texto":"Control más eme: muestra u oculta la observación del mercado."},
+  {"v":"s5_alt","texto":"Alt más dos: cambia el gráfico a velas."},
+  {"v":"s5_zoom","texto":"Y las teclas más y menos: acercan y alejan el gráfico."},
+  {"v":"s5_cta","texto":"Mira el video completo en mi canal. Y sígueme para más."}
+ ]
+}
