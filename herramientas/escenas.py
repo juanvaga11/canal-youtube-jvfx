@@ -582,6 +582,224 @@ def v2_tarea():
 </div></div>"""
 
 
+# ================= VIDEO 3: BRÓKER =================
+def v3_gancho():
+    return f"""<div class="stage">
+<div class="row" data-s="0"><div class="card" style="width:460px"><div class="ico">🧠</div><div class="val">Mejor estrategia</div></div><div class="arrow">+</div><div class="card" style="width:460px;border-color:{ROJO}"><div class="ico">🏚️</div><div class="val rojo">Mal bróker</div></div><div class="arrow">=</div><div class="card" style="border-color:{ROJO}"><div class="val rojo" style="font-size:60px">$0</div></div></div>
+<div class="p" data-s="1">Miles caen cada año en <b class="rojo">estafas</b> de trading</div>
+<div class="pill" data-s="2">QUÉ ES · CÓMO GANA · LISTA DE VERIFICACIÓN</div>
+</div>"""
+
+
+def v3_marca():
+    return f"""<div class="stage">
+<img src="{LOGO}" style="height:300px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))">
+<div class="row" data-s="1"><div class="card"><div class="lbl">Serie</div><div class="val">Fundamentos</div></div><div class="card"><div class="lbl">Video</div><div class="val oro">#3</div></div></div>
+<div class="p" data-s="3">Hoy: <b class="oro">la empresa que te conecta con el mercado</b></div>
+</div>"""
+
+
+def v3_que_es():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">¿QUÉ ES UN BRÓKER?</div>
+<div class="row" data-s="1" style="align-items:center"><div class="card" style="width:300px"><div class="ico">🙋</div><div class="val">Tú</div></div><div class="arrow">➜</div><div class="card" style="width:340px;border-color:{ORO}"><div class="ico">🏢</div><div class="val oro">Bróker</div><div class="lbl">Intermediario</div></div><div class="arrow">➜</div><div class="card" style="width:300px"><div class="ico">🌐</div><div class="val">Mercado</div></div></div>
+<div class="row" data-s="4"><div class="pill">💳 CUENTA</div><div class="pill">💻 PLATAFORMA</div><div class="pill">🏦 GUARDA TU DINERO</div></div>
+<div class="h2" data-s="6">Le confías <span class="oro">tu capital</span></div>
+</div>"""
+
+
+def v3_como_gana():
+    c = lambda s, n, i, t, e: f'<div class="card" data-s="{s}" style="width:440px"><div class="lbl">{n}</div><div class="ico" style="margin:10px 0">{i}</div><div class="val">{t}</div><div class="p" style="font-size:26px;margin-top:8px">{e}</div></div>'
+    return f"""<div class="stage">
+<div class="h2" data-s="0">¿Cómo gana el bróker?</div>
+<div class="row">{c(2,'1','↔️','Spread','Diferencia compra / venta')}{c(3,'2','🧾','Comisión','Por cada operación')}{c(4,'3','🌙','Swap','Operación abierta de un día a otro')}</div>
+<div class="p" data-s="5">Un buen bróker <b class="oro">muestra sus costos claros</b></div>
+</div>"""
+
+
+def v3_spread():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">EL SPREAD · EJEMPLO</div>
+<div class="row" data-s="1" style="align-items:center"><div class="card" style="width:380px;border-color:{ROJO}"><div class="lbl">Venta (Bid)</div><div class="val rojo" style="font-size:64px">4.000,10</div></div><div class="card" style="width:380px;border-color:{VERDE}"><div class="lbl">Compra (Ask)</div><div class="val verde" style="font-size:64px">4.000,40</div></div></div>
+<div class="card" data-s="2" style="border-color:{ORO};width:900px"><div class="val">Diferencia = <span class="oro">spread</span> → arrancas en <span class="rojo">negativo</span></div><div class="lbl" data-s="3">No es pérdida: es el costo de entrar</div></div>
+<div class="p" data-s="5">Spread más bajo = <b class="oro">operar más barato</b></div>
+</div>"""
+
+
+def v3_tipos():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">2 TIPOS DE BRÓKER</div>
+<div class="row">
+<div class="card" data-s="1" style="width:600px"><div class="ico">🏪</div><div class="val">Creador de mercado</div><div class="p" style="font-size:28px;margin-top:10px">Toma la otra parte · spread fijo</div></div>
+<div class="card" data-s="2" style="width:600px"><div class="ico">🔀</div><div class="val">Acceso directo</div><div class="p" style="font-size:28px;margin-top:10px">Envía tu orden · spread variable + comisión</div></div>
+</div>
+<div class="h2" data-s="4">Lo importante: <span class="oro">regulado y transparente</span></div>
+</div>"""
+
+
+def v3_plataforma():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">LA PLATAFORMA</div>
+<div class="row" data-s="1"><div class="card" style="width:520px;border-color:{ORO}"><div class="ico">💻📱</div><div class="val">MetaTrader <span class="oro">5</span></div><div class="lbl">PC y celular</div></div></div>
+<div class="row" data-s="2"><div class="pill">📊 GRÁFICOS</div><div class="pill">📐 INDICADORES</div><div class="pill">🛡️ SL / TP EN SEGUNDOS</div></div>
+<div class="p" data-s="3">⚠️ Plataforma rara y sin historial = <b class="rojo">cuidado</b></div>
+</div>"""
+
+
+def v3_regulacion():
+    r = lambda s, f, n, p: f'<div class="card" data-s="{s}" style="width:340px"><div class="ico">{f}</div><div class="val">{n}</div><div class="lbl">{p}</div></div>'
+    return f"""<div class="stage" style="gap:28px">
+<div class="h1" data-s="1" style="font-size:90px">🛡️ <span class="oro">REGULACIÓN</span></div>
+<div class="row" data-s="3"><div class="pill">💰 DINERO SEPARADO</div><div class="pill">📑 REPORTA CUENTAS</div><div class="pill">⚖️ RESPONDE</div></div>
+<div class="row">{r(4,'🇬🇧','FCA','Reino Unido')}{r(4,'🇦🇺','ASIC','Australia')}{r(4,'🇨🇾','CySEC','Chipre')}</div>
+<div class="p" data-s="5">Sin regulación = <b class="rojo">banco sin vigilancia</b></div>
+</div>"""
+
+
+def v3_verificar():
+    paso = lambda s, n, t: f'<div class="card" data-s="{s}" style="width:400px"><div class="big oro" style="font-size:80px">{n}</div><div class="val" style="font-size:34px">{t}</div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">⚠️ LOGOS FALSOS EXISTEN</div>
+<div class="row">{paso(2,'1','Entra a la web oficial del regulador')}{paso(2,'2','Busca nombre o nº de licencia')}{paso(2,'3','Compara con la web del bróker')}</div>
+<div class="h2" data-s="3">¿No aparece o el nombre es "parecido"? <span class="rojo">Aléjate</span></div>
+</div>"""
+
+
+def v3_colombia():
+    return f"""<div class="stage">
+<div class="ico" style="font-size:120px">🇨🇴</div>
+<div class="h2" data-s="0">Superintendencia <span class="oro">Financiera</span></div>
+<div class="card" data-s="1" style="width:1000px"><div class="val">📋 Advertencias sobre empresas <span class="rojo">sin autorización</span></div></div>
+<div class="p" data-s="2">Si aparece ahí: <b class="rojo">no le confíes tu plata</b></div>
+</div>"""
+
+
+def v3_alertas():
+    a = lambda s, n, i, t: f'<div class="card" data-s="{s}" style="width:470px;border-color:{ROJO}"><div class="lbl">Alerta {n}</div><div class="ico" style="margin:10px 0">{i}</div><div class="val" style="font-size:34px">{t}</div></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">🚩 SEÑALES DE ESTAFA</div>
+<div class="row">{a(2,1,'💸','Ganancias fijas o garantizadas')}{a(5,2,'⏰','Presión o "asesor" que opera por ti')}{a(7,3,'🔒','Problemas o cobros para retirar')}</div>
+<div class="h2" data-s="8">Ves una → <span class="rojo">sal de ahí</span></div>
+</div>"""
+
+
+def v3_clones():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">BRÓKERS CLONADOS</div>
+<div class="row" data-s="1"><div class="card" style="width:560px;border-color:{VERDE}"><div class="lbl">Real</div><div class="val" style="font-size:36px">brokerreal<span class="verde">.com</span></div></div><div class="card" style="width:560px;border-color:{ROJO}"><div class="lbl">Clon</div><div class="val" style="font-size:36px">brokerreal<span class="rojo">-pro.net</span></div></div></div>
+<div class="p" data-s="2">✍️ Escribe tú la dirección · <b class="rojo">nunca</b> desde enlaces de mensajes o redes</div>
+</div>"""
+
+
+def v3_checklist():
+    ck = lambda s, n, t: f'<div class="chk" data-s="{s}" style="font-size:40px"><b>{n}</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:20px"><div class="pill" data-s="0">✅ LISTA DE VERIFICACIÓN</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+{ck(1,'1','<span class="oro">Regulado</span> y confirmado en el regulador')}
+{ck(3,'2','Costos claros: spread, comisión, swap')}
+{ck(6,'3','Plataforma conocida (MetaTrader 5)')}
+{ck(8,'4','Cuenta demo gratis')}
+{ck(10,'5','Depósitos y retiros fáciles desde tu país')}
+{ck(12,'6','Soporte en español que sí responde')}
+</div></div>"""
+
+
+def v3_retiro():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">💡 CONSEJO DE ORO</div>
+<div class="h1" data-s="1" style="font-size:90px">Haz una <span class="oro">prueba de retiro</span></div>
+<div class="row" data-s="2"><div class="card"><div class="val">Deposita poco</div></div><div class="arrow">➜</div><div class="card"><div class="val">Opera un poco</div></div><div class="arrow">➜</div><div class="card"><div class="val oro">Retira</div></div></div>
+<div class="row"><div class="pill" data-s="3" style="border-color:{VERDE};color:{VERDE}">✅ LLEGA A TIEMPO</div><div class="pill" data-s="4" style="border-color:{ROJO};color:{ROJO}">❌ EXCUSAS = ALÉJATE</div></div>
+</div>"""
+
+
+def v3_verificacion():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">VERIFICACIÓN DE IDENTIDAD</div>
+<div class="row">
+<div class="card" data-s="1" style="width:580px;border-color:{VERDE}"><div class="val verde">✅ Normal</div><div class="p" style="font-size:30px;margin-top:10px">Foto del documento<br>Comprobante de dirección</div></div>
+<div class="card" data-s="3" style="width:580px;border-color:{ROJO}"><div class="val rojo">❌ Nunca</div><div class="p" style="font-size:30px;margin-top:10px">Claves del banco · tu correo<br>Programas de control remoto</div></div>
+</div></div>"""
+
+
+def v3_apalancamiento():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">APALANCAMIENTO</div>
+<div class="row" data-s="2" style="align-items:center"><div class="card"><div class="lbl">Tu dinero</div><div class="val">$100</div></div><div class="arrow">× 100</div><div class="card" style="border-color:{ORO}"><div class="lbl">Controlas</div><div class="val oro">$10.000</div></div></div>
+<div class="card" data-s="4" style="width:1000px;border-color:{ROJO}"><div class="val">Multiplica <span class="verde">ganancias</span> y <span class="rojo">pérdidas</span></div></div>
+<div class="p" data-s="5">Apalancamiento alto <b class="rojo">no es un regalo, es un riesgo</b></div>
+</div>"""
+
+
+def v3_demo():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}" style="font-size:44px"><b>✓</b><span>{t}</span></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">ANTES DE ELEGIR: DEMO EN 2 O 3 BRÓKERS</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+{ck(1,'Compara spreads: <span class="oro">mismo activo, misma hora</span>')}
+{ck(1,'Prueba la plataforma')}
+{ck(1,'Escríbele al soporte y mide la respuesta')}
+</div></div>"""
+
+
+def v3_error():
+    return f"""<div class="stage">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">ERROR COMÚN</div>
+<div class="row" data-s="0"><div class="card" style="width:480px"><div class="ico">🎁</div><div class="val">"Bono de bienvenida"</div></div><div class="card" style="width:480px"><div class="ico">🗣️</div><div class="val">"Me lo recomendaron"</div></div></div>
+<div class="p" data-s="1">Un bono grande <b class="rojo">no sirve si no te dejan retirar</b></div>
+<div class="h2" data-s="2">Te protege: <span class="oro">regulación + transparencia + tu verificación</span></div>
+</div>"""
+
+
+def v3_resumen():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}"><b>✓</b><span>{t}</span></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">RESUMEN</div>
+<div style="display:flex;flex-direction:column;gap:22px">
+{ck(1,'El bróker te conecta y guarda tu dinero')}
+{ck(2,'Gana con spread, comisión y swap')}
+{ck(3,'<span class="oro">Regulado</span> y verificado por ti')}
+{ck(4,'🚩 Garantías, presión, problemas al retirar')}
+{ck(5,'Haz siempre una prueba de retiro')}
+</div></div>"""
+
+
+def v3_cierre():
+    return f"""<div class="stage">
+<img src="{JV}" style="height:150px">
+<div class="lbl" data-s="0">Siguiente video</div>
+<div class="card" data-s="0" style="width:1150px"><div class="val">#4 · Cuenta demo vs real: <span class="oro">cuándo dar el salto</span></div></div>
+<div class="row" data-s="2"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">▶ SUSCRÍBETE</div><div class="pill">🔔 ACTIVA LA CAMPANITA</div></div>
+<div class="p" data-s="3">📅 ¿Dudas con tu bróker? Agenda conmigo · <b class="oro">link en la descripción</b></div>
+<div class="p" style="font-size:22px;color:#8a826c;margin-top:20px">Contenido educativo. No es recomendación de ningún bróker. El trading implica riesgo.</div>
+</div>"""
+
+
+# ---- Short 3 ----
+def s3_gancho():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="pill" style="border-color:{ROJO};color:{ROJO}">🚩 CUIDADO</div>
+<div class="h1" style="font-size:108px">3 señales de que tu bróker es <span class="rojo">estafa</span></div></div>"""
+
+
+def _s3(n, ico, t, sub=""):
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="big rojo" style="font-size:200px">{n}</div><div style="font-size:130px">{ico}</div>
+<div class="h2" style="font-size:72px">{t}</div>{f'<div class="p" data-s="1" style="font-size:44px">{sub}</div>' if sub else ''}</div>"""
+
+
+def s3_uno():
+    return _s3(1, '💸', 'Ganancias <span class="rojo">garantizadas</span>', 'Nadie puede garantizarlas')
+
+
+def s3_dos():
+    return _s3(2, '⏰', 'Presión o un "asesor" que <span class="rojo">opera por ti</span>')
+
+
+def s3_tres():
+    return _s3(3, '🔒', 'No te dejan <span class="rojo">retirar</span>', 'o te cobran para sacar tu plata')
+
+
+def s3_cta():
+    return s_cta()
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math
