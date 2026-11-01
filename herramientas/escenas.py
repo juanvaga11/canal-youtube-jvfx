@@ -815,6 +815,7 @@ def v3_comentarios():
 <div class="h2" data-s="0">¿Qué bróker usas?</div>
 <div class="h2" data-s="0">¿Ya hiciste tu <span class="oro">prueba de retiro</span>?</div>
 <div class="p" data-s="1">Cuéntame en los comentarios · <b class="oro">los leo todos</b></div>
+<div class="pill" data-s="3">📤 COMPÁRTELO CON QUIEN ESTÉ EMPEZANDO</div>
 </div>"""
 
 
