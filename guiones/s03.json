@@ -1,0 +1,12 @@
+{
+ "id": "s03",
+ "formato": "vertical",
+ "titulo": "3 señales de que tu bróker es una estafa",
+ "escenas": [
+  {"v":"s3_gancho","texto":"Tres señales de que tu bróker es una estafa."},
+  {"v":"s3_uno","texto":"Uno: te prometen ganancias fijas o garantizadas. En el trading real nadie puede garantizarlas."},
+  {"v":"s3_dos","texto":"Dos: te presionan para depositar, o un asesor quiere operar por ti."},
+  {"v":"s3_tres","texto":"Tres: no te dejan retirar, o te piden pagar algo extra para poder sacar tu plata."},
+  {"v":"s3_cta","texto":"Mira el video completo en mi canal. Y sígueme para más."}
+ ]
+}
