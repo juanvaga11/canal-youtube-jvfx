@@ -1,0 +1,12 @@
+{
+ "id": "s06",
+ "formato": "vertical",
+ "titulo": "Lo que te dice una mecha larga",
+ "escenas": [
+  {"v":"s6_gancho","texto":"¿Qué te está diciendo una mecha larga en una vela?"},
+  {"v":"s6_abajo","texto":"Mecha larga abajo: los vendedores empujaron, pero los compradores devolvieron el precio. Rechazo de precios bajos."},
+  {"v":"s6_arriba","texto":"Mecha larga arriba: los compradores intentaron subir, pero los vendedores lo rechazaron."},
+  {"v":"s6_ojo","texto":"Pero ojo: solo vale si aparece en una zona importante, y cuando la vela ya cerró."},
+  {"v":"s6_cta","texto":"Mira el video completo en mi canal. Y sígueme para más."}
+ ]
+}
