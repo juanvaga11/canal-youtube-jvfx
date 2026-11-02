@@ -1865,7 +1865,7 @@ def _g_lista(v):
         if tipo == "x": return f'<b style="background:{ROJO};color:#fff">✕</b>'
         if tipo == "check": return '<b>✓</b>'
         return f'<b>{i + 1}</b>'
-    items = "".join(f'<div class="chk" data-s="{sd}" style="font-size:{v.get("fs",54)}px">{ico(i)}<span>{t}</span></div>' for i, (sd, t) in enumerate(v["items"]))
+    items = "".join(f'<div class="chk" data-s="{sd}" style="font-size:{v.get("fs",68)}px;gap:30px">{ico(i).replace("<b", "<b style=\'width:84px;height:84px;font-size:46px\'", 1) if tipo != "x" else ico(i).replace("<b style=\"", "<b style=\"width:84px;height:84px;font-size:46px;", 1)}<span>{t}</span></div>' for i, (sd, t) in enumerate(v["items"]))
     pill = f'<div class="pill" style="font-size:40px;{"border-color:"+ROJO+";color:"+ROJO if tipo=="x" else ""}">{v["pill"]}</div>' if v.get("pill") else ""
     return f"""<div class="stage" style="top:200px;bottom:700px;gap:40px">{pill}<div style="display:flex;flex-direction:column;gap:34px">{items}</div></div>"""
 
@@ -1874,16 +1874,16 @@ def _g_vs(v):
     def card(c, sd):
         ico, tit, sub, col = c
         cc = _COL.get(col, ORO)
-        return f'<div class="card" data-s="{sd}" style="width:860px;border-color:{cc}"><div style="font-size:110px">{ico}</div><div class="val" style="color:{cc};font-size:66px">{tit}</div><div class="p" style="font-size:42px">{sub}</div></div>'
+        return f'<div class="card" data-s="{sd}" style="width:900px;border-color:{cc}"><div style="font-size:120px">{ico}</div><div class="val" style="color:{cc};font-size:76px">{tit}</div><div class="p" style="font-size:50px">{sub}</div></div>'
     pie = f'<div class="h2" data-s="{v.get("s_pie",2)}" style="font-size:58px">{v["pie"]}</div>' if v.get("pie") else ""
     pill = f'<div class="pill" style="font-size:40px">{v["pill"]}</div>' if v.get("pill") else ""
     return f"""<div class="stage" style="top:180px;bottom:640px;gap:34px">{pill}{card(v['a'], v.get('s_a',0))}{card(v['b'], v.get('s_b',1))}{pie}</div>"""
 
 
 def _g_texto(v):
-    sub = f'<div class="p" data-s="{v.get("s_sub",1)}" style="font-size:54px">{v["sub"]}</div>' if v.get("sub") else ""
-    emo = f'<div style="font-size:170px;line-height:1">{v["emoji"]}</div>' if v.get("emoji") else ""
-    return f"""<div class="stage" style="top:200px;bottom:700px;gap:40px">{emo}<div class="h2" style="font-size:{v.get('fs',84)}px">{v['titulo']}</div>{sub}</div>"""
+    sub = f'<div class="p" data-s="{v.get("s_sub",1)}" style="font-size:62px">{v["sub"]}</div>' if v.get("sub") else ""
+    emo = f'<div style="font-size:190px;line-height:1">{v["emoji"]}</div>' if v.get("emoji") else ""
+    return f"""<div class="stage" style="top:200px;bottom:700px;gap:40px">{emo}<div class="h2" style="font-size:{v.get('fs',96)}px">{v['titulo']}</div>{sub}</div>"""
 
 
 def _g_velas(v):

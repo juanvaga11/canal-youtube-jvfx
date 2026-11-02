@@ -83,7 +83,7 @@ def main(guion, salida):
     env = uniform_filter1d(np.abs(voz), int(0.35 * SR))
     hay_voz = np.clip(env / 0.02, 0, 1)
     fondo = MU.musica(len(voz) / SR, seed=hash(d["id"]) % 100)
-    fondo = fondo[:len(voz)] * (0.30 - 0.20 * hay_voz)
+    fondo = np.pad(fondo, (0, max(0, len(voz) - len(fondo))))[:len(voz)] * (0.30 - 0.20 * hay_voz)
     if intro_ini is not None:
         sfx = np.concatenate([MU.whoosh(0.7) * 0.5, MU.brillo_logo() * 0.9])
         k = int(max(intro_ini - 0.2, 0) * SR)
