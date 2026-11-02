@@ -1,0 +1,68 @@
+{
+ "id": "s24",
+ "formato": "vertical",
+ "titulo": "Vela envolvente en 20 segundos",
+ "desde": "v06",
+ "escenas": [
+  {
+   "v": "s24_a",
+   "texto": "La vela envolvente en veinte segundos.",
+   "vis": {
+    "t": "velas",
+    "pill": "VELA ENVOLVENTE",
+    "velas": [
+     [
+      60,
+      45,
+      63,
+      42
+     ],
+     [
+      43,
+      66,
+      69,
+      41
+     ]
+    ],
+    "w": 560
+   }
+  },
+  {
+   "v": "s24_b",
+   "texto": "Es cuando el cuerpo de una vela cubre por completo al de la anterior.",
+   "vis": {
+    "t": "texto",
+    "titulo": "El cuerpo nuevo <span class='oro'>cubre</span> al anterior",
+    "emoji": "🫂"
+   }
+  },
+  {
+   "v": "s24_c",
+   "texto": "Verde que envuelve a roja: compradores al mando. Roja que envuelve a verde: vendedores al mando.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "🟢",
+     "Alcista",
+     "Compradores al mando",
+     "verde"
+    ],
+    "b": [
+     "🔴",
+     "Bajista",
+     "Vendedores al mando",
+     "rojo"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s24_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

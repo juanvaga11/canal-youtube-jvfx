@@ -1,0 +1,47 @@
+{
+ "id": "s27",
+ "formato": "vertical",
+ "titulo": "Por qué tu operación empieza en negativo",
+ "desde": "v07",
+ "escenas": [
+  {
+   "v": "s27_a",
+   "texto": "¿Por qué tu operación empieza en negativo?",
+   "vis": {
+    "t": "big",
+    "big": "−0.12",
+    "color": "rojo",
+    "sub": "¿Por qué?",
+    "s_sub": 0,
+    "fs": 200
+   }
+  },
+  {
+   "v": "s27_b",
+   "texto": "Por el spread: la diferencia entre el precio de compra y el de venta.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Es el <span class='oro'>spread</span>",
+    "sub": "Compra (ask) − venta (bid)",
+    "s_sub": 0,
+    "emoji": "↔️"
+   }
+  },
+  {
+   "v": "s27_c",
+   "texto": "No es un error: es el costo de entrar. El precio tiene que cubrirlo primero.",
+   "vis": {
+    "t": "texto",
+    "titulo": "No es un error: <span class='oro'>es el costo de entrar</span>",
+    "emoji": "🎟️"
+   }
+  },
+  {
+   "v": "s27_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

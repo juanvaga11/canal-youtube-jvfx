@@ -1,0 +1,65 @@
+{
+ "id": "s11",
+ "formato": "vertical",
+ "titulo": "Forex en 20 segundos",
+ "desde": "v02",
+ "escenas": [
+  {
+   "v": "s11_a",
+   "texto": "¿Qué es forex? Te lo explico en veinte segundos.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "💱",
+    "titulo": "Forex en <span class='oro'>20 segundos</span>"
+   }
+  },
+  {
+   "v": "s11_b",
+   "texto": "Es el mercado de divisas: monedas que se compran y se venden en pares, como el euro dólar.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Monedas en <span class='oro'>pares</span>",
+    "sub": "EUR / USD",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s11_c",
+   "texto": "Si crees que el euro se va a fortalecer frente al dólar, compras. Si crees que se va a debilitar, vendes.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "📈",
+     "Euro más fuerte",
+     "Compras",
+     "verde"
+    ],
+    "b": [
+     "📉",
+     "Euro más débil",
+     "Vendes",
+     "rojo"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s11_d",
+   "texto": "Y abre veinticuatro horas, de lunes a viernes.",
+   "vis": {
+    "t": "big",
+    "big": "24/5",
+    "sub": "Lunes a viernes",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s11_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

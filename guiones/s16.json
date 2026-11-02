@@ -1,0 +1,62 @@
+{
+ "id": "s16",
+ "formato": "vertical",
+ "titulo": "Haz esta prueba antes de depositar mucho",
+ "desde": "v03",
+ "escenas": [
+  {
+   "v": "s16_a",
+   "texto": "Haz esta prueba antes de depositar mucho dinero en un bróker.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🧪",
+    "titulo": "La prueba <span class='oro'>antes de depositar</span>"
+   }
+  },
+  {
+   "v": "s16_b",
+   "texto": "Deposita poco. Y haz un retiro pequeño.",
+   "vis": {
+    "t": "lista",
+    "items": [
+     [
+      0,
+      "Deposita poco"
+     ],
+     [
+      1,
+      "Haz un retiro pequeño"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s16_c",
+   "texto": "Si el dinero llega rápido y sin excusas, buena señal. Si te ponen trabas, aléjate.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "✅",
+     "Llega rápido",
+     "Buena señal",
+     "verde"
+    ],
+    "b": [
+     "🚩",
+     "Te ponen trabas",
+     "Aléjate",
+     "rojo"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s16_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

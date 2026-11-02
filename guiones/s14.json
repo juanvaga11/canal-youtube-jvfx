@@ -1,0 +1,54 @@
+{
+ "id": "s14",
+ "formato": "vertical",
+ "titulo": "Cómo saber si tu bróker está regulado",
+ "desde": "v03",
+ "escenas": [
+  {
+   "v": "s14_a",
+   "texto": "¿Cómo saber si tu bróker está regulado de verdad?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🔍",
+    "titulo": "¿Tu bróker está <span class='oro'>regulado</span>?"
+   }
+  },
+  {
+   "v": "s14_b",
+   "texto": "Busca el número de licencia en su página. Entra a la web oficial del regulador. Y confirma que el nombre y el dominio coincidan.",
+   "vis": {
+    "t": "lista",
+    "items": [
+     [
+      0,
+      "Busca el número de licencia"
+     ],
+     [
+      1,
+      "Entra a la web del regulador"
+     ],
+     [
+      2,
+      "Confirma nombre y dominio"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s14_c",
+   "texto": "Si no aparece, no deposites.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Si no aparece: <span class='rojo'>no deposites</span>",
+    "emoji": "🚫"
+   }
+  },
+  {
+   "v": "s14_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

@@ -1842,6 +1842,80 @@ def t_cta():
 ESCENAS = {k: v for k, v in globals().items() if callable(v) and not k.startswith("_")}
 
 
+# ---------- Plantillas genéricas para Shorts (escena con "vis" en el guion) ----------
+_COL = {"verde": VERDE, "rojo": ROJO, "oro": ORO}
+
+
+def _g_gancho(v):
+    emo = f'<div style="font-size:200px;line-height:1">{v["emoji"]}</div>' if v.get("emoji") else ""
+    pill = f'<div class="pill" style="font-size:40px">{v["pill"]}</div>' if v.get("pill") else ""
+    return f"""<div class="stage" style="top:200px;bottom:700px">{pill}{emo}<div class="h1" style="font-size:{v.get('fs',104)}px">{v['titulo']}</div></div>"""
+
+
+def _g_big(v):
+    c = _COL.get(v.get("color", "oro"), ORO)
+    sub = f'<div class="h2" data-s="{v.get("s_sub",1)}" style="font-size:66px">{v["sub"]}</div>' if v.get("sub") else ""
+    pill = f'<div class="pill" style="font-size:40px">{v["pill"]}</div>' if v.get("pill") else ""
+    return f"""<div class="stage" style="top:200px;bottom:700px">{pill}<div class="big" style="font-size:{v.get('fs',230)}px;color:{c}">{v['big']}</div>{sub}</div>"""
+
+
+def _g_lista(v):
+    tipo = v.get("tipo", "num")
+    def ico(i):
+        if tipo == "x": return f'<b style="background:{ROJO};color:#fff">✕</b>'
+        if tipo == "check": return '<b>✓</b>'
+        return f'<b>{i + 1}</b>'
+    items = "".join(f'<div class="chk" data-s="{sd}" style="font-size:{v.get("fs",54)}px">{ico(i)}<span>{t}</span></div>' for i, (sd, t) in enumerate(v["items"]))
+    pill = f'<div class="pill" style="font-size:40px;{"border-color:"+ROJO+";color:"+ROJO if tipo=="x" else ""}">{v["pill"]}</div>' if v.get("pill") else ""
+    return f"""<div class="stage" style="top:200px;bottom:700px;gap:40px">{pill}<div style="display:flex;flex-direction:column;gap:34px">{items}</div></div>"""
+
+
+def _g_vs(v):
+    def card(c, sd):
+        ico, tit, sub, col = c
+        cc = _COL.get(col, ORO)
+        return f'<div class="card" data-s="{sd}" style="width:860px;border-color:{cc}"><div style="font-size:110px">{ico}</div><div class="val" style="color:{cc};font-size:66px">{tit}</div><div class="p" style="font-size:42px">{sub}</div></div>'
+    pie = f'<div class="h2" data-s="{v.get("s_pie",2)}" style="font-size:58px">{v["pie"]}</div>' if v.get("pie") else ""
+    pill = f'<div class="pill" style="font-size:40px">{v["pill"]}</div>' if v.get("pill") else ""
+    return f"""<div class="stage" style="top:180px;bottom:640px;gap:34px">{pill}{card(v['a'], v.get('s_a',0))}{card(v['b'], v.get('s_b',1))}{pie}</div>"""
+
+
+def _g_texto(v):
+    sub = f'<div class="p" data-s="{v.get("s_sub",1)}" style="font-size:54px">{v["sub"]}</div>' if v.get("sub") else ""
+    emo = f'<div style="font-size:170px;line-height:1">{v["emoji"]}</div>' if v.get("emoji") else ""
+    return f"""<div class="stage" style="top:200px;bottom:700px;gap:40px">{emo}<div class="h2" style="font-size:{v.get('fs',84)}px">{v['titulo']}</div>{sub}</div>"""
+
+
+def _g_velas(v):
+    sub = f'<div class="h2" data-s="{v.get("s_sub",1)}" style="font-size:66px">{v["sub"]}</div>' if v.get("sub") else ""
+    pill = f'<div class="pill" style="font-size:40px">{v["pill"]}</div>' if v.get("pill") else ""
+    return f"""<div class="stage" style="top:200px;bottom:700px;gap:30px">{pill}<div>{_velas([tuple(x) for x in v['velas']], w=v.get('w',820), h=v.get('h',560), resaltar=v.get('resaltar'), zona=tuple(v['zona']) if v.get('zona') else None, ancho=v.get('ancho',.55))}</div>{sub}</div>"""
+
+
+def _g_ruta(v):
+    sub = f'<div class="h2" data-s="{v.get("s_sub",1)}" style="font-size:66px">{v["sub"]}</div>' if v.get("sub") else ""
+    pill = f'<div class="pill" style="font-size:40px">{v["pill"]}</div>' if v.get("pill") else ""
+    lin = [tuple(x) for x in v.get("lineas", [])]
+    lin = [(a, b, _COL.get(c, c), d) for a, b, c, d in lin]
+    return f"""<div class="stage" style="top:200px;bottom:700px;gap:30px">{pill}<div>{_ruta(v['pts'], lin, w=900, h=560, col=_COL.get(v.get('color'), None))}</div>{sub}</div>"""
+
+
+_PLANT = {"gancho": _g_gancho, "big": _g_big, "lista": _g_lista, "vs": _g_vs, "texto": _g_texto, "velas": _g_velas, "ruta": _g_ruta, "cta": lambda v: s_cta()}
+
+
+def _registrar_vis():
+    import glob, json
+    base = os.path.join(os.path.dirname(__file__), "..", "guiones")
+    for g in glob.glob(os.path.join(base, "*.json")):
+        for e in json.load(open(g, encoding="utf-8"))["escenas"]:
+            if "vis" in e:
+                vis = e["vis"]
+                ESCENAS[e["v"]] = (lambda vv: (lambda: _PLANT[vv["t"]](vv)))(vis)
+
+
+_registrar_vis()
+
+
 def pagina(nombre, paso, w, h):
     cuerpo = ESCENAS[nombre]()
     vertical = h > w

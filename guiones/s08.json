@@ -1,0 +1,67 @@
+{
+ "id": "s08",
+ "formato": "vertical",
+ "titulo": "El trading NO es esto",
+ "desde": "v01",
+ "escenas": [
+  {
+   "v": "s08_a",
+   "texto": "El trading no es lo que te venden en redes.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🚫",
+    "titulo": "El trading <span class='rojo'>NO</span> es esto"
+   }
+  },
+  {
+   "v": "s08_b",
+   "texto": "No es magia. No es suerte. Y no es dinero rápido.",
+   "vis": {
+    "t": "lista",
+    "tipo": "x",
+    "items": [
+     [
+      0,
+      "No es magia"
+     ],
+     [
+      1,
+      "No es suerte"
+     ],
+     [
+      2,
+      "No es dinero rápido"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s08_c",
+   "texto": "Es una habilidad: se aprende, se practica y se mide.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Es una <span class='oro'>habilidad</span>",
+    "sub": "Se aprende · se practica · se mide",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s08_d",
+   "texto": "Y como toda habilidad, empieza desde cero.",
+   "vis": {
+    "t": "big",
+    "big": "0 → 💯",
+    "sub": "Empieza <span class='oro'>desde cero</span>",
+    "s_sub": 0,
+    "fs": 200
+   }
+  },
+  {
+   "v": "s08_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

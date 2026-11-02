@@ -1,0 +1,52 @@
+{
+ "id": "s12",
+ "formato": "vertical",
+ "titulo": "Índices sintéticos: lo que nadie te dice",
+ "desde": "v02",
+ "escenas": [
+  {
+   "v": "s12_a",
+   "texto": "Índices sintéticos: lo que nadie te dice.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "⚡",
+    "titulo": "Índices <span class='oro'>sintéticos</span>: lo que nadie te dice"
+   }
+  },
+  {
+   "v": "s12_b",
+   "texto": "Funcionan todos los días, incluso fines de semana. Y no les afectan las noticias.",
+   "vis": {
+    "t": "lista",
+    "tipo": "check",
+    "items": [
+     [
+      0,
+      "Abren 7 días a la semana"
+     ],
+     [
+      1,
+      "Sin noticias económicas"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s12_c",
+   "texto": "Pero ojo: se mueven muy rápido, así que el riesgo también es alto. Practica primero en demo.",
+   "vis": {
+    "t": "texto",
+    "titulo": "⚠️ Se mueven <span class='rojo'>muy rápido</span>",
+    "sub": "Practica primero en demo",
+    "s_sub": 1
+   }
+  },
+  {
+   "v": "s12_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

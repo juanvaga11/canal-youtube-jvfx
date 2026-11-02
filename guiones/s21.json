@@ -1,0 +1,64 @@
+{
+ "id": "s21",
+ "formato": "vertical",
+ "titulo": "Nunca descargues MetaTrader de aquí",
+ "desde": "v05",
+ "escenas": [
+  {
+   "v": "s21_a",
+   "texto": "Nunca descargues MetaTrader desde aquí.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "⚠️",
+    "titulo": "Nunca descargues MetaTrader <span class='rojo'>de aquí</span>"
+   }
+  },
+  {
+   "v": "s21_b",
+   "texto": "Enlaces que te mandan por mensaje o redes. Y versiones modificadas.",
+   "vis": {
+    "t": "lista",
+    "tipo": "x",
+    "items": [
+     [
+      0,
+      "Links por mensaje o redes"
+     ],
+     [
+      1,
+      "Versiones modificadas"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s21_c",
+   "texto": "Solo de la web oficial de tu bróker o de MetaTrader. Y en el celular, del desarrollador MetaQuotes.",
+   "vis": {
+    "t": "lista",
+    "tipo": "check",
+    "items": [
+     [
+      0,
+      "Web oficial del bróker"
+     ],
+     [
+      0,
+      "Web oficial de MetaTrader"
+     ],
+     [
+      1,
+      "Celular: MetaQuotes"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s21_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

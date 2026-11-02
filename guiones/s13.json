@@ -1,0 +1,42 @@
+{
+ "id": "s13",
+ "formato": "vertical",
+ "titulo": "Por qué tantos traders operan el oro",
+ "desde": "v02",
+ "escenas": [
+  {
+   "v": "s13_a",
+   "texto": "¿Por qué tantos traders operan el oro?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🥇",
+    "titulo": "¿Por qué todos operan el <span class='oro'>ORO</span>?"
+   }
+  },
+  {
+   "v": "s13_b",
+   "texto": "Porque se mueve mucho en poco tiempo, y eso da oportunidades todos los días.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Se mueve <span class='oro'>mucho</span> en poco tiempo",
+    "emoji": "🎢"
+   }
+  },
+  {
+   "v": "s13_c",
+   "texto": "Pero esa misma fuerza es un arma de doble filo: sin stop loss, puede quemar tu cuenta en minutos.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Sin stop loss = <span class='rojo'>cuenta quemada</span>",
+    "emoji": "🔥"
+   }
+  },
+  {
+   "v": "s13_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "s28",
+ "formato": "vertical",
+ "titulo": "Por mercado vs orden pendiente",
+ "desde": "v07",
+ "escenas": [
+  {
+   "v": "s28_a",
+   "texto": "¿Entrar ya o esperar? Las dos formas de abrir una operación.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "⏱️",
+    "titulo": "¿Entrar <span class='oro'>ya</span> o <span class='oro'>esperar</span>?"
+   }
+  },
+  {
+   "v": "s28_b",
+   "texto": "Por mercado: entras al instante, al precio actual. Orden pendiente: entras solo cuando el precio llega a tu nivel.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "⚡",
+     "Por mercado",
+     "Al instante",
+     "oro"
+    ],
+    "b": [
+     "⏳",
+     "Pendiente",
+     "Cuando llega a tu nivel",
+     "verde"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s28_c",
+   "texto": "Los traders pacientes usan más las pendientes.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Los pacientes usan <span class='verde'>pendientes</span>",
+    "emoji": "🧘"
+   }
+  },
+  {
+   "v": "s28_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

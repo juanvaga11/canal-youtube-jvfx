@@ -1,0 +1,54 @@
+{
+ "id": "s09",
+ "formato": "vertical",
+ "titulo": "Trading vs inversión en 20 segundos",
+ "desde": "v01",
+ "escenas": [
+  {
+   "v": "s09_a",
+   "texto": "¿Trading o inversión? No son lo mismo.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🤔",
+    "titulo": "¿Trading o <span class='oro'>inversión</span>?"
+   }
+  },
+  {
+   "v": "s09_b",
+   "texto": "Inversión: compras y esperas meses o años. Trading: entras y sales en minutos, horas o días.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "🌳",
+     "Inversión",
+     "Meses o años",
+     "verde"
+    ],
+    "b": [
+     "⚡",
+     "Trading",
+     "Minutos, horas o días",
+     "oro"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s09_c",
+   "texto": "Y en trading puedes ganar cuando el precio sube, y también cuando baja.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Ganas si <span class='verde'>sube</span> y si <span class='rojo'>baja</span>",
+    "emoji": "📈📉"
+   }
+  },
+  {
+   "v": "s09_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "id": "s26",
+ "formato": "vertical",
+ "titulo": "Buy Limit vs Buy Stop",
+ "desde": "v07",
+ "escenas": [
+  {
+   "v": "s26_a",
+   "texto": "Buy Limit o Buy Stop: no te vuelvas a confundir.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🤯",
+    "titulo": "Buy Limit vs <span class='oro'>Buy Stop</span>"
+   }
+  },
+  {
+   "v": "s26_b",
+   "texto": "Buy Limit: compras más abajo del precio actual, esperando un retroceso.",
+   "vis": {
+    "t": "ruta",
+    "pill": "BUY LIMIT",
+    "pts": [
+     60,
+     55,
+     48,
+     41,
+     47,
+     56,
+     64
+    ],
+    "lineas": [
+     [
+      41,
+      "COMPRA",
+      "verde",
+      0
+     ]
+    ],
+    "sub": "Debajo · espera un <span class='oro'>retroceso</span>",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s26_c",
+   "texto": "Buy Stop: compras más arriba, solo si el precio rompe.",
+   "vis": {
+    "t": "ruta",
+    "pill": "BUY STOP",
+    "pts": [
+     44,
+     50,
+     46,
+     52,
+     48,
+     58,
+     66
+    ],
+    "lineas": [
+     [
+      54,
+      "COMPRA",
+      "verde",
+      0
+     ]
+    ],
+    "sub": "Encima · espera una <span class='oro'>ruptura</span>",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s26_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

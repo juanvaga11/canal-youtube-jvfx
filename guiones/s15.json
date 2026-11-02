@@ -1,0 +1,55 @@
+{
+ "id": "s15",
+ "formato": "vertical",
+ "titulo": "El bróker clon: la estafa más peligrosa",
+ "desde": "v03",
+ "escenas": [
+  {
+   "v": "s15_a",
+   "texto": "La estafa más peligrosa: el bróker clon.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🎭",
+    "titulo": "El bróker <span class='rojo'>CLON</span>"
+   }
+  },
+  {
+   "v": "s15_b",
+   "texto": "Copian el nombre, el logo y hasta la licencia de un bróker real. Pero la página es otra.",
+   "vis": {
+    "t": "lista",
+    "tipo": "x",
+    "items": [
+     [
+      0,
+      "Copian nombre y logo"
+     ],
+     [
+      0,
+      "Hasta la licencia"
+     ],
+     [
+      1,
+      "Pero la web es otra"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s15_c",
+   "texto": "Por eso siempre verifica el dominio exacto en la página del regulador.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Verifica el <span class='oro'>dominio exacto</span>",
+    "emoji": "🔗"
+   }
+  },
+  {
+   "v": "s15_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

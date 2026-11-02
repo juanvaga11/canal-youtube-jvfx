@@ -1,0 +1,55 @@
+{
+ "id": "s17",
+ "formato": "vertical",
+ "titulo": "3 señales de que estás listo para la cuenta real",
+ "desde": "v04",
+ "escenas": [
+  {
+   "v": "s17_a",
+   "texto": "Tres señales de que estás listo para pasar a cuenta real.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🚦",
+    "titulo": "3 señales de que estás <span class='verde'>listo</span>"
+   }
+  },
+  {
+   "v": "s17_b",
+   "texto": "Llevas al menos dos meses en demo con resultados estables. Siempre usas stop loss. Y tienes un diario de trading.",
+   "vis": {
+    "t": "lista",
+    "tipo": "check",
+    "items": [
+     [
+      0,
+      "2+ meses estables en demo"
+     ],
+     [
+      1,
+      "Siempre usas stop loss"
+     ],
+     [
+      2,
+      "Llevas un diario"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s17_c",
+   "texto": "Si te falta una, todavía no.",
+   "vis": {
+    "t": "texto",
+    "titulo": "¿Te falta una? <span class='rojo'>Todavía no</span>",
+    "emoji": "⏳"
+   }
+  },
+  {
+   "v": "s17_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

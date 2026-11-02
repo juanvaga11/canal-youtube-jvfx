@@ -1,0 +1,86 @@
+{
+ "id": "s23",
+ "formato": "vertical",
+ "titulo": "Cómo reconocer un martillo",
+ "desde": "v06",
+ "escenas": [
+  {
+   "v": "s23_a",
+   "texto": "Cómo reconocer un martillo en el gráfico.",
+   "vis": {
+    "t": "velas",
+    "pill": "🔨 EL MARTILLO",
+    "velas": [
+     [
+      80,
+      72,
+      82,
+      70
+     ],
+     [
+      72,
+      63,
+      74,
+      60
+     ],
+     [
+      63,
+      52,
+      65,
+      50
+     ],
+     [
+      52,
+      44,
+      54,
+      41
+     ],
+     [
+      41,
+      44,
+      45,
+      22
+     ]
+    ],
+    "resaltar": 4
+   }
+  },
+  {
+   "v": "s23_b",
+   "texto": "Cuerpo pequeño arriba. Mecha abajo de al menos dos veces el cuerpo. Y aparece después de una caída.",
+   "vis": {
+    "t": "lista",
+    "items": [
+     [
+      0,
+      "Cuerpo pequeño arriba"
+     ],
+     [
+      1,
+      "Mecha abajo ≥ 2× cuerpo"
+     ],
+     [
+      2,
+      "Después de una caída"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s23_c",
+   "texto": "Te dice que los vendedores perdieron fuerza.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Vendedores <span class='rojo'>sin fuerza</span>",
+    "emoji": "🪫"
+   }
+  },
+  {
+   "v": "s23_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

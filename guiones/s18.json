@@ -1,0 +1,53 @@
+{
+ "id": "s18",
+ "formato": "vertical",
+ "titulo": "Lo que la cuenta demo no te enseña",
+ "desde": "v04",
+ "escenas": [
+  {
+   "v": "s18_a",
+   "texto": "La cuenta demo no te enseña esto.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🎮",
+    "titulo": "Lo que la demo <span class='rojo'>NO</span> te enseña"
+   }
+  },
+  {
+   "v": "s18_b",
+   "texto": "Las emociones. En demo no sientes miedo ni ansiedad, porque el dinero no es real.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Las <span class='oro'>emociones</span>",
+    "sub": "Sin dinero real no hay miedo",
+    "s_sub": 1,
+    "emoji": "😰"
+   }
+  },
+  {
+   "v": "s18_c",
+   "texto": "Por eso, cuando pases a real, empieza con poco dinero y con las mismas reglas.",
+   "vis": {
+    "t": "lista",
+    "tipo": "check",
+    "items": [
+     [
+      0,
+      "Empieza con poco"
+     ],
+     [
+      0,
+      "Mismas reglas"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s18_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

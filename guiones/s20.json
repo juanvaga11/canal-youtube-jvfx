@@ -1,0 +1,45 @@
+{
+ "id": "s20",
+ "formato": "vertical",
+ "titulo": "Contraseña principal vs de inversor",
+ "desde": "v05",
+ "escenas": [
+  {
+   "v": "s20_a",
+   "texto": "MetaTrader te da dos contraseñas. ¿Cuál compartes?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🔐",
+    "titulo": "¿Cuál contraseña <span class='oro'>compartes</span>?"
+   }
+  },
+  {
+   "v": "s20_b",
+   "texto": "La principal permite operar: nunca la compartas. La de inversor solo deja ver, sin operar.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "🔑",
+     "Principal",
+     "Opera · nunca la compartas",
+     "rojo"
+    ],
+    "b": [
+     "👁️",
+     "De inversor",
+     "Solo ver · sin operar",
+     "verde"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s20_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "id": "s10",
+ "formato": "vertical",
+ "titulo": "Por qué 7 de cada 10 traders pierden",
+ "desde": "v01",
+ "escenas": [
+  {
+   "v": "s10_a",
+   "texto": "Siete de cada diez principiantes pierden dinero. ¿Por qué?",
+   "vis": {
+    "t": "big",
+    "big": "7/10",
+    "color": "rojo",
+    "sub": "principiantes <span class='rojo'>pierden</span>",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s10_b",
+   "texto": "Operan sin plan. No usan stop loss. Y dejan que las emociones decidan.",
+   "vis": {
+    "t": "lista",
+    "tipo": "x",
+    "pill": "LAS 3 RAZONES",
+    "items": [
+     [
+      0,
+      "Operan sin plan"
+     ],
+     [
+      1,
+      "No usan stop loss"
+     ],
+     [
+      2,
+      "Deciden con emociones"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s10_c",
+   "texto": "Arregla esas tres cosas y ya estás por delante de la mayoría.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Arregla eso y ya estás <span class='oro'>por delante</span>",
+    "emoji": "🏁"
+   }
+  },
+  {
+   "v": "s10_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "s19",
+ "formato": "vertical",
+ "titulo": "Pasa de demo a real sin quemar la cuenta",
+ "desde": "v04",
+ "escenas": [
+  {
+   "v": "s19_a",
+   "texto": "Cómo pasar de demo a real sin quemar tu cuenta.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🔥",
+    "titulo": "De demo a real <span class='oro'>sin quemarte</span>"
+   }
+  },
+  {
+   "v": "s19_b",
+   "texto": "Empieza con el volumen más pequeño. Arriesga muy poco por operación. Y sube solo cuando lleves un mes estable.",
+   "vis": {
+    "t": "lista",
+    "items": [
+     [
+      0,
+      "Volumen mínimo"
+     ],
+     [
+      1,
+      "Riesgo muy bajo"
+     ],
+     [
+      2,
+      "Sube tras 1 mes estable"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s19_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "s25",
+ "formato": "vertical",
+ "titulo": "El error #1 al leer velas",
+ "desde": "v06",
+ "escenas": [
+  {
+   "v": "s25_a",
+   "texto": "El error número uno al leer velas.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🕯️",
+    "titulo": "El error <span class='rojo'>#1</span> al leer velas"
+   }
+  },
+  {
+   "v": "s25_b",
+   "texto": "Decidir antes de que la vela cierre.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Decidir <span class='rojo'>antes del cierre</span>",
+    "emoji": "⏳"
+   }
+  },
+  {
+   "v": "s25_c",
+   "texto": "Un martillo puede terminar siendo una vela roja gigante en el último minuto.",
+   "vis": {
+    "t": "velas",
+    "velas": [
+     [
+      40,
+      22,
+      47,
+      20
+     ]
+    ],
+    "w": 300,
+    "ancho": 0.5,
+    "sub": "“Era un martillo”… <span class='rojo'>ya no</span>",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s25_d",
+   "texto": "Siempre espera el cierre.",
+   "vis": {
+    "t": "texto",
+    "titulo": "Siempre <span class='oro'>espera el cierre</span>",
+    "emoji": "✅"
+   }
+  },
+  {
+   "v": "s25_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

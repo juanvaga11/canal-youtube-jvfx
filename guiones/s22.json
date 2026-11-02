@@ -1,0 +1,66 @@
+{
+ "id": "s22",
+ "formato": "vertical",
+ "titulo": "Temporalidades en 20 segundos",
+ "desde": "v05",
+ "escenas": [
+  {
+   "v": "s22_a",
+   "texto": "¿Qué son las temporalidades en trading?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "⏱️",
+    "titulo": "Temporalidades en <span class='oro'>20 segundos</span>"
+   }
+  },
+  {
+   "v": "s22_b",
+   "texto": "Es cuánto tiempo representa cada vela. M15 son quince minutos, H1 una hora, D1 un día.",
+   "vis": {
+    "t": "lista",
+    "items": [
+     [
+      1,
+      "M15 = 15 minutos"
+     ],
+     [
+      1,
+      "H1 = 1 hora"
+     ],
+     [
+      1,
+      "D1 = 1 día"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s22_c",
+   "texto": "Las altas te dan el panorama. Las bajas, el detalle.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "🔭",
+     "Altas",
+     "El panorama",
+     "oro"
+    ],
+    "b": [
+     "🔬",
+     "Bajas",
+     "El detalle",
+     "oro"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s22_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}
