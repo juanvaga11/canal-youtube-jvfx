@@ -1355,6 +1355,7 @@ def v6_doji():
 <div class="pill" data-s="0">PATRÓN 1 · DOJI</div>
 <div data-s="1">{_velas([(50, 50.6, 85, 15)], w=220, h=400, ancho=.5)}</div>
 <div class="h2" data-s="3">⚖️ <span class="oro">Indecisión</span>: empate entre compradores y vendedores</div>
+<div class="p" data-s="6">Tras una tendencia larga: <b class="oro">posible agotamiento</b></div>
 </div>"""
 
 
@@ -1429,6 +1430,13 @@ def v6_ejercicio():
     return f"""<div class="stage" style="gap:18px"><div class="pill" data-s="0">📝 EJERCICIO</div>
 <div data-s="1" style="display:flex;flex-direction:column;gap:14px">{ck(1,'Euro dólar en H1')}{ck(2,'3 velas de cuerpo grande')}{ck(3,'3 velas con mechas largas')}{ck(4,'1 doji')}</div>
 <div class="h2" data-s="3" style="font-size:52px">¿Quién ganó la pelea, <span class="oro">y con cuánta fuerza</span>?</div></div>"""
+
+
+def v6_ejercicio2():
+    return f"""<div class="stage">
+<div class="row" data-s="0"><div class="card" style="width:360px"><div class="val oro">D1</div><div class="lbl">La historia grande</div></div><div class="card" style="width:360px"><div class="val oro">H1</div><div class="lbl">Tu ejercicio</div></div><div class="card" style="width:360px"><div class="val oro">M15</div><div class="lbl">Los detalles</div></div></div>
+<div class="pill" data-s="2" style="border-color:{VERDE};color:{VERDE}">🧪 SOLO EN CUENTA DEMO</div>
+</div>"""
 
 
 def v6_comentarios():

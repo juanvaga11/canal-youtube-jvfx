@@ -61,7 +61,7 @@
   },
   {
    "v": "v6_doji",
-   "texto": "Ahora, los patrones más importantes. El primero es el doji. Es una vela donde la apertura y el cierre quedaron casi en el mismo precio, así que el cuerpo es una rayita. El doji muestra indecisión: compradores y vendedores quedaron empatados."
+   "texto": "Ahora, los patrones más importantes. El primero es el doji. Es una vela donde la apertura y el cierre quedaron casi en el mismo precio, así que el cuerpo es una rayita. El doji muestra indecisión: compradores y vendedores quedaron empatados. Ahora, un doji solo, en medio de un movimiento, no te dice mucho. Pero después de una tendencia larga, puede avisarte que ese movimiento se está agotando."
   },
   {
    "v": "v6_martillo",
@@ -94,6 +94,10 @@
   {
    "v": "v6_ejercicio",
    "texto": "Te dejo un ejercicio. Abre el gráfico del euro dólar en la temporalidad de una hora. Busca tres velas con cuerpo grande, tres con mechas largas y un doji. Para cada una, pregúntate: ¿quién ganó la pelea aquí, compradores o vendedores, y con cuánta fuerza? Ese hábito te va a cambiar la forma de ver el gráfico."
+  },
+  {
+   "v": "v6_ejercicio2",
+   "texto": "Cuando ya los encuentres en el gráfico de una hora, repite el ejercicio en el diario y en el de quince minutos. Vas a notar que la temporalidad alta te cuenta la historia grande, y la baja te muestra los detalles. Y todo esto lo practicas en tu cuenta demo, todavía sin dinero real."
   },
   {
    "v": "v6_comentarios",
