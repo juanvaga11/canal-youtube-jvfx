@@ -1537,6 +1537,246 @@ def s6_cta():
     return s_cta()
 
 
+# ---------- Video 7: compras y ventas ----------
+def _ruta(pts, lineas=(), w=760, h=420, col=None, sd_lineas=None, rango=None):
+    """pts: precios del recorrido. lineas: [(precio, texto, color, s)]"""
+    vals = list(pts) + [l[0] for l in lineas]
+    mn, mx = (rango if rango else (min(vals), max(vals)))
+    pad = (mx - mn) * .12 + .001; mn -= pad; mx += pad
+    y = lambda v: (mx - v) / (mx - mn) * h
+    wl = w - 240
+    xs = [i * wl / (len(pts) - 1) for i in range(len(pts))]
+    c = col or (VERDE if pts[-1] >= pts[0] else ROJO)
+    out = [f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" style="overflow:visible">']
+    for (v, t, lc, sd) in lineas:
+        out.append(f'<g data-s="{sd}"><line x1="0" x2="{wl + 20}" y1="{y(v)}" y2="{y(v)}" stroke="{lc}" stroke-width="3" stroke-dasharray="10 7"/><text x="{wl + 30}" y="{y(v) + 11}" fill="{lc}" font-size="30" font-weight="800" font-family="Inter">{t}</text></g>')
+    d = " ".join(f"{x},{y(v)}" for x, v in zip(xs, pts))
+    out.append(f'<polyline points="{d}" fill="none" stroke="{c}" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>')
+    out.append(f'<circle cx="{xs[-1]}" cy="{y(pts[-1])}" r="11" fill="{c}"/>')
+    out.append('</svg>')
+    return "".join(out)
+
+
+def v7_gancho():
+    return f"""<div class="stage">
+<div data-s="0">{_ruta([60, 64, 55, 50, 53, 42, 38, 30], w=900, h=330, col=ROJO)}</div>
+<div class="h2" data-s="0">¿Ganar aunque el precio <span class="rojo">caiga</span>?</div>
+<div class="row" data-s="2"><div class="pill" style="border-color:{VERDE};color:{VERDE}">📈 GANAS SI SUBE</div><div class="pill" style="border-color:{ROJO};color:{ROJO}">📉 GANAS SI BAJA</div></div>
+</div>"""
+
+
+def v7_marca():
+    return f"""<div class="stage">
+<img src="{LOGO}" style="height:300px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))">
+<div class="row" data-s="1"><div class="card"><div class="lbl">Serie</div><div class="val">Fundamentos</div></div><div class="card"><div class="lbl">Video</div><div class="val oro">#7</div></div></div>
+<div class="p" data-s="3">Hoy: <b class="verde">comprar</b> o <b class="rojo">vender</b></div>
+</div>"""
+
+
+def v7_dos():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">SOLO HAY 2 OPERACIONES</div>
+<div class="row"><div class="card" data-s="1" style="width:520px;border-color:{VERDE}"><div class="ico">📈</div><div class="val verde">COMPRAR</div><div class="lbl">Ir en largo</div></div>
+<div class="card" data-s="2" style="width:520px;border-color:{ROJO}"><div class="ico">📉</div><div class="val rojo">VENDER</div><div class="lbl">Ir en corto</div></div></div>
+<div class="p" data-s="4">Todo lo demás = <b class="oro">formas de entrar</b> a una de estas dos</div>
+</div>"""
+
+
+def v7_compra():
+    return f"""<div class="stage" style="gap:18px">
+<div class="pill" data-s="0" style="border-color:{VERDE};color:{VERDE}">📈 COMPRA</div>
+<div class="h2" data-s="1" style="font-size:52px">Crees que el precio va a <span class="verde">subir</span></div>
+<div data-s="2">{_ruta([40, 38, 45, 50, 48, 58, 64], [(40, 'ENTRADA', ORO, 2), (64, 'SALIDA', VERDE, 2)], w=820, h=330)}</div>
+<div class="p" data-s="3">Salida − entrada = <b class="verde">tu ganancia</b></div>
+</div>"""
+
+
+def v7_ej_compra():
+    f = lambda sd, l, v, c="#fff": f'<div data-s="{sd}" style="display:flex;justify-content:space-between;gap:40px;padding:12px 0;border-bottom:1px solid #2a2a2a;font-size:36px"><span style="color:#aaa">{l}</span><b style="color:{c}">{v}</b></div>'
+    return f"""<div class="stage">
+<div class="pill" data-s="0">EJEMPLO · ORO (XAUUSD) · COMPRA</div>
+<div class="row" style="gap:50px">
+<div class="card" style="width:600px;text-align:left">{f(1,'Compras en','$4.000')}{f(2,'Cierras en','$4.020')}{f(3,'Resultado','+$20 por onza',VERDE)}</div>
+<div class="card" data-s="4" style="width:600px;text-align:left;border-color:{ROJO}">{f(4,'Si baja a','$3.990')}{f(4,'Resultado','−$10 por onza',ROJO)}</div>
+</div></div>"""
+
+
+def v7_venta():
+    return f"""<div class="stage" style="gap:18px">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">📉 VENTA</div>
+<div class="h2" data-s="1" style="font-size:52px">Crees que el precio va a <span class="rojo">bajar</span></div>
+<div data-s="2">{_ruta([64, 66, 58, 54, 56, 46, 40], [(64, 'ENTRADA', ORO, 2), (40, 'SALIDA', VERDE, 2)], w=820, h=300)}</div>
+<div class="card" data-s="4" style="padding:18px 30px;border-color:{ORO}"><div class="val" style="font-size:40px">🤯 No necesitas <span class="oro">tener el activo</span></div></div>
+</div>"""
+
+
+def v7_como():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">¿CÓMO VENDES ALGO QUE NO TIENES?</div>
+<div class="row" style="align-items:center"><div class="card" data-s="1" style="width:420px"><div class="ico">🪙</div><div class="val rojo" style="font-size:40px">No compras el activo real</div></div>
+<div class="arrow">→</div><div class="card" data-s="2" style="width:420px;border-color:{ORO}"><div class="ico">📄</div><div class="val oro" style="font-size:40px">Operas un contrato que sigue el precio</div></div></div>
+<div class="row" data-s="3"><div class="pill" style="border-color:{VERDE};color:{VERDE}">⬆️ A FAVOR DE LA SUBIDA</div><div class="pill" style="border-color:{ROJO};color:{ROJO}">⬇️ A FAVOR DE LA CAÍDA</div></div>
+</div>"""
+
+
+def v7_ej_venta():
+    lin = [(1.0850, 'VENTA 1.0850', ORO, 1), (1.0820, 'CIERRE 1.0820', VERDE, 2), (1.0870, 'SI SUBE 1.0870', ROJO, 4)]
+    return f"""<div class="stage" style="gap:16px">
+<div class="pill" data-s="0">EJEMPLO · EURUSD · VENTA</div>
+<div data-s="1">{_ruta([1.0850, 1.0856, 1.0842, 1.0838, 1.0844, 1.0828, 1.0820], lin, w=900, h=360, col=ROJO, rango=(1.0815, 1.0875))}</div>
+<div class="row" data-s="3"><div class="pill" style="border-color:{VERDE};color:{VERDE}">+30 PIPS</div><div class="pill" data-s="4" style="border-color:{ROJO};color:{ROJO}">−20 PIPS SI SUBE</div><div class="pill" data-s="5">¿QUÉ ES UN PIP? → VIDEO #8</div></div>
+</div>"""
+
+
+def v7_espejo():
+    def lado(t, c, pts, lin):
+        return f'<div class="card" style="width:600px;border-color:{c}"><div class="val" style="color:{c};font-size:42px">{t}</div>{_ruta(pts, lin, w=520, h=300, col=c)}</div>'
+    return f"""<div class="stage" style="gap:16px">
+<div class="pill" data-s="0">🪞 LA VENTA ES EL ESPEJO DE LA COMPRA</div>
+<div class="row">
+<div data-s="2">{lado('COMPRA', VERDE, [50, 52, 49, 56, 60, 66], [(70, 'TP', VERDE, 2), (50, 'ENTRADA', ORO, 2), (42, 'SL', ROJO, 2)])}</div>
+<div data-s="3">{lado('VENTA', ROJO, [60, 58, 61, 54, 50, 44], [(68, 'SL', ROJO, 3), (60, 'ENTRADA', ORO, 3), (40, 'TP', VERDE, 3)])}</div>
+</div></div>"""
+
+
+def v7_bid_ask():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">BID Y ASK</div>
+<div class="row" style="align-items:center">
+<div class="card" data-s="2" style="width:440px;border-color:{VERDE}"><div class="lbl">Compras al</div><div class="val verde">ASK</div><div class="p" style="font-size:34px">1.08524 · el más alto</div></div>
+<div class="card" data-s="3" style="width:440px;border-color:{ROJO}"><div class="lbl">Vendes al</div><div class="val rojo">BID</div><div class="p" style="font-size:34px">1.08512 · el más bajo</div></div></div>
+<div class="pill" data-s="4">DIFERENCIA = SPREAD</div>
+</div>"""
+
+
+def v7_spread():
+    return f"""<div class="stage">
+<div class="row" style="align-items:center;gap:60px">
+<div class="card" data-s="0" style="width:520px"><div class="lbl">Recién abierta</div><div class="big rojo" style="font-size:130px">−0.12</div></div>
+<div style="width:620px;text-align:left"><div class="h2" data-s="1" style="text-align:left;font-size:58px">No es un error:<br><span class="oro">es el costo de entrar</span></div>
+<div class="p" data-s="3" style="text-align:left;margin-top:20px">El precio debe moverse a tu favor y <b class="oro">cubrir el spread</b></div></div>
+</div></div>"""
+
+
+def v7_cerrar():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">CERRAR UNA OPERACIÓN</div>
+<div class="row" style="align-items:center"><div class="card" data-s="1" style="width:420px"><div class="val verde">Compra</div><div class="lbl">se cierra con una venta</div></div><div class="card" data-s="2" style="width:420px"><div class="val rojo">Venta</div><div class="lbl">se cierra con una compra</div></div></div>
+<div class="card" data-s="3" style="padding:20px 34px;border-color:{ORO}"><div class="val" style="font-size:38px">Tú solo das clic en la <span class="rojo">✕</span> · MetaTrader hace el resto</div></div>
+</div>"""
+
+
+def v7_mercado():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">ENTRAR · EJECUCIÓN POR MERCADO</div>
+<div class="row" data-s="2" style="align-items:center"><div class="pill" style="font-size:44px">⌨️ F9</div><div class="arrow">→</div><div class="pill" style="font-size:44px">VOLUMEN</div><div class="arrow">→</div><div class="pill" style="font-size:40px;background:{ROJO};border-color:{ROJO};color:#fff">VENDER</div><div class="pill" style="font-size:40px;background:{VERDE};border-color:{VERDE};color:#000">COMPRAR</div></div>
+<div class="h2" data-s="3">⚡ Entras <span class="oro">al instante</span>, al precio actual</div>
+</div>"""
+
+
+def v7_pendientes():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">⏳ ÓRDENES PENDIENTES</div>
+<div class="h2" data-s="1" style="font-size:54px">“Entra solo cuando el precio <span class="oro">llegue aquí</span>”</div>
+<div class="row" data-s="4"><div class="card" style="width:460px"><div class="lbl">Pregunta 1</div><div class="val" style="font-size:42px"><span class="verde">¿Compro</span> o <span class="rojo">vendo?</span></div></div>
+<div class="card" data-s="5" style="width:520px"><div class="lbl">Pregunta 2</div><div class="val" style="font-size:42px">¿<span class="oro">Retroceso</span> o <span class="oro">ruptura</span>?</div></div></div>
+</div>"""
+
+
+def _orden(t, c, pts, nivel, txt, sd):
+    return f'<div class="card" data-s="{sd}" style="width:620px;border-color:{c}"><div class="val" style="color:{c};font-size:46px">{t}</div>{_ruta(pts, [(nivel, txt, c, sd)], w=540, h=280, col="#d9d3c0")}</div>'
+
+
+def v7_limit():
+    return f"""<div class="stage" style="gap:16px">
+<div class="pill" data-s="0">LIMIT = ESPERA UN RETROCESO</div>
+<div class="row">{_orden('BUY LIMIT', VERDE, [60, 55, 48, 41, 47, 56, 64], 41, 'COMPRA', 1)}{_orden('SELL LIMIT', ROJO, [40, 46, 53, 60, 54, 45, 38], 60, 'VENTA', 3)}</div>
+<div class="row" style="gap:120px"><div class="lbl" data-s="1">Debajo del precio actual</div><div class="lbl" data-s="3">Encima del precio actual</div></div>
+</div>"""
+
+
+def v7_stop():
+    return f"""<div class="stage" style="gap:16px">
+<div class="pill" data-s="0">STOP = ESPERA UNA RUPTURA</div>
+<div class="row">{_orden('BUY STOP', VERDE, [44, 50, 46, 52, 48, 58, 66], 54, 'COMPRA', 1)}{_orden('SELL STOP', ROJO, [56, 50, 54, 48, 52, 42, 34], 46, 'VENTA', 3)}</div>
+<div class="row" style="gap:120px"><div class="lbl" data-s="1">Encima del precio actual</div><div class="lbl" data-s="3">Debajo del precio actual</div></div>
+</div>"""
+
+
+def v7_smc():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">EN SMC</div>
+<div class="h1" data-s="0" style="font-size:90px">Usamos mucho las <span class="oro">Limit</span></div>
+<div class="row" data-s="0"><div class="card" style="width:480px;border-color:{VERDE}"><div class="ico">🎯</div><div class="val verde" style="font-size:40px">Esperar la zona</div></div><div class="card" style="width:480px;border-color:{ROJO}"><div class="ico">🏃</div><div class="val rojo" style="font-size:40px">Perseguir el precio</div></div></div>
+<div class="p" data-s="1">Lo vemos a fondo en el <b class="oro">Módulo 3</b></div>
+</div>"""
+
+
+def v7_flotante():
+    return f"""<div class="stage" style="gap:16px"><div class="pill" data-s="0">RESULTADO FLOTANTE</div>
+<div style="zoom:.72">{_mt5('caja')}</div>
+<div class="row" data-s="2"><div class="pill">💭 NO ES TUYO TODAVÍA</div><div class="pill" data-s="3">✅ ES REAL AL CERRAR: TÚ · SL · TP</div></div></div>"""
+
+
+def v7_errores():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}" style="font-size:40px"><b style="background:{ROJO};color:#fff">✕</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:20px"><div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">ERRORES COMUNES</div>
+<div style="display:flex;flex-direction:column;gap:18px">{ck(1,'Vender cuando querías comprar (por afán)')}{ck(2,'Creer que solo se gana cuando sube')}{ck(3,'Stop loss del lado equivocado en una venta')}{ck(4,'Confundir órdenes Limit con Stop')}</div>
+<div class="pill" data-s="5" style="border-color:{VERDE};color:{VERDE}">🧪 PRACTICA PRIMERO EN DEMO</div></div>"""
+
+
+def v7_ejercicio():
+    ck = lambda n, t: f'<div class="chk" style="font-size:38px"><b>{n}</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:18px"><div class="pill" data-s="0">📝 EJERCICIO EN DEMO</div>
+<div style="display:flex;flex-direction:column;gap:14px"><div data-s="1">{ck(1,'1 compra y 1 venta en EURUSD · volumen mínimo')}</div><div data-s="2">{ck(2,'SL y TP del lado correcto')}</div><div data-s="3">{ck(3,'1 Buy Limit y 1 Sell Limit')}</div><div data-s="4">{ck(4,'Observa qué pasa durante el día')}</div></div></div>"""
+
+
+def v7_comentarios():
+    return f"""<div class="stage"><div style="font-size:150px">💬</div>
+<div class="h2" data-s="0">¿Sabías que se podía ganar cuando <span class="rojo">el precio baja</span>?</div>
+<div class="p" data-s="2">¿Dudas con las órdenes pendientes? <b class="oro">Escríbelas, te respondo</b></div></div>"""
+
+
+def v7_resumen():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}"><b>✓</b><span>{t}</span></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">RESUMEN</div>
+<div style="display:flex;flex-direction:column;gap:20px">{ck(1,'<span class="verde">Compra</span> si sube · <span class="rojo">venta</span> si baja')}{ck(2,'Para vender no necesitas el activo')}{ck(3,'Compra al ask · venta al bid · spread = costo')}{ck(4,'Limit = retroceso · Stop = ruptura')}{ck(5,'<span class="oro">En la venta, el SL va arriba</span>')}</div></div>"""
+
+
+def v7_cierre():
+    return f"""<div class="stage">
+<img src="{JV}" style="height:150px">
+<div class="lbl" data-s="0">Siguiente video</div>
+<div class="card" data-s="0" style="width:1150px"><div class="val">#8 · Lotes, pips y apalancamiento: <span class="oro">explicados fácil</span></div></div>
+<div class="row" data-s="1"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">▶ SUSCRÍBETE</div><div class="pill">🔔 ACTIVA LA CAMPANITA</div></div>
+<div class="p" data-s="2">📅 ¿Revisamos tus operaciones demo? · <b class="oro">link en la descripción</b></div>
+<div class="p" style="font-size:22px;color:#8a826c;margin-top:20px">Contenido educativo, no es asesoría financiera. El trading implica riesgo.</div>
+</div>"""
+
+
+# ---- Short 7 ----
+def s7_gancho():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div>{_ruta([60, 64, 55, 50, 53, 42, 38, 30], w=820, h=420, col=ROJO)}</div><div class="h1" style="font-size:100px">¿Se puede ganar si el precio <span class="rojo">BAJA</span>?</div></div>"""
+
+
+def s7_si():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="big verde" style="font-size:260px">SÍ</div><div class="h2" data-s="1" style="font-size:80px">Se llama <span class="rojo">vender</span><br>o ir en corto</div></div>"""
+
+
+def s7_como():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div>{_ruta([64, 66, 58, 54, 56, 46, 40], [(64, 'ENTRAS', ORO, 0), (40, 'SALES', VERDE, 0)], w=820, h=440, col=ROJO)}</div>
+<div class="h2" data-s="1" style="font-size:64px">Sin tener <span class="oro">el activo</span></div></div>"""
+
+
+def s7_ojo():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="h1" style="font-size:120px">⚠️ OJO</div><div data-s="1">{_ruta([60, 58, 61, 54, 50, 44], [(68, 'SL', ROJO, 1), (60, 'VENTA', ORO, 1), (40, 'TP', VERDE, 1)], w=820, h=480, col=ROJO)}</div>
+<div class="h2" data-s="1" style="font-size:64px">En la venta, el SL va <span class="rojo">arriba</span></div></div>"""
+
+
+def s7_cta():
+    return s_cta()
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math
