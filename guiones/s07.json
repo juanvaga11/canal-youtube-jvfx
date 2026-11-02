@@ -1,0 +1,27 @@
+{
+ "id": "s07",
+ "formato": "vertical",
+ "titulo": "¿Se puede ganar cuando el precio baja?",
+ "escenas": [
+  {
+   "v": "s7_gancho",
+   "texto": "¿Se puede ganar dinero cuando el precio baja?"
+  },
+  {
+   "v": "s7_si",
+   "texto": "Sí. Se llama vender, o ir en corto."
+  },
+  {
+   "v": "s7_como",
+   "texto": "Entras arriba, sales abajo, y ganas con la caída. Y no necesitas tener el activo."
+  },
+  {
+   "v": "s7_ojo",
+   "texto": "Ojo: en una venta, el stop loss va arriba de la entrada."
+  },
+  {
+   "v": "s7_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más."
+  }
+ ]
+}

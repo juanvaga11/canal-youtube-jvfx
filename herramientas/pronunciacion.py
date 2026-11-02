@@ -42,6 +42,7 @@ CAMBIOS = {
     r"\bStep\b": "Estep",
     r"\bbitcoin\b": "bítcoin",
     r"\bShorts?\b": "Shorts",
+    r"\bBuy\b": "Bai", r"\bSell\b": "Sel", r"\bLimit\b": "Límit", r"\bStop\b": "Estop",
 }
 def aplicar(texto):
     for k, v in CAMBIOS.items():

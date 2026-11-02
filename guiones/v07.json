@@ -1,0 +1,107 @@
+{
+ "id": "v07",
+ "formato": "horizontal",
+ "titulo": "Compras y ventas: cómo ganar cuando el precio sube y cuando baja",
+ "escenas": [
+  {
+   "v": "v7_gancho",
+   "texto": "¿Sabías que en trading puedes ganar dinero aunque el precio esté cayendo? Mucha gente cree que solo se gana cuando algo sube, como cuando compras una acción. Pero en el trading que te estoy enseñando puedes ganar en las dos direcciones. Hoy te explico cómo funcionan las compras y las ventas, con ejemplos reales y sin enredos."
+  },
+  {
+   "v": "intro",
+   "texto": ""
+  },
+  {
+   "v": "v7_marca",
+   "texto": "Bienvenido a JulianVal.fx. Este es el video siete de la serie de cero a experto. Ya sabes leer las velas japonesas. Hoy aprendes las dos únicas decisiones que vas a tomar en cada operación: comprar o vender."
+  },
+  {
+   "v": "v7_dos",
+   "texto": "En trading solo hay dos tipos de operación. Comprar, que también se le dice ir en largo. Y vender, que también se le dice ir en corto. No hay más. Todo lo demás son formas distintas de entrar a una de estas dos."
+  },
+  {
+   "v": "v7_compra",
+   "texto": "Empecemos por la compra. Compras cuando crees que el precio va a subir. Entras abajo y sales más arriba. La diferencia entre el precio de entrada y el de salida es tu ganancia. Si el precio baja en lugar de subir, esa diferencia es tu pérdida."
+  },
+  {
+   "v": "v7_ej_compra",
+   "texto": "Un ejemplo con el oro. Compras en cuatro mil dólares la onza. El precio sube a cuatro mil veinte, y cierras. Ganaste veinte dólares por cada onza de tu operación. Si en vez de subir hubiera bajado a tres mil novecientos noventa, habrías perdido diez dólares por onza."
+  },
+  {
+   "v": "v7_venta",
+   "texto": "Ahora, la venta. Vendes cuando crees que el precio va a bajar. Aquí entras arriba y sales más abajo. Y aquí está lo que confunde a muchos: no necesitas tener el activo para venderlo. Tu bróker te permite abrir una venta directamente, y ganas con la caída del precio."
+  },
+  {
+   "v": "v7_como",
+   "texto": "¿Cómo es posible vender algo que no tienes? Porque en forex y en la mayoría de mercados que operas desde MetaTrader, no compras el activo de verdad. Operas un contrato que sigue su precio. Así que lo único que importa es hacia dónde se mueve, y tú eliges si vas a favor de la subida o de la caída."
+  },
+  {
+   "v": "v7_ej_venta",
+   "texto": "Ejemplo de venta con el euro dólar. Vendes en uno punto cero ocho cincuenta. El precio cae hasta uno punto cero ocho veinte, y cierras. Ganaste esos treinta pips de caída. Pero si el precio sube a uno punto cero ocho setenta, pierdes veinte pips. En el siguiente video te explico qué es un pip y cuánto dinero vale."
+  },
+  {
+   "v": "v7_espejo",
+   "texto": "Fíjate que la venta es el espejo de la compra. En la compra quieres que el precio suba, y en la venta quieres que baje. En la compra, tu stop loss va abajo de la entrada y tu take profit arriba. En la venta es al revés: el stop loss va arriba y el take profit abajo."
+  },
+  {
+   "v": "v7_bid_ask",
+   "texto": "Ahora un detalle técnico importante. ¿Recuerdas el bid y el ask de la observación del mercado? Cuando compras, entras al precio ask, que es el más alto. Cuando vendes, entras al precio bid, que es el más bajo. Y la diferencia entre los dos es el spread."
+  },
+  {
+   "v": "v7_spread",
+   "texto": "Por eso, apenas abres una operación, la ves un poquito en negativo. No es un error: es el spread, el costo de entrar. Para quedar en ganancia, el precio primero tiene que moverse a tu favor lo suficiente para cubrir ese costo."
+  },
+  {
+   "v": "v7_cerrar",
+   "texto": "Otra cosa que pocos entienden: para cerrar una compra, la plataforma hace una venta. Y para cerrar una venta, hace una compra. Tú no tienes que hacer eso a mano: solo das clic en la equis de la operación, y MetaTrader la cierra por ti."
+  },
+  {
+   "v": "v7_mercado",
+   "texto": "Ahora, ¿cómo entras? La forma más simple es la ejecución por mercado. Presionas F9, eliges el volumen, y das clic en comprar o en vender. Entras al instante, al precio que haya en ese momento."
+  },
+  {
+   "v": "v7_pendientes",
+   "texto": "La otra forma son las órdenes pendientes. Con ellas le dices a la plataforma: entra solo cuando el precio llegue a este nivel. Hay cuatro tipos, y se entienden fácil con dos preguntas: ¿compro o vendo? ¿Y espero un retroceso o una ruptura?"
+  },
+  {
+   "v": "v7_limit",
+   "texto": "Las órdenes Limit esperan un retroceso. Un Buy Limit es una compra que pones por debajo del precio actual: esperas que el precio baje a una zona y desde ahí suba. Un Sell Limit es una venta que pones por encima del precio: esperas que suba a una zona y desde ahí caiga."
+  },
+  {
+   "v": "v7_stop",
+   "texto": "Las órdenes Stop esperan una ruptura. Un Buy Stop es una compra por encima del precio actual: entras solo si el precio rompe hacia arriba. Un Sell Stop es una venta por debajo del precio: entras solo si rompe hacia abajo."
+  },
+  {
+   "v": "v7_smc",
+   "texto": "En Smart Money Concepts vamos a usar mucho las órdenes Limit, porque preferimos esperar que el precio vuelva a nuestras zonas en lugar de perseguirlo. Pero eso lo vemos con calma en el módulo tres."
+  },
+  {
+   "v": "v7_flotante",
+   "texto": "Mientras la operación está abierta, en la caja de herramientas ves el resultado flotante. Sube y baja con cada movimiento del precio. Ese dinero todavía no es tuyo: solo se vuelve real cuando la operación se cierra, ya sea por ti, por tu stop loss o por tu take profit."
+  },
+  {
+   "v": "v7_errores",
+   "texto": "Los errores más comunes con las compras y las ventas. Dar clic en vender cuando querías comprar, por ir de afán. Pensar que solo se gana cuando el precio sube. Poner el stop loss del lado equivocado en una venta. Y confundir las órdenes Limit con las Stop. Por eso todo esto se practica primero en demo."
+  },
+  {
+   "v": "v7_ejercicio",
+   "texto": "Te dejo un ejercicio. En tu cuenta demo, abre una compra y una venta en el euro dólar, con el volumen más pequeño. Ponle a cada una su stop loss y su take profit, del lado correcto. Luego coloca un Buy Limit y un Sell Limit en zonas que tú elijas. Y observa qué pasa con cada una durante el día."
+  },
+  {
+   "v": "v7_comentarios",
+   "texto": "Cuéntame en los comentarios: ¿sabías que se podía ganar cuando el precio baja? Y si te quedó alguna duda con las órdenes pendientes, escríbela, que yo te respondo."
+  },
+  {
+   "v": "v7_resumen",
+   "texto": "Resumamos. Compras cuando esperas que el precio suba, y vendes cuando esperas que baje. No necesitas tener el activo para vender. La compra entra al ask, la venta al bid, y el spread es tu costo de entrada. Las órdenes Limit esperan un retroceso y las Stop una ruptura. Y en la venta, el stop loss siempre va arriba."
+  },
+  {
+   "v": "v7_cierre",
+   "texto": "En el siguiente video te explico los lotes, los pips y el apalancamiento, para que sepas exactamente cuánto ganas o pierdes en cada operación. Suscríbete y activa la campanita. Y si quieres que revisemos juntos tus primeras operaciones en demo, en la descripción tienes el enlace para agendar una llamada. Nos vemos en el próximo video."
+  },
+  {
+   "v": "outro",
+   "texto": ""
+  }
+ ]
+}
