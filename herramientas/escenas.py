@@ -1245,6 +1245,290 @@ def s5_cta():
     return s_cta()
 
 
+# ---------- Video 6: velas japonesas ----------
+def _velas(lst, w=700, h=440, resaltar=None, zona=None, etiquetas=None, ancho=.55):
+    """lst: (o,c,hi,lo). zona=(desde,hasta) en precio. etiquetas: [(precio, texto, color, s)]"""
+    mn = min(v[3] for v in lst); mx = max(v[2] for v in lst)
+    if zona: mn = min(mn, zona[0]); mx = max(mx, zona[1])
+    pad = (mx - mn) * .08 + .01; mn -= pad; mx += pad
+    y = lambda v: (mx - v) / (mx - mn) * h
+    n = len(lst); cw = (w - (230 if etiquetas else 0)) / n
+    out = [f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" style="overflow:visible">']
+    if zona:
+        out.append(f'<rect x="0" y="{y(zona[1])}" width="{w}" height="{y(zona[0]) - y(zona[1])}" fill="rgba(212,175,55,.16)" stroke="{ORO}" stroke-dasharray="10 8" stroke-width="2"/>')
+    for i, (o, c, hi, lo) in enumerate(lst):
+        x = i * cw + cw / 2
+        col = VERDE if c >= o else ROJO
+        op = '1' if resaltar is None or i == resaltar else '.35'
+        sw = max(3, cw * .05)
+        out.append(f'<g opacity="{op}"><line x1="{x}" x2="{x}" y1="{y(hi)}" y2="{y(lo)}" stroke="{col}" stroke-width="{sw}" stroke-linecap="round"/>')
+        top, bot = y(max(o, c)), y(min(o, c))
+        out.append(f'<rect x="{x - cw * ancho / 2}" y="{top}" width="{cw * ancho}" height="{max(bot - top, 4)}" fill="{col}" rx="3"/></g>')
+    for (v, t, col, sd) in (etiquetas or []):
+        x0 = cw * (n - .5) + cw * ancho / 2 + 10
+        out.append(f'<g data-s="{sd}"><line x1="{x0}" x2="{x0 + 50}" y1="{y(v)}" y2="{y(v)}" stroke="{col}" stroke-width="3" stroke-dasharray="6 5"/><text x="{x0 + 60}" y="{y(v) + 11}" fill="{col}" font-size="32" font-weight="800" font-family="Inter">{t}</text></g>')
+    out.append('</svg>')
+    return "".join(out)
+
+
+def v6_gancho():
+    return f"""<div class="stage" style="gap:26px">
+<div data-s="0">{velas_svg(w=1300, h=380, n=38, seed=11, tendencia=.3)}</div>
+<div class="row" data-s="1" style="align-items:center"><div class="pill" style="border-color:{VERDE};color:{VERDE}">🟢 COMPRADORES</div><div class="arrow">⚔️</div><div class="pill" style="border-color:{ROJO};color:{ROJO}">🔴 VENDEDORES</div></div>
+<div class="row" data-s="3"><div class="pill">🕯️ PARTES</div><div class="pill">📐 FORMAS</div><div class="pill">⭐ PATRONES CLAVE</div></div>
+</div>"""
+
+
+def v6_marca():
+    return f"""<div class="stage">
+<img src="{LOGO}" style="height:300px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))">
+<div class="row" data-s="1"><div class="card"><div class="lbl">Serie</div><div class="val">Fundamentos</div></div><div class="card"><div class="lbl">Video</div><div class="val oro">#6</div></div></div>
+<div class="p" data-s="3">Hoy: <b class="oro">leer lo que te dice el gráfico</b></div>
+</div>"""
+
+
+def v6_historia():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">UN POCO DE HISTORIA</div>
+<div class="row"><div class="card" data-s="1" style="width:400px"><div class="ico">🇯🇵</div><div class="val">Japón</div><div class="lbl">+200 años</div></div>
+<div class="card" data-s="1" style="width:400px"><div class="ico">🌾</div><div class="val">Mercado del arroz</div></div>
+<div class="card" data-s="3" style="width:400px;border-color:{ORO}"><div class="ico">🌍</div><div class="val oro">Hoy: el gráfico más usado</div></div></div>
+</div>"""
+
+
+def v6_partes():
+    et = [(90, 'MÁXIMO', '#fff', 3), (70, 'CIERRE', VERDE, 2), (35, 'APERTURA', VERDE, 1), (12, 'MÍNIMO', '#fff', 4)]
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">4 PRECIOS EN CADA VELA</div>
+<div>{_velas([(35, 70, 90, 12)], w=560, h=470, etiquetas=et, ancho=.5)}</div>
+</div>"""
+
+
+def v6_cuerpo():
+    return f"""<div class="stage" style="gap:20px">
+<div class="row" style="align-items:center;gap:60px">
+<div>{_velas([(35, 70, 90, 12)], w=330, h=480, ancho=.5)}</div>
+<div style="display:flex;flex-direction:column;gap:26px">
+<div class="card" data-s="0" style="width:640px;text-align:left"><div class="val">▮ Cuerpo</div><div class="p" style="font-size:30px;text-align:left">De la apertura al cierre</div></div>
+<div class="card" data-s="1" style="width:640px;text-align:left"><div class="val">│ Mechas o sombras</div><div class="p" style="font-size:30px;text-align:left">Hasta dónde llegó el precio y se devolvió</div></div>
+</div></div></div>"""
+
+
+def v6_colores():
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">EL COLOR = LA DIRECCIÓN</div>
+<div class="row" style="gap:90px">
+<div data-s="1" style="text-align:center">{_velas([(30, 72, 85, 18)], w=400, h=380, etiquetas=[(72, 'CIERRE', VERDE, 5), (30, 'APERTURA', VERDE, 5)], ancho=.5)}<div class="val verde">Alcista · subió</div></div>
+<div data-s="3" style="text-align:center">{_velas([(72, 30, 85, 18)], w=400, h=380, etiquetas=[(72, 'APERTURA', ROJO, 5), (30, 'CIERRE', ROJO, 5)], ancho=.5)}<div class="val rojo">Bajista · bajó</div></div>
+</div></div>"""
+
+
+def v6_tiempo():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">⏱️ CADA VELA = UN TIEMPO</div>
+<div class="row"><div class="card" data-s="2" style="width:520px"><div class="val oro">H1</div><div class="p">1 vela = 1 hora</div></div>
+<div class="card" data-s="3" style="width:520px"><div class="val oro">D1</div><div class="p">1 vela = 1 día completo</div></div></div>
+<div class="p" data-s="4">Misma vela, <b class="oro">distinta temporalidad</b> = distinta historia</div>
+</div>"""
+
+
+def v6_fuerza():
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">💪 LEER LA FUERZA</div>
+<div class="row" style="gap:70px;align-items:flex-end">
+<div data-s="1" style="text-align:center">{_velas([(15, 88, 92, 12), (88, 15, 92, 12)], w=380, h=380, ancho=.5)}<div class="val" style="font-size:40px">Cuerpo grande</div><div class="lbl">Un lado <span class="verde">dominó</span></div></div>
+<div data-s="4" style="text-align:center">{_velas([(48, 55, 78, 28), (55, 49, 74, 25)], w=380, h=380, ancho=.5)}<div class="val" style="font-size:40px">Cuerpo pequeño</div><div class="lbl">Equilibrio · indecisión</div></div>
+</div></div>"""
+
+
+def v6_mechas():
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">LAS MECHAS TAMBIÉN HABLAN</div>
+<div class="row" style="gap:80px">
+<div class="card" data-s="1" style="width:560px"><div>{_velas([(70, 78, 82, 10)], w=200, h=330, ancho=.5)}</div><div class="val verde" style="font-size:40px">Mecha larga abajo</div><div class="lbl">Rechazo de precios bajos</div></div>
+<div class="card" data-s="3" style="width:560px"><div>{_velas([(30, 22, 90, 18)], w=200, h=330, ancho=.5)}</div><div class="val rojo" style="font-size:40px">Mecha larga arriba</div><div class="lbl">Rechazo de precios altos</div></div>
+</div></div>"""
+
+
+def v6_doji():
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">PATRÓN 1 · DOJI</div>
+<div data-s="1">{_velas([(50, 50.6, 85, 15)], w=220, h=400, ancho=.5)}</div>
+<div class="h2" data-s="3">⚖️ <span class="oro">Indecisión</span>: empate entre compradores y vendedores</div>
+</div>"""
+
+
+def v6_martillo():
+    lst = [(80, 72, 82, 70), (72, 63, 74, 60), (63, 52, 65, 50), (52, 44, 54, 41), (41, 44, 45, 22)]
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">PATRÓN 2 · MARTILLO 🔨</div>
+<div class="row" style="align-items:center;gap:60px">
+<div data-s="1">{_velas(lst, w=620, h=420, resaltar=4)}</div>
+<div style="display:flex;flex-direction:column;gap:22px;width:620px">
+<div class="chk" data-s="1"><b>1</b><span>Cuerpo pequeño arriba</span></div>
+<div class="chk" data-s="1"><b>2</b><span>Mecha abajo ≥ 2× el cuerpo</span></div>
+<div class="chk" data-s="2"><b>3</b><span>Después de una <span class="rojo">caída</span></span></div>
+</div></div></div>"""
+
+
+def v6_estrella():
+    lst = [(20, 28, 30, 18), (28, 37, 40, 26), (37, 48, 50, 35), (48, 56, 59, 46), (59, 56, 78, 55)]
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">PATRÓN 3 · ESTRELLA FUGAZ 🌠</div>
+<div class="row" style="align-items:center;gap:60px">
+<div data-s="1">{_velas(lst, w=620, h=420, resaltar=4)}</div>
+<div style="display:flex;flex-direction:column;gap:22px;width:620px">
+<div class="chk" data-s="1"><b>1</b><span>Cuerpo pequeño abajo</span></div>
+<div class="chk" data-s="1"><b>2</b><span>Mecha larga arriba</span></div>
+<div class="chk" data-s="2"><b>3</b><span>Después de una <span class="verde">subida</span></span></div>
+</div></div></div>"""
+
+
+def v6_envolvente():
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">PATRÓN 4 · VELA ENVOLVENTE</div>
+<div class="row" style="gap:80px">
+<div class="card" data-s="2" style="width:540px"><div>{_velas([(60, 45, 63, 42), (43, 66, 69, 41)], w=300, h=320)}</div><div class="val verde" style="font-size:40px">Envolvente alcista</div></div>
+<div class="card" data-s="4" style="width:540px"><div>{_velas([(40, 55, 58, 37), (57, 34, 59, 31)], w=300, h=320)}</div><div class="val rojo" style="font-size:40px">Envolvente bajista</div></div>
+</div>
+<div class="p" data-s="1">El cuerpo nuevo <b class="oro">cubre por completo</b> al anterior</div>
+</div>"""
+
+
+def v6_contexto():
+    nada = [(50, 54, 56, 48), (54, 51, 57, 49), (51, 53, 55, 49), (53, 50, 55, 48), (49, 51, 52, 40), (51, 53, 55, 49)]
+    zona = [(78, 70, 80, 68), (70, 60, 72, 58), (60, 50, 62, 48), (50, 42, 52, 40), (38, 41, 42, 22), (41, 52, 54, 40)]
+    return f"""<div class="stage" style="gap:20px">
+<div class="h2" data-s="1">Una vela sola <span class="rojo">no es señal</span></div>
+<div class="row" style="gap:70px">
+<div class="card" data-s="2" style="width:560px;border-color:{ROJO}"><div>{_velas(nada, w=460, h=280, resaltar=4)}</div><div class="val rojo" style="font-size:36px">Martillo en la nada</div></div>
+<div class="card" data-s="4" style="width:560px;border-color:{VERDE}"><div>{_velas(zona, w=460, h=280, resaltar=4, zona=(20, 31))}</div><div class="val verde" style="font-size:36px">Martillo en una zona ✓</div></div>
+</div>
+<div class="p" data-s="5">Próximamente: <b class="oro">estructura y zonas</b></div>
+</div>"""
+
+
+def v6_cierre_vela():
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">⚠️ ESPERA EL CIERRE</div>
+<div class="row" style="align-items:center;gap:40px">
+<div class="card" data-s="1" style="width:420px"><div>{_velas([(40, 46, 47, 20)], w=160, h=300, ancho=.5)}</div><div class="lbl">⏳ En formación</div><div class="val" style="font-size:36px">“Parece martillo”</div></div>
+<div class="arrow" data-s="2">→</div>
+<div class="card" data-s="2" style="width:420px;border-color:{ROJO}"><div>{_velas([(40, 22, 47, 20)], w=160, h=300, ancho=.5)}</div><div class="lbl">✅ Cerró</div><div class="val rojo" style="font-size:36px">Vela roja grande</div></div>
+</div></div>"""
+
+
+def v6_errores():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}" style="font-size:40px"><b style="background:{ROJO};color:#fff">✕</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:20px"><div class="pill" data-s="0" style="border-color:{ROJO};color:{ROJO}">ERRORES COMUNES CON LAS VELAS</div>
+<div style="display:flex;flex-direction:column;gap:18px">{ck(1,'Operar cada patrón que ves')}{ck(2,'Olvidar la temporalidad')}{ck(3,'Decidir con velas sin cerrar')}{ck(4,'Memorizar 100 nombres raros')}</div></div>"""
+
+
+def v6_ejercicio():
+    ck = lambda n, t: f'<div class="chk" style="font-size:38px"><b>{n}</b><span>{t}</span></div>'
+    return f"""<div class="stage" style="gap:18px"><div class="pill" data-s="0">📝 EJERCICIO</div>
+<div data-s="1" style="display:flex;flex-direction:column;gap:14px">{ck(1,'Euro dólar en H1')}{ck(2,'3 velas de cuerpo grande')}{ck(3,'3 velas con mechas largas')}{ck(4,'1 doji')}</div>
+<div class="h2" data-s="3" style="font-size:52px">¿Quién ganó la pelea, <span class="oro">y con cuánta fuerza</span>?</div></div>"""
+
+
+def v6_comentarios():
+    return f"""<div class="stage"><div style="font-size:150px">💬</div>
+<div class="h2" data-s="0">¿Cuál de estos patrones <span class="oro">ya habías visto</span>?</div>
+<div class="row" data-s="2"><div class="pill">DOJI</div><div class="pill">🔨 MARTILLO</div><div class="pill">🌠 ESTRELLA</div><div class="pill">ENVOLVENTE</div></div>
+<div class="pill" data-s="3">📤 COMPÁRTELO CON QUIEN ESTÉ EMPEZANDO</div></div>"""
+
+
+def v6_resumen():
+    ck = lambda s, t: f'<div class="chk" data-s="{s}"><b>✓</b><span>{t}</span></div>'
+    return f"""<div class="stage"><div class="pill" data-s="0">RESUMEN</div>
+<div style="display:flex;flex-direction:column;gap:20px">{ck(1,'Apertura, cierre, máximo y mínimo')}{ck(2,'Cuerpo = quién ganó · mechas = rechazos')}{ck(3,'Doji, martillo, estrella fugaz, envolvente')}{ck(4,'<span class="oro">El contexto y la zona mandan</span>')}{ck(5,'Siempre espera el cierre')}</div></div>"""
+
+
+def v6_cierre():
+    return f"""<div class="stage">
+<img src="{JV}" style="height:150px">
+<div class="lbl" data-s="0">Siguiente video</div>
+<div class="card" data-s="0" style="width:1150px"><div class="val">#7 · Compras y ventas: <span class="oro">ganar cuando sube y cuando baja</span></div></div>
+<div class="row" data-s="1"><div class="pill" style="background:{ROJO};border-color:{ROJO};color:#fff">▶ SUSCRÍBETE</div><div class="pill">🔔 ACTIVA LA CAMPANITA</div></div>
+<div class="p" data-s="2">📅 ¿Practicamos juntos? Agenda conmigo · <b class="oro">link en la descripción</b></div>
+<div class="p" style="font-size:22px;color:#8a826c;margin-top:20px">Contenido educativo, no es asesoría financiera. El trading implica riesgo.</div>
+</div>"""
+
+
+def v6_ejemplo():
+    f = lambda sd, l, v, c="#fff": f'<div data-s="{sd}" style="display:flex;justify-content:space-between;gap:40px;padding:10px 0;border-bottom:1px solid #2a2a2a;font-size:34px"><span style="color:#aaa">{l}</span><b style="color:{c}">{v}</b></div>'
+    et = [(80, '1.0880', '#fff', 3), (70, '1.0870', VERDE, 5), (50, '1.0850', VERDE, 2), (40, '1.0840', '#fff', 4)]
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">EJEMPLO · EURUSD H1</div>
+<div class="row" style="align-items:center;gap:70px">
+<div class="card" style="width:560px;text-align:left">{f(2,'Apertura','1.0850')}{f(3,'Máximo','1.0880')}{f(4,'Mínimo','1.0840')}{f(5,'Cierre','1.0870',VERDE)}</div>
+<div data-s="6">{_velas([(50, 70, 80, 40)], w=480, h=440, etiquetas=et, ancho=.5)}</div>
+</div></div>"""
+
+
+def v6_mt5():
+    return f"""<div class="stage" style="gap:16px">
+<div class="pill" data-s="0">EN METATRADER 5 · ALT + 2</div>
+<div style="zoom:.7">{_mt5('graf')}</div>
+<div class="row" data-s="1"><div class="pill">🖱️ CLIC DERECHO</div><div class="arrow" style="font-size:40px">→</div><div class="pill">PROPIEDADES</div><div class="arrow" style="font-size:40px">→</div><div class="pill">COLORES <span class="verde">●</span> <span class="rojo">●</span></div></div>
+</div>"""
+
+
+def v6_pelea():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">🪢 TIRAR LA CUERDA</div>
+<div class="row" style="align-items:center"><div class="card" data-s="1" style="width:420px;border-color:{VERDE}"><div class="ico">🐂</div><div class="val verde">Compradores</div><div class="lbl">quieren subir</div></div>
+<div class="arrow" data-s="2" style="font-size:90px">⟷</div>
+<div class="card" data-s="2" style="width:420px;border-color:{ROJO}"><div class="ico">🐻</div><div class="val rojo">Vendedores</div><div class="lbl">quieren bajar</div></div></div>
+<div class="h2" data-s="3" style="font-size:54px">Cuerpo = <span class="oro">quién ganó</span> · Tamaño = <span class="oro">qué tan claro</span></div>
+</div>"""
+
+
+def v6_marubozu():
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">CASO ESPECIAL</div>
+<div class="row" style="align-items:center;gap:70px">
+<div data-s="1">{_velas([(12, 88, 89, 11), (88, 12, 89, 11)], w=360, h=420, ancho=.5)}</div>
+<div style="text-align:left"><div class="h1" data-s="2" style="font-size:100px;text-align:left"><span class="oro">Marubozu</span></div>
+<div class="p" data-s="3" style="text-align:left">Un lado dominó de principio a fin</div>
+<div class="pill" data-s="4" style="margin-top:20px">💪 MÁXIMA FUERZA</div></div>
+</div></div>"""
+
+
+def v6_secuencia():
+    lst = [(20, 34, 36, 19), (34, 47, 49, 33), (47, 57, 60, 46), (57, 63, 68, 56), (63, 66, 74, 62), (66, 67, 78, 65)]
+    return f"""<div class="stage" style="gap:20px">
+<div class="pill" data-s="0">🎓 NIVEL MÁS ALTO: LEE LA SECUENCIA</div>
+<div data-s="2">{_velas(lst, w=820, h=400)}</div>
+<div class="row" data-s="2"><div class="pill" style="border-color:{VERDE};color:{VERDE}">CUERPOS MÁS PEQUEÑOS</div><div class="pill" style="border-color:{ROJO};color:{ROJO}">MECHAS ARRIBA</div><div class="pill">= COMPRADORES CANSADOS</div></div>
+<div class="p" data-s="3">⚠️ No es para vender ya: <b class="oro">es una alerta</b></div>
+</div>"""
+
+
+# ---- Short 6 ----
+def s6_gancho():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div>{_velas([(70, 76, 80, 15)], w=260, h=520, ancho=.5)}</div><div class="h1" style="font-size:100px">¿Qué te dice una <span class="oro">mecha larga</span>?</div></div>"""
+
+
+def s6_abajo():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="pill" style="border-color:{VERDE};color:{VERDE}">⬇️ MECHA LARGA ABAJO</div><div>{_velas([(70, 78, 82, 10)], w=240, h=480, ancho=.5)}</div>
+<div class="h2" data-s="1" style="font-size:64px">Vendedores empujaron… <span class="verde">compradores lo devolvieron</span></div></div>"""
+
+
+def s6_arriba():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="pill" style="border-color:{ROJO};color:{ROJO}">⬆️ MECHA LARGA ARRIBA</div><div>{_velas([(30, 22, 90, 18)], w=240, h=480, ancho=.5)}</div>
+<div class="h2" data-s="1" style="font-size:64px">Compradores intentaron… <span class="rojo">vendedores rechazaron</span></div></div>"""
+
+
+def s6_ojo():
+    return f"""<div class="stage" style="top:200px;bottom:700px"><div class="h1" style="font-size:120px">⚠️ OJO</div>
+<div style="display:flex;flex-direction:column;gap:30px" data-s="1"><div class="chk" style="font-size:56px"><b>✓</b><span>En una <span class="oro">zona importante</span></span></div><div class="chk" style="font-size:56px"><b>✓</b><span>Con la vela <span class="oro">ya cerrada</span></span></div></div></div>"""
+
+
+def s6_cta():
+    return s_cta()
+
+
 def intro_frame(t, w=1920, h=1080):
     """t de 0 a 1. Logo aparece con zoom, destello dorado y barrido de luz."""
     import math
