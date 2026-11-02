@@ -1654,7 +1654,7 @@ def v7_spread():
 <div class="row" style="align-items:center;gap:60px">
 <div class="card" data-s="0" style="width:520px"><div class="lbl">Recién abierta</div><div class="big rojo" style="font-size:130px">−0.12</div></div>
 <div style="width:620px;text-align:left"><div class="h2" data-s="1" style="text-align:left;font-size:58px">No es un error:<br><span class="oro">es el costo de entrar</span></div>
-<div class="p" data-s="3" style="text-align:left;margin-top:20px">El precio debe moverse a tu favor y <b class="oro">cubrir el spread</b></div></div>
+<div class="p" data-s="3" style="text-align:left;margin-top:20px">El precio debe moverse a tu favor y <b class="oro">cubrir el spread</b></div><div class="p" data-s="4" style="text-align:left;margin-top:14px">⏰ Opera en horarios de spread bajo · <b class="oro">video #11</b></div></div>
 </div></div>"""
 
 
@@ -1752,6 +1752,34 @@ def v7_cierre():
 <div class="p" data-s="2">📅 ¿Revisamos tus operaciones demo? · <b class="oro">link en la descripción</b></div>
 <div class="p" style="font-size:22px;color:#8a826c;margin-top:20px">Contenido educativo, no es asesoría financiera. El trading implica riesgo.</div>
 </div>"""
+
+
+def v7_mercados():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">FUNCIONA IGUAL EN TODOS</div>
+<div class="row" data-s="0"><div class="pill">💱 FOREX</div><div class="pill">🥇 ORO</div><div class="pill">📊 ÍNDICES</div><div class="pill">₿ CRIPTO</div><div class="pill">⚡ SINTÉTICOS</div></div>
+<div class="row" data-s="1"><div class="card" style="width:420px;border-color:{VERDE}"><div class="val verde">Comprar ✓</div></div><div class="card" style="width:420px;border-color:{ROJO}"><div class="val rojo">Vender ✓</div></div></div>
+</div>"""
+
+
+def v7_decidir():
+    return f"""<div class="stage" style="gap:18px">
+<div class="h2" data-s="0" style="font-size:56px">¿Comprar o vender? → <span class="oro">la estructura</span></div>
+<div class="row">
+<div class="card" data-s="2" style="width:600px;border-color:{VERDE}">{_ruta([30, 45, 38, 55, 48, 66], w=500, h=230, col=VERDE)}<div class="val verde" style="font-size:36px">Máximos y mínimos más altos → compras</div></div>
+<div class="card" data-s="3" style="width:600px;border-color:{ROJO}">{_ruta([66, 52, 58, 42, 48, 30], w=500, h=230, col=ROJO)}<div class="val rojo" style="font-size:36px">Más bajos → ventas</div></div>
+</div>
+<div class="p" data-s="5">No es adivinar: <b class="oro">es leer el mercado</b> · Módulo 2</div>
+</div>"""
+
+
+def v7_pantalla():
+    extra = (f'<div data-s="1" style="position:absolute;left:10px;right:10px;top:200px;border-top:3px dashed {ORO}"><span style="position:absolute;right:0;top:-26px;background:{ORO};color:#000;font-weight:800;font-size:16px;padding:2px 8px;border-radius:5px">BUY 0.01</span></div>'
+             f'<div data-s="2" style="position:absolute;left:10px;right:10px;top:90px;border-top:3px dashed {VERDE}"><span style="position:absolute;right:0;top:-26px;background:{VERDE};color:#000;font-weight:800;font-size:16px;padding:2px 8px;border-radius:5px">T/P</span></div>'
+             f'<div data-s="2" style="position:absolute;left:10px;right:10px;top:300px;border-top:3px dashed {ROJO}"><span style="position:absolute;right:0;top:-26px;background:{ROJO};color:#000;font-weight:800;font-size:16px;padding:2px 8px;border-radius:5px">S/L</span></div>')
+    return f"""<div class="stage" style="gap:14px"><div class="pill" data-s="0">ASÍ SE VE EN METATRADER</div>
+<div style="zoom:.8">{_mt5('graf', extra=extra)}</div>
+<div class="row" data-s="3"><div class="pill">🖱️ ARRASTRA LAS LÍNEAS PARA AJUSTAR</div><div class="pill" data-s="4">BUY = COMPRA · SELL = VENTA</div></div></div>"""
 
 
 # ---- Short 7 ----

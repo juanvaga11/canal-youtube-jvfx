@@ -40,8 +40,16 @@
    "texto": "Ejemplo de venta con el euro dólar. Vendes en uno punto cero ocho cincuenta. El precio cae hasta uno punto cero ocho veinte, y cierras. Ganaste esos treinta pips de caída. Pero si el precio sube a uno punto cero ocho setenta, pierdes veinte pips. En el siguiente video te explico qué es un pip y cuánto dinero vale."
   },
   {
+   "v": "v7_mercados",
+   "texto": "Y esto funciona igual en todos los mercados que vimos en el video dos: forex, oro, índices, criptomonedas e índices sintéticos. En todos puedes comprar y vender, y en todos aplica exactamente la misma lógica."
+  },
+  {
    "v": "v7_espejo",
    "texto": "Fíjate que la venta es el espejo de la compra. En la compra quieres que el precio suba, y en la venta quieres que baje. En la compra, tu stop loss va abajo de la entrada y tu take profit arriba. En la venta es al revés: el stop loss va arriba y el take profit abajo."
+  },
+  {
+   "v": "v7_decidir",
+   "texto": "Ahora, la gran pregunta: ¿cómo sé si comprar o vender? La respuesta corta es la estructura del mercado. Si el precio viene haciendo máximos y mínimos cada vez más altos, buscas compras. Si los hace cada vez más bajos, buscas ventas. Eso lo estudiamos a fondo en el módulo dos. Por ahora quédate con esta idea: no se trata de adivinar, se trata de leer hacia dónde va el mercado."
   },
   {
    "v": "v7_bid_ask",
@@ -49,7 +57,7 @@
   },
   {
    "v": "v7_spread",
-   "texto": "Por eso, apenas abres una operación, la ves un poquito en negativo. No es un error: es el spread, el costo de entrar. Para quedar en ganancia, el precio primero tiene que moverse a tu favor lo suficiente para cubrir ese costo."
+   "texto": "Por eso, apenas abres una operación, la ves un poquito en negativo. No es un error: es el spread, el costo de entrar. Para quedar en ganancia, el precio primero tiene que moverse a tu favor lo suficiente para cubrir ese costo. Por eso conviene operar en los horarios donde el spread es bajo, algo que vemos en el video once."
   },
   {
    "v": "v7_cerrar",
@@ -58,6 +66,10 @@
   {
    "v": "v7_mercado",
    "texto": "Ahora, ¿cómo entras? La forma más simple es la ejecución por mercado. Presionas F9, eliges el volumen, y das clic en comprar o en vender. Entras al instante, al precio que haya en ese momento."
+  },
+  {
+   "v": "v7_pantalla",
+   "texto": "Así se ve en MetaTrader. En el gráfico aparece una línea en tu precio de entrada. Y si pusiste stop loss y take profit, aparecen dos líneas más, una roja y una verde. Puedes arrastrar esas líneas con el mouse para ajustarlas. Y en la caja de herramientas ves si tu operación es una compra, que dice Buy, o una venta, que dice Sell."
   },
   {
    "v": "v7_pendientes",
