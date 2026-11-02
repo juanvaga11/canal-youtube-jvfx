@@ -1703,6 +1703,14 @@ def v7_stop():
 </div>"""
 
 
+def v7_truco():
+    return f"""<div class="stage">
+<div class="pill" data-s="0">💡 TRUCO PARA NO CONFUNDIRTE</div>
+<div class="row"><div class="card" data-s="1" style="width:600px;border-color:{ORO}"><div class="val oro">LIMIT</div><div class="p" style="font-size:32px">Mejor precio:<br>comprar más barato · vender más caro</div></div>
+<div class="card" data-s="2" style="width:600px;border-color:{ORO}"><div class="val oro">STOP</div><div class="p" style="font-size:32px">Confirmación:<br>comprar si sigue subiendo · vender si sigue bajando</div></div></div>
+</div>"""
+
+
 def v7_smc():
     return f"""<div class="stage">
 <div class="pill" data-s="0">EN SMC</div>
@@ -1757,8 +1765,8 @@ def v7_cierre():
 def v7_mercados():
     return f"""<div class="stage">
 <div class="pill" data-s="0">FUNCIONA IGUAL EN TODOS</div>
-<div class="row" data-s="0"><div class="pill">💱 FOREX</div><div class="pill">🥇 ORO</div><div class="pill">📊 ÍNDICES</div><div class="pill">₿ CRIPTO</div><div class="pill">⚡ SINTÉTICOS</div></div>
-<div class="row" data-s="1"><div class="card" style="width:420px;border-color:{VERDE}"><div class="val verde">Comprar ✓</div></div><div class="card" style="width:420px;border-color:{ROJO}"><div class="val rojo">Vender ✓</div></div></div>
+<div class="row" data-s="1"><div class="pill">💱 FOREX</div><div class="pill">🥇 ORO</div><div class="pill">📊 ÍNDICES</div><div class="pill">₿ CRIPTO</div><div class="pill">⚡ SINTÉTICOS</div></div>
+<div class="row" data-s="2"><div class="card" style="width:420px;border-color:{VERDE}"><div class="val verde">Comprar ✓</div></div><div class="card" style="width:420px;border-color:{ROJO}"><div class="val rojo">Vender ✓</div></div></div>
 </div>"""
 
 
@@ -1766,10 +1774,10 @@ def v7_decidir():
     return f"""<div class="stage" style="gap:18px">
 <div class="h2" data-s="0" style="font-size:56px">¿Comprar o vender? → <span class="oro">la estructura</span></div>
 <div class="row">
-<div class="card" data-s="2" style="width:600px;border-color:{VERDE}">{_ruta([30, 45, 38, 55, 48, 66], w=500, h=230, col=VERDE)}<div class="val verde" style="font-size:36px">Máximos y mínimos más altos → compras</div></div>
-<div class="card" data-s="3" style="width:600px;border-color:{ROJO}">{_ruta([66, 52, 58, 42, 48, 30], w=500, h=230, col=ROJO)}<div class="val rojo" style="font-size:36px">Más bajos → ventas</div></div>
+<div class="card" data-s="3" style="width:600px;border-color:{VERDE}">{_ruta([30, 45, 38, 55, 48, 66], w=500, h=230, col=VERDE)}<div class="val verde" style="font-size:36px">Máximos y mínimos más altos → compras</div></div>
+<div class="card" data-s="4" style="width:600px;border-color:{ROJO}">{_ruta([66, 52, 58, 42, 48, 30], w=500, h=230, col=ROJO)}<div class="val rojo" style="font-size:36px">Más bajos → ventas</div></div>
 </div>
-<div class="p" data-s="5">No es adivinar: <b class="oro">es leer el mercado</b> · Módulo 2</div>
+<div class="p" data-s="6">No es adivinar: <b class="oro">es leer el mercado</b> · Módulo 2</div>
 </div>"""
 
 

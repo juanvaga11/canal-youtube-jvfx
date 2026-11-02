@@ -17,7 +17,7 @@
   },
   {
    "v": "v7_dos",
-   "texto": "En trading solo hay dos tipos de operación. Comprar, que también se le dice ir en largo. Y vender, que también se le dice ir en corto. No hay más. Todo lo demás son formas distintas de entrar a una de estas dos."
+   "texto": "En trading solo hay dos tipos de operación. Comprar, que también se le dice ir en largo. Y vender, que también se le dice ir en corto. No hay más. Todo lo demás son formas distintas de entrar a una de estas dos. Y en las dos puedes ganar o perder, según hacia dónde se mueva el precio."
   },
   {
    "v": "v7_compra",
@@ -82,6 +82,10 @@
   {
    "v": "v7_stop",
    "texto": "Las órdenes Stop esperan una ruptura. Un Buy Stop es una compra por encima del precio actual: entras solo si el precio rompe hacia arriba. Un Sell Stop es una venta por debajo del precio: entras solo si rompe hacia abajo."
+  },
+  {
+   "v": "v7_truco",
+   "texto": "Un truco para no confundirte. Limit significa que quieres un mejor precio que el actual: comprar más barato o vender más caro. Stop significa que quieres confirmación: comprar solo si sigue subiendo, o vender solo si sigue bajando. Si recuerdas eso, nunca vas a poner una orden al revés."
   },
   {
    "v": "v7_smc",
