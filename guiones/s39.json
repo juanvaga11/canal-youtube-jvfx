@@ -1,0 +1,43 @@
+{
+ "id": "s39",
+ "formato": "vertical",
+ "titulo": "Cómo calcular tu LOTE exacto en 30 segundos 🧮 #trading #shorts",
+ "desde": "v10",
+ "escenas": [
+  {
+   "v": "s39_a",
+   "texto": "Cómo calcular tu lote exacto.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🧮",
+    "titulo": "Calcula tu <span class='oro'>LOTE</span> exacto"
+   }
+  },
+  {
+   "v": "s39_b",
+   "texto": "Riesgo en dólares, dividido entre los pips del stop por el valor del pip.",
+   "vis": {
+    "t": "texto",
+    "fs": 80,
+    "titulo": "Lote = <span class='oro'>riesgo $</span> ÷ (pips SL × valor pip)"
+   }
+  },
+  {
+   "v": "s39_c",
+   "texto": "Diez dólares de riesgo, stop de veinte pips en euro dólar. Cero coma cero cinco lotes.",
+   "vis": {
+    "t": "big",
+    "big": "0.05",
+    "sub": "$10 ÷ (20 × $10)",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s39_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

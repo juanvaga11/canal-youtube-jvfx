@@ -1903,6 +1903,79 @@ def _g_ruta(v):
 _PLANT = {"gancho": _g_gancho, "big": _g_big, "lista": _g_lista, "vs": _g_vs, "texto": _g_texto, "velas": _g_velas, "ruta": _g_ruta, "cta": lambda v: s_cta()}
 
 
+# ---------- Plantilla horizontal por bloques (escena con vis {"t":"h","b":[...]}) ----------
+QR_REGALO = _uri("qr_regalo.png")
+
+
+def _hb(b):
+    s = f' data-s="{b["s"]}"' if "s" in b else ""
+    c = _COL.get(b.get("color"), b.get("color"))
+    if "pill" in b:
+        st = f"border-color:{c};color:{c};" if c else ""
+        return f'<div class="pill"{s} style="{st}{b.get("st","")}">{b["pill"]}</div>'
+    if "h1" in b:
+        return f'<div class="h1"{s} style="font-size:{b.get("fs",96)}px">{b["h1"]}</div>'
+    if "h2" in b:
+        return f'<div class="h2"{s} style="font-size:{b.get("fs",60)}px">{b["h2"]}</div>'
+    if "p" in b:
+        return f'<div class="p"{s} style="font-size:{b.get("fs",38)}px">{b["p"]}</div>'
+    if "big" in b:
+        return f'<div class="big"{s} style="font-size:{b.get("fs",200)}px;color:{c or ORO}">{b["big"]}</div>'
+    if "emoji" in b:
+        return f'<div{s} style="font-size:{b.get("fs",140)}px;line-height:1">{b["emoji"]}</div>'
+    if "logo" in b:
+        return f'<img{s} src="{LOGO}" style="height:{b.get("h",280)}px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))">'
+    if "cards" in b:
+        out = []
+        for k in b["cards"]:
+            kc = _COL.get(k.get("color"), k.get("color"))
+            ks = f' data-s="{k["s"]}"' if "s" in k else ""
+            ico = f'<div class="ico">{k["ico"]}</div>' if k.get("ico") else ""
+            lbl = f'<div class="lbl">{k["lbl"]}</div>' if k.get("lbl") else ""
+            val = f'<div class="val" style="font-size:{k.get("fs",50)}px;{"color:"+kc if kc else ""}">{k["val"]}</div>' if k.get("val") else ""
+            sub = f'<div class="p" style="font-size:30px;margin-top:8px">{k["sub"]}</div>' if k.get("sub") else ""
+            top = lbl + val if k.get("lbl_arriba", True) else val + lbl
+            out.append(f'<div class="card"{ks} style="width:{k.get("w",420)}px;{"border-color:"+kc if kc else ""}">{ico}{top}{sub}</div>')
+        return f'<div class="row"{s} style="gap:{b.get("gap",34)}px">{"".join(out)}</div>'
+    if "chk" in b:
+        def ico(t, i):
+            if t == "x": return f'<b style="background:{ROJO};color:#fff">✕</b>'
+            if t == "num": return f'<b>{i + 1}</b>'
+            return '<b>✓</b>'
+        _st = lambda t: t.replace("<b ", "<strong ").replace("<b>", "<strong>").replace("</b>", "</strong>")
+        items = "".join(f'<div class="chk" data-s="{it[0]}" style="font-size:{b.get("fs",40)}px">{ico(it[2] if len(it) > 2 else b.get("tipo","check"), i)}<span>{_st(it[1])}</span></div>' for i, it in enumerate(b["chk"]))
+        return f'<div{s} style="display:flex;flex-direction:column;gap:{b.get("gap",20)}px">{items}</div>'
+    if "tabla" in b:
+        rows = "".join(f'<div data-s="{r[0]}" style="display:flex;justify-content:space-between;gap:40px;padding:12px 0;border-bottom:1px solid #2a2a2a;font-size:{b.get("fs",36)}px"><span style="color:#aaa">{r[1]}</span><b style="color:{_COL.get(r[3], r[3]) if len(r) > 3 else "#fff"}">{r[2]}</b></div>' for r in b["tabla"])
+        bc = f"border-color:{c};" if c else ""
+        tit = f'<div class="lbl" style="margin:0 0 6px">{b["titulo"]}</div>' if b.get("titulo") else ""
+        return f'<div class="card"{s} style="width:{b.get("w",640)}px;text-align:left;{bc}">{tit}{rows}</div>'
+    if "ruta" in b:
+        r = b["ruta"]
+        lin = [(a, t, _COL.get(cc, cc), sd) for a, t, cc, sd in r.get("lineas", [])]
+        return f'<div{s}>{_ruta(r["pts"], lin, w=r.get("w",900), h=r.get("h",330), col=_COL.get(r.get("color")))}</div>'
+    if "velas" in b:
+        r = b["velas"]
+        return f'<div{s}>{_velas([tuple(x) for x in r["v"]], w=r.get("w",760), h=r.get("h",380), resaltar=r.get("resaltar"), zona=tuple(r["zona"]) if r.get("zona") else None, ancho=r.get("ancho",.55))}</div>'
+    if "qr" in b:
+        return f'<div class="card"{s} style="padding:22px;border-color:#25D366;display:flex;align-items:center;gap:30px;text-align:left"><img src="{QR_REGALO}" style="width:{b.get("tam",230)}px;border-radius:14px;background:#fff;padding:8px"><div><div class="lbl" style="color:#25D366">🎁 Guía gratis</div><div class="val" style="font-size:40px">Escanea y escríbeme<br><span class="oro">REGALO</span></div><div class="p" style="font-size:26px;text-align:left;margin-top:8px">o usa el enlace de la descripción</div></div></div>'
+    if "row" in b:
+        return f'<div class="row"{s} style="align-items:center;gap:{b.get("gap",50)}px">{"".join(_hb(x) for x in b["row"])}</div>'
+    if "col" in b:
+        al = b.get("align", "center")
+        return f'<div{s} style="display:flex;flex-direction:column;align-items:{al};gap:{b.get("gap",20)}px;width:{b.get("w",640)}px">{"".join(_hb(x) for x in b["col"])}</div>'
+    if "html" in b:
+        return f'<div{s}>{b["html"]}</div>'
+    raise ValueError(f"bloque desconocido: {b}")
+
+
+def _g_h(v):
+    return f'<div class="stage" style="gap:{v.get("gap",26)}px">{"".join(_hb(b) for b in v["b"])}</div>'
+
+
+_PLANT["h"] = _g_h
+
+
 def _registrar_vis():
     import glob, json
     base = os.path.join(os.path.dirname(__file__), "..", "guiones")

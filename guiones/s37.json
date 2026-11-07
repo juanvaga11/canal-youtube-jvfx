@@ -1,0 +1,44 @@
+{
+ "id": "s37",
+ "formato": "vertical",
+ "titulo": "¿Cuánto ARRIESGAR por operación? Mi regla 💰 #trading #shorts",
+ "desde": "v10",
+ "escenas": [
+  {
+   "v": "s37_a",
+   "texto": "¿Cuánto debes arriesgar en cada operación?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "💰",
+    "titulo": "¿Cuánto <span class='oro'>arriesgar</span> por operación?"
+   }
+  },
+  {
+   "v": "s37_b",
+   "texto": "Los profesionales arriesgan entre el medio y el dos por ciento. Yo uso el uno por ciento.",
+   "vis": {
+    "t": "big",
+    "big": "1 %",
+    "pill": "MI REGLA",
+    "sub": "por operación",
+    "s_sub": 1
+   }
+  },
+  {
+   "v": "s37_c",
+   "texto": "Con mil dólares, son diez dólares por operación. Ni un peso más.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🛡️",
+    "titulo": "$1.000 → <span class='oro'>$10</span> por operación"
+   }
+  },
+  {
+   "v": "s37_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

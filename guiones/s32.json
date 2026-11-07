@@ -1,0 +1,45 @@
+{
+ "id": "s32",
+ "formato": "vertical",
+ "titulo": "Qué es un PIP en 20 segundos 📏 #trading #shorts",
+ "desde": "v08",
+ "escenas": [
+  {
+   "v": "s32_a",
+   "texto": "¿Qué es un pip?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "📏",
+    "titulo": "¿Qué es un <span class='oro'>PIP</span>?"
+   }
+  },
+  {
+   "v": "s32_b",
+   "texto": "Es la unidad que mide cuánto se mueve el precio. En el euro dólar es el cuarto decimal.",
+   "vis": {
+    "t": "big",
+    "big": "4.º",
+    "sub": "decimal = 1 pip en EURUSD",
+    "s_sub": 1
+   }
+  },
+  {
+   "v": "s32_c",
+   "texto": "Si pasa de uno coma cero ocho cero cero, a uno coma cero ocho uno cero, se movió diez pips.",
+   "vis": {
+    "t": "big",
+    "big": "+10",
+    "color": "verde",
+    "sub": "1.0800 → 1.0810 = 10 pips",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s32_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

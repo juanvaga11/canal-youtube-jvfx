@@ -1,0 +1,55 @@
+{
+ "id": "s38",
+ "formato": "vertical",
+ "titulo": "10 pérdidas seguidas: 1% vs 10% de riesgo 📉 #trading #shorts",
+ "desde": "v10",
+ "escenas": [
+  {
+   "v": "s38_a",
+   "texto": "¿Qué pasa con diez pérdidas seguidas?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "📉",
+    "titulo": "¿Qué pasa con <span class='rojo'>10 pérdidas</span> seguidas?"
+   }
+  },
+  {
+   "v": "s38_b",
+   "texto": "Arriesgando el uno por ciento, pierdes cerca del diez por ciento de tu cuenta. Arriesgando el diez por ciento, pierdes casi dos tercios.",
+   "vis": {
+    "t": "vs",
+    "pill": "10 PÉRDIDAS SEGUIDAS",
+    "a": [
+     "🛡️",
+     "Riesgo 1 %",
+     "−9,6 %",
+     "verde"
+    ],
+    "b": [
+     "💀",
+     "Riesgo 10 %",
+     "−65 %",
+     "rojo"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s38_c",
+   "texto": "Uno sigue operando. El otro ya quemó la cuenta.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🔥",
+    "titulo": "Uno sigue. <span class='rojo'>El otro quemó la cuenta</span>"
+   }
+  },
+  {
+   "v": "s38_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1193 @@
+{
+ "id": "v10",
+ "formato": "horizontal",
+ "titulo": "Gestión de riesgo: cuánto arriesgar por operación",
+ "escenas": [
+  {
+   "v": "v10_gancho",
+   "texto": "Dos traders tienen la misma estrategia, el mismo mercado y aciertan las mismas operaciones. Al final del mes, uno duplicó su cuenta en una semana y la quemó en la siguiente. El otro creció poco a poco y sigue operando. La diferencia no fue la estrategia. Fue cuánto arriesgaron en cada operación.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "pill": "TRADER A",
+          "color": "rojo"
+         },
+         {
+          "ruta": {
+           "pts": [
+            20,
+            30,
+            45,
+            62,
+            40,
+            15,
+            4
+           ],
+           "w": 600,
+           "h": 240,
+           "color": "rojo"
+          }
+         }
+        ],
+        "w": 620,
+        "s": 1
+       },
+       {
+        "col": [
+         {
+          "pill": "TRADER B",
+          "color": "verde"
+         },
+         {
+          "ruta": {
+           "pts": [
+            20,
+            24,
+            23,
+            28,
+            31,
+            30,
+            36
+           ],
+           "w": 600,
+           "h": 240,
+           "color": "verde"
+          }
+         }
+        ],
+        "w": 620,
+        "s": 2
+       }
+      ],
+      "gap": 40
+     },
+     {
+      "h2": "No fue la estrategia…",
+      "s": 3,
+      "fs": 56
+     },
+     {
+      "h2": "…fue <span class='oro'>cuánto arriesgaron</span>",
+      "s": 4,
+      "fs": 60
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "intro",
+   "texto": ""
+  },
+  {
+   "v": "v10_marca",
+   "texto": "Bienvenido a JulianVal.fx. Este es el video diez, y cierra el bloque más importante de la serie. Ya sabes qué es un lote y dónde va el stop loss. Hoy juntamos todo, para que sepas cuánto arriesgar y qué lote usar en cada operación.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "logo": 1,
+      "h": 280
+     },
+     {
+      "cards": [
+       {
+        "val": "Fundamentos",
+        "lbl": "Serie",
+        "ico": "",
+        "w": 420,
+        "fs": 50,
+        "sub": ""
+       },
+       {
+        "val": "#10",
+        "lbl": "Video",
+        "ico": "",
+        "w": 300,
+        "fs": 50,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "p": "Hoy: <b class='oro'>gestión de riesgo</b> · cuánto arriesgar y qué lote usar",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_que_es",
+   "texto": "La gestión de riesgo es decidir cuánto dinero estás dispuesto a perder en cada operación, antes de entrar. No se trata de evitar las pérdidas, porque las pérdidas son parte del trading. Hasta los mejores traders del mundo pierden muchas operaciones. Se trata de que ninguna pérdida, ni ninguna racha mala, te saque del juego.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "GESTIÓN DE RIESGO",
+      "s": 0
+     },
+     {
+      "h2": "¿Cuánto estoy dispuesto a perder… <span class='oro'>antes de entrar</span>?",
+      "s": 0,
+      "fs": 54
+     },
+     {
+      "chk": [
+       [
+        1,
+        "No es evitar las pérdidas",
+        "x"
+       ],
+       [
+        2,
+        "Hasta los mejores pierden muchas",
+        "check"
+       ]
+      ],
+      "fs": 42
+     },
+     {
+      "h2": "Es que ninguna racha <span class='rojo'>te saque del juego</span>",
+      "s": 3,
+      "fs": 54
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_casino",
+   "texto": "Piensa en un casino. El casino pierde muchas manos todos los días, pero al final del año siempre gana. ¿Por qué? Porque cada apuesta es pequeña comparada con su capital, y tiene una ventaja que se repite miles de veces. Tú quieres ser el casino, no el apostador que se juega todo en una sola mano.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "🎰",
+      "fs": 120
+     },
+     {
+      "h2": "Pierde manos… <span class='verde'>gana el año</span>",
+      "s": 1,
+      "fs": 60
+     },
+     {
+      "chk": [
+       [
+        3,
+        "Cada apuesta es pequeña vs su capital"
+       ],
+       [
+        3,
+        "Una ventaja repetida miles de veces"
+       ]
+      ],
+      "fs": 42
+     },
+     {
+      "h2": "Sé el <span class='oro'>casino</span>, no el apostador",
+      "s": 4,
+      "fs": 58
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_regla",
+   "texto": "La regla más usada por los profesionales es arriesgar entre el medio y el dos por ciento de la cuenta en cada operación. Yo uso el uno por ciento. Si tu cuenta es de mil dólares, el uno por ciento son diez dólares. Eso es lo máximo que vas a perder si te toca el stop loss. Ni un peso más.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LA REGLA · 0,5 % A 2 %",
+      "s": 0
+     },
+     {
+      "big": "1 %",
+      "s": 1,
+      "fs": 210
+     },
+     {
+      "cards": [
+       {
+        "val": "$1.000 → riesgo $10",
+        "lbl": "Ejemplo",
+        "ico": "",
+        "w": 760,
+        "fs": 56,
+        "sub": ""
+       }
+      ],
+      "s": 2
+     },
+     {
+      "p": "Lo máximo si te toca el SL · <b class='oro'>ni un peso más</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_por_que",
+   "texto": "¿Por qué tan poquito? Mira lo que pasa con una racha de diez pérdidas seguidas, que le pasa a cualquiera. Arriesgando el uno por ciento, después de diez pérdidas tu cuenta baja cerca de un diez por ciento. Arriesgando el diez por ciento, después de las mismas diez pérdidas pierdes casi dos tercios de tu cuenta. Con el primero sigues operando tranquilo. Con el segundo ya estás pensando en recuperar, y ahí empiezan los errores.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "10 PÉRDIDAS SEGUIDAS",
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "−9,6 %",
+        "lbl": "Arriesgando 1 %",
+        "ico": "",
+        "w": 500,
+        "fs": 80,
+        "sub": "",
+        "s": 2,
+        "color": "oro"
+       },
+       {
+        "val": "−65 %",
+        "lbl": "Arriesgando 10 %",
+        "ico": "",
+        "w": 500,
+        "fs": 80,
+        "sub": "",
+        "s": 3,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "row": [
+       {
+        "p": "1 % → <b class='verde'>sigues tranquilo</b>",
+        "s": 4
+       },
+       {
+        "p": "10 % → <b class='rojo'>modo recuperar</b>",
+        "s": 5
+       }
+      ],
+      "gap": 80
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_recuperar",
+   "texto": "Y aquí está lo más duro. Recuperar es mucho más difícil que perder. Si pierdes el diez por ciento, necesitas ganar un once por ciento para volver a donde estabas. Si pierdes el cincuenta por ciento, necesitas ganar el cien por ciento, o sea, duplicar lo que te quedó. Por eso proteger la cuenta es la prioridad número uno.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "RECUPERAR ES MÁS DIFÍCIL",
+      "s": 1
+     },
+     {
+      "tabla": [
+       [
+        2,
+        "Pierdes 10 %",
+        "necesitas +11 %"
+       ],
+       [
+        3,
+        "Pierdes 25 %",
+        "necesitas +33 %",
+        "oro"
+       ],
+       [
+        3,
+        "Pierdes 50 %",
+        "necesitas +100 %",
+        "rojo"
+       ]
+      ],
+      "w": 900,
+      "fs": 44
+     },
+     {
+      "pill": "PRIORIDAD #1: PROTEGER LA CUENTA",
+      "s": 4,
+      "color": "verde"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_formula",
+   "texto": "Ahora, cómo se calcula el lote. Necesitas tres datos. Cuánto vas a arriesgar en dólares, a cuántos pips está tu stop loss, y cuánto vale el pip por cada lote. La fórmula es esta. Lote igual a riesgo en dólares, dividido entre los pips del stop por el valor del pip de un lote.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🧮 CÓMO CALCULAR EL LOTE",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        2,
+        "Riesgo en dólares",
+        "num"
+       ],
+       [
+        2,
+        "Pips del stop loss",
+        "num"
+       ],
+       [
+        2,
+        "Valor del pip por lote",
+        "num"
+       ]
+      ],
+      "fs": 44
+     },
+     {
+      "cards": [
+       {
+        "val": "Lote = <span class='oro'>riesgo $</span> ÷ (pips del SL × valor del pip)",
+        "lbl": "",
+        "ico": "",
+        "w": 1400,
+        "fs": 50,
+        "sub": ""
+       }
+      ],
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_ej_eur",
+   "texto": "Ejemplo con el euro dólar. Cuenta de mil dólares, riesgo del uno por ciento, o sea diez dólares. Tu stop loss está a veinte pips. Un lote completo vale diez dólares por pip. Entonces, diez dividido entre veinte por diez, da cero coma cero cinco. Ese es tu lote. Si te toca el stop, pierdes exactamente diez dólares.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EJEMPLO · EURUSD",
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "tabla": [
+         [
+          1,
+          "Cuenta",
+          "$1.000"
+         ],
+         [
+          1,
+          "Riesgo 1 %",
+          "$10"
+         ],
+         [
+          2,
+          "Stop loss",
+          "20 pips"
+         ],
+         [
+          3,
+          "Valor pip (1 lote)",
+          "$10"
+         ]
+        ],
+        "w": 640,
+        "fs": 40
+       },
+       {
+        "col": [
+         {
+          "cards": [
+           {
+            "val": "$10 ÷ (20 × $10)",
+            "lbl": "Cálculo",
+            "ico": "",
+            "w": 520,
+            "fs": 46,
+            "sub": ""
+           }
+          ],
+          "s": 4
+         },
+         {
+          "cards": [
+           {
+            "val": "0.05",
+            "lbl": "Tu lote",
+            "ico": "",
+            "w": 520,
+            "fs": 80,
+            "sub": "",
+            "color": "oro"
+           }
+          ],
+          "s": 5
+         },
+         {
+          "p": "SL = <b class='rojo'>−$10 exactos</b>",
+          "s": 6
+         }
+        ],
+        "w": 540
+       }
+      ],
+      "gap": 40
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_ej_oro",
+   "texto": "Ahora con el oro. Misma cuenta, mismos diez dólares de riesgo. Tu stop loss está a cinco dólares del precio de entrada. Con cero coma cero uno, cada dólar de movimiento vale un dólar, así que esos cinco dólares de stop te costarían cinco dólares. Para arriesgar diez, usas cero coma cero dos. Fácil, ¿cierto?",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🥇 EJEMPLO · ORO",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        1,
+        "Riesgo",
+        "$10"
+       ],
+       [
+        2,
+        "Stop loss",
+        "$5 de distancia"
+       ],
+       [
+        3,
+        "Con 0.01",
+        "−$5 si toca el SL"
+       ],
+       [
+        4,
+        "Lote",
+        "0.02 → −$10",
+        "oro"
+       ]
+      ],
+      "w": 900,
+      "fs": 44
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_clave",
+   "texto": "Mira algo clave. El riesgo siempre es el mismo, pero el lote cambia según la distancia del stop. Si el stop está cerca, puedes usar un lote más grande. Si el stop está lejos, el lote tiene que ser más pequeño. Lo que nunca cambia es tu uno por ciento.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LA CLAVE",
+      "s": 0
+     },
+     {
+      "h2": "Riesgo <span class='oro'>fijo</span> · lote <span class='verde'>variable</span>",
+      "s": 1,
+      "fs": 64
+     },
+     {
+      "cards": [
+       {
+        "val": "Lote más grande",
+        "lbl": "SL cerca",
+        "ico": "",
+        "w": 480,
+        "fs": 50,
+        "sub": "",
+        "s": 2,
+        "color": "verde"
+       },
+       {
+        "val": "Lote más pequeño",
+        "lbl": "SL lejos",
+        "ico": "",
+        "w": 480,
+        "fs": 50,
+        "sub": "",
+        "s": 3,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "h2": "Lo que nunca cambia: <span class='oro'>tu 1 %</span>",
+      "s": 4,
+      "fs": 54
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_cuenta_pequena",
+   "texto": "¿Y si tu cuenta es muy pequeña? Con cien dólares, el uno por ciento es un dólar. Y con el lote mínimo de cero coma cero uno, un stop de veinte pips en el euro dólar ya te cuesta dos dólares, el dos por ciento. En ese caso tienes dos opciones. Buscar operaciones con stops más cortos, o aceptar un riesgo un poco mayor, máximo el dos por ciento. Lo que no puedes hacer es abrir un lote más grande para ganar más rápido.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "CUENTA PEQUEÑA · $100",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        1,
+        "1 % de $100",
+        "$1"
+       ],
+       [
+        2,
+        "SL 20 pips con 0.01",
+        "$2 = 2 %",
+        "oro"
+       ]
+      ],
+      "w": 860,
+      "fs": 42
+     },
+     {
+      "chk": [
+       [
+        4,
+        "Stops más cortos",
+        "num"
+       ],
+       [
+        4,
+        "O riesgo máximo del 2 %",
+        "num"
+       ]
+      ],
+      "fs": 42
+     },
+     {
+      "pill": "NO SUBAS EL LOTE PARA GANAR RÁPIDO",
+      "s": 5,
+      "color": "rojo"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_calculadora",
+   "texto": "No tienes que hacer esta cuenta a mano cada vez. Existen calculadoras de tamaño de posición gratis en internet. Pones tu cuenta, tu riesgo, el par y los pips del stop, y te dice el lote. Lo importante es que entiendas de dónde sale el número, para que nunca operes a ciegas.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🧮 CALCULADORA DE LOTE",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        2,
+        "Cuenta",
+        "$1.000"
+       ],
+       [
+        2,
+        "Riesgo",
+        "1 %"
+       ],
+       [
+        2,
+        "Par",
+        "EURUSD"
+       ],
+       [
+        2,
+        "Stop loss",
+        "20 pips"
+       ],
+       [
+        2,
+        "Lote",
+        "0.05",
+        "oro"
+       ]
+      ],
+      "w": 760,
+      "fs": 40,
+      "s": 1
+     },
+     {
+      "p": "Entiende de dónde sale · <b class='oro'>nunca a ciegas</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_ventaja",
+   "texto": "Ahora une esto con el video anterior. Si arriesgas uno para ganar dos, y aciertas solo el cuarenta por ciento, en cien operaciones pierdes sesenta veces el uno por ciento y ganas cuarenta veces el dos por ciento. Eso es menos sesenta, más ochenta. Terminas cerca de un veinte por ciento arriba, acertando menos de la mitad.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "1 % + 1:2 = TU VENTAJA",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        1,
+        "100 operaciones",
+        "40 % de acierto"
+       ],
+       [
+        2,
+        "60 perdidas × 1 %",
+        "−60 %",
+        "rojo"
+       ],
+       [
+        2,
+        "40 ganadas × 2 %",
+        "+80 %",
+        "verde"
+       ],
+       [
+        3,
+        "Resultado",
+        "≈ +20 %",
+        "oro"
+       ]
+      ],
+      "w": 900,
+      "fs": 44
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_limites",
+   "texto": "La gestión de riesgo no es solo por operación. También necesitas límites por día y por semana. Por ejemplo, máximo dos o tres pérdidas en el día, y cierras la plataforma. O un límite del cinco por ciento en la semana. Estos límites te protegen de tu peor enemigo, que eres tú mismo operando con rabia.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LÍMITES DIARIOS Y SEMANALES",
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "Máx. 2–3 pérdidas → cierras",
+        "lbl": "Por día",
+        "ico": "",
+        "w": 560,
+        "fs": 42,
+        "sub": "",
+        "s": 2
+       },
+       {
+        "val": "Máx. −5 %",
+        "lbl": "Por semana",
+        "ico": "",
+        "w": 480,
+        "fs": 56,
+        "sub": "",
+        "s": 3,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "h2": "Tu peor enemigo: <span class='rojo'>operar con rabia</span>",
+      "s": 4,
+      "fs": 56
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_emociones",
+   "texto": "La gestión de riesgo también es emocional. Cuando arriesgas una cantidad que no te duele, piensas con claridad. Respetas el stop, no cierras antes de tiempo, y no te desesperas. Cuando arriesgas demasiado, cada vela te acelera el corazón, y empiezas a tomar decisiones con miedo. Si una pérdida te quita el sueño, estás arriesgando demasiado.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🧠 RIESGO Y EMOCIONES",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "😌 Decides con claridad",
+        "lbl": "Riesgo que no duele",
+        "ico": "",
+        "w": 560,
+        "fs": 42,
+        "sub": "",
+        "s": 1,
+        "color": "verde"
+       },
+       {
+        "val": "😰 Decides con miedo",
+        "lbl": "Riesgo excesivo",
+        "ico": "",
+        "w": 560,
+        "fs": 42,
+        "sub": "",
+        "s": 3,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "h2": "¿Te quita el sueño? <span class='rojo'>Es demasiado</span>",
+      "s": 4,
+      "fs": 58
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_oculto",
+   "texto": "Otro error silencioso es abrir varias operaciones al mismo tiempo en pares que se mueven igual. Si compras euro dólar y libra dólar a la vez, con el uno por ciento cada una, en la práctica estás arriesgando casi el dos por ciento en la misma idea. Si el dólar se fortalece, pierdes en las dos.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "⚠️ RIESGO OCULTO",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "row": [
+       {
+        "cards": [
+         {
+          "val": "1 %",
+          "lbl": "Compra EURUSD",
+          "ico": "",
+          "w": 320,
+          "fs": 50,
+          "sub": ""
+         }
+        ]
+       },
+       {
+        "h1": "+"
+       },
+       {
+        "cards": [
+         {
+          "val": "1 %",
+          "lbl": "Compra GBPUSD",
+          "ico": "",
+          "w": 320,
+          "fs": 50,
+          "sub": ""
+         }
+        ]
+       },
+       {
+        "h1": "="
+       },
+       {
+        "cards": [
+         {
+          "val": "≈ 2 %",
+          "lbl": "La misma idea",
+          "ico": "",
+          "w": 360,
+          "fs": 50,
+          "sub": "",
+          "color": "rojo"
+         }
+        ]
+       }
+      ],
+      "s": 1,
+      "gap": 26
+     },
+     {
+      "p": "Dólar fuerte → <b class='rojo'>pierdes en las dos</b>",
+      "s": 2
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_crecer",
+   "texto": "¿Y cuándo subo el riesgo? Cuando tu cuenta crece, el uno por ciento también crece solo. Con mil dólares arriesgas diez. Con dos mil, arriesgas veinte, sin cambiar la regla. Así tus ganancias crecen con tu cuenta, de forma natural y sin saltos peligrosos. El porcentaje se queda igual, lo que crece es la cuenta.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "¿CUÁNDO CRECE EL RIESGO?",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        2,
+        "Cuenta $1.000",
+        "1 % = $10"
+       ],
+       [
+        3,
+        "Cuenta $2.000",
+        "1 % = $20",
+        "verde"
+       ]
+      ],
+      "w": 860,
+      "fs": 44
+     },
+     {
+      "ruta": {
+       "pts": [
+        20,
+        23,
+        22,
+        27,
+        30,
+        29,
+        35,
+        38
+       ],
+       "w": 900,
+       "h": 200,
+       "color": "verde"
+      },
+      "s": 4
+     },
+     {
+      "h2": "Mismo % · <span class='verde'>cuenta más grande</span>",
+      "s": 5,
+      "fs": 56
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_mi_regla",
+   "texto": "Te dejo mi regla completa, para que la copies. Uno por ciento por operación. Mínimo uno a dos de riesgo beneficio. Stop loss siempre, donde la idea se invalida. Máximo dos pérdidas al día. Y el lote se calcula, nunca se adivina.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📋 MI REGLA DE RIESGO",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "<b class='oro'>1 %</b> por operación",
+        "num"
+       ],
+       [
+        2,
+        "Mínimo <b class='oro'>1 : 2</b>",
+        "num"
+       ],
+       [
+        3,
+        "Stop loss siempre, donde la idea se invalida",
+        "num"
+       ],
+       [
+        4,
+        "Máximo 2 pérdidas al día",
+        "num"
+       ],
+       [
+        5,
+        "El lote se <b class='verde'>calcula</b>, nunca se adivina",
+        "num"
+       ]
+      ],
+      "fs": 42,
+      "gap": 16
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_diario",
+   "texto": "Y una última herramienta. Lleva un diario de trading. Cada operación, con su riesgo, su lote y su resultado. Después de un mes, vas a ver con números si estás respetando tu gestión de riesgo, o si la estás rompiendo sin darte cuenta. Lo que no se mide, no se mejora.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📒 DIARIO DE TRADING",
+      "s": 1
+     },
+     {
+      "tabla": [
+       [
+        2,
+        "Par",
+        "EURUSD"
+       ],
+       [
+        2,
+        "Riesgo",
+        "1 % · $10"
+       ],
+       [
+        2,
+        "Lote",
+        "0.05"
+       ],
+       [
+        2,
+        "Resultado",
+        "+$20",
+        "verde"
+       ]
+      ],
+      "titulo": "Mi diario",
+      "w": 760,
+      "fs": 40
+     },
+     {
+      "h2": "Lo que no se mide, <span class='oro'>no se mejora</span>",
+      "s": 4,
+      "fs": 56
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_errores",
+   "texto": "Los errores más comunes son cuatro. Arriesgar más para recuperar lo que perdiste. Subir el riesgo después de una racha ganadora, porque te sientes invencible. Usar siempre el mismo lote, sin importar dónde está el stop. Y no tener ningún límite diario.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "ERRORES COMUNES",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Arriesgar más para recuperar",
+        "x"
+       ],
+       [
+        2,
+        "Subir el riesgo tras una racha ganadora",
+        "x"
+       ],
+       [
+        3,
+        "Mismo lote sin importar el stop",
+        "x"
+       ],
+       [
+        4,
+        "Cero límite diario",
+        "x"
+       ]
+      ],
+      "fs": 44
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_ejercicio",
+   "texto": "Tu ejercicio en demo. Configura tu cuenta demo con el mismo dinero que piensas usar en real. Haz diez operaciones arriesgando exactamente el uno por ciento, calculando el lote cada vez. Anota en una hoja el riesgo, el lote, el resultado y cómo te sentiste. Al final, revisa si respetaste la regla en todas.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📝 EJERCICIO EN DEMO",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Demo con el mismo dinero que usarías en real",
+        "num"
+       ],
+       [
+        2,
+        "10 operaciones al 1 %, calculando el lote",
+        "num"
+       ],
+       [
+        3,
+        "Anota riesgo, lote, resultado y emoción",
+        "num"
+       ],
+       [
+        4,
+        "¿Respetaste la regla en todas?",
+        "num"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_comentarios",
+   "texto": "Cuéntame en los comentarios. Con una cuenta de quinientos dólares, arriesgando el uno por ciento, y un stop de veinticinco pips en el euro dólar, ¿qué lote usarías? Al primero que responda bien, le fijo el comentario.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "💬"
+     },
+     {
+      "h2": "Cuenta $500 · riesgo 1 % · SL 25 pips EURUSD → <span class='oro'>¿qué lote?</span>",
+      "s": 1,
+      "fs": 56
+     },
+     {
+      "p": "Responde y <b class='oro'>te fijo el comentario 📌</b>",
+      "s": 2
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_resumen",
+   "texto": "Resumamos. La gestión de riesgo es decidir cuánto puedes perder antes de entrar. Arriesga el uno por ciento por operación. Calcula el lote con la fórmula, según la distancia del stop. Combínalo con uno a dos. Y ponte límites diarios, para protegerte de ti mismo.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "RESUMEN",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Decide cuánto perder <b class='oro'>antes de entrar</b>"
+       ],
+       [
+        2,
+        "<b class='oro'>1 %</b> por operación"
+       ],
+       [
+        3,
+        "Lote = riesgo ÷ (pips SL × valor pip)"
+       ],
+       [
+        4,
+        "Mínimo <b class='oro'>1 : 2</b>"
+       ],
+       [
+        5,
+        "Límites diarios"
+       ]
+      ],
+      "fs": 42,
+      "gap": 16
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v10_cierre",
+   "texto": "Con este video terminas lo esencial para operar con cabeza. En el siguiente te explico los horarios del mercado desde Colombia, cuándo operar y cuándo no. Suscríbete y activa la campanita. Y si estás empezando, te tengo un regalo. La guía gratis con los cinco errores que hacen perder a todo principiante. Escanea el código o entra al enlace de la descripción, y escríbeme la palabra regalo. Nos vemos en el próximo video.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "SIGUIENTE VIDEO",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "#11 · Horarios del mercado desde Colombia: <span class='oro'>cuándo operar y cuándo no</span>",
+        "lbl": "",
+        "ico": "",
+        "w": 1200,
+        "fs": 44,
+        "sub": ""
+       }
+      ],
+      "s": 1
+     },
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "pill": "▶ SUSCRÍBETE",
+          "st": "background:#EF4444;border-color:#EF4444;color:#fff"
+         },
+         {
+          "pill": "🔔 ACTIVA LA CAMPANITA"
+         }
+        ],
+        "w": 560,
+        "s": 2
+       },
+       {
+        "qr": 1,
+        "s": 3,
+        "tam": 210
+       }
+      ],
+      "gap": 50
+     },
+     {
+      "p": "Contenido educativo, no es asesoría financiera. El trading implica riesgo.",
+      "fs": 22
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "outro",
+   "texto": ""
+  }
+ ]
+}

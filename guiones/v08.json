@@ -1,0 +1,1327 @@
+{
+ "id": "v08",
+ "formato": "horizontal",
+ "titulo": "Lotes, pips y apalancamiento explicados fácil",
+ "escenas": [
+  {
+   "v": "v8_gancho",
+   "texto": "¿Sabías que con la misma operación una persona puede ganar dos dólares y otra doscientos? El precio se mueve exactamente igual para las dos. La diferencia está en tres palabras que hoy vas a dominar. Lotes, pips y apalancamiento. Y si no las entiendes bien, puedes quemar tu cuenta sin darte cuenta.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "ruta": {
+       "pts": [
+        40,
+        38,
+        44,
+        47,
+        45,
+        52,
+        58
+       ],
+       "w": 820,
+       "h": 260,
+       "color": "verde"
+      },
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "+$2",
+        "lbl": "Lote 0.01",
+        "ico": "",
+        "w": 420,
+        "fs": 50,
+        "sub": "",
+        "color": "verde"
+       },
+       {
+        "val": "+$200",
+        "lbl": "Lote 1.00",
+        "ico": "",
+        "w": 420,
+        "fs": 50,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 0
+     },
+     {
+      "h2": "Mismo movimiento · <span class='oro'>resultado distinto</span>",
+      "s": 1,
+      "fs": 52
+     },
+     {
+      "row": [
+       {
+        "pill": "LOTES"
+       },
+       {
+        "pill": "PIPS"
+       },
+       {
+        "pill": "APALANCAMIENTO"
+       }
+      ],
+      "s": 3,
+      "gap": 20
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "intro",
+   "texto": ""
+  },
+  {
+   "v": "v8_marca",
+   "texto": "Bienvenido a JulianVal.fx. Este es el video ocho de la serie de cero a experto. Ya sabes comprar y vender. Hoy aprendes a medir cuánto ganas o pierdes en cada operación, antes de dar clic.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "logo": 1,
+      "h": 280
+     },
+     {
+      "cards": [
+       {
+        "val": "Fundamentos",
+        "lbl": "Serie",
+        "ico": "",
+        "w": 420,
+        "fs": 50,
+        "sub": ""
+       },
+       {
+        "val": "#8",
+        "lbl": "Video",
+        "ico": "",
+        "w": 300,
+        "fs": 50,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "p": "Hoy: <b class='oro'>lotes · pips · apalancamiento</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_por_que",
+   "texto": "¿Por qué esto es tan importante? Porque la mayoría de principiantes no pierde por analizar mal el mercado. Pierde porque abre operaciones demasiado grandes para su cuenta. Puedes acertar la dirección y aun así quemar la cuenta, si el lote es muy grande y el precio se devuelve un poco antes de ir a tu favor. Cuando termines este video, vas a saber exactamente cuánto arriesgas antes de entrar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "¿POR QUÉ IMPORTA?",
+      "s": 0
+     },
+     {
+      "h2": "No pierden por analizar mal…",
+      "s": 1,
+      "fs": 54
+     },
+     {
+      "h2": "…sino por <span class='rojo'>lotes demasiado grandes</span>",
+      "s": 2,
+      "fs": 54
+     },
+     {
+      "ruta": {
+       "pts": [
+        50,
+        44,
+        36,
+        30,
+        38,
+        52,
+        66
+       ],
+       "lineas": [
+        [
+         50,
+         "ENTRADA",
+         "oro",
+         3
+        ],
+        [
+         32,
+         "CUENTA QUEMADA",
+         "rojo",
+         3
+        ]
+       ],
+       "w": 900,
+       "h": 260,
+       "color": "verde"
+      },
+      "s": 3
+     },
+     {
+      "p": "Hoy: saber cuánto arriesgas <b class='oro'>antes del clic</b>",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_pip_que",
+   "texto": "Empecemos por el pip. El pip es la unidad con la que se mide cuánto se movió el precio. Así como los kilómetros miden una distancia, los pips miden el recorrido del precio. Cuando un trader dice que ganó treinta pips, te está diciendo cuánto se movió el precio a su favor, no cuánto dinero ganó.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EL PIP",
+      "s": 0
+     },
+     {
+      "h2": "La regla con la que se mide <span class='oro'>el precio</span>",
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "Distancia",
+        "lbl": "📏 Kilómetros",
+        "ico": "",
+        "w": 440,
+        "fs": 50,
+        "sub": ""
+       },
+       {
+        "val": "Recorrido del precio",
+        "lbl": "📊 Pips",
+        "ico": "",
+        "w": 520,
+        "fs": 50,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 2
+     },
+     {
+      "h2": "30 pips <span class='rojo'>≠</span> $30",
+      "s": 3,
+      "fs": 70
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_pip_eur",
+   "texto": "En el euro dólar y en la mayoría de pares de divisas, el pip es el cuarto decimal. Si el precio pasa de uno coma cero ocho cero cero, a uno coma cero ocho uno cero, se movió diez pips. Ten en cuenta que MetaTrader te muestra un quinto decimal. Ese último número es una décima de pip, y casi nadie lo cuenta.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EURUSD · EL PIP ES EL 4.º DECIMAL",
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "cards": [
+         {
+          "val": "1.08<span class='oro'>0</span>0",
+          "lbl": "Antes",
+          "ico": "",
+          "w": 360,
+          "fs": 64,
+          "sub": ""
+         }
+        ]
+       },
+       {
+        "h2": "→"
+       },
+       {
+        "cards": [
+         {
+          "val": "1.08<span class='oro'>1</span>0",
+          "lbl": "Después",
+          "ico": "",
+          "w": 360,
+          "fs": 64,
+          "sub": ""
+         }
+        ]
+       },
+       {
+        "cards": [
+         {
+          "val": "+10 pips",
+          "lbl": "Movimiento",
+          "ico": "",
+          "w": 360,
+          "fs": 60,
+          "sub": "",
+          "color": "verde"
+         }
+        ]
+       }
+      ],
+      "s": 1,
+      "gap": 30
+     },
+     {
+      "p": "MetaTrader muestra 5 decimales: 1.0810<b style='color:#777'>5</b>",
+      "s": 2
+     },
+     {
+      "p": "El 5.º decimal = <b class='oro'>décima de pip</b> (punto)",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_pip_otros",
+   "texto": "Hay dos excepciones que debes conocer. En los pares con yen japonés, como el dólar yen, el pip es el segundo decimal. Y en el oro, lo más fácil es pensar en dólares. Si el oro pasa de cuatro mil a cuatro mil diez, se movió diez dólares, y así lo vamos a medir en este canal.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LAS EXCEPCIONES",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "2.º decimal",
+        "lbl": "🇯🇵 USDJPY",
+        "ico": "",
+        "w": 560,
+        "fs": 50,
+        "sub": "150.<b class='oro'>2</b>5 → 150.<b class='oro'>3</b>5 = 10 pips",
+        "s": 1
+       },
+       {
+        "val": "En dólares",
+        "lbl": "🥇 Oro · XAUUSD",
+        "ico": "",
+        "w": 560,
+        "fs": 50,
+        "sub": "$4.000 → $4.010 = <b class='verde'>$10</b> de movimiento",
+        "s": 2,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "p": "Así lo medimos en el canal: <b class='oro'>dólares de movimiento</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_lote_que",
+   "texto": "Ahora, el lote. El lote es el tamaño de tu operación. Es como elegir cuántas unidades compras. Puedes comprar el mismo producto en una bolsita pequeña o en un bulto completo. El precio por unidad es el mismo, pero lo que ganas o pierdes cambia muchísimo.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EL LOTE",
+      "s": 0
+     },
+     {
+      "h2": "= el <span class='oro'>tamaño</span> de tu operación",
+      "s": 1,
+      "fs": 70
+     },
+     {
+      "cards": [
+       {
+        "val": "Lote pequeño",
+        "lbl": "Bolsita",
+        "ico": "🛍️",
+        "w": 440,
+        "fs": 50,
+        "sub": ""
+       },
+       {
+        "val": "Lote grande",
+        "lbl": "Bulto completo",
+        "ico": "📦",
+        "w": 440,
+        "fs": 50,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 3
+     },
+     {
+      "p": "Mismo precio · <b class='oro'>resultado muy distinto</b>",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_lote_tipos",
+   "texto": "Existen tres tamaños de referencia. Un lote estándar son cien mil unidades de la moneda. Un mini lote, que en MetaTrader escribes como cero coma uno, son diez mil unidades. Y un micro lote, cero coma cero uno, son mil unidades. El micro lote es el más pequeño en la mayoría de brókers, y es con el que debes empezar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LOS 3 TAMAÑOS",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        1,
+        "Lote estándar · 1.00",
+        "100.000 unidades"
+       ],
+       [
+        2,
+        "Mini lote · 0.10",
+        "10.000 unidades"
+       ],
+       [
+        3,
+        "Micro lote · 0.01",
+        "1.000 unidades",
+        "oro"
+       ]
+      ],
+      "w": 900,
+      "fs": 42
+     },
+     {
+      "pill": "✅ EMPIEZA CON 0.01",
+      "s": 4,
+      "color": "verde"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_valor_pip",
+   "texto": "Aquí viene lo más importante. Unir los pips con los lotes. En el euro dólar, con un lote estándar, cada pip vale diez dólares. Con un mini lote, cada pip vale un dólar. Y con un micro lote, cada pip vale diez centavos. Así que si ganas veinte pips con cero coma cero uno, ganas dos dólares.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "VALOR DEL PIP · EURUSD",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        2,
+        "1.00 lote",
+        "$10 por pip"
+       ],
+       [
+        3,
+        "0.10 lote",
+        "$1 por pip"
+       ],
+       [
+        4,
+        "0.01 lote",
+        "$0,10 por pip",
+        "oro"
+       ]
+      ],
+      "w": 820,
+      "fs": 42
+     },
+     {
+      "cards": [
+       {
+        "val": "20 pips × $0,10 = <span class='verde'>$2</span>",
+        "lbl": "Ejemplo",
+        "ico": "",
+        "w": 820,
+        "fs": 54,
+        "sub": ""
+       }
+      ],
+      "s": 5
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_formula",
+   "texto": "La fórmula es muy sencilla. El resultado es igual a los pips que se movió el precio, multiplicado por el valor del pip según tu lote. Volvamos al ejemplo del inicio. Veinte pips con un micro lote son dos dólares. Los mismos veinte pips con un lote completo son doscientos dólares. Mismo movimiento, resultado cien veces más grande.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LA FÓRMULA",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "Resultado = pips × valor del pip",
+        "lbl": "",
+        "ico": "",
+        "w": 1100,
+        "fs": 62,
+        "sub": ""
+       }
+      ],
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "+$2",
+        "lbl": "20 pips · 0.01",
+        "ico": "",
+        "w": 420,
+        "fs": 50,
+        "sub": "",
+        "s": 3,
+        "color": "verde"
+       },
+       {
+        "val": "+$200",
+        "lbl": "20 pips · 1.00",
+        "ico": "",
+        "w": 420,
+        "fs": 50,
+        "sub": "",
+        "s": 4,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "h2": "Mismo movimiento · <span class='oro'>×100</span>",
+      "s": 5,
+      "fs": 56
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_oro",
+   "texto": "En el oro funciona igual, pero con onzas. Un lote de oro son cien onzas. Entonces, por cada dólar que se mueve el precio, un lote gana o pierde cien dólares. Con cero coma cero uno, que es una sola onza, cada dólar de movimiento vale un dólar. Si el oro se mueve diez dólares en tu contra con cero coma cero uno, pierdes diez dólares.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🥇 ORO · XAUUSD",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        1,
+        "1 lote de oro",
+        "100 onzas"
+       ],
+       [
+        2,
+        "$1 de movimiento con 1.00",
+        "$100"
+       ],
+       [
+        3,
+        "$1 de movimiento con 0.01",
+        "$1",
+        "oro"
+       ]
+      ],
+      "w": 900,
+      "fs": 40
+     },
+     {
+      "cards": [
+       {
+        "val": "−$10",
+        "lbl": "$10 en contra con 0.01",
+        "ico": "",
+        "w": 600,
+        "fs": 60,
+        "sub": "",
+        "color": "rojo"
+       }
+      ],
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_cuidado",
+   "texto": "Por eso el oro es tan peligroso para el que empieza. El oro se puede mover veinte o treinta dólares en pocos minutos cuando hay noticias. Con un lote completo, eso son dos mil o tres mil dólares. Con un micro lote, son veinte o treinta. Ahí está la diferencia entre aprender y quemar la cuenta.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "⚠️ CUIDADO CON EL ORO",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "ruta": {
+       "pts": [
+        60,
+        62,
+        59,
+        61,
+        52,
+        40,
+        34
+       ],
+       "w": 860,
+       "h": 240,
+       "color": "rojo"
+      },
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "−$3.000",
+        "lbl": "$30 en contra · 1.00",
+        "ico": "",
+        "w": 480,
+        "fs": 50,
+        "sub": "",
+        "s": 2,
+        "color": "rojo"
+       },
+       {
+        "val": "−$30",
+        "lbl": "$30 en contra · 0.01",
+        "ico": "",
+        "w": 480,
+        "fs": 50,
+        "sub": "",
+        "s": 3,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "p": "Aprender <b class='oro'>vs</b> quemar la cuenta",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_sinteticos",
+   "texto": "Si operas índices sintéticos, como Crash, Boom o Step, el lote funciona distinto en cada índice. Cada uno tiene su lote mínimo y su propio valor por punto. Antes de operar, en MetaTrader das clic derecho sobre el símbolo y abres Especificaciones. Ahí ves el volumen mínimo y el tamaño del contrato. Nunca asumas que funciona igual que el euro dólar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "⚡ ÍNDICES SINTÉTICOS",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "Lote mínimo propio",
+        "lbl": "Cada índice",
+        "ico": "",
+        "w": 480,
+        "fs": 50,
+        "sub": "",
+        "s": 1
+       },
+       {
+        "val": "Valor por punto propio",
+        "lbl": "Cada índice",
+        "ico": "",
+        "w": 480,
+        "fs": 50,
+        "sub": "",
+        "s": 1,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "chk": [
+       [
+        2,
+        "Clic derecho sobre el símbolo → <b class='oro'>Especificaciones</b>",
+        "num"
+       ],
+       [
+        3,
+        "Mira el volumen mínimo y el tamaño del contrato",
+        "num"
+       ]
+      ],
+      "fs": 38
+     },
+     {
+      "pill": "NO ASUMAS QUE ES IGUAL AL EURUSD",
+      "s": 4,
+      "color": "rojo"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_apal_que",
+   "texto": "Ahora sí, el apalancamiento. El apalancamiento es un préstamo que te da el bróker para que puedas abrir operaciones más grandes que tu dinero. Con apalancamiento de uno a cien, por cada dólar tuyo puedes mover hasta cien. Con mil dólares en la cuenta, podrías controlar una posición de hasta cien mil.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EL APALANCAMIENTO",
+      "s": 0
+     },
+     {
+      "h2": "Un <span class='oro'>préstamo</span> del bróker",
+      "s": 1,
+      "fs": 66
+     },
+     {
+      "row": [
+       {
+        "cards": [
+         {
+          "val": "$1.000",
+          "lbl": "Tu dinero",
+          "ico": "",
+          "w": 360,
+          "fs": 50,
+          "sub": ""
+         }
+        ]
+       },
+       {
+        "h2": "×"
+       },
+       {
+        "cards": [
+         {
+          "val": "1:100",
+          "lbl": "Apalancamiento",
+          "ico": "",
+          "w": 360,
+          "fs": 50,
+          "sub": "",
+          "color": "oro"
+         }
+        ]
+       },
+       {
+        "h2": "="
+       },
+       {
+        "cards": [
+         {
+          "val": "$100.000",
+          "lbl": "Controlas hasta",
+          "ico": "",
+          "w": 400,
+          "fs": 50,
+          "sub": "",
+          "color": "verde"
+         }
+        ]
+       }
+      ],
+      "s": 2,
+      "gap": 26
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_margen",
+   "texto": "El dinero que el bróker te bloquea para abrir esa operación se llama margen. Es como un depósito de garantía. Por ejemplo, un lote completo de euro dólar vale unos ciento ocho mil dólares. Con apalancamiento de uno a cien, el bróker te pide unos mil ochenta dólares de margen. Con un micro lote, te pide apenas unos diez dólares.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EL MARGEN",
+      "s": 0
+     },
+     {
+      "h2": "🔒 Depósito de <span class='oro'>garantía</span>",
+      "s": 1,
+      "fs": 62
+     },
+     {
+      "tabla": [
+       [
+        2,
+        "1 lote EURUSD (a 1.08)",
+        "≈ $108.000"
+       ],
+       [
+        3,
+        "Margen con 1:100",
+        "≈ $1.080"
+       ],
+       [
+        4,
+        "Margen con 0.01 lote",
+        "≈ $10,80",
+        "oro"
+       ]
+      ],
+      "w": 900,
+      "fs": 40
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_mito",
+   "texto": "Aquí viene el gran mito. Mucha gente cree que el apalancamiento alto es lo que quema las cuentas. No exactamente. El apalancamiento no cambia cuánto vale cada pip. Lo que cambia tu riesgo es el tamaño del lote que tú eliges. El apalancamiento solo te deja abrir lotes más grandes, y esa es la tentación.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EL GRAN MITO",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "h2": "“El apalancamiento <span class='rojo'>quema</span> las cuentas”",
+      "s": 1,
+      "fs": 56
+     },
+     {
+      "p": "❌ No exactamente",
+      "s": 2,
+      "fs": 44
+     },
+     {
+      "cards": [
+       {
+        "val": "No cambia el valor del pip",
+        "lbl": "Apalancamiento",
+        "ico": "",
+        "w": 520,
+        "fs": 42,
+        "sub": "",
+        "s": 3
+       },
+       {
+        "val": "= tu riesgo real",
+        "lbl": "Tamaño del lote",
+        "ico": "",
+        "w": 520,
+        "fs": 46,
+        "sub": "",
+        "s": 4,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "p": "Más apalancamiento = <b class='rojo'>más tentación</b>",
+      "s": 5
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_margin_call",
+   "texto": "Lo que sí debes conocer es el llamado de margen. Si tus pérdidas flotantes se comen casi todo tu dinero libre, el bróker te avisa. Y si siguen creciendo, llega el stop out. El bróker cierra tus operaciones solo, para que no pierdas más de lo que tienes. Esto pasa casi siempre por abrir lotes demasiado grandes.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "MARGIN CALL Y STOP OUT",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        100,
+        97,
+        92,
+        94,
+        86,
+        80,
+        74,
+        66
+       ],
+       "lineas": [
+        [
+         82,
+         "MARGIN CALL",
+         "oro",
+         1
+        ],
+        [
+         66,
+         "STOP OUT",
+         "rojo",
+         2
+        ]
+       ],
+       "w": 1000,
+       "h": 280,
+       "color": "rojo"
+      }
+     },
+     {
+      "p": "El bróker <b class='rojo'>cierra por ti</b>",
+      "s": 3
+     },
+     {
+      "pill": "CAUSA #1: LOTES DEMASIADO GRANDES",
+      "s": 4,
+      "color": "rojo"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_mt5",
+   "texto": "¿Dónde eliges el lote en MetaTrader? Cuando abres una nueva orden, el campo Volumen es el lote. Ahí escribes cero coma cero uno, por ejemplo. El apalancamiento de tu cuenta lo ves en tu bróker, cuando la abres. No lo cambies cada semana, elige uno y concéntrate en el lote.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EN METATRADER 5",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        1,
+        "Símbolo",
+        "EURUSD"
+       ],
+       [
+        1,
+        "Tipo",
+        "Ejecución por mercado"
+       ],
+       [
+        1,
+        "Volumen = tu lote",
+        "0.01",
+        "oro"
+       ],
+       [
+        3,
+        "Apalancamiento",
+        "lo ves en tu bróker"
+       ]
+      ],
+      "titulo": "Nueva orden",
+      "w": 860,
+      "fs": 38
+     },
+     {
+      "p": "Elige uno y <b class='oro'>concéntrate en el lote</b>",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_ejemplo",
+   "texto": "Hagamos un ejemplo completo. Tienes una cuenta de quinientos dólares. Compras euro dólar con cero coma cero dos lotes. Cada pip vale veinte centavos. El precio sube treinta pips y cierras. Ganaste seis dólares. Si hubiera bajado treinta pips, habrías perdido seis dólares, un poco más del uno por ciento de tu cuenta.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EJEMPLO COMPLETO",
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "tabla": [
+         [
+          1,
+          "Cuenta",
+          "$500"
+         ],
+         [
+          2,
+          "Operación",
+          "Compra EURUSD · 0.02"
+         ],
+         [
+          3,
+          "Valor del pip",
+          "$0,20"
+         ],
+         [
+          4,
+          "Movimiento",
+          "+30 pips",
+          "verde"
+         ]
+        ],
+        "w": 720,
+        "fs": 36
+       },
+       {
+        "col": [
+         {
+          "cards": [
+           {
+            "val": "+$6",
+            "lbl": "Ganancia",
+            "ico": "",
+            "w": 440,
+            "fs": 50,
+            "sub": "",
+            "s": 5,
+            "color": "verde"
+           }
+          ]
+         },
+         {
+          "cards": [
+           {
+            "val": "−$6",
+            "lbl": "Si baja 30 pips · 1,2 %",
+            "ico": "",
+            "w": 440,
+            "fs": 50,
+            "sub": "",
+            "s": 6,
+            "color": "rojo"
+           }
+          ]
+         }
+        ],
+        "w": 460
+       }
+      ],
+      "gap": 40
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_cuenta_pequena",
+   "texto": "¿Y si tienes una cuenta pequeña, de cien dólares? Con cero coma cero uno en el euro dólar, un movimiento de cincuenta pips en tu contra te cuesta cinco dólares, el cinco por ciento de tu cuenta. Con cero coma uno, te costaría cincuenta dólares, la mitad de tu cuenta, en un movimiento normal del día. Por eso, con cuentas pequeñas, el lote mínimo no es una opción, es una obligación.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "CUENTA PEQUEÑA · $100",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "−$5 · 5 %",
+        "lbl": "50 pips en contra · 0.01",
+        "ico": "",
+        "w": 520,
+        "fs": 50,
+        "sub": "",
+        "s": 1,
+        "color": "oro"
+       },
+       {
+        "val": "−$50 · 50 %",
+        "lbl": "50 pips en contra · 0.10",
+        "ico": "",
+        "w": 520,
+        "fs": 50,
+        "sub": "",
+        "s": 2,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "h2": "Lote mínimo = <span class='oro'>obligación</span>, no opción",
+      "s": 3,
+      "fs": 56
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_puente",
+   "texto": "Y aquí está el truco de los profesionales. Ellos no eligen el lote al azar. Primero deciden cuánto dinero están dispuestos a perder, y después calculan el lote. Eso se llama gestión de riesgo, y es el tema del video diez. Pero antes necesitas dominar el stop loss, que es el video nueve.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EL TRUCO DE LOS PROFESIONALES",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "El lote <b class='rojo'>no</b> se elige al azar",
+        "x"
+       ],
+       [
+        2,
+        "Primero: ¿cuánto estoy dispuesto a perder?",
+        "num"
+       ],
+       [
+        2,
+        "Después: calculo el lote",
+        "num"
+       ]
+      ],
+      "fs": 42
+     },
+     {
+      "cards": [
+       {
+        "val": "Stop loss",
+        "lbl": "Video #9",
+        "ico": "",
+        "w": 380,
+        "fs": 50,
+        "sub": "",
+        "s": 4
+       },
+       {
+        "val": "Gestión de riesgo",
+        "lbl": "Video #10",
+        "ico": "",
+        "w": 440,
+        "fs": 50,
+        "sub": "",
+        "s": 3,
+        "color": "oro"
+       }
+      ]
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_errores",
+   "texto": "Los errores más comunes con este tema son cuatro. Abrir un lote completo porque uno se ve como un número pequeño. Creer que diez pips siempre son diez dólares. Usar el apalancamiento alto como excusa para operar más grande. Y operar el oro o los sintéticos con el mismo lote que usas en el euro dólar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "ERRORES COMUNES",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Abrir 1.00 porque “parece poquito”",
+        "x"
+       ],
+       [
+        2,
+        "Creer que 10 pips = $10 siempre",
+        "x"
+       ],
+       [
+        3,
+        "Apalancamiento alto como excusa para lotes grandes",
+        "x"
+       ],
+       [
+        4,
+        "Mismo lote en oro, sintéticos y EURUSD",
+        "x"
+       ]
+      ],
+      "fs": 40
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_ejercicio",
+   "texto": "Tu ejercicio en demo. Abre una compra en euro dólar con cero coma cero uno. Mira en la pestaña Operaciones cuánto cambia tu resultado cuando el precio se mueve un pip. Después repite con cero coma uno, y compara. Y abre las especificaciones del oro para ver el tamaño del contrato.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📝 EJERCICIO EN DEMO",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Compra EURUSD con 0.01",
+        "num"
+       ],
+       [
+        2,
+        "Mira cuánto cambia con 1 pip",
+        "num"
+       ],
+       [
+        3,
+        "Repite con 0.10 y compara",
+        "num"
+       ],
+       [
+        4,
+        "Especificaciones del oro → tamaño del contrato",
+        "num"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_comentarios",
+   "texto": "Cuéntame en los comentarios. ¿Cuánto vale un pip si operas cero coma cero cinco lotes en euro dólar? Al primero que responda bien, le fijo el comentario.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "💬"
+     },
+     {
+      "h2": "¿Cuánto vale 1 pip con <span class='oro'>0.05</span> lotes en EURUSD?",
+      "s": 1,
+      "fs": 60
+     },
+     {
+      "p": "Responde y <b class='oro'>te fijo el comentario 📌</b>",
+      "s": 2
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_resumen",
+   "texto": "Resumamos. El pip mide cuánto se mueve el precio. El lote es el tamaño de tu operación, y define cuánto vale cada pip. El apalancamiento te deja abrir lotes más grandes, pero no cambia el valor del pip. Y la clave está en elegir bien el lote, empezando por cero coma cero uno.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "RESUMEN",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "<b class='oro'>Pip</b> = cuánto se mueve el precio"
+       ],
+       [
+        2,
+        "<b class='oro'>Lote</b> = tamaño · define el valor del pip"
+       ],
+       [
+        3,
+        "<b class='oro'>Apalancamiento</b> = abre lotes más grandes"
+       ],
+       [
+        4,
+        "Empieza con <b class='verde'>0.01</b>"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v8_cierre",
+   "texto": "En el siguiente video te explico el stop loss y el take profit, tu cinturón de seguridad en cada operación. Suscríbete y activa la campanita. Y si estás empezando, te tengo un regalo. La guía gratis con los cinco errores que hacen perder a todo principiante. Escanea el código o entra al enlace de la descripción, y escríbeme la palabra regalo. Nos vemos en el próximo video.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "SIGUIENTE VIDEO",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "#9 · Stop loss y take profit: <span class='oro'>tu cinturón de seguridad</span>",
+        "lbl": "",
+        "ico": "",
+        "w": 1200,
+        "fs": 44,
+        "sub": ""
+       }
+      ],
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "pill": "▶ SUSCRÍBETE",
+          "st": "background:#EF4444;border-color:#EF4444;color:#fff"
+         },
+         {
+          "pill": "🔔 ACTIVA LA CAMPANITA"
+         }
+        ],
+        "w": 560,
+        "s": 1
+       },
+       {
+        "qr": 1,
+        "s": 2,
+        "tam": 210
+       }
+      ],
+      "gap": 50
+     },
+     {
+      "p": "Contenido educativo, no es asesoría financiera. El trading implica riesgo.",
+      "fs": 22
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "outro",
+   "texto": ""
+  }
+ ]
+}

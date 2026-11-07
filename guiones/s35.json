@@ -1,0 +1,60 @@
+{
+ "id": "s35",
+ "formato": "vertical",
+ "titulo": "El error que convierte tus GANANCIAS en pérdidas 😩 #trading #shorts",
+ "desde": "v09",
+ "escenas": [
+  {
+   "v": "s35_a",
+   "texto": "El error que convierte una ganancia en pérdida.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "😩",
+    "titulo": "Ganancia → <span class='rojo'>pérdida</span>"
+   }
+  },
+  {
+   "v": "s35_b",
+   "texto": "Estás ganando, no pusiste take profit, y el precio se devuelve. Terminas perdiendo.",
+   "vis": {
+    "t": "ruta",
+    "pts": [
+     40,
+     46,
+     54,
+     60,
+     52,
+     44,
+     34
+    ],
+    "lineas": [
+     [
+      40,
+      "ENTRADA",
+      "oro",
+      0
+     ]
+    ],
+    "color": "rojo",
+    "sub": "Sin take profit",
+    "s_sub": 1
+   }
+  },
+  {
+   "v": "s35_c",
+   "texto": "Pon tu objetivo antes de entrar, o mueve tu stop a break even.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🎯",
+    "titulo": "Pon <span class='verde'>take profit</span> o usa <span class='oro'>break even</span>"
+   }
+  },
+  {
+   "v": "s35_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

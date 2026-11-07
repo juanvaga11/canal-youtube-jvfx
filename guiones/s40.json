@@ -1,0 +1,45 @@
+{
+ "id": "s40",
+ "formato": "vertical",
+ "titulo": "Pierdes 50%… ¿cuánto necesitas para recuperar? 😱 #trading #shorts",
+ "desde": "v10",
+ "escenas": [
+  {
+   "v": "s40_a",
+   "texto": "Si pierdes la mitad de tu cuenta, ¿cuánto necesitas para recuperarla?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "😱",
+    "titulo": "Pierdes 50 %… ¿cuánto para <span class='oro'>recuperar</span>?"
+   }
+  },
+  {
+   "v": "s40_b",
+   "texto": "No es el cincuenta por ciento. Es el cien por ciento. Tienes que duplicar lo que te quedó.",
+   "vis": {
+    "t": "big",
+    "big": "+100 %",
+    "color": "rojo",
+    "fs": 190,
+    "sub": "duplicar lo que te quedó",
+    "s_sub": 2
+   }
+  },
+  {
+   "v": "s40_c",
+   "texto": "Por eso proteger la cuenta es la prioridad número uno.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🛡️",
+    "titulo": "Prioridad #1: <span class='oro'>proteger la cuenta</span>"
+   }
+  },
+  {
+   "v": "s40_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

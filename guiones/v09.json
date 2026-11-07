@@ -1,0 +1,1298 @@
+{
+ "id": "v09",
+ "formato": "horizontal",
+ "titulo": "Stop loss y take profit: tu cinturón de seguridad",
+ "escenas": [
+  {
+   "v": "v9_gancho",
+   "texto": "Imagina que entras a una operación, te vas a dormir, y al despertar tu cuenta está en cero. Eso le pasa todos los días a gente que opera sin stop loss. Y lo peor es que se podía evitar con un solo número. Hoy te enseño a ponerlo bien, y también a saber dónde cobrar tus ganancias.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "😴",
+      "s": 0,
+      "fs": 110
+     },
+     {
+      "ruta": {
+       "pts": [
+        60,
+        58,
+        61,
+        52,
+        44,
+        30,
+        12
+       ],
+       "lineas": [
+        [
+         12,
+         "CUENTA: $0",
+         "rojo",
+         1
+        ]
+       ],
+       "w": 900,
+       "h": 240,
+       "color": "rojo"
+      },
+      "s": 0
+     },
+     {
+      "h2": "Se evita con <span class='oro'>un solo número</span>",
+      "s": 2,
+      "fs": 56
+     },
+     {
+      "row": [
+       {
+        "pill": "🛡️ STOP LOSS",
+        "color": "rojo"
+       },
+       {
+        "pill": "🎯 TAKE PROFIT",
+        "color": "verde"
+       }
+      ],
+      "s": 3,
+      "gap": 20
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "intro",
+   "texto": ""
+  },
+  {
+   "v": "v9_marca",
+   "texto": "Bienvenido a JulianVal.fx. Este es el video nueve de la serie de cero a experto. Ya sabes cuánto vale cada pip según tu lote. Hoy aprendes a ponerle límites a cada operación, para que ninguna pueda hacerte un daño grande.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "logo": 1,
+      "h": 280
+     },
+     {
+      "cards": [
+       {
+        "val": "Fundamentos",
+        "lbl": "Serie",
+        "ico": "",
+        "w": 420,
+        "fs": 50,
+        "sub": ""
+       },
+       {
+        "val": "#9",
+        "lbl": "Video",
+        "ico": "",
+        "w": 300,
+        "fs": 50,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "p": "Hoy: <b class='rojo'>stop loss</b> y <b class='verde'>take profit</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_que_sl",
+   "texto": "El stop loss es una orden que cierra tu operación automáticamente cuando el precio llega a un nivel de pérdida que tú decidiste antes de entrar. Es tu cinturón de seguridad. No evita que haya un choque, pero evita que el choque te mate. Con stop loss, sabes de antemano cuánto es lo máximo que puedes perder.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🛡️ STOP LOSS · SL",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "h2": "Cierra solo cuando llegas a <span class='rojo'>tu pérdida máxima</span>",
+      "s": 0,
+      "fs": 54
+     },
+     {
+      "cards": [
+       {
+        "val": "Cinturón de seguridad",
+        "lbl": "",
+        "ico": "🚗",
+        "w": 520,
+        "fs": 42,
+        "sub": "",
+        "s": 1
+       },
+       {
+        "val": "No evita el choque, evita el daño",
+        "lbl": "",
+        "ico": "💥",
+        "w": 620,
+        "fs": 40,
+        "sub": "",
+        "s": 2
+       }
+      ]
+     },
+     {
+      "p": "Pérdida máxima: <b class='oro'>conocida antes de entrar</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_que_tp",
+   "texto": "El take profit es lo contrario. Es una orden que cierra tu operación automáticamente cuando el precio llega a tu objetivo de ganancia. Así no tienes que estar pegado a la pantalla, y evitas el error más doloroso de todos. Ver una operación en ganancia que se devuelve y termina en pérdida.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🎯 TAKE PROFIT · TP",
+      "s": 0,
+      "color": "verde"
+     },
+     {
+      "h2": "Cierra solo en <span class='verde'>tu objetivo</span>",
+      "s": 1,
+      "fs": 60
+     },
+     {
+      "p": "📵 Sin vivir pegado a la pantalla",
+      "s": 2
+     },
+     {
+      "ruta": {
+       "pts": [
+        40,
+        46,
+        54,
+        60,
+        52,
+        44,
+        34
+       ],
+       "lineas": [
+        [
+         40,
+         "ENTRADA",
+         "oro",
+         3
+        ]
+       ],
+       "w": 900,
+       "h": 240,
+       "color": "rojo"
+      },
+      "s": 3
+     },
+     {
+      "p": "Ganancia que se volvió <b class='rojo'>pérdida</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_por_que_no",
+   "texto": "¿Por qué tanta gente no pone stop loss? Porque cuando el precio toca el stop, duele. Se siente como perder. Entonces prefieren esperar a que el precio se devuelva. A veces se devuelve, y eso es lo peligroso, porque refuerza el mal hábito. Hasta que un día no se devuelve, y una sola operación se lleva lo que ganaste en meses.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "¿POR QUÉ NO LO PONEN?",
+      "s": 0
+     },
+     {
+      "h2": "Porque <span class='rojo'>duele</span>",
+      "s": 1,
+      "fs": 70
+     },
+     {
+      "p": "“Espero a que se devuelva…” · a veces se devuelve 😬",
+      "s": 3
+     },
+     {
+      "ruta": {
+       "pts": [
+        50,
+        46,
+        49,
+        44,
+        36,
+        24,
+        10
+       ],
+       "w": 900,
+       "h": 220,
+       "color": "rojo"
+      },
+      "s": 5
+     },
+     {
+      "h2": "1 operación = <span class='rojo'>meses de ganancia</span>",
+      "s": 5,
+      "fs": 54
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_compra",
+   "texto": "Veamos cómo se ubican en una compra. En una compra, el stop loss va por debajo de tu entrada y el take profit va por encima. Por ejemplo, compras oro en cuatro mil. Pones el stop loss en tres mil novecientos noventa, diez dólares abajo. Y el take profit en cuatro mil veinte, veinte dólares arriba.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📈 EN UNA COMPRA",
+      "s": 0,
+      "color": "verde"
+     },
+     {
+      "ruta": {
+       "pts": [
+        4000,
+        3996,
+        4004,
+        4009,
+        4005,
+        4014,
+        4020
+       ],
+       "lineas": [
+        [
+         4020,
+         "TP 4.020",
+         "verde",
+         4
+        ],
+        [
+         4000,
+         "COMPRA 4.000",
+         "oro",
+         2
+        ],
+        [
+         3990,
+         "SL 3.990",
+         "rojo",
+         3
+        ]
+       ],
+       "w": 1000,
+       "h": 330,
+       "color": "verde"
+      },
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "−$10 por onza",
+        "lbl": "Si toca el SL",
+        "ico": "",
+        "w": 440,
+        "fs": 42,
+        "sub": "",
+        "s": 3,
+        "color": "rojo"
+       },
+       {
+        "val": "+$20 por onza",
+        "lbl": "Si toca el TP",
+        "ico": "",
+        "w": 440,
+        "fs": 42,
+        "sub": "",
+        "s": 4,
+        "color": "verde"
+       }
+      ]
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_venta",
+   "texto": "En una venta es al revés. El stop loss va por encima de tu entrada, y el take profit por debajo. Si vendes el euro dólar en uno coma cero ocho cero cero, el stop loss puede ir en uno coma cero ocho dos cero, y el take profit en uno coma cero siete seis cero. Recuerda la regla del video siete. En la venta, el stop loss siempre va arriba.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📉 EN UNA VENTA",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "ruta": {
+       "pts": [
+        1.08,
+        1.0812,
+        1.0795,
+        1.0788,
+        1.0798,
+        1.0775,
+        1.076
+       ],
+       "lineas": [
+        [
+         1.082,
+         "SL 1.0820",
+         "rojo",
+         1
+        ],
+        [
+         1.08,
+         "VENTA 1.0800",
+         "oro",
+         1
+        ],
+        [
+         1.076,
+         "TP 1.0760",
+         "verde",
+         1
+        ]
+       ],
+       "w": 1000,
+       "h": 330,
+       "color": "rojo"
+      },
+      "s": 1
+     },
+     {
+      "p": "SL a <b class='rojo'>20 pips</b> · TP a <b class='verde'>40 pips</b>",
+      "s": 2
+     },
+     {
+      "pill": "EN LA VENTA, EL SL VA ARRIBA",
+      "s": 4,
+      "color": "rojo"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_donde_mal",
+   "texto": "Ahora, la pregunta del millón. ¿Dónde pongo el stop loss? Lo que hace la mayoría es ponerlo por plata. Dice, no quiero perder más de diez dólares, y lo pone donde le dé diez dólares. Eso es un error, porque al mercado no le importa cuánto quieres perder tú.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LA PREGUNTA DEL MILLÓN",
+      "s": 0
+     },
+     {
+      "h1": "¿Dónde pongo el <span class='rojo'>stop loss</span>?",
+      "s": 1,
+      "fs": 80
+     },
+     {
+      "cards": [
+       {
+        "val": "“Donde me dé $10”",
+        "lbl": "❌ Por plata",
+        "ico": "",
+        "w": 700,
+        "fs": 48,
+        "sub": "",
+        "s": 2,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "p": "Al mercado <b class='rojo'>no le importa</b> cuánto quieres perder",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_donde_bien",
+   "texto": "El stop loss se pone donde tu idea deja de tener sentido. Si compraste porque el precio respetó un mínimo, tu stop va un poco por debajo de ese mínimo. Si el precio rompe ese mínimo, tu idea ya no es válida, y no tiene sentido seguir adentro. En una venta es igual, pero por encima del último máximo.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "✅ DONDE TU IDEA SE INVALIDA",
+      "s": 0,
+      "color": "verde"
+     },
+     {
+      "ruta": {
+       "pts": [
+        62,
+        52,
+        41,
+        47,
+        45,
+        53,
+        60,
+        64
+       ],
+       "lineas": [
+        [
+         46,
+         "ENTRADA",
+         "oro",
+         1
+        ],
+        [
+         41,
+         "MÍNIMO",
+         "#9ca3af",
+         1
+        ],
+        [
+         36,
+         "SL",
+         "rojo",
+         1
+        ]
+       ],
+       "w": 1000,
+       "h": 330,
+       "color": "verde"
+      }
+     },
+     {
+      "p": "Rompe el mínimo → <b class='rojo'>la idea ya no vale</b>",
+      "s": 2
+     },
+     {
+      "p": "Venta: SL <b class='oro'>por encima del último máximo</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_margen",
+   "texto": "Un detalle importante. No pongas el stop loss exactamente en el mínimo, déjale un pequeño margen. El precio muchas veces toca ese nivel justo antes de seguir a tu favor, y además existe el spread. Unos pocos pips de espacio pueden salvarte de que te saquen por nada.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "UN DETALLE QUE TE SALVA",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        52,
+        46,
+        42,
+        39.6,
+        45,
+        53,
+        60
+       ],
+       "lineas": [
+        [
+         40,
+         "SL PEGADO ✕",
+         "rojo",
+         1
+        ],
+        [
+         34.5,
+         "SL CON MARGEN ✓",
+         "verde",
+         1
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "verde"
+      }
+     },
+     {
+      "p": "Toca el nivel y sigue · + spread",
+      "s": 2
+     },
+     {
+      "h2": "Unos pips de espacio = <span class='verde'>sigues adentro</span>",
+      "s": 3,
+      "fs": 54
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_tp_donde",
+   "texto": "¿Y el take profit dónde va? Lo más lógico es ponerlo antes del siguiente obstáculo. Por ejemplo, antes del siguiente máximo en una compra, o antes del siguiente mínimo en una venta. Ahí es donde el precio suele frenar, y donde muchos traders cierran. Más adelante, en el módulo de Smart Money, vas a aprender a ubicarlo en las zonas de liquidez.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🎯 ¿DÓNDE VA EL TAKE PROFIT?",
+      "s": 0,
+      "color": "verde"
+     },
+     {
+      "h2": "Antes del <span class='oro'>siguiente obstáculo</span>",
+      "s": 1,
+      "fs": 58
+     },
+     {
+      "ruta": {
+       "pts": [
+        40,
+        47,
+        44,
+        52,
+        50,
+        56,
+        58
+       ],
+       "lineas": [
+        [
+         63,
+         "MÁXIMO ANTERIOR",
+         "#9ca3af",
+         2
+        ],
+        [
+         59,
+         "TP",
+         "verde",
+         2
+        ]
+       ],
+       "w": 1000,
+       "h": 280,
+       "color": "verde"
+      }
+     },
+     {
+      "p": "Ahí el precio suele frenar",
+      "s": 3
+     },
+     {
+      "pill": "MÓDULO 3 · SMC: ZONAS DE LIQUIDEZ",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_rr",
+   "texto": "Ahora, la relación entre los dos. Si arriesgas diez dólares para ganar veinte, tu relación riesgo beneficio es de uno a dos. Esa es la mínima que yo uso. ¿Por qué? Porque con uno a dos, aunque aciertes solo cuatro de cada diez operaciones, terminas ganando.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "RIESGO : BENEFICIO",
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "cards": [
+         {
+          "val": "$10",
+          "lbl": "Riesgo",
+          "ico": "",
+          "w": 360,
+          "fs": 70,
+          "sub": "",
+          "color": "rojo"
+         }
+        ]
+       },
+       {
+        "h1": ":"
+       },
+       {
+        "cards": [
+         {
+          "val": "$20",
+          "lbl": "Beneficio",
+          "ico": "",
+          "w": 360,
+          "fs": 70,
+          "sub": "",
+          "color": "verde"
+         }
+        ]
+       },
+       {
+        "h1": "= <span class='oro'>1 : 2</span>",
+        "fs": 90
+       }
+      ],
+      "s": 1,
+      "gap": 30
+     },
+     {
+      "pill": "EL MÍNIMO QUE YO USO",
+      "s": 2
+     },
+     {
+      "p": "Aciertas 4 de 10 → <b class='verde'>igual ganas</b>",
+      "s": 4,
+      "fs": 44
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_rr_mate",
+   "texto": "Hagamos la cuenta. Diez operaciones, arriesgando diez dólares en cada una. Pierdes seis, eso son sesenta dólares menos. Ganas cuatro, a veinte cada una, eso son ochenta dólares más. Al final quedas con veinte dólares de ganancia, acertando menos de la mitad. Por eso el take profit importa tanto como el stop loss.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "HAGAMOS LA CUENTA",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        1,
+        "10 operaciones",
+        "$10 de riesgo c/u"
+       ],
+       [
+        2,
+        "6 perdidas",
+        "−$60",
+        "rojo"
+       ],
+       [
+        3,
+        "4 ganadas × $20",
+        "+$80",
+        "verde"
+       ],
+       [
+        4,
+        "Resultado",
+        "+$20",
+        "oro"
+       ]
+      ],
+      "w": 900,
+      "fs": 42
+     },
+     {
+      "p": "El TP importa <b class='oro'>tanto como el SL</b>",
+      "s": 5
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_lote_sl",
+   "texto": "Y el stop loss está conectado con el video anterior. La distancia del stop, multiplicada por el valor del pip de tu lote, te dice cuánto pierdes si te toca. Si tu stop está a veinte pips y operas cero coma cero uno en el euro dólar, arriesgas dos dólares. Con cero coma uno, arriesgas veinte. Por eso el lote y el stop siempre se deciden juntos.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "SL + LOTE = TU RIESGO",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "Riesgo = pips del SL × valor del pip",
+        "lbl": "",
+        "ico": "",
+        "w": 1200,
+        "fs": 50,
+        "sub": ""
+       }
+      ],
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "−$2",
+        "lbl": "SL 20 pips · 0.01",
+        "ico": "",
+        "w": 460,
+        "fs": 64,
+        "sub": "",
+        "s": 2,
+        "color": "oro"
+       },
+       {
+        "val": "−$20",
+        "lbl": "SL 20 pips · 0.10",
+        "ico": "",
+        "w": 460,
+        "fs": 64,
+        "sub": "",
+        "s": 3,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "h2": "Se deciden <span class='oro'>juntos</span>",
+      "s": 4,
+      "fs": 56
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_mt5",
+   "texto": "¿Cómo se ponen en MetaTrader? Cuando abres una nueva orden, verás dos campos, Stop Loss y Take Profit. Ahí escribes el precio exacto de cada uno. Si ya abriste la operación sin ellos, no hay problema. Le das doble clic a la operación en la pestaña Operaciones, y los agregas desde ahí.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EN METATRADER 5",
+      "s": 0
+     },
+     {
+      "tabla": [
+       [
+        1,
+        "Stop Loss",
+        "3990.00",
+        "rojo"
+       ],
+       [
+        1,
+        "Take Profit",
+        "4020.00",
+        "verde"
+       ],
+       [
+        2,
+        "Escribes",
+        "el precio exacto",
+        "oro"
+       ]
+      ],
+      "titulo": "Nueva orden · XAUUSD",
+      "w": 860,
+      "fs": 40
+     },
+     {
+      "cards": [
+       {
+        "val": "Doble clic → Modificar → agregas SL y TP",
+        "lbl": "¿Ya la abriste sin ellos?",
+        "ico": "",
+        "w": 1000,
+        "fs": 40,
+        "sub": ""
+       }
+      ],
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_arrastrar",
+   "texto": "También hay una forma más visual. En el gráfico, tu operación aparece como una línea. En una compra, arrastra esa línea hacia abajo para crear el stop loss, o hacia arriba para el take profit. Y cuando ya existen, puedes arrastrar las líneas para ajustarlas. Ojo, ajustar no es lo mismo que alejar el stop cuando el precio va en contra, eso nunca.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🖱️ LA FORMA VISUAL",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        50,
+        51,
+        49,
+        52,
+        50,
+        53,
+        52
+       ],
+       "lineas": [
+        [
+         57,
+         "T/P",
+         "verde",
+         2
+        ],
+        [
+         51,
+         "BUY 0.01",
+         "oro",
+         1
+        ],
+        [
+         45,
+         "S/L",
+         "rojo",
+         2
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "verde"
+      }
+     },
+     {
+      "p": "Arrastra las líneas para ajustar",
+      "s": 3
+     },
+     {
+      "pill": "⛔ NUNCA ALEJES EL SL SI VA EN CONTRA",
+      "s": 4,
+      "color": "rojo"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_sl_mental",
+   "texto": "Otra trampa común es el stop mental. Es cuando dices, si llega a tal precio, yo cierro. Pero cuando el precio llega, te da miedo cerrar, esperas un poquito más, y la pérdida crece. El stop tiene que estar puesto en la plataforma, no en tu cabeza.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🧠 EL STOP MENTAL",
+      "s": 0
+     },
+     {
+      "h2": "“Si llega allá, <span class='oro'>yo cierro</span>”",
+      "s": 1,
+      "fs": 64
+     },
+     {
+      "p": "…llega, esperas un poquito más, y la pérdida crece 😬",
+      "s": 2,
+      "fs": 42
+     },
+     {
+      "pill": "EL SL VA EN LA PLATAFORMA, NO EN TU CABEZA",
+      "s": 3,
+      "color": "verde"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_break_even",
+   "texto": "Cuando la operación ya va a tu favor, puedes proteger lo ganado. Lo más común es mover el stop loss al precio de entrada cuando el precio ya recorrió una buena parte del camino. Eso se llama break even. Desde ese momento, en el peor de los casos sales sin perder nada. Esto lo veremos a fondo en el módulo cuatro.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "BREAK EVEN",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        40,
+        38,
+        44,
+        50,
+        47,
+        55,
+        60
+       ],
+       "lineas": [
+        [
+         40,
+         "ENTRADA = NUEVO SL",
+         "oro",
+         1
+        ],
+        [
+         34,
+         "SL INICIAL",
+         "rojo",
+         0
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "verde"
+      }
+     },
+     {
+      "h2": "Peor caso: <span class='verde'>sales en cero</span>",
+      "s": 3,
+      "fs": 56
+     },
+     {
+      "p": "Módulo 4 · gestión de la operación",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_trailing",
+   "texto": "Y existe el trailing stop, que es un stop que va persiguiendo al precio. Cada vez que el precio avanza a tu favor, el stop sube detrás de él. Si el precio se devuelve, el stop se queda quieto y te saca con ganancia. Es muy útil cuando el mercado está en una tendencia fuerte.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "TRAILING STOP",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        40,
+        44,
+        42,
+        49,
+        47,
+        54,
+        52,
+        59
+       ],
+       "lineas": [
+        [
+         37,
+         "SL 1",
+         "rojo",
+         0
+        ],
+        [
+         43,
+         "SL 2",
+         "oro",
+         1
+        ],
+        [
+         49,
+         "SL 3",
+         "verde",
+         1
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "verde"
+      }
+     },
+     {
+      "p": "Se devuelve → <b class='verde'>sales con ganancia</b>",
+      "s": 2
+     },
+     {
+      "pill": "IDEAL EN TENDENCIA FUERTE",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_noticias",
+   "texto": "Un caso especial son las noticias. Cuando sale un dato económico fuerte, el precio puede saltar de golpe, y tu stop puede ejecutarse unos pips peor de lo que pusiste. Eso se llama deslizamiento. No es trampa del bróker, pasa porque en ese segundo no hay precio disponible en tu nivel. Por eso, si estás empezando, lo mejor es no tener operaciones abiertas justo en las noticias fuertes.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📰 NOTICIAS Y DESLIZAMIENTO",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "ruta": {
+       "pts": [
+        52,
+        53,
+        52,
+        51,
+        38,
+        36,
+        37
+       ],
+       "lineas": [
+        [
+         47,
+         "TU SL",
+         "rojo",
+         1
+        ],
+        [
+         38,
+         "SE EJECUTÓ AQUÍ",
+         "oro",
+         2
+        ]
+       ],
+       "w": 1000,
+       "h": 300,
+       "color": "rojo"
+      }
+     },
+     {
+      "p": "No es trampa: <b class='oro'>no hay precio en tu nivel</b>",
+      "s": 3
+     },
+     {
+      "pill": "EMPEZANDO: SIN OPERACIONES EN NOTICIAS FUERTES",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_errores",
+   "texto": "Los errores más comunes son cinco. Operar sin stop loss porque crees que el precio se va a devolver. Mover el stop loss más lejos cuando el precio va en tu contra. Ponerlo tan pegado que cualquier movimiento normal te saca. No poner take profit y dejar que una ganancia se vuelva pérdida. Y en la venta, ponerlo del lado equivocado.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "ERRORES COMUNES",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Operar sin SL “porque se devuelve”",
+        "x"
+       ],
+       [
+        2,
+        "Alejar el SL cuando va en contra",
+        "x"
+       ],
+       [
+        3,
+        "SL tan pegado que te saca por nada",
+        "x"
+       ],
+       [
+        4,
+        "Sin TP: la ganancia se vuelve pérdida",
+        "x"
+       ],
+       [
+        5,
+        "En la venta, SL del lado equivocado",
+        "x"
+       ]
+      ],
+      "fs": 40,
+      "gap": 16
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_regla",
+   "texto": "Si te llevas una sola regla de este video, que sea esta. Antes de dar clic, ya sabes dónde sales si pierdes y dónde sales si ganas. Si no lo sabes, no entras. Así de simple.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "📌",
+      "fs": 110
+     },
+     {
+      "h2": "Antes del clic: <span class='rojo'>dónde salgo si pierdo</span> y <span class='verde'>dónde salgo si gano</span>",
+      "s": 1,
+      "fs": 52
+     },
+     {
+      "h1": "Si no lo sabes, <span class='oro'>no entras</span>",
+      "s": 2,
+      "fs": 80
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_ejercicio",
+   "texto": "Tu ejercicio en demo. Abre una compra en el oro con cero coma cero uno, y ponle el stop loss diez dólares abajo y el take profit veinte dólares arriba. Después abre una venta en el euro dólar, con el stop por encima del último máximo. Anota cuánto arriesgaste en cada una. Y observa cuál se cierra primero, y por qué.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📝 EJERCICIO EN DEMO",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Compra oro 0.01 · SL −$10 · TP +$20",
+        "num"
+       ],
+       [
+        2,
+        "Venta EURUSD · SL encima del último máximo",
+        "num"
+       ],
+       [
+        3,
+        "Anota cuánto arriesgaste en cada una",
+        "num"
+       ],
+       [
+        4,
+        "¿Cuál cerró primero y por qué?",
+        "num"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_comentarios",
+   "texto": "Cuéntame en los comentarios. ¿Alguna vez dejaste una operación sin stop loss y te pasó algo? Leo todos los comentarios, y los mejores casos los uso para próximos videos.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "💬"
+     },
+     {
+      "h2": "¿Alguna vez operaste <span class='rojo'>sin stop loss</span>? ¿Qué pasó?",
+      "s": 1,
+      "fs": 60
+     },
+     {
+      "p": "Leo todos los comentarios 👀",
+      "s": 2
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_resumen",
+   "texto": "Resumamos. El stop loss cierra tu operación en tu pérdida máxima, y el take profit en tu objetivo. En la compra el stop va abajo, y en la venta va arriba. El stop se pone donde tu idea se invalida, no donde te dé la plata. Busca mínimo uno a dos. Y nunca alejes el stop cuando el precio va en contra.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "RESUMEN",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "<b class='rojo'>SL</b> = pérdida máxima · <b class='verde'>TP</b> = objetivo"
+       ],
+       [
+        2,
+        "Compra: SL abajo · Venta: SL arriba"
+       ],
+       [
+        3,
+        "SL donde la idea se invalida"
+       ],
+       [
+        4,
+        "Mínimo <b class='oro'>1 : 2</b>"
+       ],
+       [
+        5,
+        "Nunca alejes el SL"
+       ]
+      ],
+      "fs": 42,
+      "gap": 16
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v9_cierre",
+   "texto": "En el siguiente video vamos a juntar todo. Te enseño la gestión de riesgo, cuánto arriesgar en cada operación y cómo calcular el lote exacto. Suscríbete y activa la campanita. Y si estás empezando, te tengo un regalo. La guía gratis con los cinco errores que hacen perder a todo principiante. Escanea el código o entra al enlace de la descripción, y escríbeme la palabra regalo. Nos vemos en el próximo video.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "SIGUIENTE VIDEO",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "#10 · Gestión de riesgo: <span class='oro'>cuánto arriesgar por operación</span>",
+        "lbl": "",
+        "ico": "",
+        "w": 1200,
+        "fs": 44,
+        "sub": ""
+       }
+      ],
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "pill": "▶ SUSCRÍBETE",
+          "st": "background:#EF4444;border-color:#EF4444;color:#fff"
+         },
+         {
+          "pill": "🔔 ACTIVA LA CAMPANITA"
+         }
+        ],
+        "w": 560,
+        "s": 2
+       },
+       {
+        "qr": 1,
+        "s": 3,
+        "tam": 210
+       }
+      ],
+      "gap": 50
+     },
+     {
+      "p": "Contenido educativo, no es asesoría financiera. El trading implica riesgo.",
+      "fs": 22
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "outro",
+   "texto": ""
+  }
+ ]
+}

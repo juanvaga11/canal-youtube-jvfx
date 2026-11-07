@@ -1,0 +1,66 @@
+{
+ "id": "s33",
+ "formato": "vertical",
+ "titulo": "¿Dónde poner el STOP LOSS? (no es donde crees) 🛡️ #trading #shorts",
+ "desde": "v09",
+ "escenas": [
+  {
+   "v": "s33_a",
+   "texto": "¿Dónde se pone el stop loss?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🛡️",
+    "titulo": "¿Dónde va el <span class='rojo'>STOP LOSS</span>?"
+   }
+  },
+  {
+   "v": "s33_b",
+   "texto": "No donde te dé la plata. Va donde tu idea deja de tener sentido. En una compra, un poco por debajo del último mínimo.",
+   "vis": {
+    "t": "ruta",
+    "pts": [
+     60,
+     50,
+     42,
+     48,
+     46,
+     54,
+     62
+    ],
+    "lineas": [
+     [
+      46,
+      "ENTRADA",
+      "oro",
+      1
+     ],
+     [
+      38,
+      "SL",
+      "rojo",
+      2
+     ]
+    ],
+    "color": "verde",
+    "sub": "Debajo del último mínimo",
+    "s_sub": 2
+   }
+  },
+  {
+   "v": "s33_c",
+   "texto": "En una venta, un poco por encima del último máximo.",
+   "vis": {
+    "t": "texto",
+    "emoji": "📉",
+    "titulo": "Venta: <span class='rojo'>encima</span> del último máximo"
+   }
+  },
+  {
+   "v": "s33_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

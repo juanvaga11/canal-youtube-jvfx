@@ -1,0 +1,55 @@
+{
+ "id": "s29",
+ "formato": "vertical",
+ "titulo": "¿10 pips = 10 DÓLARES? 🤔 Depende de esto #trading #shorts",
+ "desde": "v08",
+ "escenas": [
+  {
+   "v": "s29_a",
+   "texto": "¿Diez pips son diez dólares?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🤔",
+    "titulo": "¿10 pips = <span class='oro'>$10</span>?"
+   }
+  },
+  {
+   "v": "s29_b",
+   "texto": "Depende de tu lote. En el euro dólar, con cero coma cero uno, cada pip vale diez centavos. Con cero coma uno, un dólar. Y con un lote completo, diez dólares.",
+   "vis": {
+    "t": "lista",
+    "pill": "DEPENDE DE TU LOTE",
+    "items": [
+     [
+      1,
+      "0.01 → $0,10 por pip"
+     ],
+     [
+      2,
+      "0.10 → $1 por pip"
+     ],
+     [
+      3,
+      "1.00 → $10 por pip"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s29_c",
+   "texto": "Por eso, empieza siempre con el lote mínimo.",
+   "vis": {
+    "t": "texto",
+    "emoji": "✅",
+    "titulo": "Empieza con <span class='oro'>0.01</span>"
+   }
+  },
+  {
+   "v": "s29_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

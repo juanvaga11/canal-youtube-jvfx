@@ -1,0 +1,54 @@
+{
+ "id": "s36",
+ "formato": "vertical",
+ "titulo": "La ÚNICA regla antes de dar clic 📌 #trading #shorts",
+ "desde": "v09",
+ "escenas": [
+  {
+   "v": "s36_a",
+   "texto": "Una sola regla antes de dar clic.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "📌",
+    "titulo": "La regla antes del <span class='oro'>CLIC</span>"
+   }
+  },
+  {
+   "v": "s36_b",
+   "texto": "Sabes dónde sales si pierdes. Y sabes dónde sales si ganas.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "🛡️",
+     "Stop loss",
+     "dónde salgo si pierdo",
+     "rojo"
+    ],
+    "b": [
+     "🎯",
+     "Take profit",
+     "dónde salgo si gano",
+     "verde"
+    ],
+    "s_a": 0,
+    "s_b": 1
+   }
+  },
+  {
+   "v": "s36_c",
+   "texto": "Si no lo sabes, no entras.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🚫",
+    "titulo": "Si no lo sabes, <span class='rojo'>no entras</span>"
+   }
+  },
+  {
+   "v": "s36_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

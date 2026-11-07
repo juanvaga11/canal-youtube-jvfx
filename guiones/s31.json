@@ -1,0 +1,55 @@
+{
+ "id": "s31",
+ "formato": "vertical",
+ "titulo": "Así el ORO quema cuentas en minutos 🥇💀 #trading #shorts",
+ "desde": "v08",
+ "escenas": [
+  {
+   "v": "s31_a",
+   "texto": "Así es como el oro quema cuentas.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🥇",
+    "titulo": "Así el oro <span class='rojo'>QUEMA</span> cuentas"
+   }
+  },
+  {
+   "v": "s31_b",
+   "texto": "Un lote de oro son cien onzas. Si el precio se mueve treinta dólares en tu contra, pierdes tres mil dólares. Con cero coma cero uno, pierdes treinta.",
+   "vis": {
+    "t": "vs",
+    "pill": "$30 EN CONTRA",
+    "a": [
+     "💀",
+     "1.00 lote",
+     "−$3.000",
+     "rojo"
+    ],
+    "b": [
+     "🛡️",
+     "0.01 lote",
+     "−$30",
+     "verde"
+    ],
+    "s_a": 1,
+    "s_b": 2
+   }
+  },
+  {
+   "v": "s31_c",
+   "texto": "Mismo movimiento. La diferencia la decides tú.",
+   "vis": {
+    "t": "texto",
+    "titulo": "La diferencia <span class='oro'>la decides tú</span>",
+    "emoji": "🎯"
+   }
+  },
+  {
+   "v": "s31_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

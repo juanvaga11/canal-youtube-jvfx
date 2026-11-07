@@ -1,0 +1,54 @@
+{
+ "id": "s30",
+ "formato": "vertical",
+ "titulo": "El MITO del apalancamiento que nadie te explica 🔥 #trading #shorts",
+ "desde": "v08",
+ "escenas": [
+  {
+   "v": "s30_a",
+   "texto": "¿El apalancamiento quema las cuentas?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🔥",
+    "titulo": "¿El apalancamiento <span class='rojo'>quema</span> cuentas?"
+   }
+  },
+  {
+   "v": "s30_b",
+   "texto": "No exactamente. El apalancamiento no cambia cuánto vale cada pip. Lo que cambia tu riesgo es el tamaño del lote.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "⚙️",
+     "Apalancamiento",
+     "No cambia el valor del pip",
+     "oro"
+    ],
+    "b": [
+     "📦",
+     "Tamaño del lote",
+     "= tu riesgo real",
+     "rojo"
+    ],
+    "s_a": 1,
+    "s_b": 2
+   }
+  },
+  {
+   "v": "s30_c",
+   "texto": "El apalancamiento solo te deja abrir lotes más grandes. Esa es la trampa.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🪤",
+    "titulo": "Más apalancamiento = <span class='rojo'>más tentación</span>"
+   }
+  },
+  {
+   "v": "s30_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

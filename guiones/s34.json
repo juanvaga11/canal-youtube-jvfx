@@ -1,0 +1,53 @@
+{
+ "id": "s34",
+ "formato": "vertical",
+ "titulo": "Ganar acertando solo 4 de 10 operaciones ✅ #trading #shorts",
+ "desde": "v09",
+ "escenas": [
+  {
+   "v": "s34_a",
+   "texto": "¿Se puede ganar acertando solo cuatro de cada diez operaciones?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🎯",
+    "titulo": "¿Ganar acertando <span class='oro'>4 de 10</span>?"
+   }
+  },
+  {
+   "v": "s34_b",
+   "texto": "Sí. Si arriesgas diez para ganar veinte, pierdes seis veces diez, menos sesenta. Ganas cuatro veces veinte, más ochenta.",
+   "vis": {
+    "t": "lista",
+    "pill": "RIESGO 1 : 2",
+    "items": [
+     [
+      1,
+      "6 perdidas → −$60"
+     ],
+     [
+      2,
+      "4 ganadas → +$80"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s34_c",
+   "texto": "Quedas veinte dólares arriba, acertando menos de la mitad.",
+   "vis": {
+    "t": "big",
+    "big": "+$20",
+    "color": "verde",
+    "sub": "acertando menos de la mitad",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s34_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}
