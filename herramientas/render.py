@@ -175,7 +175,7 @@ def main(guion, salida):
     cmd = ["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", f"{tmp}/lista.txt", "-i", f"{tmp}/voz.wav", *entradas,
            "-filter_complex", filtro, "-map", "[v]", "-map", "1:a",
            "-af", "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000",
-           "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-b:v", "8M", "-minrate", "6M", "-maxrate", "12M", "-bufsize", "16M", "-pix_fmt", "yuv420p", "-r", str(FPS),
+           "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS),
            "-c:a", "aac", "-b:a", "160k", "-ac", "2", "-movflags", "+faststart", "-t", f"{total:.2f}", tmp_out]
     subprocess.run(cmd, check=True)
     os.replace(tmp_out, salida)
