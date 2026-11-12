@@ -1,0 +1,1070 @@
+{
+ "id": "v11",
+ "formato": "horizontal",
+ "titulo": "Horarios del mercado desde Colombia",
+ "escenas": [
+  {
+   "v": "v11_gancho",
+   "texto": "Puedes tener la mejor estrategia del mundo y aun así perder, solo por operar a la hora equivocada. Hay horas en que el mercado se mueve con fuerza y te da oportunidades claras. Y hay horas en que está muerto, el spread se abre y todo es ruido. Hoy te enseño cuáles son, en hora de Colombia.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "⏰",
+      "fs": 120,
+      "s": 0
+     },
+     {
+      "h2": "Misma estrategia · <span class='rojo'>hora equivocada</span>",
+      "s": 0,
+      "fs": 58
+     },
+     {
+      "cards": [
+       {
+        "val": "Movimiento y oportunidades",
+        "lbl": "🔥 Horas buenas",
+        "ico": "",
+        "w": 560,
+        "fs": 40,
+        "sub": "",
+        "s": 1,
+        "color": "verde"
+       },
+       {
+        "val": "Spread alto y puro ruido",
+        "lbl": "😴 Horas muertas",
+        "ico": "",
+        "w": 560,
+        "fs": 40,
+        "sub": "",
+        "s": 2,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "pill": "🇨🇴 EN HORA DE COLOMBIA",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "intro",
+   "texto": ""
+  },
+  {
+   "v": "v11_marca",
+   "texto": "Bienvenido a JulianVal.fx. Este es el video once, y con él cerramos el módulo uno, los fundamentos. Ya sabes qué operar, cuánto arriesgar y dónde poner el stop. Ahora vas a saber cuándo.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "logo": 1,
+      "h": 280
+     },
+     {
+      "cards": [
+       {
+        "val": "Fundamentos",
+        "lbl": "Módulo 1 · cierre",
+        "ico": "",
+        "w": 420,
+        "fs": 50,
+        "sub": ""
+       },
+       {
+        "val": "#11",
+        "lbl": "Video",
+        "ico": "",
+        "w": 300,
+        "fs": 50,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "p": "Hoy: <b class='oro'>cuándo operar y cuándo no</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_24h",
+   "texto": "El mercado de divisas funciona veinticuatro horas, de lunes a viernes. Pero no porque esté abierto significa que siempre valga la pena operar. El mercado se mueve cuando hay dinero entrando, y el dinero entra cuando abren los grandes centros financieros del mundo. Esos horarios se llaman sesiones.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "FOREX · 24 HORAS DE LUNES A VIERNES",
+      "s": 0
+     },
+     {
+      "h2": "Abierto <span class='rojo'>≠</span> buen momento",
+      "s": 1,
+      "fs": 64
+     },
+     {
+      "h2": "El precio se mueve cuando <span class='oro'>entra el dinero</span>",
+      "s": 2,
+      "fs": 52
+     },
+     {
+      "row": [
+       {
+        "pill": "SÍDNEY"
+       },
+       {
+        "pill": "TOKIO"
+       },
+       {
+        "pill": "LONDRES"
+       },
+       {
+        "pill": "NUEVA YORK"
+       }
+      ],
+      "s": 3,
+      "gap": 16
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_volatilidad",
+   "texto": "¿Por qué importa tanto la hora? Por la volatilidad, que es cuánto se mueve el precio. Si el euro dólar se mueve cinco pips en una hora, no hay espacio para tu stop y tu objetivo. Si se mueve treinta pips, sí hay espacio para un uno a dos limpio. Operar sin volatilidad es como querer navegar sin viento.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LA VOLATILIDAD",
+      "s": 0
+     },
+     {
+      "h2": "= <span class='oro'>cuánto se mueve</span> el precio",
+      "s": 1,
+      "fs": 60
+     },
+     {
+      "cards": [
+       {
+        "val": "5 pips / hora",
+        "lbl": "Sin espacio para SL y TP",
+        "ico": "",
+        "w": 520,
+        "fs": 50,
+        "sub": "",
+        "s": 2,
+        "color": "rojo"
+       },
+       {
+        "val": "30 pips / hora",
+        "lbl": "Espacio para un 1:2 limpio",
+        "ico": "",
+        "w": 520,
+        "fs": 50,
+        "sub": "",
+        "s": 3,
+        "color": "verde"
+       }
+      ]
+     },
+     {
+      "p": "⛵ Sin volatilidad = <b class='rojo'>navegar sin viento</b>",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_sesiones",
+   "texto": "Son cuatro sesiones principales. Sídney, que abre la semana. Tokio, la sesión asiática. Londres, la más grande del mundo. Y Nueva York, la de Estados Unidos. Mira cómo se ven en hora de Colombia en esta época del año. Londres abre a las tres de la mañana, y Nueva York abre a las ocho.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LAS 4 SESIONES · HORA DE COLOMBIA",
+      "s": 0
+     },
+     {
+      "html": "<div style=\"position:relative;width:1300px;height:340px;font-family:Inter,sans-serif\"><div style=\"position:absolute;left:240.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">0h</div><div style=\"position:absolute;left:260.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:367.5px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">3h</div><div style=\"position:absolute;left:387.5px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:495.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">6h</div><div style=\"position:absolute;left:515.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:622.5px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">9h</div><div style=\"position:absolute;left:642.5px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:750.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">12h</div><div style=\"position:absolute;left:770.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:877.5px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">15h</div><div style=\"position:absolute;left:897.5px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:1005.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">18h</div><div style=\"position:absolute;left:1025.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:1132.5px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">21h</div><div style=\"position:absolute;left:1152.5px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:1260.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">24h</div><div style=\"position:absolute;left:1280.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div data-s=\"1\"><div style=\"position:absolute;left:0;top:16px;width:240px;text-align:right;font-weight:800;font-size:30px;color:#fff\">🇦🇺 Sídney</div><div style=\"position:absolute;left:982.5px;top:10px;width:297.5px;height:46px;border-radius:12px;background:#64748b;opacity:.9\"></div><div style=\"position:absolute;left:260.0px;top:10px;width:85.0px;height:46px;border-radius:12px;background:#64748b;opacity:.9\"></div></div><div data-s=\"2\"><div style=\"position:absolute;left:0;top:86px;width:240px;text-align:right;font-weight:800;font-size:30px;color:#fff\">🇯🇵 Tokio</div><div style=\"position:absolute;left:1067.5px;top:80px;width:212.5px;height:46px;border-radius:12px;background:#a855f7;opacity:.9\"></div><div style=\"position:absolute;left:260.0px;top:80px;width:170.0px;height:46px;border-radius:12px;background:#a855f7;opacity:.9\"></div></div><div data-s=\"3\"><div style=\"position:absolute;left:0;top:156px;width:240px;text-align:right;font-weight:800;font-size:30px;color:#fff\">🇬🇧 Londres</div><div style=\"position:absolute;left:387.5px;top:150px;width:382.5px;height:46px;border-radius:12px;background:#3b82f6;opacity:.9\"></div></div><div data-s=\"4\"><div style=\"position:absolute;left:0;top:226px;width:240px;text-align:right;font-weight:800;font-size:30px;color:#fff\">🇺🇸 Nueva York</div><div style=\"position:absolute;left:600.0px;top:220px;width:382.5px;height:46px;border-radius:12px;background:#22c55e;opacity:.9\"></div></div></div>"
+     },
+     {
+      "p": "Londres <b class='oro'>3 a. m.</b> · Nueva York <b class='oro'>8 a. m.</b>",
+      "s": 6
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_cruce",
+   "texto": "Y aquí está la clave. Entre las ocho de la mañana y el mediodía, Londres y Nueva York están abiertas al mismo tiempo. Es el cruce de sesiones. Ahí se mueve la mayor cantidad de dinero del día, hay más volumen, spreads más bajos y movimientos más limpios. Esa es la ventana dorada para operar desde Colombia.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LA VENTANA DORADA",
+      "s": 0
+     },
+     {
+      "html": "<div style=\"position:relative;width:1300px;height:340px;font-family:Inter,sans-serif\"><div style=\"position:absolute;left:240.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">0h</div><div style=\"position:absolute;left:260.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:367.5px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">3h</div><div style=\"position:absolute;left:387.5px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:495.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">6h</div><div style=\"position:absolute;left:515.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:622.5px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">9h</div><div style=\"position:absolute;left:642.5px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:750.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">12h</div><div style=\"position:absolute;left:770.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:877.5px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">15h</div><div style=\"position:absolute;left:897.5px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:1005.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">18h</div><div style=\"position:absolute;left:1025.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:1132.5px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">21h</div><div style=\"position:absolute;left:1152.5px;top:0;height:290px;border-left:1px dashed #333\"></div><div style=\"position:absolute;left:1260.0px;top:298px;width:40px;text-align:center;color:#888;font-size:22px\">24h</div><div style=\"position:absolute;left:1280.0px;top:0;height:290px;border-left:1px dashed #333\"></div><div data-s=\"0\"><div style=\"position:absolute;left:0;top:16px;width:240px;text-align:right;font-weight:800;font-size:30px;color:#fff\">🇦🇺 Sídney</div><div style=\"position:absolute;left:982.5px;top:10px;width:297.5px;height:46px;border-radius:12px;background:#64748b;opacity:.9\"></div><div style=\"position:absolute;left:260.0px;top:10px;width:85.0px;height:46px;border-radius:12px;background:#64748b;opacity:.9\"></div></div><div data-s=\"0\"><div style=\"position:absolute;left:0;top:86px;width:240px;text-align:right;font-weight:800;font-size:30px;color:#fff\">🇯🇵 Tokio</div><div style=\"position:absolute;left:1067.5px;top:80px;width:212.5px;height:46px;border-radius:12px;background:#a855f7;opacity:.9\"></div><div style=\"position:absolute;left:260.0px;top:80px;width:170.0px;height:46px;border-radius:12px;background:#a855f7;opacity:.9\"></div></div><div data-s=\"0\"><div style=\"position:absolute;left:0;top:156px;width:240px;text-align:right;font-weight:800;font-size:30px;color:#fff\">🇬🇧 Londres</div><div style=\"position:absolute;left:387.5px;top:150px;width:382.5px;height:46px;border-radius:12px;background:#3b82f6;opacity:.9\"></div></div><div data-s=\"0\"><div style=\"position:absolute;left:0;top:226px;width:240px;text-align:right;font-weight:800;font-size:30px;color:#fff\">🇺🇸 Nueva York</div><div style=\"position:absolute;left:600.0px;top:220px;width:382.5px;height:46px;border-radius:12px;background:#22c55e;opacity:.9\"></div></div><div data-s=\"1\" style=\"position:absolute;left:600.0px;top:0;width:170.0px;height:290px;border:4px solid #D4AF37;border-radius:14px;box-shadow:0 0 30px rgba(212,175,55,.5)\"><div style=\"position:absolute;top:-48px;left:0;right:0;text-align:center;color:#E6C25A;font-weight:900;font-size:28px;white-space:nowrap\">8 a. m. – 12 m</div></div></div>"
+     },
+     {
+      "h2": "Londres + Nueva York = <span class='oro'>más volumen, menos spread</span>",
+      "s": 2,
+      "fs": 50
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_spread",
+   "texto": "Y en las horas muertas pasa otra cosa. El spread, que es la comisión escondida entre el precio de compra y el de venta, se vuelve más grande. En el cruce de sesiones, el euro dólar puede tener un spread de menos de un pip, y en la madrugada puede triplicarse. Eso significa que empiezas cada operación perdiendo más.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EL SPREAD EN LAS HORAS MUERTAS",
+      "s": 0
+     },
+     {
+      "h2": "Comisión escondida entre <span class='verde'>compra</span> y <span class='rojo'>venta</span>",
+      "s": 1,
+      "fs": 50
+     },
+     {
+      "cards": [
+       {
+        "val": "< 1 pip",
+        "lbl": "Cruce de sesiones",
+        "ico": "",
+        "w": 460,
+        "fs": 64,
+        "sub": "",
+        "s": 2,
+        "color": "verde"
+       },
+       {
+        "val": "× 3",
+        "lbl": "Madrugada",
+        "ico": "",
+        "w": 460,
+        "fs": 64,
+        "sub": "",
+        "s": 2,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "p": "Empiezas cada operación <b class='rojo'>perdiendo más</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_trabajo",
+   "texto": "¿Y si trabajas en esas horas? Tienes opciones. Puedes operar solo en la hora antes de entrar al trabajo, o en la hora del almuerzo, que coincide con el final del cruce. También puedes dejar órdenes pendientes con su stop y su take profit, como vimos en el video siete. Lo que no puedes es operar a escondidas desde el celular en medio de una reunión.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "¿Y SI TRABAJAS?",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        2,
+        "Antes de entrar al trabajo",
+        "num"
+       ],
+       [
+        2,
+        "Hora del almuerzo (final del cruce)",
+        "num"
+       ],
+       [
+        3,
+        "Órdenes pendientes con SL y TP · video #7",
+        "num"
+       ]
+      ],
+      "fs": 42
+     },
+     {
+      "pill": "📱 NO: OPERAR A ESCONDIDAS EN UNA REUNIÓN",
+      "s": 4,
+      "color": "rojo"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_yo",
+   "texto": "Yo opero el oro y el euro dólar en la mañana, entre las ocho y las once. Es cuando veo los movimientos más claros. Si tienes un trabajo de oficina, no te preocupes. Con una o dos horas bien escogidas al día es suficiente. No necesitas estar todo el día pegado a la pantalla.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "MI HORARIO",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "8 – 11 a. m.",
+        "lbl": "🥇 Oro · 💶 EURUSD",
+        "ico": "",
+        "w": 620,
+        "fs": 80,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        3,
+        "1 o 2 horas bien escogidas son suficientes"
+       ],
+       [
+        4,
+        "No necesitas vivir pegado a la pantalla"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_cambio_hora",
+   "texto": "Un detalle importante. Colombia no cambia la hora, pero Estados Unidos y Europa sí. Entre marzo y noviembre adelantan el reloj, y las sesiones se te corren una hora más temprano. En esa época, Londres abre a las dos de la mañana y Nueva York a las siete. El cruce queda de siete a once.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "⚠️ OJO CON EL CAMBIO DE HORA",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "h2": "🇨🇴 Colombia <span class='verde'>no</span> cambia la hora · 🇺🇸🇬🇧 ellos <span class='rojo'>sí</span>",
+      "s": 1,
+      "fs": 50
+     },
+     {
+      "tabla": [
+       [
+        3,
+        "Marzo → noviembre",
+        "Londres 2 a. m. · NY 7 a. m."
+       ],
+       [
+        3,
+        "Cruce",
+        "7 a. m. – 11 a. m.",
+        "oro"
+       ],
+       [
+        4,
+        "Noviembre → marzo",
+        "Londres 3 a. m. · NY 8 a. m."
+       ],
+       [
+        4,
+        "Cruce",
+        "8 a. m. – 12 m",
+        "oro"
+       ]
+      ],
+      "w": 1000,
+      "fs": 38
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_asia",
+   "texto": "¿Y la sesión asiática? Es la de la noche en Colombia. Para el euro dólar suele ser lenta, con rangos pequeños y spreads más altos. Muchos principiantes operan de noche porque es cuando tienen tiempo, y terminan atrapados en movimientos sin dirección. Si solo puedes de noche, opera pares con yen, o mejor, usa ese tiempo para estudiar y marcar tus zonas.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🌙 LA SESIÓN ASIÁTICA",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "Lento · rangos pequeños",
+        "lbl": "EURUSD de noche",
+        "ico": "",
+        "w": 560,
+        "fs": 42,
+        "sub": "",
+        "s": 1,
+        "color": "rojo"
+       },
+       {
+        "val": "Atrapado sin dirección",
+        "lbl": "Principiante nocturno",
+        "ico": "",
+        "w": 560,
+        "fs": 42,
+        "sub": "",
+        "s": 2,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "p": "¿Solo de noche? Pares con yen, o <b class='oro'>estudia y marca tus zonas</b>",
+      "s": 4,
+      "fs": 40
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_oro",
+   "texto": "El oro tiene su propio comportamiento. Se mueve con fuerza en la apertura de Londres y, sobre todo, en la apertura de Nueva York, cuando salen los datos económicos de Estados Unidos. Por eso a las siete y media o las ocho y media de la mañana, hora de Colombia, el oro puede dar movimientos de diez o veinte dólares en minutos.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🥇 EL ORO",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        40,
+        41,
+        40,
+        42,
+        41,
+        52,
+        48,
+        58
+       ],
+       "lineas": [
+        [
+         42,
+         "APERTURA NY + DATOS",
+         "oro",
+         2
+        ]
+       ],
+       "w": 1000,
+       "h": 300,
+       "color": "verde"
+      },
+      "s": 1
+     },
+     {
+      "h2": "$10 – $20 <span class='oro'>en minutos</span>",
+      "s": 2,
+      "fs": 60
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_noticias",
+   "texto": "Y hablando de datos, las noticias económicas son el momento más peligroso para un principiante. Cuando sale un dato fuerte, como el empleo de Estados Unidos o la inflación, el precio puede saltar en segundos para un lado y luego para el otro. Para verlas, usa un calendario económico, como el de Investing o Forex Factory, y filtra solo las de impacto alto.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📰 NOTICIAS ECONÓMICAS",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "ruta": {
+       "pts": [
+        50,
+        50,
+        51,
+        30,
+        70,
+        45,
+        52
+       ],
+       "w": 1000,
+       "h": 260,
+       "color": "rojo"
+      },
+      "s": 1
+     },
+     {
+      "row": [
+       {
+        "pill": "EMPLEO (NFP)"
+       },
+       {
+        "pill": "INFLACIÓN (CPI)"
+       },
+       {
+        "pill": "TASAS DE LA FED"
+       }
+      ],
+      "s": 1,
+      "gap": 16
+     },
+     {
+      "p": "Calendario económico · filtra <b class='rojo'>impacto alto 🔴</b>",
+      "s": 2
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_regla_noticias",
+   "texto": "Mi regla con las noticias es sencilla. No abro operaciones quince minutos antes ni quince minutos después de una noticia de impacto alto. Y si ya tengo una operación abierta, me aseguro de que tenga su stop loss puesto. La mayoría de datos de Estados Unidos salen a las siete y media de la mañana, hora de Colombia, en esta época del año.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "MI REGLA CON NOTICIAS",
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "cards": [
+         {
+          "val": "−15 min",
+          "lbl": "Antes",
+          "ico": "",
+          "w": 320,
+          "fs": 64,
+          "sub": "",
+          "color": "rojo"
+         }
+        ]
+       },
+       {
+        "h1": "📰"
+       },
+       {
+        "cards": [
+         {
+          "val": "+15 min",
+          "lbl": "Después",
+          "ico": "",
+          "w": 320,
+          "fs": 64,
+          "sub": "",
+          "color": "rojo"
+         }
+        ]
+       }
+      ],
+      "s": 1,
+      "gap": 40
+     },
+     {
+      "p": "¿Ya estás adentro? <b class='oro'>Stop loss puesto</b>",
+      "s": 2
+     },
+     {
+      "pill": "DATOS DE EE. UU. ≈ 7:30 A. M. HORA COLOMBIA",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_semana",
+   "texto": "La semana también tiene su ritmo. El lunes temprano el mercado suele estar buscando dirección. Martes, miércoles y jueves son normalmente los días con mejores movimientos. Y el viernes en la tarde muchos cierran posiciones antes del fin de semana, así que el mercado se vuelve raro. Yo evito abrir operaciones nuevas el viernes después del mediodía.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "EL RITMO DE LA SEMANA",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "Buscando dirección",
+        "lbl": "Lunes",
+        "ico": "",
+        "w": 330,
+        "fs": 36,
+        "sub": "",
+        "s": 1
+       },
+       {
+        "val": "Mejores movimientos",
+        "lbl": "Mar · Mié · Jue",
+        "ico": "",
+        "w": 420,
+        "fs": 36,
+        "sub": "",
+        "s": 2,
+        "color": "verde"
+       },
+       {
+        "val": "Cierres y movimientos raros",
+        "lbl": "Viernes tarde",
+        "ico": "",
+        "w": 400,
+        "fs": 34,
+        "sub": "",
+        "s": 3,
+        "color": "rojo"
+       }
+      ],
+      "gap": 24
+     },
+     {
+      "pill": "SIN OPERACIONES NUEVAS EL VIERNES DESPUÉS DE MEDIODÍA",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_domingo",
+   "texto": "El mercado cierra el viernes a las cinco de la tarde, hora de Nueva York, y abre de nuevo el domingo a la misma hora. Esa apertura del domingo es delicada. Los spreads están muy abiertos y el precio puede abrir con un salto, que se llama gap. No es buen momento para entrar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "CIERRE Y APERTURA",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "Vie 5 p. m. NY",
+        "lbl": "Cierra",
+        "ico": "",
+        "w": 420,
+        "fs": 46,
+        "sub": ""
+       },
+       {
+        "val": "Dom 5 p. m. NY",
+        "lbl": "Abre",
+        "ico": "",
+        "w": 420,
+        "fs": 46,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        50,
+        51,
+        50,
+        50,
+        58,
+        57,
+        59
+       ],
+       "lineas": [
+        [
+         51,
+         "CIERRE VIERNES",
+         "#9ca3af",
+         2
+        ],
+        [
+         58,
+         "GAP EN LA APERTURA",
+         "rojo",
+         2
+        ]
+       ],
+       "w": 1000,
+       "h": 240,
+       "color": "verde"
+      }
+     },
+     {
+      "p": "Spreads muy abiertos · <b class='rojo'>no es momento de entrar</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_rollover",
+   "texto": "Hay otra hora con trampa todos los días. A las cinco de la tarde de Nueva York, los brókers cambian de día y el spread se abre muchísimo por unos minutos. Si tu stop está muy pegado, te puede sacar solo por ese spread. Revisa tu plataforma a esa hora y verás cómo se abre.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "⚠️ EL CAMBIO DE DÍA DEL BRÓKER",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "cards": [
+       {
+        "val": "5 p. m. NY",
+        "lbl": "Todos los días",
+        "ico": "",
+        "w": 480,
+        "fs": 60,
+        "sub": "",
+        "color": "rojo"
+       }
+      ],
+      "s": 0
+     },
+     {
+      "h2": "Spread <span class='rojo'>muy abierto</span> por unos minutos",
+      "s": 1,
+      "fs": 54
+     },
+     {
+      "p": "Stop muy pegado → <b class='rojo'>te saca el spread</b>",
+      "s": 2
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_sinteticos",
+   "texto": "Si operas índices sintéticos, la historia es distinta. Estos índices no dependen de ninguna economía real, los genera un algoritmo. En la mayoría de brókers que los ofrecen, funcionan las veinticuatro horas, incluso los fines de semana. Pero igual necesitas un horario fijo para operar, porque el que más se cansa no es el mercado, eres tú.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "⚡ ÍNDICES SINTÉTICOS",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "Generados por un algoritmo",
+        "lbl": "Sin economía real detrás",
+        "ico": "",
+        "w": 560,
+        "fs": 40,
+        "sub": "",
+        "s": 1
+       },
+       {
+        "val": "24/7, incluso fines de semana",
+        "lbl": "En la mayoría de brókers",
+        "ico": "",
+        "w": 560,
+        "fs": 40,
+        "sub": "",
+        "s": 2,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "h2": "Igual necesitas horario: <span class='oro'>el que se cansa eres tú</span>",
+      "s": 3,
+      "fs": 50
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_festivos",
+   "texto": "Y cuidado con los festivos. Cuando Estados Unidos o Inglaterra tienen festivo, el volumen baja mucho. Por ejemplo, el Día de Acción de Gracias, en noviembre, y las fiestas de Navidad y fin de año. En esos días el mercado puede estar quieto, o hacer movimientos raros con poco volumen. Muchos profesionales simplemente no operan.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🎄 FESTIVOS",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Festivo en EE. UU. o Inglaterra = <b class='rojo'>poco volumen</b>",
+        "x"
+       ],
+       [
+        2,
+        "Acción de Gracias · Navidad · fin de año",
+        "x"
+       ],
+       [
+        3,
+        "Quieto o movimientos raros",
+        "x"
+       ]
+      ],
+      "fs": 42
+     },
+     {
+      "p": "Muchos profesionales <b class='oro'>no operan</b>",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_mi_plan",
+   "texto": "Así que te dejo un plan sencillo. Escoge una o dos horas fijas dentro del cruce de Londres y Nueva York. Revisa el calendario económico antes de empezar. Marca tus zonas la noche anterior. Opera solo en tu ventana, y cuando se acabe, cierras la plataforma, ganes o pierdas.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📋 TU PLAN DE HORARIO",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "1 o 2 horas fijas dentro del cruce (8 a. m. – 12 m)",
+        "num"
+       ],
+       [
+        2,
+        "Revisa el calendario económico",
+        "num"
+       ],
+       [
+        3,
+        "Marca tus zonas la noche anterior",
+        "num"
+       ],
+       [
+        4,
+        "Opera solo en tu ventana y cierra la plataforma",
+        "num"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_errores",
+   "texto": "Los errores más comunes con los horarios son cuatro. Operar de noche el euro dólar porque es cuando hay tiempo. Entrar justo cuando sale una noticia fuerte. Abrir operaciones el domingo en la apertura. Y quedarse operando todo el día, hasta que el cansancio decide por ti.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "ERRORES COMUNES",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "chk": [
+       [
+        1,
+        "EURUSD de noche “porque hay tiempo”",
+        "x"
+       ],
+       [
+        2,
+        "Entrar justo en la noticia",
+        "x"
+       ],
+       [
+        3,
+        "Abrir el domingo en la apertura",
+        "x"
+       ],
+       [
+        4,
+        "Operar todo el día hasta el cansancio",
+        "x"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_ejercicio",
+   "texto": "Tu ejercicio en demo. Abre el euro dólar en temporalidad de quince minutos. Mira cuánto se movió el precio entre las ocho y las doce del día, y compáralo con lo que se movió entre las ocho de la noche y las doce de la noche. Después abre el calendario económico y anota las noticias de impacto alto de esta semana.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📝 EJERCICIO EN DEMO",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "EURUSD en M15",
+        "num"
+       ],
+       [
+        2,
+        "Compara 8 a. m. – 12 m vs 8 p. m. – 12 a. m.",
+        "num"
+       ],
+       [
+        3,
+        "Anota las noticias de impacto alto de la semana",
+        "num"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_comentarios",
+   "texto": "Cuéntame en los comentarios. ¿A qué hora operas tú, y desde qué país me ves? Así sé en qué horario te queda mejor y te puedo dar recomendaciones.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "💬"
+     },
+     {
+      "h2": "¿A qué hora operas, y <span class='oro'>desde qué país</span> me ves?",
+      "s": 1,
+      "fs": 60
+     },
+     {
+      "p": "Leo todos los comentarios 👀",
+      "s": 2
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_resumen",
+   "texto": "Resumamos. El mercado está abierto veinticuatro horas, pero no siempre vale la pena operar. La mejor ventana desde Colombia es el cruce de Londres y Nueva York, de ocho a doce en esta época, y de siete a once entre marzo y noviembre. Evita las noticias fuertes, el domingo en la apertura, el cambio de día del bróker y los festivos. Y escoge un horario fijo.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "RESUMEN",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Abierto 24 h ≠ siempre operar"
+       ],
+       [
+        2,
+        "Ventana dorada: <b class='oro'>cruce Londres + NY</b>"
+       ],
+       [
+        3,
+        "Evita noticias, domingo, cambio de día y festivos"
+       ],
+       [
+        4,
+        "Escoge un <b class='verde'>horario fijo</b>"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v11_cierre",
+   "texto": "Con este video terminas el módulo uno, felicitaciones. En el siguiente arrancamos el módulo dos, estructura de mercado, con las tendencias, alcista, bajista y lateral. Suscríbete y activa la campanita. Y si estás empezando, te tengo un regalo. La guía gratis con los cinco errores que hacen perder a todo principiante. Escanea el código o entra al enlace de la descripción, y escríbeme la palabra regalo. Nos vemos en el próximo video.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "SIGUIENTE VIDEO",
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "Módulo 2 · #12 Tendencias: <span class='oro'>alcista, bajista y lateral</span>",
+        "lbl": "",
+        "ico": "",
+        "w": 1200,
+        "fs": 44,
+        "sub": ""
+       }
+      ],
+      "s": 1
+     },
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "pill": "▶ SUSCRÍBETE",
+          "st": "background:#EF4444;border-color:#EF4444;color:#fff"
+         },
+         {
+          "pill": "🔔 ACTIVA LA CAMPANITA"
+         }
+        ],
+        "w": 560,
+        "s": 2
+       },
+       {
+        "qr": 1,
+        "s": 3,
+        "tam": 210
+       }
+      ],
+      "gap": 50
+     },
+     {
+      "p": "Contenido educativo, no es asesoría financiera. El trading implica riesgo.",
+      "fs": 22
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "outro",
+   "texto": ""
+  }
+ ]
+}

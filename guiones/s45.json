@@ -1,0 +1,67 @@
+{
+ "id": "s45",
+ "formato": "vertical",
+ "titulo": "¿Cómo saber si hay TENDENCIA? 📈 en 20 segundos #trading #shorts",
+ "desde": "v12",
+ "escenas": [
+  {
+   "v": "s45_a",
+   "texto": "¿Cómo saber si el mercado está en tendencia?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "📈",
+    "titulo": "¿Hay <span class='oro'>TENDENCIA</span>?"
+   }
+  },
+  {
+   "v": "s45_b",
+   "texto": "Mira los máximos y los mínimos. Si cada máximo y cada mínimo es más alto que el anterior, es alcista.",
+   "vis": {
+    "t": "ruta",
+    "pts": [
+     20,
+     34,
+     28,
+     44,
+     37,
+     54,
+     47,
+     64
+    ],
+    "lineas": [
+     [
+      44,
+      "MÁXIMO MÁS ALTO",
+      "verde",
+      1
+     ],
+     [
+      37,
+      "MÍNIMO MÁS ALTO",
+      "oro",
+      1
+     ]
+    ],
+    "color": "verde",
+    "sub": "Alcista",
+    "s_sub": 1
+   }
+  },
+  {
+   "v": "s45_c",
+   "texto": "Si son cada vez más bajos, es bajista.",
+   "vis": {
+    "t": "texto",
+    "emoji": "📉",
+    "titulo": "Más bajos = <span class='rojo'>bajista</span>"
+   }
+  },
+  {
+   "v": "s45_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

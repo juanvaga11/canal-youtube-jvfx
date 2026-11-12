@@ -1,0 +1,1303 @@
+{
+ "id": "v12",
+ "formato": "horizontal",
+ "titulo": "Tendencias: alcista, bajista y lateral",
+ "escenas": [
+  {
+   "v": "v12_gancho",
+   "texto": "El error que más cuentas quema no es entrar tarde ni salir temprano. Es operar en contra de la tendencia. Comprar porque el precio ya bajó mucho, o vender porque ya subió demasiado. Hoy aprendes a ver hacia dónde va el mercado en segundos, para operar a favor de la corriente y no en contra.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "🌊",
+      "fs": 110,
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        64,
+        50,
+        57,
+        40,
+        47,
+        30,
+        37,
+        20
+       ],
+       "lineas": [
+        [
+         47,
+         "“YA BAJÓ MUCHO” → COMPRA",
+         "rojo",
+         2
+        ]
+       ],
+       "w": 1000,
+       "h": 260,
+       "color": "rojo"
+      },
+      "s": 1
+     },
+     {
+      "h2": "Opera <span class='verde'>a favor</span> de la corriente",
+      "s": 3,
+      "fs": 60
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "intro",
+   "texto": ""
+  },
+  {
+   "v": "v12_marca",
+   "texto": "Bienvenido a JulianVal.fx. Con este video arrancamos el módulo dos, estructura de mercado. Ya tienes los fundamentos. Ahora vas a aprender a leer el gráfico como lo leen los profesionales, empezando por lo más importante, la tendencia.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "logo": 1,
+      "h": 280
+     },
+     {
+      "cards": [
+       {
+        "val": "Estructura de mercado",
+        "lbl": "Módulo 2",
+        "ico": "",
+        "w": 520,
+        "fs": 50,
+        "sub": ""
+       },
+       {
+        "val": "#12",
+        "lbl": "Video",
+        "ico": "",
+        "w": 300,
+        "fs": 50,
+        "sub": "",
+        "color": "oro"
+       }
+      ],
+      "s": 1
+     },
+     {
+      "p": "Hoy: <b class='oro'>tendencias</b> · alcista, bajista y lateral",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_por_que",
+   "texto": "¿Por qué la tendencia es lo primero? Porque es más fácil nadar con la corriente que en contra. Si el mercado está subiendo y tú compras, el movimiento natural del precio te ayuda. Si vendes, estás peleando contra miles de traders y contra el dinero grande. Los profesionales primero preguntan hacia dónde va el mercado, y solo después buscan dónde entrar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "🏊",
+      "fs": 110
+     },
+     {
+      "cards": [
+       {
+        "val": "El mercado te ayuda",
+        "lbl": "A favor",
+        "ico": "",
+        "w": 500,
+        "fs": 44,
+        "sub": "",
+        "s": 2,
+        "color": "verde"
+       },
+       {
+        "val": "Peleas contra el dinero grande",
+        "lbl": "En contra",
+        "ico": "",
+        "w": 560,
+        "fs": 40,
+        "sub": "",
+        "s": 3,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "chk": [
+       [
+        4,
+        "¿Hacia dónde va el mercado?",
+        "num"
+       ],
+       [
+        4,
+        "Solo después: ¿dónde entro?",
+        "num"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_que_es",
+   "texto": "Una tendencia es la dirección general en la que se mueve el precio. Pero ojo, el precio nunca se mueve en línea recta. Sube, retrocede un poco, vuelve a subir. Como una escalera, o como las olas del mar cuando sube la marea. Cada ola retrocede, pero la marea sigue subiendo.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "¿QUÉ ES UNA TENDENCIA?",
+      "s": 0
+     },
+     {
+      "h2": "La <span class='oro'>dirección general</span> del precio",
+      "s": 0,
+      "fs": 60
+     },
+     {
+      "ruta": {
+       "pts": [
+        20,
+        34,
+        28,
+        44,
+        37,
+        54,
+        47,
+        64
+       ],
+       "w": 1000,
+       "h": 300,
+       "color": "verde"
+      },
+      "s": 2
+     },
+     {
+      "p": "🌊 Cada ola retrocede, pero <b class='verde'>la marea sigue subiendo</b>",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_tres",
+   "texto": "Existen solo tres tipos. Tendencia alcista, cuando el precio va subiendo. Tendencia bajista, cuando va bajando. Y lateral, cuando no va para ningún lado y se queda moviendo entre un techo y un piso. Vamos a ver cómo reconocer cada una sin ningún indicador.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LOS 3 TIPOS",
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "pill": "📈 ALCISTA",
+          "color": "verde"
+         },
+         {
+          "ruta": {
+           "pts": [
+            20,
+            34,
+            28,
+            44,
+            37,
+            54,
+            47,
+            64
+           ],
+           "w": 400,
+           "h": 200,
+           "color": "verde"
+          }
+         }
+        ],
+        "w": 400,
+        "s": 1
+       },
+       {
+        "col": [
+         {
+          "pill": "📉 BAJISTA",
+          "color": "rojo"
+         },
+         {
+          "ruta": {
+           "pts": [
+            64,
+            50,
+            57,
+            40,
+            47,
+            30,
+            37,
+            20
+           ],
+           "w": 400,
+           "h": 200,
+           "color": "rojo"
+          }
+         }
+        ],
+        "w": 400,
+        "s": 2
+       },
+       {
+        "col": [
+         {
+          "pill": "↔️ LATERAL"
+         },
+         {
+          "ruta": {
+           "pts": [
+            40,
+            56,
+            42,
+            57,
+            41,
+            55,
+            42,
+            56
+           ],
+           "w": 400,
+           "h": 200,
+           "color": "oro"
+          }
+         }
+        ],
+        "w": 400,
+        "s": 3
+       }
+      ],
+      "gap": 30
+     },
+     {
+      "p": "Sin ningún indicador 👀",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_alcista",
+   "texto": "Una tendencia alcista se reconoce por dos cosas. Cada máximo es más alto que el anterior, y cada mínimo también es más alto que el anterior. En inglés se les llama higher high y higher low. Mientras el precio siga haciendo máximos y mínimos más altos, la tendencia sigue siendo alcista.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📈 TENDENCIA ALCISTA",
+      "s": 0,
+      "color": "verde"
+     },
+     {
+      "ruta": {
+       "pts": [
+        20,
+        34,
+        28,
+        44,
+        37,
+        54,
+        47,
+        64
+       ],
+       "lineas": [
+        [
+         44,
+         "MÁXIMO MÁS ALTO",
+         "verde",
+         1
+        ],
+        [
+         37,
+         "MÍNIMO MÁS ALTO",
+         "oro",
+         1
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "verde"
+      }
+     },
+     {
+      "row": [
+       {
+        "pill": "HH · HIGHER HIGH"
+       },
+       {
+        "pill": "HL · HIGHER LOW"
+       }
+      ],
+      "s": 2,
+      "gap": 16
+     },
+     {
+      "p": "Máximos y mínimos <b class='verde'>cada vez más altos</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_bajista",
+   "texto": "La tendencia bajista es exactamente al revés. Cada mínimo es más bajo que el anterior, y cada máximo también es más bajo. Lower low y lower high. El precio cae, rebota un poco, pero no logra superar el máximo anterior, y vuelve a caer más abajo.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📉 TENDENCIA BAJISTA",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "ruta": {
+       "pts": [
+        64,
+        50,
+        57,
+        40,
+        47,
+        30,
+        37,
+        20
+       ],
+       "lineas": [
+        [
+         47,
+         "MÁXIMO MÁS BAJO",
+         "oro",
+         1
+        ],
+        [
+         30,
+         "MÍNIMO MÁS BAJO",
+         "rojo",
+         1
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "rojo"
+      }
+     },
+     {
+      "row": [
+       {
+        "pill": "LL · LOWER LOW"
+       },
+       {
+        "pill": "LH · LOWER HIGH"
+       }
+      ],
+      "s": 2,
+      "gap": 16
+     },
+     {
+      "p": "Rebota, <b class='rojo'>no supera el máximo</b>, y cae más",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_lateral",
+   "texto": "Y la lateral, que también se llama rango. El precio choca una y otra vez contra un mismo techo y un mismo piso, sin romper ninguno. Es como una pelota rebotando entre el suelo y el techo de una habitación. Nadie tiene el control, ni los compradores ni los vendedores.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "↔️ LATERAL · RANGO",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        40,
+        56,
+        42,
+        57,
+        41,
+        55,
+        42,
+        56
+       ],
+       "lineas": [
+        [
+         57,
+         "TECHO",
+         "rojo",
+         1
+        ],
+        [
+         41,
+         "PISO",
+         "verde",
+         1
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "oro"
+      }
+     },
+     {
+      "p": "🏀 Pelota rebotando entre <b class='verde'>piso</b> y <b class='rojo'>techo</b>",
+      "s": 2
+     },
+     {
+      "h2": "Nadie tiene el control",
+      "s": 3,
+      "fs": 56
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_zoom",
+   "texto": "El primer truco para ver la tendencia es alejar el gráfico. Muchos principiantes miran solo cincuenta velas en un minuto, y ven tendencias que no existen. Aleja el zoom, mira las últimas semanas, y pregúntate algo muy simple. ¿El precio está más arriba o más abajo que hace un mes? A veces la respuesta está a la vista.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🔍 TRUCO 1: ALEJA EL GRÁFICO",
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "p": "Zoom en M1 · 50 velas",
+          "fs": 32
+         },
+         {
+          "ruta": {
+           "pts": [
+            50,
+            46,
+            44,
+            41,
+            42,
+            38
+           ],
+           "w": 520,
+           "h": 220,
+           "color": "rojo"
+          }
+         }
+        ],
+        "w": 540,
+        "s": 1
+       },
+       {
+        "col": [
+         {
+          "p": "Alejado · últimas semanas",
+          "fs": 32
+         },
+         {
+          "ruta": {
+           "pts": [
+            20,
+            30,
+            26,
+            40,
+            36,
+            50,
+            46,
+            58,
+            55
+           ],
+           "w": 520,
+           "h": 220,
+           "color": "verde"
+          }
+         }
+        ],
+        "w": 540,
+        "s": 2
+       }
+      ],
+      "gap": 50
+     },
+     {
+      "h2": "¿Más arriba o más abajo que <span class='oro'>hace un mes</span>?",
+      "s": 3,
+      "fs": 50
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_temporalidad",
+   "texto": "Y esto es clave. La tendencia depende de la temporalidad que mires. El oro puede estar en tendencia alcista en el gráfico diario, y al mismo tiempo bajando en el gráfico de quince minutos. Las dos cosas son ciertas. Por eso yo siempre miro primero las temporalidades altas, como cuatro horas y una hora, para saber hacia dónde va la marea. Eso lo veremos a fondo en el video quince.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "LA TENDENCIA DEPENDE DE LA TEMPORALIDAD",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "📈 Alcista",
+        "lbl": "Oro · Diario",
+        "ico": "",
+        "w": 440,
+        "fs": 50,
+        "sub": "",
+        "s": 1,
+        "color": "verde"
+       },
+       {
+        "val": "📉 Bajando",
+        "lbl": "Oro · M15",
+        "ico": "",
+        "w": 440,
+        "fs": 50,
+        "sub": "",
+        "s": 1,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "h2": "Las dos son <span class='oro'>ciertas</span>",
+      "s": 2,
+      "fs": 56
+     },
+     {
+      "p": "Primero H4 y H1 → <b class='oro'>la marea</b> · Video #15",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_retroceso",
+   "texto": "Ahora, el error número uno. Confundir un retroceso con un cambio de tendencia. En una tendencia alcista, cuando el precio baja un poco, mucha gente vende pensando que ya se dio la vuelta. Pero mientras no rompa el último mínimo, es solo un retroceso, una ola que se devuelve. Y en realidad, esos retrocesos son las mejores zonas para comprar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "RETROCESO ≠ CAMBIO DE TENDENCIA",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "ruta": {
+       "pts": [
+        20,
+        34,
+        28,
+        46,
+        38,
+        54
+       ],
+       "lineas": [
+        [
+         28,
+         "ÚLTIMO MÍNIMO",
+         "oro",
+         3
+        ],
+        [
+         38,
+         "RETROCESO → ZONA DE COMPRA",
+         "verde",
+         4
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "verde"
+      }
+     },
+     {
+      "p": "No rompe el mínimo = <b class='verde'>solo es una ola</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_ejemplo",
+   "texto": "Veamos un ejemplo con el oro. El precio sube de cuatro mil a cuatro mil cincuenta, retrocede a cuatro mil treinta, y luego sube a cuatro mil ochenta. Ese retroceso a cuatro mil treinta hizo un mínimo más alto que el anterior. Quien compró ahí, con el stop debajo de ese mínimo, entró a favor de la tendencia con un riesgo pequeño. Quien vendió pensando que se iba a caer, perdió.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🥇 EJEMPLO CON EL ORO",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        4000,
+        4018,
+        4010,
+        4050,
+        4030,
+        4062,
+        4080
+       ],
+       "lineas": [
+        [
+         4030,
+         "COMPRA EN 4.030",
+         "verde",
+         2
+        ],
+        [
+         4016,
+         "SL DEBAJO DEL MÍNIMO",
+         "rojo",
+         3
+        ]
+       ],
+       "w": 1000,
+       "h": 360,
+       "color": "verde"
+      },
+      "s": 1
+     },
+     {
+      "cards": [
+       {
+        "val": "A favor · riesgo pequeño",
+        "lbl": "Compró en el retroceso",
+        "ico": "",
+        "w": 520,
+        "fs": 40,
+        "sub": "",
+        "s": 3,
+        "color": "verde"
+       },
+       {
+        "val": "Perdió",
+        "lbl": "Vendió “porque se iba a caer”",
+        "ico": "",
+        "w": 520,
+        "fs": 40,
+        "sub": "",
+        "s": 4,
+        "color": "rojo"
+       }
+      ]
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_cambio",
+   "texto": "¿Y cuándo cambia de verdad una tendencia? Una señal importante es cuando el precio rompe el último mínimo relevante en una tendencia alcista. Ya no está haciendo mínimos más altos. Y si después tampoco logra hacer un máximo más alto, la estructura se dañó. En el próximo video vamos a profundizar en cómo leer esos máximos y mínimos.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "¿CUÁNDO CAMBIA DE VERDAD?",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        20,
+        34,
+        28,
+        46,
+        38,
+        52,
+        32,
+        44,
+        26
+       ],
+       "lineas": [
+        [
+         38,
+         "ÚLTIMO MÍNIMO ROTO",
+         "rojo",
+         1
+        ],
+        [
+         52,
+         "NO HACE NUEVO MÁXIMO",
+         "oro",
+         3
+        ]
+       ],
+       "w": 1000,
+       "h": 320,
+       "color": "rojo"
+      }
+     },
+     {
+      "p": "Estructura dañada → <b class='rojo'>posible cambio</b> · Video #13",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_fuerza",
+   "texto": "También puedes medir la fuerza de una tendencia. Cuando los impulsos son largos y los retrocesos son cortos, la tendencia es fuerte. Cuando los impulsos se vuelven cada vez más cortos y los retrocesos más profundos, la tendencia se está cansando. Es como un corredor que empieza a bajar el ritmo. No significa que se dé la vuelta ya, pero es momento de ser más cuidadoso.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "💪 LA FUERZA DE LA TENDENCIA",
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "pill": "FUERTE",
+          "color": "verde"
+         },
+         {
+          "ruta": {
+           "pts": [
+            20,
+            45,
+            40,
+            65,
+            60,
+            85
+           ],
+           "w": 560,
+           "h": 230,
+           "color": "verde"
+          }
+         }
+        ],
+        "w": 580,
+        "s": 1
+       },
+       {
+        "col": [
+         {
+          "pill": "CANSADA"
+         },
+         {
+          "ruta": {
+           "pts": [
+            20,
+            45,
+            34,
+            52,
+            42,
+            55,
+            47
+           ],
+           "w": 560,
+           "h": 230,
+           "color": "oro"
+          }
+         }
+        ],
+        "w": 580,
+        "s": 2
+       }
+      ],
+      "gap": 40
+     },
+     {
+      "p": "🏃 El corredor baja el ritmo → <b class='oro'>más cuidado</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_rango",
+   "texto": "El mercado lateral merece un cuidado especial. El mercado pasa buena parte del tiempo en rango, sin una tendencia clara. Y ahí es donde más cuentas se pierden, porque el principiante ve cada subida como el inicio de una tendencia y cada bajada como una caída. Al final lo sacan en el techo y en el piso, una y otra vez. En el video dieciséis te enseño a reconocer los rangos y cuándo no operar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "↔️ CUIDADO CON EL RANGO",
+      "s": 0
+     },
+     {
+      "ruta": {
+       "pts": [
+        40,
+        56,
+        42,
+        57,
+        41,
+        55,
+        42,
+        56
+       ],
+       "lineas": [
+        [
+         57,
+         "COMPRÓ AQUÍ",
+         "rojo",
+         2
+        ],
+        [
+         41,
+         "VENDIÓ AQUÍ",
+         "rojo",
+         2
+        ]
+       ],
+       "w": 1000,
+       "h": 300,
+       "color": "oro"
+      }
+     },
+     {
+      "p": "Lo sacan en el techo y en el piso, <b class='rojo'>una y otra vez</b>",
+      "s": 3
+     },
+     {
+      "pill": "VIDEO #16 · RANGOS Y CUÁNDO NO OPERAR",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_lineas",
+   "texto": "Una herramienta sencilla para ver la tendencia es la línea de tendencia. En una alcista, unes dos o más mínimos con una línea, y en una bajista unes los máximos. Mientras el precio respete la línea, la tendencia sigue. Pero no te obsesiones con dibujar líneas perfectas, lo más importante siempre son los máximos y los mínimos.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📏 LÍNEA DE TENDENCIA",
+      "s": 0
+     },
+     {
+      "html": "<svg width='1000' height='320' viewBox='0 0 1000 320'><polyline points='40,280 180,170 260,210 420,110 500,150 660,50 740,90 900,20' fill='none' stroke='#22C55E' stroke-width='10' stroke-linejoin='round' stroke-linecap='round'/><line x1='40' y1='300' x2='920' y2='70' stroke='#E6C25A' stroke-width='5' stroke-dasharray='18 12'/><circle cx='260' cy='210' r='14' fill='#E6C25A'/><circle cx='500' cy='150' r='14' fill='#E6C25A'/><circle cx='740' cy='90' r='14' fill='#E6C25A'/></svg>",
+      "s": 1
+     },
+     {
+      "p": "Mientras la respete, <b class='verde'>la tendencia sigue</b>",
+      "s": 2
+     },
+     {
+      "p": "Lo más importante: <b class='oro'>máximos y mínimos</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_media",
+   "texto": "Otra ayuda muy usada son las medias móviles. Yo uso la media móvil exponencial de doscientos periodos como un filtro rápido. Si el precio está por encima, prefiero buscar compras. Si está por debajo, prefiero buscar ventas. No es una señal para entrar, es solo una brújula que te dice de qué lado estar.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "🧭 LA MEDIA MÓVIL COMO BRÚJULA",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "EMA 200",
+        "lbl": "Mi filtro",
+        "ico": "",
+        "w": 420,
+        "fs": 64,
+        "sub": "",
+        "s": 1,
+        "color": "oro"
+       }
+      ]
+     },
+     {
+      "cards": [
+       {
+        "val": "Busco compras",
+        "lbl": "Precio encima",
+        "ico": "",
+        "w": 440,
+        "fs": 44,
+        "sub": "",
+        "s": 2,
+        "color": "verde"
+       },
+       {
+        "val": "Busco ventas",
+        "lbl": "Precio debajo",
+        "ico": "",
+        "w": 440,
+        "fs": 44,
+        "sub": "",
+        "s": 3,
+        "color": "rojo"
+       }
+      ]
+     },
+     {
+      "p": "No es señal de entrada · <b class='oro'>es una brújula</b>",
+      "s": 4
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_como_operar",
+   "texto": "Entonces, ¿cómo se opera cada una? En tendencia alcista, busca compras en los retrocesos, no en los máximos. En tendencia bajista, busca ventas en los rebotes, no en los mínimos. Y en lateral, o compras cerca del piso y vendes cerca del techo, o mejor aún, si estás empezando, no operes y espera a que el precio salga del rango.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "¿CÓMO SE OPERA CADA UNA?",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "Compra en retrocesos",
+        "lbl": "📈 Alcista",
+        "ico": "",
+        "w": 400,
+        "fs": 38,
+        "sub": "",
+        "s": 1,
+        "color": "verde"
+       },
+       {
+        "val": "Vende en rebotes",
+        "lbl": "📉 Bajista",
+        "ico": "",
+        "w": 400,
+        "fs": 38,
+        "sub": "",
+        "s": 2,
+        "color": "rojo"
+       },
+       {
+        "val": "Piso/techo… o espera",
+        "lbl": "↔️ Lateral",
+        "ico": "",
+        "w": 400,
+        "fs": 38,
+        "sub": "",
+        "s": 3,
+        "color": "oro"
+       }
+      ],
+      "gap": 24
+     },
+     {
+      "p": "Empezando: <b class='oro'>en lateral, espera</b>",
+      "s": 3
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_frase",
+   "texto": "Hay una frase muy famosa en el trading. La tendencia es tu amiga, hasta que se termina. Operar a favor de la tendencia no te garantiza ganar todas, pero pone las probabilidades de tu lado. Y en el trading, todo se trata de probabilidades.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "🤝",
+      "fs": 110
+     },
+     {
+      "h1": "“La tendencia es tu amiga…”",
+      "s": 1,
+      "fs": 72
+     },
+     {
+      "h2": "…hasta que se termina",
+      "s": 1,
+      "fs": 52
+     },
+     {
+      "p": "No garantiza ganar · <b class='oro'>pone las probabilidades de tu lado</b>",
+      "s": 2
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_checklist",
+   "texto": "Te dejo una lista rápida para antes de cada operación. Primero, ¿qué tendencia hay en cuatro horas? Segundo, ¿qué tendencia hay en una hora? Tercero, ¿mi operación va a favor de esas tendencias? Si las respuestas no cuadran, mejor espera.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "✅ ANTES DE CADA OPERACIÓN",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "¿Qué tendencia hay en H4?",
+        "num"
+       ],
+       [
+        2,
+        "¿Qué tendencia hay en H1?",
+        "num"
+       ],
+       [
+        3,
+        "¿Mi operación va a favor?",
+        "num"
+       ]
+      ],
+      "fs": 46
+     },
+     {
+      "pill": "SI NO CUADRA, ESPERA",
+      "s": 4,
+      "color": "oro"
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_errores",
+   "texto": "Los errores más comunes son cuatro. Comprar en una tendencia bajista porque ya bajó mucho. Confundir un retroceso con un cambio de tendencia. Mirar solo la temporalidad de un minuto. Y operar con fuerza en un mercado lateral, esperando una tendencia que no existe.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "ERRORES COMUNES",
+      "s": 0,
+      "color": "rojo"
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Comprar en bajista “porque ya bajó mucho”",
+        "x"
+       ],
+       [
+        2,
+        "Confundir retroceso con cambio",
+        "x"
+       ],
+       [
+        3,
+        "Mirar solo M1",
+        "x"
+       ],
+       [
+        4,
+        "Forzar operaciones en lateral",
+        "x"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_ejercicio",
+   "texto": "Tu ejercicio en demo. Abre el oro y el euro dólar en temporalidad de cuatro horas. Marca los últimos máximos y mínimos de cada uno. Y escribe si cada mercado está en tendencia alcista, bajista o lateral. Después baja a una hora y mira si coincide.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "📝 EJERCICIO EN DEMO",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        1,
+        "Oro y EURUSD en H4",
+        "num"
+       ],
+       [
+        2,
+        "Marca los últimos máximos y mínimos",
+        "num"
+       ],
+       [
+        3,
+        "¿Alcista, bajista o lateral?",
+        "num"
+       ],
+       [
+        4,
+        "Baja a H1: ¿coincide?",
+        "num"
+       ]
+      ],
+      "fs": 42
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_comentarios",
+   "texto": "Cuéntame en los comentarios. Según tu análisis, ¿en qué tendencia está el oro ahora mismo en cuatro horas? Alcista, bajista o lateral. Vamos a ver quién lo lee mejor.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "emoji": "💬"
+     },
+     {
+      "h2": "¿En qué tendencia está el <span class='oro'>ORO</span> en H4?",
+      "s": 1,
+      "fs": 62
+     },
+     {
+      "row": [
+       {
+        "pill": "📈 ALCISTA",
+        "color": "verde"
+       },
+       {
+        "pill": "📉 BAJISTA",
+        "color": "rojo"
+       },
+       {
+        "pill": "↔️ LATERAL"
+       }
+      ],
+      "s": 2,
+      "gap": 16
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_resumen",
+   "texto": "Resumamos. Hay tres tipos de tendencia. Alcista, con máximos y mínimos más altos. Bajista, con máximos y mínimos más bajos. Y lateral, entre un techo y un piso. Aleja el gráfico, mira primero las temporalidades altas, y no confundas un retroceso con un cambio de tendencia.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "RESUMEN",
+      "s": 0
+     },
+     {
+      "chk": [
+       [
+        2,
+        "<b class='verde'>Alcista</b>: máximos y mínimos más altos"
+       ],
+       [
+        3,
+        "<b class='rojo'>Bajista</b>: máximos y mínimos más bajos"
+       ],
+       [
+        4,
+        "<b class='oro'>Lateral</b>: entre techo y piso"
+       ],
+       [
+        5,
+        "Aleja el gráfico · temporalidades altas primero"
+       ],
+       [
+        5,
+        "Retroceso ≠ cambio de tendencia"
+       ]
+      ],
+      "fs": 40,
+      "gap": 16
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "v12_cierre",
+   "texto": "En el siguiente video vamos a profundizar en los máximos y mínimos, para que leas la estructura del mercado como un profesional. Suscríbete y activa la campanita. Y si estás empezando, te tengo un regalo. La guía gratis con los cinco errores que hacen perder a todo principiante. Escanea el código o entra al enlace de la descripción, y escríbeme la palabra regalo. Nos vemos en el próximo video.",
+   "vis": {
+    "t": "h",
+    "b": [
+     {
+      "pill": "SIGUIENTE VIDEO",
+      "s": 0
+     },
+     {
+      "cards": [
+       {
+        "val": "#13 · Máximos y mínimos: <span class='oro'>cómo leer la estructura</span>",
+        "lbl": "",
+        "ico": "",
+        "w": 1200,
+        "fs": 44,
+        "sub": ""
+       }
+      ],
+      "s": 0
+     },
+     {
+      "row": [
+       {
+        "col": [
+         {
+          "pill": "▶ SUSCRÍBETE",
+          "st": "background:#EF4444;border-color:#EF4444;color:#fff"
+         },
+         {
+          "pill": "🔔 ACTIVA LA CAMPANITA"
+         }
+        ],
+        "w": 560,
+        "s": 1
+       },
+       {
+        "qr": 1,
+        "s": 2,
+        "tam": 210
+       }
+      ],
+      "gap": 50
+     },
+     {
+      "p": "Contenido educativo, no es asesoría financiera. El trading implica riesgo.",
+      "fs": 22
+     }
+    ],
+    "gap": 26
+   }
+  },
+  {
+   "v": "outro",
+   "texto": ""
+  }
+ ]
+}

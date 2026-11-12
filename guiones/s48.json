@@ -1,0 +1,67 @@
+{
+ "id": "s48",
+ "formato": "vertical",
+ "titulo": "Mercado LATERAL: la trampa que quema cuentas ↔️ #trading #shorts",
+ "desde": "v12",
+ "escenas": [
+  {
+   "v": "s48_a",
+   "texto": "El mercado lateral es una trampa.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "↔️",
+    "titulo": "El mercado <span class='oro'>LATERAL</span> es una trampa"
+   }
+  },
+  {
+   "v": "s48_b",
+   "texto": "El precio rebota entre un techo y un piso. El principiante compra en el techo creyendo que arrancó, y vende en el piso creyendo que se cae.",
+   "vis": {
+    "t": "ruta",
+    "pts": [
+     40,
+     56,
+     42,
+     57,
+     41,
+     55,
+     42,
+     56
+    ],
+    "lineas": [
+     [
+      57,
+      "TECHO",
+      "rojo",
+      0
+     ],
+     [
+      41,
+      "PISO",
+      "verde",
+      0
+     ]
+    ],
+    "color": "oro",
+    "sub": "Lo sacan una y otra vez",
+    "s_sub": 1
+   }
+  },
+  {
+   "v": "s48_c",
+   "texto": "Si estás empezando, en lateral, espera.",
+   "vis": {
+    "t": "texto",
+    "emoji": "⏳",
+    "titulo": "Empezando: <span class='oro'>en lateral, espera</span>"
+   }
+  },
+  {
+   "v": "s48_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

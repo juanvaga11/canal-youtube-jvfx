@@ -1,0 +1,44 @@
+{
+ "id": "s41",
+ "formato": "vertical",
+ "titulo": "La MEJOR hora para operar desde Colombia 🇨🇴⏰ #trading #shorts",
+ "desde": "v11",
+ "escenas": [
+  {
+   "v": "s41_a",
+   "texto": "¿A qué hora se debe operar desde Colombia?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "⏰",
+    "titulo": "La <span class='oro'>mejor hora</span> para operar 🇨🇴"
+   }
+  },
+  {
+   "v": "s41_b",
+   "texto": "Entre las ocho de la mañana y el mediodía, Londres y Nueva York están abiertas al mismo tiempo. Más volumen, menos spread y movimientos más limpios.",
+   "vis": {
+    "t": "big",
+    "big": "8 a. m. – 12 m",
+    "fs": 150,
+    "sub": "cruce Londres + Nueva York",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s41_c",
+   "texto": "Esa es la ventana dorada.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🏆",
+    "titulo": "La <span class='oro'>ventana dorada</span>"
+   }
+  },
+  {
+   "v": "s41_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

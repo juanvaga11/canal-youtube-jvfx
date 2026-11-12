@@ -1,0 +1,44 @@
+{
+ "id": "s42",
+ "formato": "vertical",
+ "titulo": "NO operes a esta hora ❌ (te saca el spread) #trading #shorts",
+ "desde": "v11",
+ "escenas": [
+  {
+   "v": "s42_a",
+   "texto": "Hay una hora en que no deberías operar nunca.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "❌",
+    "titulo": "NO operes a <span class='rojo'>esta hora</span>"
+   }
+  },
+  {
+   "v": "s42_b",
+   "texto": "A las cinco de la tarde de Nueva York los brókers cambian de día, y el spread se abre muchísimo por unos minutos. Si tu stop está pegado, te saca solo por eso.",
+   "vis": {
+    "t": "big",
+    "big": "5 p. m.",
+    "color": "rojo",
+    "sub": "hora de Nueva York · todos los días",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s42_c",
+   "texto": "Revisa tu plataforma a esa hora y lo vas a ver.",
+   "vis": {
+    "t": "texto",
+    "emoji": "👀",
+    "titulo": "Revisa tu plataforma <span class='rojo'>a esa hora</span>"
+   }
+  },
+  {
+   "v": "s42_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

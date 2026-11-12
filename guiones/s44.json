@@ -1,0 +1,54 @@
+{
+ "id": "s44",
+ "formato": "vertical",
+ "titulo": "Mi regla con las NOTICIAS 📰 (15 minutos) #trading #shorts",
+ "desde": "v11",
+ "escenas": [
+  {
+   "v": "s44_a",
+   "texto": "Mi regla con las noticias económicas.",
+   "vis": {
+    "t": "gancho",
+    "emoji": "📰",
+    "titulo": "Mi regla con las <span class='oro'>NOTICIAS</span>"
+   }
+  },
+  {
+   "v": "s44_b",
+   "texto": "No abro operaciones quince minutos antes ni quince minutos después de una noticia de impacto alto.",
+   "vis": {
+    "t": "vs",
+    "a": [
+     "⏪",
+     "Antes",
+     "−15 min",
+     "rojo"
+    ],
+    "b": [
+     "⏩",
+     "Después",
+     "+15 min",
+     "rojo"
+    ],
+    "s_a": 0,
+    "s_b": 0
+   }
+  },
+  {
+   "v": "s44_c",
+   "texto": "Y si ya estoy adentro, mi stop loss está puesto.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🛡️",
+    "titulo": "Adentro = <span class='oro'>stop loss puesto</span>"
+   }
+  },
+  {
+   "v": "s44_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

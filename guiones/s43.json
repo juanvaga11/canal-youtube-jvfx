@@ -1,0 +1,56 @@
+{
+ "id": "s43",
+ "formato": "vertical",
+ "titulo": "Operar de NOCHE el EURUSD: el error del principiante 🌙 #trading #shorts",
+ "desde": "v11",
+ "escenas": [
+  {
+   "v": "s43_a",
+   "texto": "¿Operas el euro dólar de noche?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🌙",
+    "titulo": "¿EURUSD de <span class='rojo'>noche</span>?"
+   }
+  },
+  {
+   "v": "s43_b",
+   "texto": "De noche en Colombia está la sesión asiática. Para el euro dólar suele ser lenta, con rangos pequeños y spreads más altos.",
+   "vis": {
+    "t": "lista",
+    "pill": "SESIÓN ASIÁTICA",
+    "tipo": "x",
+    "items": [
+     [
+      1,
+      "Lenta"
+     ],
+     [
+      1,
+      "Rangos pequeños"
+     ],
+     [
+      1,
+      "Spreads más altos"
+     ]
+    ]
+   }
+  },
+  {
+   "v": "s43_c",
+   "texto": "Usa la noche para estudiar y marcar tus zonas.",
+   "vis": {
+    "t": "texto",
+    "emoji": "📚",
+    "titulo": "De noche: <span class='oro'>estudia y marca zonas</span>"
+   }
+  },
+  {
+   "v": "s43_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

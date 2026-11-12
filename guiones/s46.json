@@ -1,0 +1,61 @@
+{
+ "id": "s46",
+ "formato": "vertical",
+ "titulo": "¿Ya bajó mucho? NO compres todavía 🛑 #trading #shorts",
+ "desde": "v12",
+ "escenas": [
+  {
+   "v": "s46_a",
+   "texto": "“Ya bajó mucho, voy a comprar.”",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🛑",
+    "titulo": "“Ya bajó mucho…” <span class='rojo'>NO compres</span>"
+   }
+  },
+  {
+   "v": "s46_b",
+   "texto": "Si el precio sigue haciendo máximos y mínimos más bajos, la tendencia es bajista. Comprar ahí es nadar contra la corriente.",
+   "vis": {
+    "t": "ruta",
+    "pts": [
+     64,
+     50,
+     57,
+     40,
+     47,
+     30,
+     37,
+     20
+    ],
+    "lineas": [
+     [
+      47,
+      "“YA BAJÓ MUCHO” → COMPRA",
+      "rojo",
+      1
+     ]
+    ],
+    "color": "rojo",
+    "sub": "Contra la corriente",
+    "s_sub": 1
+   }
+  },
+  {
+   "v": "s46_c",
+   "texto": "Opera a favor de la tendencia.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🌊",
+    "titulo": "Opera <span class='verde'>a favor</span> de la tendencia"
+   }
+  },
+  {
+   "v": "s46_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}

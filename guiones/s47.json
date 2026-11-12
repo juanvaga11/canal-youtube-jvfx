@@ -1,0 +1,65 @@
+{
+ "id": "s47",
+ "formato": "vertical",
+ "titulo": "Retroceso o CAMBIO de tendencia? 🤔 La diferencia #trading #shorts",
+ "desde": "v12",
+ "escenas": [
+  {
+   "v": "s47_a",
+   "texto": "¿Es un retroceso, o la tendencia cambió?",
+   "vis": {
+    "t": "gancho",
+    "emoji": "🤔",
+    "titulo": "¿Retroceso o <span class='rojo'>cambio</span>?"
+   }
+  },
+  {
+   "v": "s47_b",
+   "texto": "Mientras el precio no rompa el último mínimo, en una tendencia alcista, es solo un retroceso. Y esos retrocesos son zonas de compra.",
+   "vis": {
+    "t": "ruta",
+    "pts": [
+     20,
+     34,
+     28,
+     46,
+     38,
+     54
+    ],
+    "lineas": [
+     [
+      28,
+      "ÚLTIMO MÍNIMO",
+      "oro",
+      0
+     ],
+     [
+      38,
+      "RETROCESO = COMPRA",
+      "verde",
+      1
+     ]
+    ],
+    "color": "verde",
+    "sub": "No rompe el mínimo",
+    "s_sub": 0
+   }
+  },
+  {
+   "v": "s47_c",
+   "texto": "No vendas cada ola que se devuelve.",
+   "vis": {
+    "t": "texto",
+    "emoji": "🌊",
+    "titulo": "No vendas <span class='oro'>cada ola</span>"
+   }
+  },
+  {
+   "v": "s47_cta",
+   "texto": "Mira el video completo en mi canal. Y sígueme para más.",
+   "vis": {
+    "t": "cta"
+   }
+  }
+ ]
+}
